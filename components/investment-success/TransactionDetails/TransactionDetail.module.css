@@ -1,0 +1,120 @@
+.mainContainer {
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.59) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  top: -91px;
+  right: -61%;
+  z-index: 1;
+}
+
+.mobileMainContainer {
+  flex-direction: column;
+  align-items: center;
+}
+
+.partnerInfoContainer {
+  width: 100%;
+}
+
+.partnerInfoPadding {
+  padding: 0px 20px;
+}
+
+.subContainer {
+  background: var(--gripWhite, #ffffff);
+  box-shadow: 32px 31px 84px rgba(111, 118, 138, 0.03);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.returnContainer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+.dealContainer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+}
+.yourInvestmentContainer {
+  display: flex;
+  flex-direction: column;
+}
+.commercialReturnContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.yourReturnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.yourInvestmentContainerCommercial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.investmentTypeHeading {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey, #555770);
+}
+.calculatedReturns {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: right;
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.investedAmount {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.otherDetails {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey, #555770);
+}
+@media screen and (max-width: 767px) {
+  .subContainer {
+    width: auto;
+    padding: 20px;
+    position: relative;
+    top: -105px;
+    right: 0%;
+    margin: 0 20px;
+    background: var(--gripWhite, #ffffff);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+  }
+  .AssetBondPayment {
+    gap: 8px;
+    top: 0;
+    margin-top: -130px;
+  }
+  .AssetBondPayment .returnContainer {
+    margin-bottom: 12px;
+  }
+}

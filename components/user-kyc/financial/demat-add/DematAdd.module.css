@@ -1,0 +1,302 @@
+.SubHeading {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.Wrapper {
+  align-items: flex-start;
+}
+
+.DPIDImage {
+  margin-right: 16px !important;
+}
+
+.GmailCta {
+  gap: 4px;
+}
+
+.Loader {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.commonnote {
+  color: var(--gripBlue, #00357c);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.LoadingCntnr {
+  padding-bottom: 25px;
+  align-items: center;
+  display: flex;
+  gap: 36px;
+}
+
+.HideInMobile {
+  display: inline-block !important;
+}
+
+.AccordionWrapper {
+  gap: 10px;
+}
+
+.NotesContainer {
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+.FormContainer {
+  width: 360px;
+}
+
+.Title {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0px 0px 30px;
+}
+
+.Modal {
+  bottom: 0% !important;
+}
+
+.Card {
+  padding: 12px;
+  height: 100%;
+  border-radius: 12px;
+  justify-content: space-between;
+  gap: 16px;
+  background: url('https://static-assets.gripinvest.in/icons/DematCardBackgroundImage.png')
+    lightgray 50% / cover no-repeat;
+  cursor: pointer;
+}
+
+.SwiperComponent {
+  gap: 20px;
+}
+
+.UploadTextContainer {
+  margin-top: 2px;
+}
+
+.UploadBtnContainer {
+  gap: 4px;
+}
+
+.Card p {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0px;
+}
+
+.Card .Icons {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.Card .SwiperComponent {
+  width: 100%;
+}
+
+.Card .SwiperSlide {
+  height: auto;
+}
+
+.container {
+  width: 100%;
+}
+
+.pagination {
+  gap: 5px;
+  justify-content: center;
+}
+
+.swiperBullet {
+  height: 7px;
+  width: 7px;
+  border-radius: 3px;
+  border: none;
+  background-color: var(--gripWhiteLilac, #d9d9d9);
+  cursor: pointer;
+  outline: none;
+}
+
+.swiperBulletActive {
+  background-color: var(--gripBlue, #00357c);
+  width: 20px;
+}
+
+.container :global(.swiper-slide) {
+  height: auto;
+}
+
+.Gap {
+  height: 9px;
+}
+
+.InfoIcon {
+  font-size: 14px;
+  color: var(--gripBlue, #00357c);
+  font-weight: 700;
+}
+
+.QuickHelpContainer {
+  gap: 12px;
+  padding: 20px 20px 30px;
+}
+
+.LinkContainer {
+  gap: 4px;
+}
+
+.LocateDemat {
+  color: var(--gripBlue, #00357c);
+  font-size: 14px;
+  font-weight: 400;
+  border: 0px;
+  background-color: inherit;
+  border-bottom: 1px solid var(--gripBlue, #00357c);
+  padding: 0px;
+  cursor: pointer;
+}
+
+.QuickHelpTitle {
+  color: var(--gripTextMain, #373a46);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 0px;
+}
+
+.LinkText {
+  color: var(--gripTextMain, #373a46);
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.NeedHelpBtn {
+  display: none;
+}
+
+.NeedHelpBtnGmail {
+  display: none;
+}
+
+/* Media Queries Start */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .container {
+    padding-top: 28px !important;
+    width: auto;
+    margin: 0px -40px;
+  }
+
+  .DematIDNote {
+    margin: 12px 4px;
+    composes: commonnote;
+  }
+
+  .DematIDNote + .DematIDNote {
+    margin-top: 0;
+  }
+
+  .Wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .NeedHelpBtn {
+    display: block;
+    margin-top: 24px;
+  }
+
+  .NeedHelpBtnGmail {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .MainContainer {
+    gap: 8px;
+    width: calc(100% - 20px);
+  }
+
+  .DematNote {
+    display: none !important;
+  }
+
+  .SubHeading {
+    margin-bottom: 16px;
+  }
+
+  .NotDemat {
+    text-align: center;
+    margin-top: auto;
+    composes: commonnote;
+  }
+
+  .DematIDNoteDrawer {
+    bottom: 0 !important;
+    padding-bottom: 31px !important;
+  }
+  .HideInMobile {
+    display: none !important;
+  }
+  .AccordionWrapper {
+    display: none !important;
+  }
+
+  .FormContainer {
+    max-width: 100%;
+  }
+
+  .Gap {
+    height: 22px;
+  }
+
+  .Loader {
+    min-height: calc(100vh - 300px);
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .MainContainer {
+    width: 390px;
+    gap: 20px;
+  }
+  .InputFieldSet {
+    height: 48px !important;
+  }
+
+  .NotDemat,
+  .DematIDNote {
+    display: none;
+  }
+
+  .SubHeading {
+    margin-bottom: 8px;
+  }
+
+  .DematNote {
+    margin-bottom: 6px;
+  }
+
+  .ModalPopupCard {
+    padding: 55px 20px 20px !important;
+  }
+}
+
+/* Media Queries End */

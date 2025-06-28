@@ -1,0 +1,53 @@
+.investmentOptionHolder {
+  margin-top: 22px;
+}
+
+.header {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--gripLuminousDark);
+  margin-bottom: 4px;
+}
+
+.SubHeader {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripLuminousGrey);
+  margin-bottom: 24px;
+}
+
+.cardHolder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 13px;
+}
+
+@media screen and (max-width: 767px) {
+  .investmentOptionHolder {
+    padding: 0px;
+    margin: 32px 0 0;
+    max-width: 100%;
+    min-height: 250px; 
+  }
+  .investmentOptionHolderWOImageSLide {
+    margin-top: 42px;
+    margin-bottom: 24px;
+  }
+  .cardHolder {
+    display: flex;
+    column-gap: 16px;
+    row-gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .header {
+    font-size: 16px;
+  }
+
+  .SubHeader {
+    margin-bottom: 32px;
+  }
+}

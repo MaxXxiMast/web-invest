@@ -1,0 +1,168 @@
+.modalPopup {
+  width: 457px !important;
+}
+
+.header {
+  padding-bottom: 10px;
+}
+
+.header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+}
+
+.assetInfo {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  padding: 16px 20px;
+  gap: 10px;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.detailRow {
+  gap: 1px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.label {
+  color: var(--gripWealthText, #696b74);
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.infoIcon {
+  gap: 5px;
+  cursor: pointer;
+}
+
+.maturity {
+  gap: 8px;
+  margin-top: 16px;
+  line-height: 20px;
+  font-size: 14px;
+  color: var(--gripGunPowder, #44485b);
+}
+
+.ToolTipData {
+  margin-top: -2px;
+}
+
+.maturityLabel {
+  font-weight: 400;
+}
+
+.maturityValue {
+  font-weight: 600;
+}
+
+.inputSection {
+  margin-top: 20px;
+  border: 1px solid var(--gripWealthTex, #696b74);
+  padding: 10px 16px;
+  border-radius: 6px;
+  height: 65px;
+}
+
+.inputLabel {
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 600;
+  color: var(--gripBlue, #00357c);
+}
+
+.errorText {
+  color: var(--gripDanger, #ff5c5c);
+  text-align: center;
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.expectedPayout {
+  gap: 4px;
+  margin-top: 20px;
+}
+
+.payoutLabel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gripTextMain, #373a46);
+}
+
+.payoutValue {
+  gap: 6px;
+  color: var(--gripPersianGreen, #00a3a2);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.disclaimer {
+  background-color: var(--gripEarlyDawn, #fff8ea);
+  color: var(--gripTextMain, #373a46);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 16px;
+}
+
+.expectedPayoutContainer {
+  margin-bottom: 16px;
+}
+
+.ctaButton {
+  width: 100% !important;
+  background-color: var(--gripBlue, #00357c);
+  color: var(--gripWhite, #ffffff);
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.terms {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  color: var(--gripGunPowder, #44485b);
+  text-align: center;
+}
+
+.terms a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.perUnit {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.gap4 {
+  gap: 4px;
+}
+
+@media screen and (max-width: 399px) {
+  .disclaimer {
+    font-size: 10px;
+  }
+}

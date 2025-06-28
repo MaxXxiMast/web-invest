@@ -1,0 +1,19 @@
+.TandC {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  margin: 45px auto 0;
+  max-width: 344px;
+}
+
+.linkStyle {
+  color: var(--gripBlue, #00357c);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .TandC {
+    margin: 15px auto 0;
+  }
+}

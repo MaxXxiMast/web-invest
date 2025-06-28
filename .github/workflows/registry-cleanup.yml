@@ -1,0 +1,21 @@
+name: Cleanup Registry
+
+on:
+  schedule:
+    - cron: "0 0 * * *" 
+
+jobs:
+  clean-ghcr:
+    name: Cleanup Registry
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cleanup Container image for gi-client-web
+        uses: snok/container-retention-policy@v2
+        with:
+          image-names: "gi-client-web**"
+          cut-off: Two hours ago UTC
+          timestamp-to-use: created_at
+          account-type: org
+          org-name: gripinvest
+          token: ${{ secrets.GRIP_GITHUB_REGISTRY_TOKEN }}
+          keep-at-least: 10

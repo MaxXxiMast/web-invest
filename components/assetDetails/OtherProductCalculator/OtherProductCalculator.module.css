@@ -1,0 +1,299 @@
+.MonthlyReturnCardContent {
+  z-index: 1;
+  background: var(--gripWhite);
+  border-radius: 12px;
+  padding: 4px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+.PostTaxItem {
+  border-top: 1px solid var(--gripLightStroke);
+}
+
+.PreTaxAmount {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+  white-space: pre;
+}
+.CountLabel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey);
+}
+
+.PostTaxAmount {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gripLuminousDark);
+}
+
+.CaretDown {
+  margin-right: -10px;
+  cursor: pointer;
+  height: 24px;
+}
+
+.CaretDown svg {
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.CardBottom {
+  padding: 20px 0 0;
+}
+
+.InfoIcon {
+  margin-left: 5px;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--gripBlue);
+}
+
+.PreTaxAmount .InfoIcon {
+  margin-right: -10px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.ReturnOfInvestment + .CardBottom {
+  padding-top: 24px;
+}
+
+.errorMessage {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripRed);
+  text-align: center;
+}
+
+.CardTop {
+  padding: 24px;
+  background: rgba(229, 241, 255, 0.5);
+  border-radius: 8px;
+}
+
+.InvestmentType {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.InvestmentTypeLeft h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gripLuminousDark);
+  margin: 0;
+}
+
+.InvestMentAmount {
+  position: relative;
+}
+.InvestMentAmount::before {
+  content: '₹';
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+}
+.InvestMentAmount input {
+  padding: 16px 20px 16px 46px;
+  width: 100%;
+  background: var(--gripWhite);
+  border: 1px solid var(--gripGhost);
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gripLuminousDark);
+  outline: none;
+}
+
+.InvestMentAmount input:focus {
+  border-color: var(--gripBlue);
+  transition: 0.5s all;
+}
+
+.CountList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.CountList > li {
+  margin: 16px 0px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.RepaymentAmount {
+  margin-top: 0px !important;
+}
+
+.RepaymentAmount ul {
+  padding-left: 10px;
+  width: 100%;
+}
+
+.RepaymentAmount[id='sdi-sidebar-principal'] ul,
+.RepaymentAmount[id='bonds-sidebar-principal'] ul {
+  padding: 0 14px 0 10px;
+  width: 100%;
+}
+
+.RepaymentAmount[id='bonds-sidebar-principal'] ul {
+  padding: 0 14px 0 5px;
+}
+.RepaymentAmount ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.RepaymentAmount ul li + li {
+  margin-top: 16px;
+}
+.RepaymentAmount .CountLabel,
+.RepaymentAmount .PostTaxAmount,
+.RepaymentAmount .PreTaxAmoount {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.RepaymentAmount .PostTaxAmount {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: right;
+}
+
+.PostTaxAmount:global(.Active) .CaretDown svg,
+.PreTaxAmount:global(.Active) .CaretDown svg {
+  transform: rotate(180deg);
+  transition: 0.3s ease-in-out;
+}
+
+.CountList > li:last-child {
+  margin-bottom: 0;
+}
+.CountList .PostTaxItem {
+  padding: 16px 24px;
+}
+
+.VisualReturns {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gripBlue);
+  margin: 32px 0 16px;
+  padding: 0 24px;
+}
+
+.VisualReturnsInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.VisualReturns span {
+  cursor: pointer;
+}
+
+.VisualReturns .ImageContainer {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.ContinueSection {
+  max-width: 344px;
+  margin: 0 auto;
+  margin-bottom: -30px;
+}
+
+.VisualReturnCloseBtn {
+  top: 33px !important;
+}
+
+@media screen and (min-width: 993px) {
+  .MonthlyReturnCardContent {
+    position: relative;
+  }
+
+  .VisualReturnModalPopup :global(.Card) {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .CardTop {
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .MonthlyReturnCardContent {
+    border-radius: 12px 12px 0 0;
+    padding: 0;
+    border: none;
+  }
+  .CardTop {
+    padding: 16px;
+  }
+  .InvestmentTypeLeft h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .CardBottom {
+    padding: 40px 0 19px;
+  }
+  .CountList li {
+    padding: 0 18px 0 12px;
+  }
+
+  .ContinueSection {
+    margin-bottom: 0px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .VisualReturnsDrawer {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .CountList .PostTaxItem {
+    padding: 16px 18px 16px 12px;
+  }
+
+  .RepaymentAmount[id='sdi-sidebar-principal'] {
+    padding: 0 !important;
+  }
+
+  .RepaymentAmount[id='bonds-sidebar-principal'] ul {
+    padding: 0;
+  }
+  .RepaymentAmount[id='bonds-sidebar-principal'] ul > li {
+    padding: 0 12px 0 6px;
+  }
+
+  .PreTaxAmount .InfoIcon {
+    height: 15px;
+    max-height: 15px;
+  }
+}

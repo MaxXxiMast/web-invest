@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "en-US"
+early_access: false
+reviews:
+  profile: "chill"
+  request_changes_workflow: false
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  sequence_diagrams: true
+  abort_on_close: true
+  auto_review:
+    enabled: true
+    auto_incremental_review: true
+  tools:
+    shellcheck:
+      enabled: true
+    markdownlint:
+      enabled: true
+    github-checks:
+      enabled: true
+    biome:
+      enabled: true
+    yamllint:
+      enabled: true
+    gitleaks:
+      enabled: true
+    eslint:
+      enabled: true
+chat:
+  auto_reply: true
+knowledge_base:
+  learnings:
+    scope: "auto"
+  issues:
+    scope: "auto"

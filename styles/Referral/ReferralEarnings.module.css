@@ -1,0 +1,91 @@
+.ReferralEarningsSlider {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 0 20vw;
+}
+
+.ReferralEarningsNoSlider {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.leftMargin1 {
+  margin-left: 38%;
+  max-width: 500px;
+}
+
+.leftMargin2 {
+  max-width: 800px;
+}
+
+.ReferralEarnings {
+  margin: 80px 0;
+}
+
+.ReferralEarnings :global(.swiper-wrapper) {
+  align-items: flex-end;
+  padding-top: 70px;
+}
+
+@media screen and (max-width: 1500px) {
+  .ReferralEarningsSlider {
+    padding: 0 0 0 12vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ReferralEarnings {
+    margin: 0 0 50px;
+    text-align: center;
+  }
+  .ReferralEarnings :global(.swiper) {
+    margin: 0 -20px;
+    padding: 0 30px;
+  }
+  .ReferralEarnings :global(.containerNew) {
+    padding-bottom: 0;
+  }
+}
+
+.SliderNavigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9;
+  padding: 0;
+  margin-top: 50px;
+  gap: 8px;
+  max-width: 100%;
+  margin-left: -8%;
+}
+
+.SliderBtn {
+  border: 0.5px solid rgba(40, 44, 63, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.82);
+  z-index: 9;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SliderBtn > img {
+  max-height: 16px;
+}
+
+.PreviousBtn {
+  transform: rotate(180deg);
+}
+.ScrollBar {
+  min-width: 280px;
+  margin: 0 15px;
+  padding-top: 5px;
+}
+.ScrollBar :global(.swiper-scrollbar-drag) {
+  background: var(--gripLuminousDark);
+  height: 2px;
+}

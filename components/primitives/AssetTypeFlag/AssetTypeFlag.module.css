@@ -1,0 +1,114 @@
+.Flag {
+  position: relative;
+  padding: 4px 12px;
+  background: var(--linerGradientFive);
+  border-radius: 4px 0px 0px 4px;
+  color: var(--gripLuminousGrey);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.Flag:global(.bonds) {
+  background: linear-gradient(
+    90deg,
+    rgba(159, 122, 255, 0.2) 0%,
+    rgba(159, 122, 255, 0) 95.9%
+  );
+}
+
+.Flag:global(.sdi) {
+  background: linear-gradient(
+    91deg,
+    rgba(253, 172, 66, 0.2) 0%,
+    rgba(253, 172, 66, 0) 100%
+  );
+}
+
+.Flag:global(.inventory) {
+  background: linear-gradient(
+    270deg,
+    rgba(62, 123, 250, 0.2) 0.03%,
+    rgba(62, 123, 250, 0) 99.98%
+  );
+}
+
+.Flag:global(.realEstate) {
+  background: linear-gradient(
+    270deg,
+    rgba(2, 201, 136, 0.2) 0.03%,
+    rgba(2, 201, 136, 0) 99.98%
+  );
+}
+
+.Flag:global(.startupEquity) {
+  background: linear-gradient(
+    270deg,
+    rgba(0, 202, 241, 0.2) 0.03%,
+    rgba(0, 202, 241, 0) 99.98%
+  );
+}
+
+@media screen and (max-width: 320px) {
+  .Flag {
+    font-size: 10px;
+  }
+}
+
+.LeasingAssetList {
+  background: var(--gripRedLighterSix, #ffebeb);
+  padding: 4px 12px;
+  width: 147px;
+  margin-left: 0px;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .LeasingAssetList {
+    width: 121px;
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}
+
+.CorporateBondList,
+.SDIAssetlist {
+  background: var(--bonds, #f1ecff);
+  padding: 4px 12px;
+  width: 147px;
+  margin-left: 0px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.SDIAssetlist {
+  background: var(--sdiSecondary, #fff7ec);
+}
+
+.CorporateBondInvestmentOverview {
+  background: linear-gradient(
+    0.03deg,
+    rgba(159, 122, 255, 0.2) 0.03%,
+    rgba(159, 122, 255, 0) 99.97%
+  );
+}
+
+.sdiSecondaryInvestmentOverview {
+  background: linear-gradient(
+    360deg,
+    rgba(253, 172, 66, 0.2) 0%,
+    rgba(253, 172, 66, 0) 100%
+  );
+}
+
+@media screen and (max-width: 767px) {
+  .CorporateBondList,
+  .SDIAssetlist {
+    width: 121px;
+    padding: 4px 8px;
+    font-size: 10px;
+  }
+}

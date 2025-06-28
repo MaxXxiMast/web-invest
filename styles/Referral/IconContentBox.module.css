@@ -1,0 +1,47 @@
+.Icon {
+  text-align: center;
+}
+.StepNumber {
+  margin-top: 30px;
+}
+.StepNumber span {
+  color: var(--gripLuminousDark);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.StepNumber h3 {
+  color: var(--gripLuminousDark);
+  margin-bottom: 12px;
+  margin-top: 12px;
+  width: 370px;
+}
+
+.StepNumber p {
+  color: var(--gripLuminousGrey);
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  .Icon img {
+    max-width: 80px;
+  }
+  .StepNumber h3 {
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--gripLuminousDark);
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .StepNumber h3 {
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--gripLuminousDark);
+    margin-bottom: 8px;
+    margin-top: 8px;
+    width: 100%;
+  }
+}

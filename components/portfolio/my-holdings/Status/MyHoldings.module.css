@@ -1,0 +1,23 @@
+.status {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  padding: 2px 12px;
+  width: min-content;
+  border-radius: 6px;
+}
+
+.status:global(.withdrawn) {
+  color: var(--gripPrimaryRed, #ff4d4f);
+  background-color: var(--bridesmaid, #fef1f1);
+}
+
+.status:global(.sold) {
+  color: var(--gripBlue, #00357c);
+  background-color: var(--gripSolitude, #e7f1fe);
+}
+.status:global(.matured) {
+  color: var(--gripElfGreen, #0a8b65);
+  background-color: var(--gripWhiteIce, #e0f7f0);
+}

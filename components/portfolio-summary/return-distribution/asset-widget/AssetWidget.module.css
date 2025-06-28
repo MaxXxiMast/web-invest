@@ -1,0 +1,14 @@
+.assetSliderButton {
+  width: 90% !important;
+  margin-top: 50px;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .assetSliderButton {
+    display: none;
+  }
+  .assetDrawerContainer {
+    display: none;
+  }
+}

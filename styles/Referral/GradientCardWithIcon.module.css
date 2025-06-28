@@ -1,0 +1,52 @@
+.ReferralCard {
+  border-radius: 12px 12px 0px 0px;
+  padding: 40px 24px 24px;
+  position: relative;
+}
+
+.ReferralCard::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px 12px 0px 0px;
+  opacity: 0.2;
+  background: var(--linerGradientTwo);
+}
+
+.ReferralCard:global(.gradientTwo)::before {
+  background: var(--linerGradientFour);
+}
+
+.CardContent {
+  position: relative;
+  z-index: 9;
+}
+
+.CardIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -64px;
+  left: 0;
+  background-color: var(--gripWhite, #ffffff);
+  border-radius: 50%;
+}
+
+.CardIcon img {
+  width: 23px;
+  height: 23px;
+}
+
+@media screen and (max-width: 767px) {
+  .CardContent :global(.Heading1) {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

@@ -1,0 +1,88 @@
+.OverviewContainer {
+  margin: 40px 0px;
+}
+.RedirectLoader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.RedirectLoader p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: center;
+}
+.Modal {
+  max-width: 440px !important;
+}
+.Modal :global .Card {
+  padding: 50px 32px;
+}
+
+.MobileModal {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.MobileModal .RedirectLoader {
+  gap: 20px;
+}
+.MobileModal .RedirectLoader p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.ProgressWrapper {
+  position: relative;
+}
+.Progress {
+  position: absolute;
+  left: calc(50% - 32px);
+  transform: translateX(calc(50% - 32px));
+  z-index: 1;
+}
+
+.Progress svg {
+  color: var(--gripBlue, #00357c);
+}
+
+.ProgressHolder svg {
+  color: var(--gripLighterOne, #e5f1ff);
+}
+
+.LoaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .HeaderContainer,
+  .PGHeaderDesktop {
+    padding: 100px 0px 20px;
+  }
+  .OverviewContainer {
+    min-height: 60vh;
+  }
+
+  .PGHeaderMobile {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .PGHeaderDesktop {
+    display: none !important;
+  }
+
+  .PgContainer {
+    margin: 0 !important;
+  }
+}

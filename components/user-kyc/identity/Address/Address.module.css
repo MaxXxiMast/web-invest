@@ -1,0 +1,114 @@
+.Title {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.FormFieldsContainer {
+  gap: 24px;
+}
+
+.AddressNotMatchText {
+  color: var(--gripBlue, #00357c);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.FetchModal :global(.Card) {
+  padding: 32px;
+}
+
+.FetchModal,
+.DigilockerFetchModal :global(h3) {
+  margin-top: 16px;
+}
+
+.IconContainer {
+  border-bottom: 1px solid var(--borderSix, #eaeaea);
+  padding-bottom: 25px;
+  align-items: center;
+  display: flex;
+  gap: 36px;
+}
+
+.NoteContainer {
+  max-width: 335px;
+  gap: 16px;
+}
+
+.Note a {
+  cursor: pointer;
+  color: var(--gripNewBlue, #00347d);
+  text-decoration-line: underline;
+}
+
+.extraMessage {
+  margin-top: 0px;
+  color: var(--gripWealthText, #696b74);
+  font-size: 12px;
+}
+
+.contactTitle {
+  max-width: 100%;
+}
+
+.contactChildren {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.contactChildren span {
+  color: var(--gripBlue, #00357c);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+/* Media Queries Start */
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .TextAreaInput {
+    width: 371px !important;
+  }
+
+  .FormFieldsContainer {
+    margin-top: 21px;
+    max-width: 371px;
+  }
+
+  .failTitleHeading {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Title {
+    margin-top: 25px;
+    display: flex;
+  }
+
+  .FormFieldsContainer {
+    margin-top: 30px;
+  }
+
+  .DigilockerDrawer {
+    padding: 50px 20px;
+    margin-top: 16px;
+  }
+
+  .DigilockerDrawer :global(h3) {
+    max-width: 284px;
+  }
+}

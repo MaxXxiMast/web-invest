@@ -1,0 +1,66 @@
+.btn {
+  color: var(--gripBlue, #00357c);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  background-color: var(--gripLighterOne, #e5f1ff);
+  border-width: 0px;
+  cursor: pointer;
+  width: 100%;
+  align-self: center;
+}
+
+.btn2 {
+  color: var(--gripNewBlue, #00347d);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  text-decoration-line: underline;
+  border-width: 0px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.Drawer {
+  max-width: 550px !important;
+}
+
+.cardContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.SebiGuidliance {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 12px;
+}
+
+.SebiGuidliance p {
+  font-size: 12px !important;
+  line-height: 18px !important;
+}
+
+.WrapperClass {
+  margin-top: 10px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Drawer {
+    bottom: 0px;
+  }
+
+  .btn2 {
+    min-width: 100vw;
+    position: sticky;
+    bottom: 0;
+    padding-top: 15px;
+  }
+}

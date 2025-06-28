@@ -1,0 +1,109 @@
+.dealAssistButton {
+  background-color: var(--gripLuminousDark, #282c3f);
+  color: var(--gripWhite, #ffffff);
+  border-radius: 6px;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 400;
+  white-space: nowrap;
+  padding-right: 6px;
+  padding-bottom: 7px;
+  padding-left: 6px;
+  margin-top: 6px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.dealAssistButton:hover {
+  background-color: var(--gripLuminousDark, #282c3f);
+  color: var(--gripWhite, #ffffff);
+}
+
+.dealAssistButton:focus {
+  background-color: var(--gripLuminousDark, #282c3f);
+  color: var(--gripWhite, #ffffff);
+}
+
+.dealAssistGCButton {
+  background-color: var(--gripLuminousDark, #282c3f);
+  margin-right: 15px;
+}
+.blueDot {
+  position: absolute;
+  top: 12px;
+  right: 9px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--gripWhite, #ffffff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blueDot::after {
+  border-radius: 50%;
+  background-color: var(--gripPrimaryGreen, #00b8b7);
+  width: 8px;
+  height: 8px;
+  content: '';
+}
+.blueDotGc {
+  position: absolute;
+  top: 6px;
+  right: 21px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--gripWhite, #ffffff);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blueDotGc::after {
+  border-radius: 50%;
+  background-color: var(--gripPrimaryGreen, #00b8b7);
+  width: 8px;
+  height: 8px;
+  content: '';
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .dealAssistButton {
+    bottom: auto;
+  }
+  .blueDot {
+    top: 10.5px;
+    right: 45px;
+  }
+  .blueDotGc {
+    top: 6px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dealAssistButton {
+    padding-bottom: 5px;
+    margin-top: 4px;
+  }
+  .blueDot {
+    top: 3px;
+    right: -2px;
+    width: 12px;
+    height: 12px;
+    border: none;
+  }
+  .blueDot::after {
+    border-radius: 50%;
+    background-color: var(--gripPrimaryGreen, #00b8b7);
+    width: 8px;
+    height: 8px;
+    content: '';
+  }
+  .blueDotGc {
+    top: 0px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+  }
+}

@@ -1,0 +1,58 @@
+.CardHeader {
+  padding: 0;
+  justify-content: space-between;
+}
+
+.CardHeaderLeft .ImageIcon {
+  width: 40px;
+  height: 40px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.CardHeaderLeft .Label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gripLuminousDark);
+}
+
+.CardBody {
+  padding: 22px 0px 20px;
+  font-family: var(--fontFamily, "'Inter', sans-serif") !important;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey);
+  margin: 0;
+}
+
+.CardBody p {
+  margin-top: 0;
+}
+.CardBody p:last-child {
+  margin-bottom: 0;
+}
+.CardBody a {
+  text-decoration: underline;
+  color: var(--gripBlue);
+}
+
+.CardFooter {
+  padding: 0px 0;
+  text-align: center;
+}
+.CardFooter span {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gripBlue);
+  cursor: pointer;
+}
+
+.Icon {
+  font-size: 20px;
+}

@@ -1,0 +1,31 @@
+.container {
+  min-width: 300px;
+  gap: 28px;
+}
+
+.legendColor {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.subLabel {
+  font-weight: 500;
+  opacity: 1;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+@media screen and (max-width: 768px) {
+  .label {
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}

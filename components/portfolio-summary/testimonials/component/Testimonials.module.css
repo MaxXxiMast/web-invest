@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+}
+
+.pagination {
+  gap: 5px;
+}
+
+.swiperBullet {
+  height: 7px;
+  width: 25px;
+  border-radius: 3px;
+  border: none;
+  background-color: var(--gripWhiteLilac, #d9d9d9);
+  cursor: pointer;
+  outline: none;
+}
+
+.swiperBulletActive {
+  background-color: var(--gripBlue, #00357c);
+}
+
+.testimonial h2 {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.profile {
+  gap: 10px;
+}
+
+.profileImg {
+  border-radius: 50%;
+}
+
+.profile > div > p {
+  margin: 0;
+}
+
+.profile > div > p:first-child {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.profile > div > p:nth-child(2) {
+  color: var(--GripLuminousGreyPlace, #777777);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    display: none;
+  }
+}

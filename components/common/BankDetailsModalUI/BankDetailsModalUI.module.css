@@ -1,0 +1,88 @@
+.Left {
+  color: var(--gripLuminousDark, #282c3f);
+  margin-top: 18px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.Left li + li {
+  margin-top: 3px;
+}
+
+.BankList {
+  gap: 10px;
+}
+.Center {
+  margin: auto;
+}
+
+.InstructionLine {
+  padding-top: 18px;
+}
+
+.InstructionTxt {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 11px !important;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 6px !important;
+}
+
+.InstructionList {
+  gap: 15px;
+  margin-top: 10px;
+  padding-left: 0px;
+  color: var(--gripLuminousDark, #282c3f);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.title {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.description {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 6px;
+}
+
+.Wrapper {
+  text-align: start;
+  width: 100%;
+}
+
+.PayTitle {
+  color: var(--gripLuminousDark, #282c3f) !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 24px !important;
+}
+
+.Instructions {
+  padding-left: 18px;
+}
+
+.BankData {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-right: 4px;
+}
+
+.Bold {
+  font-weight: 800;
+  margin-left: -4px;
+}
+
+.CardTop {
+  gap: 10px;
+}

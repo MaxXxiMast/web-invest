@@ -1,0 +1,31 @@
+.RBIContainer {
+  gap: 24px;
+}
+
+.RBIContainer h1 {
+  margin: 0;
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.RBIContainer ul {
+  padding: 0 24px;
+}
+
+.RBIContainer li {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  list-style-type: disc;
+}
+
+.RBIModal {
+  max-width: 484px !important;
+}
+
+.RBIModalDrawer {
+  bottom: 0;
+}

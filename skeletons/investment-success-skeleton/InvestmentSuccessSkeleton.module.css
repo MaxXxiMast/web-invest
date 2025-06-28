@@ -1,0 +1,82 @@
+.container {
+  padding-top: 68px;
+  margin-bottom: 140px;
+}
+.headerContainer {
+  background-color: var(--gripWhiteLilac, #f6f7fb);
+}
+.circularSkeleton {
+  border-radius: 50% !important;
+  margin-right: 10px;
+}
+.header {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 10px 30px;
+  width: 100%;
+}
+.invesmentDetails {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0 30px;
+  width: 100%;
+}
+.invesmentDetailsContainer {
+  width: 400px;
+  padding: 24px 30px 42px;
+  border: 1px solid var(--gripMercury2, #e8e8e8);
+  border-radius: 8px;
+  margin-left: auto;
+  margin-top: -117px;
+  background: var(--gripWhite, #ffffff);
+}
+.stepsBox {
+  width: 725px;
+  padding: 24px 15px;
+  border: 1px solid var(--gripMercury2, #e8e8e8);
+  border-radius: 8px;
+}
+.stepsContainer {
+  max-width: 1200px;
+  margin: -70px auto 0px;
+  padding: 0 30px;
+  width: 100%;
+}
+.referBox {
+  border: 1px solid var(--gripMercury2, #e8e8e8);
+  padding: 13px 15px;
+  border-radius: 8px;
+}
+.actionContainer {
+  position: fixed;
+  bottom: 0px;
+  padding: 17px 20px 29px;
+  box-shadow: 0px -14px 94px rgba(0, 0, 0, 0.05);
+  border-top: solid 1px var(--gripWhiteLilac, #f7f7fc);
+}
+.mb_10 {
+  margin-bottom: 10px;
+}
+.mb_20 {
+  margin-bottom: 20px;
+}
+.mt_40 {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-top: 0;
+  }
+  .header {
+    padding: 79px 30px 165px;
+    margin-top: 12px;
+  }
+  .invesmentDetailsContainer {
+    width: 100%;
+    margin-top: -96px;
+  }
+  .stepsContainer {
+    margin: 20px auto 0px;
+  }
+}

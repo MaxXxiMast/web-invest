@@ -1,0 +1,69 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.MainContainer {
+  background: var(--gripRedLighterSix, #ffebeb);
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+}
+.skipText {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: var(--gripBlue, #00357c);
+  cursor: pointer;
+}
+.errorHeading {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.errorReason {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gripLuminousGrey, #555770);
+  flex: none;
+  order: 1;
+  align-self: stretch;
+}
+@media screen and (max-width: 767px) {
+  .MainContainer {
+    overflow: hidden;
+    gap: 0;
+    padding: 0 20px;
+    max-height: -webkit-fill-available;
+    height: calc(100vh - 56px);
+  }
+  .errorHeading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .errorReason {
+    font-size: 14px;
+  }
+  .Container:not(.secondContainer) {
+    flex-grow: 1;
+  }
+  .secondContainer {
+    margin-top: auto;
+    margin-bottom: 25px;
+    flex-grow: 0;
+  }
+}

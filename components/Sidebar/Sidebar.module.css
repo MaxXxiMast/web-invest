@@ -1,0 +1,7 @@
+.container {
+  width: 220px;
+  position: sticky;
+  top: 0;
+  height: min-content;
+  row-gap: 10px;
+}

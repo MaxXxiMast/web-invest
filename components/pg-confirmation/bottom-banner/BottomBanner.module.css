@@ -1,0 +1,20 @@
+.Container {
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+  gap: 20px;
+  padding: 20px 100px 20px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.Container p {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .Container {
+    display: none;
+  }
+}

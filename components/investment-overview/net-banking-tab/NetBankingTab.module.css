@@ -1,0 +1,32 @@
+.Wrapper {
+  gap: 24px;
+}
+
+.Txt {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+}
+
+.Txt a {
+  text-decoration: underline;
+}
+
+.Mt12 {
+  margin-top: 12px;
+}
+.ExchangeNote {
+  margin: -15px 0 0;
+}
+
+.ExchangeNote > span {
+  vertical-align: middle;
+}
+
+.InfoIcon {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gripBlue, #00357c);
+}

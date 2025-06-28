@@ -1,0 +1,65 @@
+.Header {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  gap: 12px;
+}
+
+.Container {
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.AccountInfo {
+  padding: 8px;
+  border-radius: 37px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.AccountInfo :global span#accountInfoText {
+  margin: 0 2px 0 8px;
+  color: var(--gripTextMain, #373a46);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.Arrow {
+  transform: rotate(90deg);
+}
+
+.AccountInfoTitle {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.AccountInfoText {
+  color: var(--gripTextMain, #373a46);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.AccountInfoContent,
+.ProfileContainer {
+  padding: 16px 0;
+  gap: 12px;
+}
+
+.AccountInfoContent {
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Container {
+    position: sticky;
+    top: 0;
+    background: var(--gripWhite, #ffffff);
+    z-index: 10;
+  }
+}

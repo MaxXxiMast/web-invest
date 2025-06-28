@@ -1,0 +1,76 @@
+.InfoCard {
+  border-radius: 8px;
+  padding: 16px;
+  justify-content: space-between;
+}
+
+.MainContainer :global(#accountInfoPGContainer) {
+  background: var(--sdiSecondary, #fff7ec);
+}
+
+.InfoCard :global(#accountInfoBankTitle) {
+  color: var(--gripOsloGray, #81878c);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  display: inline-flex;
+  margin-bottom: 8px;
+}
+
+.InfoIcon {
+  cursor: pointer;
+  color: #9f9f9f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.MainDetailsContainer {
+  gap: 16px;
+}
+
+.Heading {
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: center;
+}
+
+.AcceptanceText {
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.UserBankDetailsPopup {
+  max-width: 472px !important;
+}
+
+.skeleton {
+  padding: 10px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Heading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .AcceptanceText {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .Heading {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .AcceptanceText {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

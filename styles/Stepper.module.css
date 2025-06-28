@@ -1,0 +1,9 @@
+.stepperLabel {
+  top: -10px;
+  position: 'relative';
+}
+.StepIcon {
+  position: relative !important;
+  top: -3px !important;
+  left: -3px !important;
+}

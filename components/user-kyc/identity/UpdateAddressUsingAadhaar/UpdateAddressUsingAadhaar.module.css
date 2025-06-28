@@ -1,0 +1,107 @@
+.heading {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.FormFieldsContainer {
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.inputFieldSet {
+  position: relative;
+  height: 58px;
+  width: 371px;
+  margin-bottom: 8px;
+}
+
+.inputFieldSet + .inputFieldSet {
+  margin-top: -5px;
+}
+
+.verifyButtonAndClearInputButtonContainer {
+  position: absolute;
+  z-index: 2;
+  right: 5px;
+  height: 100%;
+}
+
+.clearInputButton {
+  filter: grayscale(1);
+  opacity: 0.5;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-top: 5px;
+  height: 24px;
+}
+
+.getOTP {
+  width: unset !important;
+  height: unset !important;
+  padding: 10px 15px;
+}
+
+.proceedWithDigi {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  margin: 0;
+  color: var(--gripBlue, #00357c);
+  cursor: pointer;
+}
+
+.proceedWithDigiDisabled {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  margin: 0;
+  color: var(--gripBlue, #00357c);
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.FetchModal :global(.Card) {
+  padding: 32px;
+}
+
+.FetchModal :global(h3) {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.mt_15 {
+  margin-top: 15px;
+}
+
+.nameMismatchPopup {
+  width: 450px !important;
+}
+
+.nameMismatchMsg {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.attemptLimitExceededPopup {
+  width: 450px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .inputFieldSet {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .getOTP {
+    padding: 7px 10px;
+  }
+}

@@ -1,0 +1,148 @@
+.ReferralFriends {
+  margin-top: 60px;
+}
+.WidgetTitle {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.FilterBtn {
+  padding: 0 7px 10px;
+  border-bottom: 2px solid var(--gripBlue);
+  margin-bottom: -9px;
+  cursor: pointer;
+}
+
+.FilterBtn span {
+  color: var(--gripBlue);
+  font-weight: 500;
+}
+
+.CaretDown {
+  font-size: 12px;
+}
+
+.ReferralFriends .MobileReferalTab {
+  margin: 20px 0 28px;
+  border: none;
+}
+
+.ReferralFriends .MobileReferalTab ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 35px !important;
+  border: none;
+  padding: 4px 20px;
+  outline: none;
+}
+
+.ReferralFriends .MobileReferalTab ul li + li {
+  margin-left: 8px;
+}
+.ReferralFriends .MobileReferalTab ul li:global(.active) {
+  background: var(--gripLuminousDark);
+  color: var(--gripWhite);
+}
+
+.MobileReferalTabContent {
+  margin-bottom: 0;
+}
+
+/*CARD CSS START*/
+.MobileCard {
+  background: var(--gripWhite);
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.MobileCard + .MobileCard {
+  margin-top: 16px;
+}
+.CardBody {
+  padding: 16px;
+  position: relative;
+}
+.CardFooter {
+  padding: 12px;
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+.Nudge {
+  max-width: 110px;
+  display: inline-block;
+  color: var(--gripLuminousGrey);
+  min-width: 110px;
+}
+
+.NudgeLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.NudgeLink span {
+  font-weight: 800;
+  color: var(--gripBlue);
+}
+.NudgeLink img {
+  margin-right: 8px;
+}
+.NudgeText {
+  text-align: center;
+  color: var(--gripLuminousGrey);
+}
+.RefereeCard h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--gripLuminousDark);
+}
+
+.RefereeCard p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey);
+}
+
+.RefereeCard :global(.CardIcon) {
+  margin-right: 8px;
+}
+.RegisterDate {
+  color: var(--gripLuminousGrey);
+  padding-left: 55px;
+}
+.CardStatus {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+}
+
+.FilterBtn span:not(.CaretDown) {
+  margin-right: 8px;
+}
+
+/*CARD CSS END*/
+
+@media screen and (min-width: 992px) {
+  .MobileTabination {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .FilterBtn,
+  .ReferralTable {
+    display: none;
+  }
+  .ReferralFriends {
+    margin-top: 30px;
+  }
+  .WidgetTitle {
+    padding-bottom: 16px;
+  }
+}

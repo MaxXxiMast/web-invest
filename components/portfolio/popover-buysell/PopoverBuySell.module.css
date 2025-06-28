@@ -1,0 +1,104 @@
+.ToolTipPopUp {
+  background: var(--gripWhite, #ffffff) !important;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08) !important;
+  pointer-events: visible !important;
+  width: 335px;
+  border: 1px solid var(--gripWhiteLilac, #f7f7fc);
+}
+
+.TooltipPopper {
+  z-index: 1000 !important;
+}
+
+.ArrowToolTip::before {
+  background-color: var(--gripWhite, #ffffff) !important;
+}
+
+.timelineItem {
+  padding: 8px;
+  position: relative;
+}
+
+.iconWrapper {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  position: relative;
+}
+
+.IconTick {
+  font-size: 24px;
+  margin-left: -1px;
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: var(--gripWhite, #ffffff);
+  border-radius: 50%;
+  border: 4px solid var(--gripSantasGray, #a1a3ad);
+}
+
+.timelineItem:not(:last-child) .iconWrapper::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 58%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  border-left: 1px dashed var(--lavenderMist, #e5ebf2);
+}
+
+.label {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.label[aria-disabled='true'] {
+  color: var(--gripOsloGrayTwo, #919598);
+}
+.timelineItem:first-child .label {
+  margin-top: 4px;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripTextMain, #373a46);
+  text-transform: capitalize;
+}
+
+.timelineItem:first-child .value {
+  margin-top: 4px;
+}
+
+.units {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 4px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.AmountPending {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gripMySin, #ffb628);
+}
+
+.YTMPending {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--gripMySin, #ffb628);
+}
+
+.toolTipDiv {
+  gap: 4px;
+}

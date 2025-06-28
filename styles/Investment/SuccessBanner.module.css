@@ -1,0 +1,50 @@
+.mainContainer {
+  background-color: var(--gripLighterTwo);
+}
+.messageContainer {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  height: 164px;
+}
+.investedSuccessMessage {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.investedSecondMessage {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media screen and (max-width: 767px) {
+  .mainContainer {
+    background-color: var(--gripBlue);
+    height: 259px;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .investedSuccessMessage {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--gripWhite, #ffffff);
+  }
+  .investedSecondMessage {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--gripWhite, #ffffff);
+  }
+  .messageContainer {
+    gap: 20px;
+    padding-left: 20px;
+    height: 140px;
+  }
+}

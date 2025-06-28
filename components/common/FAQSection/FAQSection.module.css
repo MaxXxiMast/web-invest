@@ -1,0 +1,94 @@
+.HeaderLeft h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--gripEbonyClay, #292c3e);
+  margin: 0;
+}
+
+.HeaderLeft h4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripLuminousGrey, #555770);
+  margin: 5px 0 0;
+}
+
+.FAQContainer {
+  display: grid;
+  grid-template-columns: 334px 334px;
+  grid-column-gap: 55px;
+}
+
+.FAQDiscoverBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px 0 19px;
+  cursor: pointer;
+}
+
+.FAQHeadingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.Heading {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--gripEbonyClay, #292c3e);
+}
+
+.SubHeading {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.Arrow {
+  font-size: 15px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+@media screen and (min-width: 768px) {
+  .FAQDiscoverBox {
+    border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  }
+
+  /* First two top values of GRID */
+  .FAQDiscoverBox:nth-child(-n + 2) {
+    margin-top: 26px;
+  }
+
+  /* Last value of GRID */
+  .FAQDiscoverBox:nth-last-child(1) {
+    border-bottom: unset !important;
+  }
+
+  /* Last second value of GRID */
+  .FAQDiscoverBox:nth-last-child(2) {
+    border-bottom: unset !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .FAQContainer {
+    grid-template-columns: auto;
+  }
+
+  .FAQDiscoverBox {
+    border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+    padding: 14px 22px 19px;
+  }
+
+  .HeaderLeft {
+    padding: 20px 22px;
+  }
+
+  .Heading {
+    font-weight: 500;
+  }
+}

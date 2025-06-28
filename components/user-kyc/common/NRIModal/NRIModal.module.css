@@ -1,0 +1,110 @@
+.DebtMarketText {
+  color: var(--gripNewBlue, #00347d);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  width: 60px;
+}
+
+.secondary {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+.secondary::before {
+  position: absolute;
+  content: '';
+  border-bottom: 1px solid var(--borderSix, #eaeaea);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.HeadingText {
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  display: inherit;
+}
+
+.SubHeadingText {
+  color: var(--gripLuminousGrey, #555770);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.RightBtn {
+  height: 52px !important;
+}
+
+/* Media Queries Start */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .NRIModalDrawer {
+    bottom: 0 !important;
+    padding-bottom: 31px !important;
+  }
+
+  .ButtonsContainer {
+    flex-direction: column;
+    gap: 18px !important;
+  }
+
+  .secondary {
+    max-width: 283px;
+  }
+
+  .secondary::before {
+    width: 32%;
+  }
+
+  .HeadingText {
+    margin-top: 47px;
+  }
+
+  .SubHeadingText {
+    margin-top: 22px;
+    margin-bottom: 47px;
+    gap: 18px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .secondary {
+    max-width: 440px;
+  }
+
+  .ButtonsContainer {
+    gap: 23px;
+  }
+
+  .secondary::before {
+    width: 59%;
+  }
+
+  .HeadingText {
+    margin-top: 37px;
+  }
+
+  .SubHeadingText {
+    gap: 12px;
+    width: 525px;
+    margin: 16px auto 32px;
+  }
+
+  .ModalPopupCard {
+    padding: 55px 20px 20px !important;
+  }
+
+  .RightBtn span {
+    font-size: 12px;
+  }
+}
+
+/* Media Queries End */

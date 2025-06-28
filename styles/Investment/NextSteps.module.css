@@ -1,0 +1,266 @@
+.mainContainer {
+  display: flex;
+  gap: 20px;
+  width: 750px;
+  flex-direction: column;
+  position: relative;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+.nextStepsText {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.subContainer {
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  border-radius: 12px;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.stepperContainer {
+  width: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.esignText {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.esignSubText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey, #555770);
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: max-content;
+}
+.commercialOrderRow {
+  display: flex;
+  gap: 16px;
+}
+.number > span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--gripBlue, #00357c);
+}
+.commercialOrderRow > div > span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.number {
+  height: 40px;
+  min-width: 40px;
+  background: var(--gripLighterOne, #e5f1ff);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.accountDetails {
+  margin-top: 20px;
+  display: flex;
+  gap: 16px;
+}
+.accountHeader {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey, #555770);
+}
+.accountNumber {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.accountDetails > div {
+  width: 166px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nextStepBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.secondarySdiIndex {
+  height: 40px;
+  width: max-content;
+  background: var(--gripLighterOne);
+  border-radius: 21px;
+  text-align: center;
+  padding: 10px 15px;
+  color: var(--gripBlue);
+  margin-right: 16px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.secondarySdiText {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gripLuminousDark, #282c3f);
+  line-height: 24px;
+  margin-top: 0px;
+}
+
+.secondarySdiText a {
+  color: var(--gripBlue);
+  text-decoration: underline;
+}
+
+.secondarySdiText i {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.secondarySdiContainer {
+  margin: 20px 8px;
+}
+
+.secondarySdiTextContainer {
+  margin-bottom: 54px;
+}
+
+.secondarySdiTextContainer:last-child {
+  margin-bottom: 0;
+}
+.secondarySdiOrderBankDetails {
+  margin-top: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.secondarySdiOrderStepsHeader {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 8px;
+}
+
+.secondarySdiOrderStepsEmail {
+  text-decoration: underline;
+  color: var(--gripBlue, #00357c);
+}
+
+.CopyLink {
+  vertical-align: middle;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .stepperContainer {
+    width: 285px;
+    flex-direction: column;
+    margin: 30px 0;
+  }
+  .subContainer {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+    border: 0;
+    padding: 0 20px 20px;
+  }
+  .mainContainer {
+    display: flex;
+    gap: 20px;
+    width: auto;
+    flex-direction: column;
+    position: relative;
+  }
+  .esignText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--gripLuminousDark, #282c3f);
+  }
+  .mobileEsignButton {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: var(--gripBlue, #00357c);
+  }
+  .buttonContainer {
+    justify-content: center;
+  }
+  .nextStepsText {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 20px;
+  }
+  .accountDetails {
+    gap: 0;
+  }
+  .accountDetails > div {
+    /* stylelint-disable-next-line value-no-vendor-prefix */
+    width: -webkit-fill-available;
+  }
+  .nextStepBlock {
+    width: 100%;
+  }
+  .secondarySdiText {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .secondarySdiContainer {
+    margin: 5px 0px 30px;
+  }
+
+  .secondarySdiTextContainer {
+    margin-bottom: 24px;
+  }
+
+  .secondarySdiIndex {
+    margin-right: 12px;
+    height: 32px;
+    padding: 6px 12px;
+    font-size: 15px;
+  }
+
+  .secondarySdiHeaderDivider {
+    border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+    width: 90%;
+    margin: auto;
+  }
+
+  .ScondarySdiNextStep {
+    gap: 16px;
+  }
+
+  .secondarySdiOrderStepsHeader {
+    margin-top: 0px;
+  }
+  .secondarySdiOrderBankDetails {
+    font-size: 14px;
+  }
+}

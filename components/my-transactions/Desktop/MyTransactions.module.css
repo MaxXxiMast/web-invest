@@ -1,0 +1,145 @@
+.container {
+  gap: 50px;
+  margin-top: 32px;
+  margin-bottom: 120px;
+}
+
+.Table {
+  border-collapse: collapse;
+}
+
+.tableContainer {
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.searchBox {
+  top: unset !important;
+  min-width: unset !important;
+  width: 210px;
+}
+
+.header > h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.selectRoot {
+  width: unset !important;
+}
+
+.formControlRoot {
+  min-width: unset !important;
+}
+
+.select > div {
+  background-color: var(--gripWhiteLilac, #f7f7fc) !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  border: unset !important;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.selectMenuIcon {
+  color: var(--gripWealthText, #696b74) !important;
+}
+
+.filter {
+  gap: 14px;
+}
+
+.Table td {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--gripEbonyClay, #292c3e);
+}
+
+.Table th {
+  padding-bottom: 10px;
+}
+
+.Table th,
+.Table td,
+.Table th:last-child,
+.Table td:last-child {
+  text-align: center;
+}
+
+.Table th:nth-last-child(2) {
+  text-align: right;
+}
+
+.Table th:first-child,
+.Table td:first-child {
+  text-align: left;
+}
+
+.Table tr:first-child td {
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.Table tr:last-child td {
+  border-bottom: none !important;
+}
+
+.Table tr td:last-child {
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+.icon {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.units {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 4px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.verticalDots {
+  height: 15px;
+  cursor: pointer;
+  padding: 0 5px 0 20px;
+}
+
+.TitleRightAllTransaction {
+  display: flex;
+  align-items: flex-end;
+}
+
+.download {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--gripBlue);
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.DownloadIcon {
+  font-size: 18px;
+  font-weight: 100;
+  color: var(--gripBlue, #00357c);
+  margin: auto;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    display: none;
+  }
+}

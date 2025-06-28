@@ -1,0 +1,31 @@
+.Wrapper {
+  gap: 28px;
+}
+
+.Content {
+  gap: 8px;
+}
+
+.Content h3,
+.Content h4 {
+  margin: 0;
+}
+
+.Content h3 {
+  color: var(--grip-luminous-dark, #282c3f);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.Content h4 {
+  color: var(--grip-luminous-grey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.Button,
+.Content,
+.Icon {
+  text-align: center;
+}

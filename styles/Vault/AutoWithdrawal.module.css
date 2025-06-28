@@ -1,0 +1,136 @@
+.AutoWithdrawal {
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.InfoIcon,
+.InfoIcon > span {
+  width: 18px;
+  height: 18px;
+  max-width: 18px;
+  max-height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.errorText {
+  width: 90%;
+  display: flex;
+  align-items: flex-end;
+  color: var(--gripRedTwo, #ff0000);
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+.popup {
+  width: 400px !important;
+}
+.AutoWithdrawal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background: var(--linerGradientFour);
+}
+.AutoWithdrawalInner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.AutoWithdrawalRight {
+  width: 100%;
+}
+
+.CardBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.CardBottomLeft {
+  display: flex;
+  align-items: center;
+}
+
+.CardBottomLeft span {
+  font-weight: 400;
+  color: var(--gripLuminousDark);
+}
+
+.ToggleSwitch {
+  margin-left: 10px;
+}
+
+.CardBottomRight a {
+  color: var(--gripBlue);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.ModalTitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.WarningImage {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  margin-top: 8px;
+}
+
+.PopupContainer {
+  display: 'flex';
+  flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .AutoWithdrawalRight {
+    width: 100%;
+  }
+  .AutoWithdrawalRight h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .AutoWithdrawal {
+    padding: 20px;
+  }
+  .CardBottom {
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+  .CardBottomLeft,
+  .CardBottomRight {
+    width: 100%;
+  }
+  .CardBottomRight {
+    margin-top: 12px;
+    text-align: center;
+  }
+  .CardBottomLeft span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .AutoWithdrawalRightInner {
+    display: flex;
+  }
+  .AutoWithdrawalRightInner > .ImageContainer {
+    max-width: 58px;
+    max-height: 58px;
+    min-width: 58px;
+    min-height: 58px;
+    margin-right: 15px;
+  }
+  .WarningImage {
+    margin-bottom: 10px;
+  }
+}

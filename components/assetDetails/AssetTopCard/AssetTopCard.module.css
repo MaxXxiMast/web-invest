@@ -1,0 +1,254 @@
+.cardContainer {
+  position: relative;
+  margin: 14px 0;
+  padding: 18px 24px;
+  border-radius: 10px;
+  border: 1px solid var(--gripMercury2, #e8e8e8);
+}
+
+.assetLabel {
+  background-color: #ccf1f1;
+  position: absolute;
+  top: 0;
+  left: 24px;
+  transform: translate(0%, -50%);
+  color: var(--gripTextMain, #373a46);
+  width: max-content;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.investmentText {
+  text-align: right;
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  gap: 8px;
+  position: relative;
+}
+
+.investmentText p {
+  margin: 0;
+}
+
+.histogram {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: var(--gripPrimaryGreen, #00b8b7);
+  line-height: 0;
+}
+
+.red {
+  color: var(--deepCarminePink, #ef3c3c) !important;
+}
+
+.returnAmount {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gripPelorous, #3bb8b7);
+}
+
+.returnPeriod {
+  font-size: 14px;
+  color: var(--gripLuminousGrey, #555770);
+}
+.logoContainer {
+  max-width: 300px;
+  padding: 6px 0;
+}
+
+.detailsWrapper {
+  gap: 48px;
+  min-width: 15%;
+}
+
+.detail {
+  text-align: center;
+}
+
+.InfoIcon,
+.InfoIcon > span {
+  width: 14px;
+  height: 14px;
+  max-width: 14px;
+  max-height: 14px;
+  margin-left: 2px;
+}
+
+.prefix {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--gripLuminousGrey, #555770);
+  margin: 0 0 6px;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+}
+
+.borderBottom {
+  margin: 12px -24px 24px;
+  height: 1px;
+  background-color: var(--gripMercury2, #e8e8e8);
+}
+
+.badgeScroll {
+  width: 48%;
+  position: relative;
+  height: 100%;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+
+.bgScroll {
+  z-index: 8;
+  width: 20px;
+  background: linear-gradient(270deg, #ffffff 61%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+  position: absolute;
+  left: 46%;
+  top: 0;
+  height: 100%;
+}
+
+.badgeContainerClass {
+  gap: 8px;
+  align-items: center;
+}
+
+.badgeContainerClass:empty {
+  display: none;
+}
+
+.badgeContainerClass::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.badgeClass {
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.dealProgress {
+  width: 50%;
+}
+
+.mfInvestmentFull {
+  width: 100%;
+}
+
+.CutOut {
+  text-decoration: line-through;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 600;
+  color: var(--gripLuminousGrey);
+  margin-right: 5px;
+}
+
+.assetCardFooter {
+  position: relative;
+}
+
+.assetHeader {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--gripGunPowder, #44485b);
+  max-width: 300px;
+  margin: 0;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .assetLabel {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cardContainer {
+    padding: 14px;
+    margin-top: 30px;
+  }
+  .detailsWrapper {
+    min-width: 10%;
+  }
+  .detail {
+    display: flex;
+    padding: 8px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .borderBottom {
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid var(--gripWhiteLilac, #f7f7fc);
+  }
+  .assetCardFooter {
+    gap: 4px;
+  }
+
+  .badgeScroll {
+    width: 100%;
+  }
+  .bgScroll {
+    right: -10px;
+    width: 35px;
+    height: 24px;
+    left: unset;
+  }
+  .dealProgress {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .mfInvestment {
+    background: linear-gradient(
+      180deg,
+      #f8f8fd 0.41%,
+      rgba(248, 248, 253, 0.92) 48.85%,
+      #ffffff 102.6%
+    );
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+  }
+  .investmentText {
+    text-align: left;
+  }
+
+  .investmentText p {
+    margin-right: 32px;
+  }
+  .mfDetailsWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .mfDetailsWrapper .detail {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .mfDetailsWrapper .detail:nth-child(1) {
+    align-items: flex-start;
+  }
+  .mfDetailsWrapper .detail:nth-child(2) {
+    align-items: flex-end;
+  }
+  .mfDetailsWrapper .label {
+    margin-bottom: 4px;
+  }
+}

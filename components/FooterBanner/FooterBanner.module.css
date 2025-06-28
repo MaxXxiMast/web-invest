@@ -1,0 +1,172 @@
+.footer_banner {
+  background: var(--gripWhiteLilac);
+}
+
+.footer_leftSection {
+  max-width: 670px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sliderCustom {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  padding-top: 35px;
+}
+
+.footer_rightSection {
+  position: relative;
+}
+
+.footer_banner_heading {
+  color: var(--gripTextMain, #373a46);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 52px;
+  margin-bottom: 20px;
+}
+
+.footer_banner_headingBold {
+  color: var(--gripPrimaryGreen, #00b8b7);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 52px;
+}
+
+.ListGrp {
+  gap: 8px;
+}
+
+.footer_banner_listItem {
+  gap: 12px;
+  color: var(--gripTextMain, #373a46);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  filter: grayscale(1);
+}
+
+.footerBtn {
+  cursor: pointer;
+}
+
+.BottomBtn {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination {
+  gap: 4px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.swiperBullet {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--gripAlto, #d9d9d9);
+  cursor: pointer;
+  outline: none;
+}
+
+.swiperBulletActive {
+  width: 25px;
+  border-radius: 5px;
+  background-color: var(--gripBlue, #00357c);
+}
+
+.prevArrow,
+.nextArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gripWhite);
+  border: 1px solid var(--gripBlue, #00357c);
+  color: var(--gripBlue, #00357c);
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 50%;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.prevArrow {
+  left: 10px;
+}
+
+.nextArrow {
+  right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer_banner :global .swiper-slide {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer_banner {
+    padding: 0;
+    height: auto;
+  }
+  .footer_leftSection {
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px;
+    gap: 10px;
+  }
+
+  .footer_banner_heading,
+  .footer_banner_headingBold {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .footer_banner_heading {
+    color: var(--gripTextMain, #373a46);
+    margin-bottom: 0;
+  }
+  .footer_banner_headingBold {
+    color: var(--gripPrimaryGreen, #00b8b7);
+  }
+
+  .footerBtn {
+    position: unset;
+    line-height: 0;
+  }
+  .footer_rightSection {
+    padding-bottom: 0;
+  }
+  .sliderCustom {
+    flex-direction: column;
+    padding: 20px 2px;
+    gap: 20px;
+  }
+  .BtnGrp {
+    gap: 5px;
+  }
+  .prevArrow,
+  .nextArrow {
+    display: none;
+  }
+  .pagination {
+    margin-top: 5px;
+    margin-bottom: -10px;
+  }
+}

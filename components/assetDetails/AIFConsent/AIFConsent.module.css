@@ -1,0 +1,88 @@
+.BottomExtraCard {
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 12px;
+  padding: 8px 24px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.BottomExtraContent {
+  margin-top: 25px;
+  padding: 0 36px;
+  margin-bottom: -12px;
+}
+.BottomExtraContent p {
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+  text-align: center;
+  margin: 0;
+}
+.BottomExtraContent p a {
+  color: var(--gripBlue, #00357c);
+  text-decoration: underline;
+}
+
+.ExtraCardContent {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+}
+.ExtraCardImage {
+  display: inline-block;
+  min-width: 40px;
+  min-height: 24px;
+}
+.hyperLink {
+  text-decoration: underline;
+  color: var(--gripBlue);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .BottomExtraCard {
+    margin-top: 0 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .BottomExtraCardSEPast {
+    margin-top: 0px !important;
+    padding: 12px 16px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .BottomExtraCardCREPast {
+    margin-top: 12px !important;
+  }
+
+  .BottomExtraContent {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .BottomExtraCardSEPast {
+    margin-top: 8px !important;
+    padding: 18px 24px !important;
+  }
+
+  .ExtraCardImage span {
+    padding: 0 !important;
+    height: auto !important;
+    width: auto !important;
+  }
+  .ExtraCardImage img,
+  .ExtraCardImage svg {
+    position: relative !important;
+    width: auto !important;
+    height: auto !important;
+    max-height: 32px !important;
+    min-height: 32px !important;
+  }
+}

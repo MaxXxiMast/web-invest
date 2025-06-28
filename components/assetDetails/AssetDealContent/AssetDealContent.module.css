@@ -1,0 +1,202 @@
+.ContentSection + .ContentSection {
+  margin-top: 44px;
+  width: 100%;
+}
+
+.ContentTitle {
+  padding-bottom: 8px;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  line-height: 32px !important;
+}
+
+.ContentList {
+  list-style-type: disc;
+}
+
+.ContentList li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.contentDescription li {
+  list-style-type: disc;
+}
+
+.ContentList li + li {
+  margin-top: 8px;
+}
+
+.contentDescription {
+  margin-top: 10px;
+  line-height: 22px;
+  font-size: 14px;
+  white-space: break-spaces;
+}
+
+.contentDescription a {
+  color: var(--gripBlue, #00357c);
+  text-decoration: underline;
+}
+.contentDescription p {
+  display: flex;
+}
+.contentDescription ul {
+  padding-inline-start: 20px;
+}
+.contentDescription img {
+  max-width: 100%;
+  height: 100%;
+  width: fit-content;
+}
+.contentDescription :global .ql-align-right {
+  justify-content: flex-end !important;
+}
+.contentDescription :global .ql-align-center {
+  justify-content: center !important;
+}
+.contentDescription :global .ql-align-justify {
+  text-align: justify !important;
+}
+
+.contentDescription :global .ql-indent-1 {
+  margin-left: 20px;
+  list-style-type: circle;
+}
+
+.contentDescription :global .ql-indent-2 {
+  margin-left: 40px;
+  list-style-type: square;
+}
+.contentDescription :global .ql-indent-3 {
+  margin-left: 60px;
+  list-style-type: square;
+}
+
+.contentDescription :global .ql-indent-4 {
+  margin-left: 80px;
+  list-style-type: square;
+}
+
+.contentDescription :global .ql-indent-5 {
+  margin-left: 100px;
+  list-style-type: square;
+}
+
+.contentDescription ol > li {
+  list-style-type: decimal !important;
+}
+
+.TabSectionTitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+}
+
+.TabSectionTitle:empty {
+  display: none;
+}
+
+.TabScrollContent {
+  margin-top: 45px;
+}
+
+.TabScrollContentInner {
+  display: flex;
+}
+
+.TabScrollContentLeft {
+  width: 152px;
+  flex-shrink: 0;
+}
+.TabScrollContentLeft ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGreyPlace, #777777);
+  cursor: pointer;
+}
+.TabScrollContentLeft ul li + li {
+  margin-top: 16px;
+}
+.TabScrollContentLeft ul li:global(.active) {
+  color: var(--gripBlue, #00357c);
+}
+
+.TabScrollContentRight {
+  max-width: 100%;
+}
+
+.AccordianContainer {
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  margin-top: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .TabScrollContentInner {
+    flex-wrap: wrap;
+  }
+
+  .ContentSection + .ContentSection {
+    margin-top: 36px;
+    width: 100%;
+  }
+
+  .ContentTitle {
+    font-weight: 700 !important;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    padding: 20px 0;
+  }
+
+  .ContentList {
+    padding-left: 0;
+  }
+
+  .contentDescription {
+    font-size: 12px;
+  }
+
+  .TabSectionTitle {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 28px;
+  }
+
+  .TabScrollContent {
+    margin-top: 0;
+  }
+
+  .TabScrollContentRight {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .DocumentTabSectionTitle {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+    text-align: left;
+  }
+
+  .AccordianContainer {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .TabScrollContentLeft {
+    display: none;
+  }
+  .TabScrollContentRight {
+    width: 100%;
+    margin-left: 0;
+  }
+}

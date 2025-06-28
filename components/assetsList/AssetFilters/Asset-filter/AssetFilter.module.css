@@ -1,0 +1,147 @@
+.FilterMain {
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  padding-bottom: 0px;
+}
+
+.filterContainer {
+  width: 100%;
+}
+
+.FilterInner {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.FilterRight {
+  margin-left: auto;
+}
+.FilterLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FilterLeft h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  color: var(--gripLuminousDark);
+  margin: 0;
+}
+.backButton {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.Preferences {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripBlue);
+  display: flex;
+  cursor: pointer;
+}
+
+.PreferenceIcon {
+  min-width: 24px;
+  min-height: 24px;
+  margin-right: 8px;
+}
+
+.SortBy {
+  margin-left: 24px;
+}
+
+.AssetFilterList {
+  display: flex;
+  margin-bottom: 0;
+}
+.AssetFilterList li {
+  padding: 7px 14px;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.ActiveTab {
+  border-bottom-color: var(--gripBlue) !important;
+  transition: 0.3s ease-in-out;
+  color: var(--gripBlue) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .FilterMain:global(.sticky_desktop) {
+    position: sticky;
+    top: 65px;
+    background: var(--gripWhite, #ffffff);
+    z-index: 9;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .FilterRight,
+  .SortBy {
+    display: none;
+  }
+  .FilterMain {
+    margin-top: 56px;
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+  .FilterInner {
+    justify-content: center;
+    width: 100%;
+  }
+  .FilterLeft,
+  .AssetFilterList {
+    width: 186px;
+  }
+  .AssetFilterList {
+    background-color: var(--gripWhiteLilac, #f7f7fc);
+    border-radius: 8px;
+    padding: 2px;
+  }
+  .AssetFilterList li {
+    flex: 1;
+    text-align: center;
+    font-size: 10px;
+    line-height: 16px;
+    border-radius: 8px;
+    border: 0.5px solid transparent !important;
+    padding: 6px;
+    color: var(--gripLuminousGreyPlace, #777777);
+  }
+
+  .ActiveTab {
+    background-color: var(--gripWhite, #ffffff);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.13),
+      0px 2px 13px rgba(0, 0, 0, 0.06);
+    border: 0.5px solid rgba(0, 0, 0, 0.04) !important;
+    font-weight: 600;
+  }
+  .FilterMain:global(.sticky) {
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 99;
+    top: -60px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .FilterMain:global(.floating) {
+    top: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  .AssetListFilter {
+    position: sticky;
+    top: 0;
+    z-index: 990;
+    background: var(--gripWhite, #ffffff);
+    transition: top 0.25s ease-in-out !important;
+  }
+}

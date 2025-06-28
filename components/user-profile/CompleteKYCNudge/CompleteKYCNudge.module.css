@@ -1,0 +1,33 @@
+.CaretRight {
+  font-size: 11px;
+  color: var(--gripNewDarkTwo, #091626);
+  font-weight:900;
+  justify-items: center;
+  padding-left: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .CompleteKYC {
+    justify-content: space-between;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    background: url('https://static-assets.gripinvest.in/icons/check_kyc_bg.svg')
+      no-repeat;
+    background-size: cover;
+    height: 54px;
+  }
+
+  .CompleteKYCDetails {
+    color: var(--gripWhite, #ffffff);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    gap: 5px;
+  }
+
+  .CaretRight {
+    color: var(--gripWhite, #ffffff);
+    transform: rotate(-90deg);
+  }
+}

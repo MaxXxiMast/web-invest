@@ -1,0 +1,54 @@
+.itemPaper {
+  width: calc(50% - 11px);
+  padding: 9px;
+}
+.itemWrapper {
+  gap: 20px;
+}
+.title {
+  gap: 24px;
+  margin-bottom: 34px;
+}
+.innerWrapper {
+  gap: 8px;
+  align-items: flex-start;
+}
+.rightFlex {
+  flex-direction: column;
+  max-width: 100%;
+  gap: 8px;
+}
+.itemDataWrapper {
+  gap: 20px;
+}
+.circularSkeleton {
+  border-radius: 8px !important;
+}
+.container {
+  margin-bottom: 40px;
+}
+.mainRightContainer {
+  padding: 20px 22px;
+  gap: 17px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .itemWrapper {
+    flex-wrap: wrap;
+  }
+
+  .mainWrapper {
+    margin-bottom: 24px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .mainWrapper {
+    margin-bottom: 36px;
+  }
+}

@@ -1,0 +1,75 @@
+.InvestementNumberCard {
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  border-radius: 12px;
+  position: relative;
+  background: url('https://static-assets.gripinvest.in/bonds/InvestmentNumberCardBackgroundImg.svg')
+    no-repeat;
+  background-size: cover;
+}
+.InvestmentNumberCardImageContainer {
+  position: absolute;
+  width: 88%;
+  top: -10px;
+  right: 0px;
+}
+.CardBody {
+  padding: 15px 20px;
+}
+.CardBody h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gripWhite);
+  margin: 0;
+}
+.PlaneIcon {
+  display: flex;
+}
+.ImageContainer {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.ImageContent {
+  margin-left: 8px;
+}
+.CardBody p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripWhite);
+  margin: 0;
+}
+.CardBody .WeAreTransparent {
+  margin-bottom: 16px;
+  line-height: 24px;
+  color: var(--gripWhite);
+  font-weight: 600;
+  font-size: 20px;
+}
+.CardFooter {
+  padding: 12px 20px;
+  align-items: center;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripBlue);
+}
+.CardFooter span {
+  cursor: pointer;
+  color: var(--gripWhite);
+}
+.ThumIcon {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .CardBody .WeAreTransparent {
+    text-align: left;
+  }
+  .CardFooter {
+    justify-content: flex-end;
+  }
+}

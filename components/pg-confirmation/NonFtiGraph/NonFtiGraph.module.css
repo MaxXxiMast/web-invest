@@ -1,0 +1,155 @@
+.container {
+  padding: 20px 20px 0px;
+  gap: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background: var(--gripWhite, #ffffff);
+}
+.title {
+  margin: 0;
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26.244px;
+}
+.Wrapper {
+  gap: 10px;
+  flex: 1;
+}
+.LeftContent {
+  width: 100%;
+  gap: 20px;
+}
+
+.Btn {
+  width: 30%;
+}
+
+.RightContent {
+  gap: 35px;
+  flex: 1;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.Heading {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.RightContent button span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.721px;
+}
+
+.graphContainer {
+  padding-left: 10px;
+}
+.graphWrapper {
+  max-width: 275px;
+}
+.graph {
+  flex-direction: row;
+  min-height: 216px;
+  width: 100%;
+  gap: 16px;
+}
+.bar {
+  padding: 12px 6px 12px 12px;
+  color: var(--gripDustyGray, #9b9b9b);
+  font-size: 12.998px;
+  font-weight: 700;
+  line-height: 12.998px;
+  border-radius: 5px 5px 0 0;
+  flex-shrink: 0;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: max-content;
+  min-height: max-content;
+}
+
+.barContainer {
+  flex-direction: column-reverse;
+  text-align: center;
+  gap: 10px;
+}
+
+.barName {
+  color: var(--gripBlue, #00357c);
+  font-size: 9.923px;
+  font-weight: 600;
+  line-height: 10.832px;
+  text-transform: capitalize;
+  max-width: 100px;
+}
+
+.BtnContainer,
+.HeadingContainer {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .Wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .BtnContainer {
+    margin-left: 20px;
+  }
+
+  .HeadingContainer,
+  .BtnContainer {
+    display: block;
+  }
+
+  .Heading {
+    text-align: center;
+  }
+
+  .graphContainer {
+    padding-left: 0px;
+    background-image: none;
+  }
+  .graph {
+    border-left: none;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 180px;
+  }
+  .barContainer {
+    align-items: center;
+    flex-direction: row;
+  }
+  .bar {
+    border-radius: 0 5px 5px 0;
+    position: relative;
+    padding: 12px 20px;
+  }
+  .barName {
+    max-width: 50px;
+  }
+  .bar span {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13px;
+  }
+  .container {
+    padding: 20px 20px 20px 0px;
+    gap: 0;
+    margin-bottom: 80px;
+    margin-top: -40px;
+  }
+
+  .RightContent {
+    display: none;
+  }
+}

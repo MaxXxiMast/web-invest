@@ -1,0 +1,43 @@
+.paper {
+  background-color: transparent !important;
+  margin: 0;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  max-width: 720px !important;
+}
+
+.DrawerPaper {
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.VideoWrapper {
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  background-color: var(--gripWhite, #ffffff);
+}
+
+.DrawerClose {
+  padding: 0 10px;
+}
+
+.ModalClose {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.VideoPlayer > div {
+  position: relative;
+  min-height: 420px;
+  max-height: calc(100vh - 50px);
+}
+
+@media screen and (max-width: 767px) {
+  .VideoPlayer > div {
+    min-height: 250px;
+  }
+}

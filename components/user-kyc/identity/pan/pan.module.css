@@ -1,0 +1,118 @@
+.StepTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.FormFieldsContainer {
+  gap: 20px;
+}
+
+.DateInputIcon {
+  width: 16px;
+  height: 16px;
+  margin-right: 14px;
+}
+
+.ReuploadTextContainer {
+  color: var(--gripBlue, #00357c);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  align-items: center;
+  display: flex;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.FormTitleContainer {
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.DocumentUploadTitle {
+  gap: 16px;
+}
+
+.FetchModal :global(.Card) {
+  padding: 32px;
+}
+
+.FetchModal,
+.KRAFetchModal :global(h3) {
+  margin-top: 16px;
+}
+
+.KRAFetchModal :global(.Card) {
+  padding: 43px 24px;
+}
+
+.KRAIconContainer {
+  border-bottom: 1px solid var(--borderSix, #eaeaea);
+  padding-bottom: 25px;
+  align-items: center;
+  display: flex;
+  gap: 36px;
+}
+
+.DocumentUploadContainer {
+  gap: 25px;
+}
+
+.ExistingPan {
+  margin-top: -8px;
+}
+
+/* Media Queries Start */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .DocumentUploadContainer {
+    flex-direction: column;
+  }
+
+  .Drawer,
+  .KRADrawer,
+  .KRAErrorModal {
+    padding: 20px;
+  }
+
+  .Drawer,
+  .KRADrawer,
+  .KRAErrorModal :global(h3) {
+    margin-top: 16px;
+  }
+
+  .Wrapper {
+    padding-top: 32px;
+  }
+
+  .KRADrawer :global(h3) {
+    max-width: 284px;
+  }
+
+  .KRAErrorModal :global(h3) {
+    margin-bottom: 10px;
+  }
+
+  .DocumentUploadTitle {
+    width: 100%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .FormTitleContainer {
+    max-width: 371px;
+  }
+
+  .KRADrawer :global(h3) {
+    max-width: 295px;
+  }
+
+  .InputFieldSetPan {
+    max-width: 373px !important;
+  }
+}
+
+/* Media Queries End */

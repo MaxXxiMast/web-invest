@@ -1,0 +1,81 @@
+.regulated {
+  font-size: 12px;
+  color: var(--gripLuminousGray, #999999);
+  border-radius: 8px;
+  background: var(--gripWhite, #ffffff);
+  max-width: 240px;
+  white-space: nowrap;
+}
+
+.regulatedBadge {
+  border-radius: 7px 7px 0px 0px;
+  background: var(--gripCream, #e8edf6);
+  color: var(--gripTextMain, #373a46);
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 14px;
+  padding: 5px;
+}
+
+.dealLogo {
+  padding: 10px;
+}
+
+.dataContent {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  height: 43px;
+}
+
+.rateCard {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  color: var(--gripBlue, #00357c);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+.exploreButton {
+  max-height: 44px;
+  margin-bottom: -20px;
+}
+
+.disableLink {
+  pointer-events: none;
+  color: var(--gripSantasGray, #a1a3ad);
+}
+
+.ratingScaleValue {
+  color: var(--gripLuminousDark, #282c3f);
+  font-weight: 400;
+}
+
+@media (max-width: 490px) {
+  .tableRow {
+    min-width: 120px;
+  }
+
+  .exploreButton {
+    max-height: 36px;
+    width: 72px !important;
+  }
+  .Rating {
+    border: none;
+  }
+  .Rating :global .rating-header {
+    padding: 0;
+  }
+  .ratingScaleValue {
+    max-width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

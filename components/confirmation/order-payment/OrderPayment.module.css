@@ -1,0 +1,73 @@
+.OrderPaymentcontainer {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: -80px;
+  padding: 8px;
+  min-width: 350px;
+}
+
+.orderDetailsCard {
+  border-radius: 12px;
+  background-color: var(--gripWhite, #ffffff);
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.detailsWrapper {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.accInfoContainer {
+  padding: 12px;
+}
+
+.accInfoLabel {
+  margin: 4px 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.accInfoContent {
+  margin: 4px 0;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: repeat(auto-fill, minmax(60px, 150px));
+}
+
+.accDematInfo {
+  grid-column: span 2 / auto;
+}
+
+.accInfoTitle {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.awareness {
+  width: 350px !important;
+}
+
+.orderInvestmentSummary {
+  background: var(--gripWhite, #ffffff);
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .OrderPaymentcontainer {
+    margin-top: -110px;
+    min-width: 100px;
+    width: 100%;
+  }
+
+  .awarenessContainer {
+    display: none;
+  }
+}

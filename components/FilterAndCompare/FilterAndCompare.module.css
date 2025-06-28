@@ -1,0 +1,22 @@
+.FilterAndCompareSection {
+  margin-top: 60px;
+  margin-bottom: 85px;
+}
+
+.FilterAndCompareHeading {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.SkeletonWrapper {
+  margin: 45px 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .FilterAndCompareSection {
+    margin-top: 30px;
+    margin-bottom: 55px;
+  }
+}

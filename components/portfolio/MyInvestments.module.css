@@ -1,0 +1,117 @@
+.ArrowRight {
+  margin-right: 20px;
+}
+
+.MyInvestmentsMain {
+  display: flex;
+}
+
+.MyInvestmentsRight {
+  width: calc(100% - (220px + 50px));
+  margin-left: auto;
+}
+
+.EquityInvestments {
+  margin-top: 60px;
+}
+
+.PastOffering {
+  margin-top: 40px;
+}
+
+.FilterOptions {
+  margin-bottom: 12px;
+  display: flex;
+  min-height: 28px;
+}
+.ItemFilters {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+.InvestmentFilter {
+  margin-left: 12px;
+}
+.InvestmentSearch svg {
+  width: 20px;
+  height: 20px;
+}
+.SortBy {
+  padding: 0;
+  border: none;
+  line-height: 0;
+}
+.SearchField {
+  flex: 1;
+  padding: 0 10px 0 25px;
+  margin-bottom: auto;
+}
+.SearchField input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  width: 100%;
+  padding: 0 0 5px;
+  outline: none;
+}
+.MyInvestmentsRight :global(.SubSectionTitleSection) {
+  border: none;
+  margin-bottom: 18px;
+  padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .MyInvestmentsMain {
+    flex-wrap: wrap;
+  }
+  .MyInvestmentsRight {
+    width: calc(100% - (220px + 30px));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .MyInvestmentsRight {
+    width: 100%;
+  }
+  .InnerPageHeading {
+    padding: 16px 0px;
+    margin-left: 0 -15px;
+    z-index: 99;
+    position: relative;
+    margin-bottom: -8px;
+  }
+  .InnerPageHeading h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    position: relative;
+  }
+  .ArrowRight {
+    margin-right: 0px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 0;
+  }
+  .ArrowRight > a > img {
+    padding: 0px;
+    width: 13px;
+  }
+  .MyInvestmentsRight :global(.SubSectionTitleSection) {
+    display: none;
+  }
+  .EquityInvestments {
+    margin-top: 0;
+  }
+  .MyInvestmentsRight :global(.scrollSectionDiv + .scrollSectionDiv) {
+    margin-top: 16px;
+  }
+}
+
+.leftPanelMobileNewIcon {
+  width: 12px;
+}

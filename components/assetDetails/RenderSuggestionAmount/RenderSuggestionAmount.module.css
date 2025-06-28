@@ -1,0 +1,24 @@
+.AmountCloud {
+  margin: 16px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.AmountCloud span {
+  background: var(--gripLighterOne);
+  border-radius: 70px;
+  padding: 4px 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripBlue);
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .AmountCloud[id='sdi'] span {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+}

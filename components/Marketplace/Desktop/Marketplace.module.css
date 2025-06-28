@@ -1,0 +1,13 @@
+.container {
+  margin-top: 120px;
+  margin-bottom: 200px;
+}
+
+.rightSection {
+  width: calc(100% - 280px);
+  margin-left: auto;
+}
+
+.ContentSection + .ContentSection {
+  margin-top: 44px;
+}

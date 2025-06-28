@@ -1,0 +1,160 @@
+.BannerSectionMain {
+  margin: 0 0 80px;
+  min-height: 0px;
+  display: flex;
+  padding: 80px 0px;
+}
+.BannerSectionMain .containerNew {
+  display: flex;
+}
+.BannerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  padding-right: 5%;
+}
+.BannerLeft h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: var(--gripLuminousDark);
+  margin: 16px 0;
+}
+.BannerLeft h1 span {
+  color: var(--gripPrimaryGreen,  #00b8b7);
+}
+.BannerLeft h1 .OldPrice {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 36px;
+  text-decoration: line-through;
+}
+.BannerLeft p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  margin: 16px 0 0px;
+}
+.BannerRight {
+  align-self: center;
+  width: 50%;
+}
+
+.BannerSection {
+  flex: 1;
+  justify-content: space-between;
+}
+
+.SubHeader {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.BulletPoints {
+  list-style-type: disc;
+  margin: 25px 0px 50px 20px;
+}
+
+/*REFER AND EARN*/
+
+.ReferEarnBanner {
+  margin-top: 60px;
+}
+.ReferEarnBanner h1 {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 767px) {
+  .BannerSectionMain .containerNew {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .BannerLeft {
+    width: 60%;
+    padding-right: 0;
+  }
+  .ReferEarnBanner .BannerLeft {
+    width: 50%;
+  }
+  .ReferEarnBanner .BannerRight {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .ReferEarnBanner .BannerSection {
+    flex-wrap: wrap;
+  }
+  .ReferEarnBanner .BannerLeft,
+  .ReferEarnBanner .BannerRight {
+    width: 100%;
+  }
+  .ReferEarnBanner .BannerRight {
+    margin-top: 50px;
+  }
+  .ReferEarnBanner .BannerLeft {
+    text-align: left;
+  }
+  .ReferEarnBanner {
+    margin: 60px auto 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .BannerRight {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .ReferEarnBanner .BannerRight {
+    margin-top: 0px;
+  }
+  .containerNew {
+    padding: 0 40px 20px;
+  }
+  .BannerSection {
+    flex-wrap: wrap;
+    padding-top: 40px;
+  }
+  .BannerLeft {
+    text-align: left;
+    max-width: 100%;
+    width: 100%;
+  }
+  .BannerLeft h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: -1px;
+    color: var(--gripLuminousDark, #282c3f);
+    text-align: left;
+    margin: 0px;
+  }
+  .BannerSectionMain {
+    background: var(--gripWhite);
+    background: linear-gradient(
+      300deg,
+      rgba(255, 255, 255, 1) 28%,
+      rgba(229, 241, 255, 1) 25%
+    );
+  }
+  .ReferEarnBanner {
+    background-image: none !important;
+    background-color: var(--gripLighterOne, #e5f1ff) !important;
+    background-position: top left !important;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
+    margin-top: 0px;
+    margin-bottom: 48px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  .ReferEarnBanner .containerNew {
+    padding: 0 20px;
+  }
+}

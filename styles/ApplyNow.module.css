@@ -1,0 +1,159 @@
+.applyNowMain {
+  margin-top: 80px;
+}
+.unorderedList {
+  list-style-type: circle;
+}
+.listItem {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0px;
+}
+.referralBreakMain {
+  margin: 120px 0 10px;
+}
+.referralHeading {
+  font-size: 31px !important;
+}
+
+.referralbreakBox {
+  padding: 52px 48px;
+  background: var(--gripSkyBlue);
+  border-radius: 20px;
+}
+.referralBreakBoxWithoutButton {
+  padding: 35px 43px;
+  background: var(--gripSkyBlue);
+  border-radius: 20px;
+}
+
+.referralBreakBoxDashboard {
+  margin-right: 0px !important;
+}
+
+.applyNowBox {
+  padding: 52px 48px;
+  background: var(--gripRedLighterSix);
+  border-radius: 20px;
+}
+
+.applyNowLeft .organicSeedling {
+  margin-right: 32px;
+}
+.organicSeedlingContent h5 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  color: var(--gripLuminousDark);
+  margin: 0;
+}
+
+.organicSeedlingContent h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: var(--gripLuminousDark);
+  margin: 0;
+}
+
+.organicSeedlingContent {
+  margin-right: 15px;
+  gap: 35px;
+  display: flex;
+}
+.applyNowRight {
+  max-width: 140px;
+}
+.applyNowRight > div,
+.applyNowRight > button {
+  height: 60px !important;
+  line-height: 32px;
+}
+.organicSeedlingContent h1 {
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.referUnit {
+  font-size: 60px;
+  color: var(--gripBlue, #00357c);
+}
+
+@media screen and (min-width: 992px) {
+  .organicSeedlingContent {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .organicSeedlingContent h5 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 44px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .phoneHeading h1 {
+    font-size: 28px !important;
+    font-weight: 800;
+    line-height: 40px;
+    color: var(--gripLuminousDark, #282c3f);
+  }
+  .applyNowMain,
+  .referralBreakMain {
+    margin-bottom: 0;
+  }
+  .applyNowMain,
+  .referralBreakMain :global(.containerNew) {
+    padding-bottom: 0;
+  }
+
+  .applyNowBox,
+  .referralbreakBox,
+  .applyNowLeft {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .applyNowBox {
+    padding: 28px;
+    flex-direction: column;
+  }
+  .applyNowLeft .organicSeedling {
+    margin-right: 0;
+    margin-bottom: 16px;
+    width: 100%;
+    text-align: center;
+  }
+  .organicSeedlingContent {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .organicSeedlingContent h5 {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .organicSeedlingContent h6 {
+    text-align: center;
+  }
+  .applyNowRight {
+    margin-top: 28px;
+  }
+  .applyNowRight > div,
+  .applyNowRight > button {
+    max-width: 140px;
+  }
+  .applyNowMain :global(.containerNew) {
+    padding-bottom: 0;
+  }
+}

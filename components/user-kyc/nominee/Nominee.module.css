@@ -1,0 +1,94 @@
+.FormContainer {
+  width: 360px;
+}
+
+.Title {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0px 0px 30px;
+}
+
+.FormWrapper {
+  gap: 20px;
+}
+
+.EsignContainer {
+  margin: auto;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+}
+
+.EsignTitle {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 16px;
+}
+
+.EsignDesc {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.EsignButton {
+  border-radius: 10px;
+  margin-top: 16px;
+}
+.Modal {
+  bottom: 0% !important;
+}
+
+.DOBInput input {
+  height: auto;
+  padding-top: 12px;
+  padding-bottom: 11px;
+}
+
+.DOBInput :global(.Mui-error) {
+  margin: 5px 0 0;
+}
+
+.Stepper {
+  margin-bottom: 20px;
+}
+
+/* Media Queries Start */
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .EsignContainer {
+    margin-top: 120px;
+  }
+  .FormContainer {
+    max-width: 100%;
+  }
+
+  .Stepper {
+    margin: 0 -20px;
+  }
+}
+
+.MobileHr {
+  display: none;
+  height: 1px;
+  width: 110%;
+  margin-inline-start: -20px;
+  background-color: #ebebf0;
+  border: 0.5px solid #ebebf0;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .MobileHr {
+    display: block;
+  }
+}

@@ -1,0 +1,41 @@
+name: DTrack Auto-Update
+
+on:
+  schedule:
+    - cron: '30 5 * * 5'  # Every Friday at 11:00 AM IST (5:30 AM UTC)
+
+jobs:
+  upload-sbom:
+    name: Generate & Upload SBOM
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22.11.0'
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Install CycloneDX SBOM generator
+        run: npm install -g @cyclonedx/cyclonedx-npm
+
+      - name: Generate SBOM.json
+        run: cyclonedx-npm --package-lock-only --ignore-npm-errors --output-file SBOM.json
+
+      - name: Upload SBOM to Dependency-Track
+        env:
+          DTRACK_URL: https://dtrack.gripinvest.in
+          DTRACK_API_KEY: ${{ secrets.DTRACK_API_KEY }}
+        run: |
+          echo "⚙️  Posting SBOM to $DTRACK_URL/api/v1/bom"
+          curl -v -X POST "${DTRACK_URL}/api/v1/bom" \
+            -H "Content-Type: multipart/form-data" \
+            -H "X-Api-Key: ${DTRACK_API_KEY}" \
+            -F "projectName=gi-client-web" \
+            -F "bom=@SBOM.json" \
+            -F "autoCreate=true"

@@ -1,0 +1,129 @@
+.CallCardContainer {
+  background: var(--gripLightGreen);
+  border-radius: 7px;
+  padding: 41px 36px;
+}
+
+.CallCardContainerLight {
+  border-radius: 10px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background: var(--gripWhite, #ffffff);
+  box-shadow: 0px 1px 3px 0px rgba(96, 108, 128, 0.05);
+  padding: 26px 28px;
+  width: 360px;
+  margin-left: 30px;
+}
+
+.CardHeaderText {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--gripEbonyClay);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.CardHeaderTextLight {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.CardSubHeaderText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--gripWealthText);
+  text-align: center;
+}
+
+.BookCallDetailsContainer {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.RMImage {
+  border-radius: 50%;
+}
+
+.RMName {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gripTextMain);
+  margin-bottom: 5px;
+}
+
+.RMDesignation {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripAbbey);
+}
+
+.BookACallButton {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  cursor: pointer;
+  box-shadow: 0px 1px 3px rgba(96, 108, 128, 0.05);
+  padding: 7px 10px;
+  border-radius: 8px;
+  color: var(--gripWhite);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.extraPadding {
+  padding: 12px;
+}
+
+.BookACallButton:global(.whatsapp) {
+  background: var(--whatsapp);
+}
+
+.BookACallButton:global(.bookACall) {
+  background: var(--gripBlue);
+}
+
+.RMDetailsContainer {
+  padding: 17px 14px;
+  background: var(--gripWhite);
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  border-radius: 8px;
+  gap: 14px;
+  margin-top: 34px;
+  margin-bottom: 16px;
+}
+
+.RMDetailsContainerLight {
+  background: var(--gripWhiteLilac, #f7f7fc);
+  padding: 15px 20px;
+  gap: 14px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.skeleton {
+  width: 100%;
+  height: 250px;
+}
+
+@media screen and (max-width: 767px) {
+  .CallCardContainer {
+    margin: 42px 0 10px;
+    padding: 41px 40px;
+  }
+  .CallCardContainerLight {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    padding: 26px 0px;
+  }
+}

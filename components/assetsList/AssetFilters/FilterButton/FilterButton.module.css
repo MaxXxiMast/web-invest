@@ -1,0 +1,62 @@
+.buttonContainer {
+  position: relative;
+}
+
+.filterButton {
+  margin: 8px 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 50px;
+  text-align: center;
+  height: 36px;
+  color: var(--gripBlue, #00357c);
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  border: none;
+  padding: 0 !important;
+}
+
+.filterButton:focus,
+.filterButton:active {
+  box-shadow: none;
+  border: none;
+}
+
+.filterApplied {
+  position: absolute;
+  top: 6px;
+  right: -3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--progressRedColor, #ee1a26);
+  border: 3px solid var(--gripWhite, #ffffff);
+}
+
+.filterButton .filterIcon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .buttonContainer {
+    position: fixed;
+    bottom: 96px;
+    right: 16px;
+    transition: 0.5s bottom ease-in-out;
+  }
+  .filterButton {
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--lavenderMist, #e5ebf2);
+  }
+  .filterApplied {
+    top: 12px;
+    right: 2px;
+  }
+  .buttonContainer:global(.Active) {
+    bottom: 220px;
+  }
+  .filterButton .filterIcon {
+    font-size: 32px;
+  }
+}

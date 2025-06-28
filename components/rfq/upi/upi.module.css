@@ -1,0 +1,277 @@
+.mainText {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 16px 0 8px;
+}
+
+.secondaryText {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 35px;
+  width: 90%;
+}
+
+.secondaryText span {
+  font-weight: 600;
+}
+
+.progressSecondaryText {
+  color: var(--gripLuminousGrey, #555770);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+
+.progressText {
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 7px;
+}
+
+.secondaryContainer {
+  border-radius: 8px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  padding: 25px;
+}
+
+.upiLogo {
+  width: 54px;
+  height: 16px;
+}
+
+.textWithImage {
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.timerLabel {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.countDownTimerContainer {
+  margin: 35px 0;
+}
+
+.closeIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.updatedStatusIcon {
+  width: 42px;
+  height: 42px;
+}
+
+.paymentStatusContainer {
+  height: 109px;
+  width: 109px;
+  border-radius: 50%;
+  align-self: center;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.paymentStatusContainer:global(.success) {
+  background: rgba(0, 184, 183, 0.08);
+  animation-name: GreenPulse;
+}
+
+.paymentStatusContainer:global(.timeout) {
+  background: var(--timeoutColor, #fef2cc);
+  animation-name: TimeoutPulse;
+}
+
+.paymentStatusContainer:global(.failed) {
+  background: var(--failedColor, #ffd9d3);
+  animation-name: DangerPulse;
+}
+
+.reInitiatePaymentButton {
+  width: 100% !important;
+  margin-top: 14px;
+  height: 52px;
+  border-radius: 8px !important;
+  padding: 12px 28px !important;
+}
+
+.reInitiatePaymentButton span {
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.secondary::before {
+  position: absolute;
+  content: '';
+  border-bottom: 1px dashed var(--borderThree, #d9d8d8);
+  width: 61%;
+  left: 47%;
+  transform: translateX(-50%);
+}
+
+.secondary {
+  position: relative;
+  max-width: 310px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.arrowContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.textContainer {
+  position: absolute;
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 12px;
+}
+
+/* Media Queries */
+
+/* For Desktop */
+
+@media screen and (min-width: 768px) {
+  .mainContainer {
+    border-radius: 12px;
+    border: 1px solid var(--borderTwo, #f0f0f3);
+    background: var(--gripWhite2, #fefefe);
+    box-shadow: 0px 14px 94px 0px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+    margin-bottom: 8px;
+    margin-top: 50px;
+  }
+}
+
+/* For Mobile */
+@media screen and (max-width: 767px) {
+  .mainContainer {
+    padding: 20px 20px 85px;
+  }
+
+  .upiLogo {
+    width: 72px;
+    height: 22px;
+  }
+
+  .mainText {
+    margin-top: 24px;
+  }
+
+  .secondaryText {
+    font-size: 16px;
+  }
+
+  .progressText {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 13px;
+  }
+
+  .progressSecondaryText {
+    max-width: 270px;
+    align-self: center;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .reInitiatePaymentButton span {
+    font-size: 11px;
+  }
+
+  .progressSecondaryText:global(.timeout) {
+    max-width: 299px;
+  }
+
+  .paymentStatusContainer {
+    height: 139px;
+    width: 139px;
+  }
+
+  .textWithImage {
+    font-size: 12px;
+  }
+
+  .btnGroup {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 8px 20px;
+    background: var(--gripWhite, #ffffff);
+  }
+}
+
+/* KEY FRAMES START */
+
+@keyframes GreenPulse {
+  0% {
+    box-shadow: 0 0 0px 0px rgba(0, 184, 183, 0.08);
+  }
+
+  50% {
+    box-shadow: 0 0 10px 10px rgba(0, 184, 183, 0.08);
+  }
+
+  100% {
+    box-shadow: 0 0 0px 0px rgba(0, 184, 183, 0.08);
+  }
+}
+
+@keyframes TimeoutPulse {
+  0% {
+    box-shadow: 0 0 0px 0px var(--timeoutColor, #fef2cc);
+  }
+
+  50% {
+    box-shadow: 0 0 10px 10px var(--timeoutColor, #fef2cc);
+  }
+
+  100% {
+    box-shadow: 0 0 0px 0px var(--timeoutColor, #fef2cc);
+  }
+}
+
+@keyframes DangerPulse {
+  0% {
+    box-shadow: 0 0 0px 0px var(--failedColor, #ffd9d3);
+  }
+
+  50% {
+    box-shadow: 0 0 10px 10px var(--failedColor, #ffd9d3);
+  }
+
+  100% {
+    box-shadow: 0 0 0px 0px var(--failedColor, #ffd9d3);
+  }
+}
+
+/* KEY FRAMES END */

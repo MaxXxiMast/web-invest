@@ -1,0 +1,21 @@
+.container {
+  margin-bottom: 20px;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.filterChip {
+  padding: 10px 16px;
+  color: var(--gripBlue, #00357c);
+  font-weight: 600;
+  font-size: 12px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 80px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.selected {
+  color: var(--gripWhite, #ffffff);
+  background: var(--gripLuminousDark, #282c3f);
+}

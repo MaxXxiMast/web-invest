@@ -1,0 +1,35 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "selector-pseudo-element-colon-notation": null,
+    "selector-class-pattern": null,
+    "rule-empty-line-before": null,
+    "custom-property-pattern": null,
+    "at-rule-empty-line-before": null,
+    "length-zero-no-unit": null,
+    "keyframes-name-pattern": null,
+    "declaration-block-no-redundant-longhand-properties": null,
+    "comment-empty-line-before": null,
+    "comment-whitespace-inside": null,
+    "property-no-vendor-prefix": null,
+    "selector-no-vendor-prefix": null,
+    "selector-id-pattern": "^[a-z]([A-Za-z0-9]*[A-Za-z])?",
+    "color-function-notation": ["legacy", { "ignore": ["with-var-inside"] }],
+    "color-hex-length": "long",
+    "media-feature-range-notation": "prefix",
+    "import-notation": "string",
+    "alpha-value-notation": "number",
+    "custom-property-no-missing-var-function": true,
+    "font-weight-notation": "numeric",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ],
+    "property-no-unknown": [
+      true,
+      { "ignoreProperties": ["/regex/", "composes", "string"] }
+    ]
+  }
+}

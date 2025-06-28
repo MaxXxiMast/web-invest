@@ -1,0 +1,173 @@
+.Container {
+  padding: 20px;
+  gap: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background: var(--gripWhite, #ffffff);
+}
+
+.MobileStepper {
+  border-radius: 12px;
+  background: var(--gripWhite, #ffffff);
+}
+
+.Stepper {
+  padding-top: 30px;
+}
+
+.StepIndicator {
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background-color: var(--gripWhite, #ffffff);
+}
+
+.StepIcon {
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+}
+
+.StepContent {
+  margin-left: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  gap: 24px;
+  align-items: center;
+}
+
+.MobileStepContent {
+  margin-left: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  gap: 24px;
+  align-items: center;
+}
+
+.StepContentTitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0px;
+}
+
+.pendingTitle {
+  opacity: 0.5;
+}
+
+.StepContentSubTitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--gripLuminousGrey, #555770);
+  margin-bottom: 0px;
+  margin-top: 2px;
+}
+
+.MobileStepperLine {
+  width: 10px;
+  flex-grow: 1;
+  border-right: 1px dashed var(--gripWhiteLilac, #f7f7fc);
+}
+
+.StepperLine {
+  flex-grow: 1;
+  border-bottom: 1px dashed var(--gripWhiteLilac, #f7f7fc);
+}
+
+.RowStepper {
+  width: 100%;
+  gap: 15px;
+}
+
+.MobileRowStepper {
+  width: 100%;
+}
+
+.IconContent {
+  align-items: center;
+}
+
+.OrderJourneyHeader {
+  gap: 4px;
+}
+
+.OrderTitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  flex: 1;
+  color: var(--gripLuminousDark, #555770);
+}
+
+.OrderSubTitle {
+  color: var(--gripTextMain, #373a46);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.orderStatusIcon {
+  width: 20px;
+}
+
+.Hide {
+  visibility: hidden;
+}
+
+.CircularProgress {
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  border-radius: 50%;
+}
+
+.BottomButtonContainer {
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .Container {
+    border: 0;
+    padding: 20px 0px 40px;
+    margin-bottom: 50px;
+    gap: 0px;
+  }
+
+  .MobileStepper {
+    border: 0;
+    padding: 20px 0px 0px;
+    gap: 0px;
+  }
+
+  .StepContentSubTitle {
+    line-height: 20px;
+  }
+
+  .OrderJourneyContainer {
+    margin-right: 0px;
+  }
+
+  .StepContent {
+    text-align: left;
+  }
+
+  .Stepper,
+  .OrderSubTitle {
+    display: none;
+  }
+
+  .AssetDetailsPGMain {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 766px) {
+  .bottomSwitch,
+  .AssetDetailsPGMain,
+  .MobileStepper {
+    display: none;
+  }
+}

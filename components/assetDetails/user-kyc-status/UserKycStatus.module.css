@@ -1,0 +1,19 @@
+.Wrapper {
+  background: var(--gripEarlyDawn, #fff8ea);
+  padding: 12px;
+  gap: 6px;
+}
+
+.Text {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.InfoIcon {
+  cursor: pointer;
+  color: var(--gripMySin, #ffb628);
+  font-size: 14px;
+  font-weight: 700;
+}

@@ -1,0 +1,37 @@
+.container {
+  gap: 32px;
+  margin-bottom: 166px;
+}
+.circularSkeleton {
+  border-radius: 50% !important;
+  margin-right: 15px;
+}
+.detailBox {
+  border: 1px solid var(--gripMercury2, #e8e8e8);
+  border-radius: 8px;
+  padding: 26px 17px;
+  margin-bottom: 42px;
+}
+.mb_6 {
+  margin-bottom: 6px;
+}
+.mb_30 {
+  margin-bottom: 30px;
+}
+.mr_20 {
+  margin-right: 20px;
+}
+.mb_20 {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .hideInDesktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hideInMobile {
+    display: none;
+  }
+}

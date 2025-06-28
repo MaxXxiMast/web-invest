@@ -1,0 +1,20 @@
+/* Media Queries Start */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Stepper {
+    margin: 0 -20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .line {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .line {
+    border: 0.5px solid var(--gripDawnPink, #ebebf0);
+    margin-bottom: -5px;
+  }
+}

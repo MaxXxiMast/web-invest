@@ -1,0 +1,60 @@
+.PageHeading {
+  padding: 0 0 20px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  position: relative;
+  margin-bottom: 16px;
+}
+.PageHeading span {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.RewardHistory {
+  padding: 100px 0;
+}
+.FilterBtn {
+  padding: 0 7px 10px;
+  border-bottom: 2px solid var(--gripBlue);
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+.FilterBtn span {
+  color: var(--gripBlue);
+  font-weight: 500;
+  margin-right: 8px;
+}
+.NoDataDiv {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.RedirectBtn {
+  margin-top: 40px;
+}
+@media screen and (max-width: 992px) {
+  .PageHeading {
+    border: none;
+    padding-bottom: 0;
+    display: none !important;
+    text-align: center;
+  }
+  .FilterBtn {
+    display: none;
+  }
+  .RewardHistory {
+    padding: 0px 0 30px;
+  }
+  .PageHeading :global(.Text) {
+    position: relative;
+    flex: 1;
+  }
+  .ReferalHeader {
+    box-shadow: none !important;
+  }
+  .ReferalHeader:global(.HideToTop) {
+    top: -70px !important;
+    transition: 0.1s top ease-in-out;
+  }
+}

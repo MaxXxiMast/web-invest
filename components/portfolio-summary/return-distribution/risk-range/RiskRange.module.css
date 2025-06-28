@@ -1,0 +1,128 @@
+.desktopDialer,
+.mobileDialer {
+  position: relative;
+}
+
+.dial {
+  position: absolute;
+  top: calc(50% - 20px);
+  z-index: 1;
+  width: 80px;
+}
+
+.indicator {
+  width: 30px;
+  height: 30px;
+  background-color: var(--gripWhite, #ffffff);
+  border-radius: 50%;
+}
+
+.indicator img {
+  border-radius: 50%;
+  object-fit: cover !important;
+}
+
+.indicator > div {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(0, 53, 124, 0.11);
+  border-radius: 50%;
+  color: var(--gripBlue, #00357c);
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.avgIndicator {
+  position: absolute;
+  top: calc(50% - 10px);
+  z-index: 0;
+  width: 80px;
+}
+
+.avgIndicator > div:first-child {
+  width: 10px;
+  height: 10px;
+  background-color: var(--gripWhite, #ffffff);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.lowerLimit {
+  left: 15.5%;
+  position: absolute;
+  top: 60%;
+  font-size: 0.8rem;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.upperLimit {
+  left: 81%;
+  position: absolute;
+  top: 60%;
+  font-size: 0.8rem;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.details > span {
+  font-size: 12px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.avgIndicator div > span {
+  font-size: 12px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.details > span:first-child {
+  font-weight: 700;
+  color: var(--gripLuminousDark, #282c3f);
+  margin-bottom: 2px;
+}
+
+.avgIndicator div > span:first-child {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gripLuminousDark, #282c3f);
+  margin-bottom: 2px;
+}
+
+.details {
+  background: var(--gripWhite, #ffffff);
+  margin-top: 10px;
+  box-shadow: 0px 1px 14px 0px #a5a5a540;
+  border-radius: 5px;
+  padding: 9px 12px;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .mobileDialer {
+    display: none !important;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desktopDialer {
+    display: none !important;
+  }
+  .dial {
+    top: calc(50% - 20px);
+  }
+  .avgIndicator {
+    top: calc(50% - 9px);
+  }
+  .avgIndicator > div:first-child {
+    height: 8px;
+    width: 8px;
+  }
+  .lowerLimit {
+    left: 16%;
+    font-size: 0.5rem;
+  }
+  .upperLimit {
+    left: 78%;
+    top: 60%;
+    font-size: 0.5rem;
+  }
+}

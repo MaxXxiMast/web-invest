@@ -1,0 +1,63 @@
+.ValueItem {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.ValueItem span:last-child {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.ValueItem:nth-child(2) span:first-child {
+  text-align: right;
+}
+
+.Button {
+  height: 45px;
+}
+
+.AssetCardContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 12px 0 20px;
+}
+
+.InvestCard {
+  border-radius: 8px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 10px;
+}
+
+.CardTop {
+  border-radius: 8px;
+  background: var(--gripWhite, #ffffff);
+  border: 1px solid var(--gripGreyExtra, #f1f3f6);
+}
+
+.headerLeft {
+  width: 100%;
+  padding: 12px;
+}
+
+.InvestmentCardIcon {
+  height: 34px;
+}
+
+.LogoImage {
+  max-width: 108px;
+  object-position: left;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .headerLeft {
+    min-width: 300px;
+  }
+}

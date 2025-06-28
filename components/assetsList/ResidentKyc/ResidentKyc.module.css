@@ -1,0 +1,90 @@
+.heading {
+  font-weight: 800 !important;
+  font-size: 20px;
+  color: var(--gripEbonyClay, #292c3e);
+  line-height: 24px;
+}
+
+.subHeadingText {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--gripLuminousGrey, #555770);
+  line-height: 24px;
+  padding: 16px 0;
+}
+
+.radioButton :global(.MuiIconButton-label) {
+  color: var(--gripPrimaryGreen, #00b8b7);
+  height: 20px;
+  width: 20px;
+}
+
+.submitButtonText {
+  color: var(--gripWhite, #ffffff);
+  font-weight: 800;
+  padding: 10px 12px;
+  text-transform: capitalize;
+  line-height: 16px;
+}
+
+.submitButton {
+  background-color: var(--gripPrimaryGreen, #00b8b7);
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submitButton:hover {
+  background-color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.submitButton :global(.MuiButton-root) {
+  background-color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.radioLabel :global(.MuiTypography-body1) {
+  color: var(--gripShuttleGray, #686b78);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Inter, sans-serif !important;
+}
+
+.disabledButton {
+  cursor: not-allowed;
+  background-color: rgba(13, 23, 36, 0.32);
+  color: var(--gripWhite, #ffffff);
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 18px;
+  }
+  .submitButton {
+    border-radius: 6;
+    font-size: 14;
+    line-height: 'unset';
+    width: '50%';
+  }
+  .subHeadingText {
+    padding: '10px 26px';
+  }
+  .radioLabel :global(.MuiTypography-body1) {
+    font-size: 14;
+  }
+}
+
+@media (min-width: 768px) {
+  .radioLabel {
+    display: flex;
+    justify-content: flex-start;
+    min-width: 35%;
+    width: max-content;
+  }
+  .RadioGroup {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,102 @@
+/* Footer */
+.Footer {
+  padding: 18px 0;
+  margin-top: auto;
+  margin-left: -350px;
+}
+
+.ProceedWrapper {
+  padding: 12px;
+  border-radius: 16px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+  margin: auto;
+  gap: 40px;
+}
+
+.DematNote {
+  padding: 8px 12px;
+  background-color: var(--gripPorcelain, #f7f8f9);
+  align-items: flex-start;
+  border-top: 4px solid var(--gripWhite, #ffffff);
+}
+
+.DematNote > span {
+  margin-top: 4px !important;
+}
+
+.Disclaimer {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--gripLuminousGrey, #555770);
+  max-width: 250px;
+}
+
+.Proceed {
+  border-radius: 12px;
+  min-width: 110px;
+}
+
+.ButtonContainer .Disabled {
+  background: var(--gripLuminousGreyPlace, #777777) !important;
+  color: var(--gripWhite, #ffffff) !important;
+}
+
+.NoBg {
+  background-color: transparent;
+}
+
+.DisableSubLink {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.ButtonContainer {
+  gap: 6px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .Footer {
+    margin-left: -276px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Footer {
+    margin-left: 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    z-index: 2;
+  }
+  .ProceedWrapper {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    gap: 16px;
+    background: var(--gripWhite, #ffffff);
+  }
+  .Disclaimer {
+    max-width: 300px;
+    text-align: center;
+  }
+  .Proceed {
+    width: 100% !important;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-height: 580px) {
+  .Footer {
+    position: static;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .DematNote {
+    display: none;
+  }
+}

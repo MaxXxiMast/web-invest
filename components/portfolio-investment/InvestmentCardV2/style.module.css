@@ -1,0 +1,323 @@
+.Card,
+.Body,
+.ReturnsWrapper,
+.ReturnItem,
+.HeaderRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header,
+.Returns,
+.Separator,
+.NextReturn,
+.ProgressHeader,
+.Schedule,
+.Calendar,
+.Action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ReturnsWrapper > p,
+.Label,
+.ReturnType,
+.ActionName,
+.ActionType span,
+.DealCode,
+.Units {
+  font-size: 12px;
+}
+
+.Card {
+  background: var(--gripWhite);
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.03);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 100%;
+  padding: 16px;
+  gap: 16px;
+}
+
+/* CARD HEADER */
+.Header {
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.HeaderRight {
+  gap: 5px;
+  align-items: flex-end;
+  width: 100%;
+}
+.DealCode {
+  font-weight: 500;
+  line-height: 16px;
+  color: rgba(85, 87, 112, 0.5);
+  word-break: break-all;
+}
+.Units {
+  font-weight: 500;
+  line-height: 15px;
+  color: var(--gripLuminousGrey);
+}
+/* CARD BODY CSS */
+.Body {
+  gap: 20px;
+}
+.ReturnsWrapper {
+  background: var(--gripPorcelain);
+  border-radius: 7px;
+  padding: 16px 12px;
+  gap: 12px;
+}
+.ReturnsWrapper > p {
+  font-weight: 400;
+  line-height: 15px;
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: center;
+  margin: 0;
+}
+.Returns {
+  gap: 10px;
+}
+.ReturnItem {
+  gap: 2px;
+}
+.Amount {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--gripEbonyClay);
+}
+.Label {
+  font-weight: 400;
+  line-height: 15px;
+  color: var(--gripLuminousGrey);
+}
+.Separator {
+  flex: 1;
+  position: relative;
+  max-width: 135px;
+}
+.Separator::before {
+  content: '';
+  width: 100%;
+  border-top: 1px dashed var(--gripBlue);
+}
+.Separator::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid var(--gripBlue);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.NextReturn {
+  gap: 10px;
+}
+.Date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gripOsloGray);
+}
+.Date strong {
+  color: var(--gripLuminousDark);
+}
+.ReturnType {
+  background: #e4eefb;
+  border-radius: 5px;
+  padding: 5px 7px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--gripLuminousGrey);
+  flex-shrink: 0;
+}
+.Progress {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* CARD FOOTER CSS */
+.Footer {
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.Schedule {
+  gap: 10px;
+}
+.Calendar {
+  gap: 8px;
+  cursor: pointer;
+}
+.Calendar span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gripBlue);
+}
+.Action {
+  background: #fcefee;
+  border-radius: 7px;
+  padding: 20px 8px;
+  gap: 10px;
+}
+
+.Initiate,
+.YetToComplete {
+  background: var(--gripHummingBird);
+}
+.Confirmed {
+  background: #ebfbf5;
+}
+.ActionLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ActionLabel img {
+  filter: grayscale(1);
+}
+
+.ActionName {
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--gripLuminousGrey);
+}
+
+.ActionType {
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+  justify-content: center;
+  cursor: pointer;
+}
+.ActionType span {
+  font-weight: 800;
+  line-height: 1;
+  color: var(--gripBlue);
+}
+
+.Menu {
+  border: none;
+  padding: 0;
+  margin-left: auto;
+  line-height: 0;
+}
+
+.Menu :global .ShortByDropDown li {
+  background-color: var(--gripWhite) !important;
+  padding: 10px 12px;
+}
+.Menu :global .ShortByDropDown li span {
+  font-size: 14px;
+}
+.DealInfoModal {
+  max-width: 400px !important;
+}
+.TransactionModal :global(.CloseBtn) {
+  top: 35px;
+}
+
+.TransactionModal th:last-child,
+.TransactionModal td:last-child {
+  padding-right: 15px;
+}
+.JustifyCenter {
+  justify-content: center;
+}
+.justifyStart {
+  justify-content: flex-start;
+}
+.BondStatusText {
+  font-weight: 500;
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: var(--gripWhite);
+}
+
+.Confirmed .BondStatusText {
+  color: var(--gripLightSecondarySix);
+}
+
+.justifyStart .ActionLabel {
+  flex-direction: row-reverse;
+}
+
+.ActionLabel :global .erd_scroll_detection_container {
+  display: none !important;
+}
+.PartnerLogo {
+  width: auto !important;
+  padding: 0 !important;
+  flex-shrink: 0;
+  max-width: 200px;
+}
+@media (min-width: 768px) {
+  .CircularProgress {
+    font-size: 12px;
+    margin-bottom: -2px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Amount {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .Date {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .TransactionModalDrawer {
+    padding: 0 0 24px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .Card {
+    padding: 8px;
+    gap: 10px;
+  }
+  .Body {
+    gap: 10px;
+  }
+  .Amount {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .Footer {
+    padding-top: 10px;
+  }
+  .ReturnsWrapper > p,
+  .Label,
+  .ReturnType,
+  .ActionName,
+  .ActionType span,
+  .DealCode,
+  .Units,
+  .Date,
+  .BondStatusText,
+  .Calendar span {
+    font-size: 10px;
+  }
+  .Action {
+    gap: 5px;
+  }
+  .Header > :not(.HeaderRight) span {
+    max-width: 100px;
+  }
+}

@@ -1,0 +1,57 @@
+.PaymentOption {
+  gap: 10px;
+  padding: 20px 0;
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.SelectedMethod {
+  color: var(--gripPersianGreen, #00a3a2);
+  background-color: var(--gripOffGreen, #e5f8f8);
+  display: inline-flex;
+  font-size: 10px;
+  line-height: 13px;
+  padding: 7px 10px;
+  border-radius: 6px;
+}
+
+.PaymentOptionRight {
+  gap: 5px;
+  color: var(--gripTextMain, #373a46);
+  cursor: pointer;
+}
+
+.PaymentWidget {
+  gap: 10px;
+}
+.MethodLogo {
+  width: 28px;
+  height: 28px;
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 4px;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AutoPayText {
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 18px;
+  color: var(--gripBlue, #00357c);
+  margin: 0;
+}
+
+.BankData {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--gripTextMain, #373a46);
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .PaymentOption {
+    padding-bottom: 10px;
+  }
+}

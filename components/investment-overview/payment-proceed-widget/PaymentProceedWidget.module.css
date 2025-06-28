@@ -1,0 +1,23 @@
+.Wrapper,
+.Left,
+.Main {
+  display: flex;
+}
+
+.Wrapper {
+  gap: 10px;
+}
+
+.Amount {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.Label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--gripLuminousGrey, #555770);
+}

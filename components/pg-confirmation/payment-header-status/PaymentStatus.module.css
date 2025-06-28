@@ -1,0 +1,75 @@
+.Container {
+  align-items: center;
+  gap: 30px;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.Right {
+  gap: 8px;
+}
+
+.Heading {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0px;
+}
+
+.SubHeading {
+  color: var(--gripTextMain, #373a46);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0px;
+}
+
+.Success {
+  background-color: var(--gripOffGreen, #e5f8f8);
+}
+
+.Error {
+  background: var(--bridesmaid, #fef1f1);
+}
+
+.Pending {
+  background: var(--gripEarlyDawn, #fff8ea);
+}
+
+.Awaited {
+  background: var(--gripWhiteLilac, #f7f7fc);
+}
+
+.cta {
+  margin-top: 7px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .Container {
+    margin-left: -24px;
+    margin-right: -24px;
+    border-radius: 0px;
+    padding-top: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Success {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 184, 183, 0.06) 0%,
+      rgba(0, 184, 183, 0) 100%
+    );
+  }
+  .Error,
+  .Awaited,
+  .Pending {
+    background: none;
+  }
+
+  .cta {
+    display: none;
+  }
+}

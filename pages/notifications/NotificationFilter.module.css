@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-inline: 16px;
+  padding-top: 20px;
+}
+
+.tab {
+  padding: 0 20px;
+  height: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.activeTab {
+  background-color: var(--gripLuminousDark, #282c3f);
+}
+
+.inactiveTab {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  cursor: default;
+}
+
+.tabText {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.activeText {
+  color: var(--gripWhite, #ffffff);
+}
+
+.inactiveText {
+  color: var(--gripLuminousDark, #282c3f);
+}

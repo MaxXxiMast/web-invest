@@ -1,0 +1,68 @@
+.container {
+  gap: 20px;
+  margin-top: 17px;
+}
+
+.dropDownContainer {
+  width: 100%;
+}
+
+.inputComment {
+  min-width: 360px !important;
+}
+
+.submitButton {
+  width: 100% !important;
+}
+
+.characterLeft {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 12px;
+  display: inline-flex;
+}
+
+.characterLeft:global(.NoComment) {
+  color: var(--gripDanger, #ff5c5c) !important;
+}
+
+.buttonContainer {
+  min-width: 360px !important;
+  gap: 20px;
+}
+
+.inputComment :global .MuiInputBase-root textarea::-webkit-scrollbar {
+  width: 4px;
+}
+.inputComment :global .MuiInputBase-root textarea::-webkit-scrollbar-thumb {
+  background: var(--gripGhost, #c5c6d3);
+}
+
+/* Media Queries Start */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .container {
+    gap: 23px;
+    margin-top: 23px;
+  }
+
+  .inputComment {
+    min-width: 240px !important;
+    max-width: 100%;
+  }
+
+  .inputPropsRoot {
+    min-height: 170px;
+  }
+
+  .inputPropsRoot > textarea {
+    height: 140px !important;
+  }
+  .buttonContainer {
+    min-width: auto !important;
+  }
+}
+
+/* Media Queries End */

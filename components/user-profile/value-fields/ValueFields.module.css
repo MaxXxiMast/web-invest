@@ -1,0 +1,29 @@
+.StaticField {
+  gap: 4px;
+  width: 100%;
+}
+
+.textCapitalize {
+  text-transform: capitalize;
+}
+
+.StaticField label,
+.StaticField p {
+  margin: 0;
+}
+
+.StaticField label {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.StaticField p {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+}

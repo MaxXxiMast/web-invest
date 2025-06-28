@@ -1,0 +1,379 @@
+.MonthlyReturnCardContent {
+  z-index: 1;
+  background: var(--gripWhite, #ffffff);
+  border-radius: 12px;
+  padding: 4px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.CardTop {
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.CardBottom {
+  padding: 0 16px;
+}
+
+.InvestmentType {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.InvestmentTypeLeft h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+}
+
+.InputFieldContainer {
+  flex: 1;
+}
+.InvestmentTypeRight {
+  color: var(--gripLuminousGrey, #555770);
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 6px;
+  gap: 4px;
+  background: var(--gripOffGreen, #e5f8f8);
+  border-radius: 6px;
+}
+
+.InvestmentTypeRight :global(.Amount) {
+  background: var(
+    --gradientBlue,
+    linear-gradient(90deg, #00357c 7.07%, #005cd7 91.41%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+/* Countlist start */
+
+.CountList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.CountList > li {
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--gripOffGreen, #e5f8f8);
+}
+
+.CountList > li:first-child {
+  border-radius: 8px 8px 0 0;
+  padding: 16px;
+}
+
+.CountList :global li[id='fd-sidebar-principal'] {
+  padding-bottom: 12px;
+}
+
+.AmountCloudItem {
+  position: relative;
+}
+
+#popularTag {
+  position: absolute;
+  padding: 2px 4px;
+  top: -12px;
+  border-radius: 4px;
+  background: #f9d579;
+  margin: 0px;
+  line-height: normal;
+}
+
+/* Count list end */
+
+.VisualReturns {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gripBlue, #00357c);
+  margin: 26px 0 16px;
+  padding: 0 24px;
+}
+
+.VisualReturnsInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.VisualReturns span {
+  cursor: pointer;
+}
+
+.VisualReturns .ImageContainer {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.ContinueSection {
+  max-width: 344px;
+  margin: 0 auto;
+  margin-bottom: -30px;
+}
+
+/* Input Field */
+
+.FieldContainer {
+  border-radius: 10px;
+  background: var(--gripWhite, #ffffff);
+  padding: 8px 16px;
+  justify-content: space-between;
+  box-shadow: 0px 0px 0px 4px var(--gripBotticelli, #ccd7e5);
+  border: 1px solid var(--gripBlue, #00357c);
+}
+
+.InputLabel {
+  color: var(--gripBlue, #00357c);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.InputField input {
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  width: 100%;
+  outline: none;
+}
+
+.InputField input::-webkit-outer-spin-button,
+.InputField input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.InputField input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* Input Field */
+
+/* Checkbox Field */
+
+.CheckBoxMainContainer {
+  margin: 6px 0;
+}
+
+.CheckboxContainer {
+  gap: 22px;
+}
+
+.CheckboxContainer :global(.MuiTypography-root) {
+  font-family: var(--fontFamily, "'Inter', sans-serif") !important;
+  color: var(--gripLuminousDark, #282c3f) !important;
+  font-size: 10px !important;
+  font-weight: 500;
+  line-height: 2 !important;
+}
+
+.CheckboxContainer :global(.MuiButtonBase-root) {
+  margin-right: 6px !important;
+}
+
+.CheckboxContainer :global(.MuiSvgIcon-root) {
+  fill: var(--greyCloud, #b5b5b5) !important;
+}
+/* Checkbox Field */
+
+.ReturnsHeading {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.AmountCloud {
+  margin: 24px 0 0;
+  justify-content: center;
+}
+.AmountCloud:empty {
+  display: none;
+}
+
+.AmountCloud span {
+  border: 1px solid var(--gripMercury3, #e6e6e6);
+  box-shadow: 0px 4px 23px 0px var(--gripBoxShadow, #2c2e390d);
+  height: 28px;
+  width: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 24px;
+  color: var(--gripTextMain, #373a46);
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+#selectedChip {
+  background-color: var(--gripSolitude, #e7f1fe);
+}
+
+/* Sort By Container */
+
+.filterContainer {
+  border: none !important;
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.filterContainer :global(.ShortByInner) {
+  display: flex;
+  align-items: center;
+}
+
+.filterContainer :global(.ShortByInner) span:last-child {
+  margin-left: 3px;
+}
+
+.InterestPayout {
+  color: var(--gripBlue, #00357c);
+  text-align: right;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 14px; /* 140% */
+}
+
+.SelectContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Error {
+  color: var(--gripDanger, #ff5c5c);
+  margin-top: 10px;
+  font-size: 12px;
+}
+.TandC {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  margin: 45px 0 0;
+}
+.TandC a {
+  color: var(--gripBlue, #00357c);
+  text-decoration: underline;
+}
+.Checkbox {
+  gap: 5px;
+}
+.TooltipIcon {
+  color: var(--gripBlue, #00357c);
+  font-weight: 700;
+}
+.CheckIcon {
+  font-size: 12px;
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+.VisualIcon {
+  font-size: 24px;
+}
+
+/* Desktop with ipad */
+@media screen and (min-width: 993px) {
+  .VisualReturnModalPopup :global(.Card) {
+    padding: 0;
+  }
+
+  .MonthlyReturnCardContent {
+    position: relative;
+  }
+}
+
+/* IPAD - 1199 */
+@media screen and (max-width: 1199px) {
+  .CardTop {
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile - 992 */
+@media screen and (max-width: 992px) {
+  .ContinueSection {
+    margin-bottom: 0px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .CardBottom {
+    padding: 0 0 10px;
+  }
+  .TandC {
+    margin-top: 0;
+  }
+
+  .MonthlyReturnCardContent {
+    border-radius: 12px 12px 0 0;
+    padding: 0;
+    border: none;
+  }
+  .InvestmentTypeLeft h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .CardTop {
+    padding: 16px;
+  }
+  .CountList li {
+    padding: 0 5px;
+  }
+  .VisualReturnsDrawer {
+    padding: 0 !important;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .BondsVisualReturns :global(.CloseBtn) {
+    top: 35px;
+  }
+}
+
+/* Mobike */
+@media screen and (max-width: 767px) {
+  .ContinueSection {
+    position: sticky;
+    bottom: 0;
+  }
+
+  .CheckBoxMainContainer {
+    white-space: pre;
+  }
+
+  .CheckboxContainer {
+    gap: 10px;
+    padding-right: 10px;
+  }
+  .TandC {
+    padding: 0 0 10px;
+  }
+}

@@ -1,0 +1,29 @@
+.yetToPayBtn {
+  color: var(--gripBlue, #00357c);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 24px;
+  text-transform: uppercase;
+  border-width: 0px;
+  cursor: pointer;
+  background: var(--gripWhite, #ffffff);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+  gap: 20px;
+}
+
+.errMsg {
+  color: var(--gripDanger, #ff5c5c) !important;
+  margin: 5px 0px !important;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,92 @@
+.infoModal {
+  padding: 24px 12px;
+  gap: 16px;
+}
+
+.accentValue {
+  color: var(--gripPrimaryGreen, #00b8b7) !important;
+}
+
+.separator {
+  width: 1.5px;
+  background: var(--gripBorder, #f0f0f0);
+}
+
+.card {
+  padding: 4px;
+}
+
+.piechartLabel {
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--gripLuminousGrey, #555770);
+  text-transform: capitalize;
+}
+
+.infoCards {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  height: fit-content;
+}
+
+.infoLabel {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+  text-transform: capitalize;
+}
+
+.infoSublabel {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  color: var(--gripEbonyClay, #292c3ea8);
+}
+
+.infoValue {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.pieChart :global(#portfolio-Overview) {
+  overflow: visible !important;
+}
+
+.NoteText {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+@media screen and (max-width: 1080px) {
+  .infoModal {
+    padding: 4px;
+  }
+
+  .piechartLabel {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .overviewModal {
+    min-width: 480px;
+    max-width: min(100%, 750px) !important;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .NoteText {
+    padding-top: 20px;
+    font-size: 11px;
+  }
+}

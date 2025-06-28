@@ -1,0 +1,68 @@
+.NeedHelpPopup {
+  max-width: 520px !important;
+}
+
+.Container {
+  gap: 16px;
+}
+
+.heading {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.items {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  gap: 22px;
+}
+
+.items.li {
+  gap: 16px;
+}
+
+.items :global .TitleWithDot::before {
+  color: var(--gripLuminousGrey, #555770) !important;
+  vertical-align: top !important;
+}
+
+.items li a {
+  text-decoration: underline;
+  color: var(--gripBlue, #00357c);
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .heading {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .items :global .TitleWithDot {
+    position: relative;
+    padding-left: 15px;
+  }
+  .items :global .TitleWithDot::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .heading,
+  .items {
+    text-align: center;
+  }
+  .items :global .TitleWithDot {
+    justify-content: center;
+  }
+  .NeedHelpPopup :global .Card {
+    padding: 36px 24px;
+  }
+}

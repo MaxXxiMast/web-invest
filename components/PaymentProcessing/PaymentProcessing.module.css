@@ -1,0 +1,67 @@
+.container {
+  padding: 150px 0 116px;
+}
+
+.processingHeader {
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.processingText {
+  color: var(--gripGunPowder, #44485b);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.MainContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 12px;
+}
+
+/* Circular Loader Starts */
+.circularProgressContainer {
+  position: relative;
+  background: var(--gripWhite, #ffffff);
+  margin-bottom: 28px;
+  text-align: center;
+  display: inline-flex;
+}
+
+.circularProgressDeterminate {
+  color: var(--gripLighterOne, #e5f1ff) !important;
+}
+
+.circularProgressInDeterminate {
+  position: absolute;
+  color: var(--gripBlue, #00357c) !important;
+}
+
+.circularProgressInDeterminateCircle {
+  stroke-linecap: round;
+  stroke-dasharray: 30px, 200px !important;
+}
+
+/* Circular Loader Ends */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .container {
+    height: calc(100vh - 100px);
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .container {
+    height: calc(100vh - 250px);
+    left: 35%;
+    top: 50%;
+    position: absolute;
+  }
+}

@@ -1,0 +1,15 @@
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--gripWealthText, #696b74);
+}
+
+.solidLine {
+  width: 70px;
+  height: 0;
+  border: 1px solid transparent;
+  border-image: linear-gradient(90deg, #696b74 0%, rgba(105, 107, 116, 0) 100%);
+  border-image-slice: 1;
+}

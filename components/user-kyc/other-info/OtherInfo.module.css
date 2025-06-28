@@ -1,0 +1,65 @@
+.RadioOptions {
+  gap: 14px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.RadioOptions > label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.FormWrapper {
+  gap: 20px;
+}
+
+.FormContainer {
+  width: 360px;
+}
+
+.FetchModal :global(.Card) {
+  padding: 32px;
+}
+
+.FetchModal :global(h3) {
+  margin-top: 16px;
+}
+
+.QualificationSelect :global(.MuiFormControl-root) {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .FormContainer {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+  .RadioOptions {
+    margin-bottom: 16px;
+  }
+  .Drawer {
+    padding: 20px;
+  }
+  .QualificationOption span {
+    white-space: pre-line;
+  }
+}
+
+.MobileHr {
+  display: none;
+  height: 1px;
+  width: 110%;
+  margin-inline-start: -20px;
+  background-color: #ebebf0;
+  border: 0.5px solid #ebebf0;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .MobileHr {
+    display: block;
+  }
+}

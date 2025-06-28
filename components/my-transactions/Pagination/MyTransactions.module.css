@@ -1,0 +1,54 @@
+.Pagination {
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PaginationText {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripTextMain, #373a46);
+}
+
+.Pagination ul li button {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--gripBlue);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--gripBlue);
+}
+.Pagination ul li + li {
+  margin-left: 12px;
+}
+.Pagination ul li button:global(.Mui-selected) {
+  background-color: var(--gripBlue);
+  color: var(--gripWhite);
+}
+.Pagination ul li button:hover,
+.Pagination ul li button:global(.Mui-selected):hover {
+  background-color: var(--gripBlue);
+  color: var(--gripWhite);
+}
+
+@media screen and (max-width: 767px) {
+  .PaginationText {
+    display: none;
+  }
+
+  .Pagination {
+    margin-top: 40px;
+    justify-content: center;
+  }
+  .PaginationRight ul li button {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+}

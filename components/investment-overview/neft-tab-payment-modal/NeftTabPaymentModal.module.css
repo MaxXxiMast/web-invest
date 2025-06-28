@@ -1,0 +1,19 @@
+.Wrapper {
+  text-align: center;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 15px;
+}
+
+.TitleIcon {
+  border-radius: 12px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  width: 100%;
+  padding: 15px 0px;
+}
+
+.Wrapper h4 {
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+  font-weight: 600;
+}

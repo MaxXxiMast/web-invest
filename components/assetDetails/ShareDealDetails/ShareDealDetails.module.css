@@ -1,0 +1,71 @@
+.ModalHeader {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 20px 0 0 12px;
+}
+
+.ReferralCodeLeftInner input,
+.LinkUrlField {
+  outline: none;
+  border: none;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 12px;
+  color: var(--gripLuminousDark, #282c3f);
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0 40px 0 20px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) 50%;
+  min-height: 52px;
+}
+
+.LinkUrlField {
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 52px;
+}
+
+.ReferralCodeLeftInner {
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.ReferralCodeLeftInner span {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.LinkShareList {
+  margin: 20px 0px;
+}
+.LinkShareList ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ShareLinkItem {
+  margin: 0 15px;
+  cursor: pointer;
+}
+.ShareLinkItem p {
+  margin: 8px 0 0;
+}
+
+.ShareLinkIcon {
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 50%;
+}

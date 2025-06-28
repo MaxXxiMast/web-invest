@@ -1,0 +1,18 @@
+.Title {
+  width: 300px;
+  max-width: 70%;
+  height: 35px;
+}
+
+.container {
+  gap: 16px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+
+.ArticleCard {
+  height: 250px;
+  width: 220px;
+  flex-shrink: 0;
+}

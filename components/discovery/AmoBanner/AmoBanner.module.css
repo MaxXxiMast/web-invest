@@ -1,0 +1,87 @@
+.container * {
+  margin: 0px;
+}
+
+.container {
+  gap: 15px;
+  background: var(--gripWhite, #ffffff);
+}
+
+.LiveTagContainer {
+  gap: 9px;
+  align-items: center;
+}
+
+.LiveText {
+  color: var(--gripPrimaryGreen, #00b8b7);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.Description {
+  color: var(--gripTextMain,#373a46);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.BtnContainer {
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
+}
+
+.LiveTag {
+  background: var(--gripPrimaryGreen, #00b8b7);
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  animation-name: Pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  display: block;
+}
+
+.Btn span {
+  font-size: 12px;
+}
+
+@keyframes Pulse {
+  0% {
+    box-shadow: 0 0 0px 0px rgba(0, 184, 183, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 4px 4px rgba(0, 184, 183, 0.3);
+  }
+
+  100% {
+    box-shadow: 0 0 0px 0px rgba(0, 184, 183, 0.3);
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Description {
+    align-self: start;
+    text-align: start;
+  }
+  .container {
+    border-radius: 8px;
+    border: 1px solid var(--gripMercuryThree, #e6e6e6);
+    padding: 20px;
+    position: relative;
+    margin-top: 55px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 14px;
+  }
+}

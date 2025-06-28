@@ -1,0 +1,74 @@
+.HowItWorks {
+  background-color: var(--gripLighterOne, #e5f1ff);
+  padding: 80px 0;
+}
+.IconBoxList {
+  display: flex;
+  justify-content: space-between;
+}
+.IconContentBox {
+  max-width: 350px;
+  position: relative;
+  width: 100%;
+  margin: 0 10px;
+}
+.IconContentBox:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  top: 40px;
+  left: -120px;
+  background-image: url('https://img.gripinvest.in/innerPages/referEarn/ArrowIcon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .HowItWorks {
+    padding: 72px 0;
+  }
+  .IconBoxList {
+    justify-content: center;
+  }
+  .IconContentBox {
+    max-width: 280px;
+    margin: 0 10px;
+  }
+  .IconContentBox:not(:first-child)::before {
+    width: 120px;
+    left: -60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .HowItWorks {
+    padding: 72px 0;
+  }
+  .IconBoxList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .IconContentBox + .IconContentBox {
+    padding-top: 75px;
+  }
+  .IconContentBox:not(:first-child)::before {
+    width: 13px;
+    height: 52px;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('https://img.gripinvest.in/innerPages/referEarn/MobileArrowIcon.svg');
+  }
+
+  .HowItWorks :global(.titleSeparator) {
+    margin-top: 32px;
+    width: auto;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .ReferHowItWorks {
+    padding: 50px 0;
+  }
+  .ReferHowItWorks :global(.containerNew) {
+    padding-bottom: 0;
+  }
+}

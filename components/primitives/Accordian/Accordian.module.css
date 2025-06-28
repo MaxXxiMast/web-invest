@@ -1,0 +1,20 @@
+.title {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.ArrowIcon {
+  font-size: 22px;
+  transition: 0.1s ease-in-out;
+}
+
+.Rotate180{
+  transform: rotate(180deg);
+  transition: 0.1s ease-in-out;
+}

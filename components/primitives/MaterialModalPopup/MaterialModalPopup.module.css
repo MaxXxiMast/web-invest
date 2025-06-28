@@ -1,0 +1,100 @@
+.paper {
+  background-color: transparent !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  max-height: 100% !important;
+  padding: 30px 0;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.DrawerPaper {
+  padding: 0 !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.ModalPopupInner {
+  max-width: 600px;
+  min-height: calc(100% - 3.5rem);
+  margin: 1.75rem auto;
+  display: flex;
+  align-items: center;
+}
+
+.Card {
+  background: var(--gripWhite2);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  width: 100%;
+  position: relative;
+  padding: 24px;
+}
+
+.CloseBtn {
+  cursor: pointer;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  line-height: 0;
+  z-index: 3;
+}
+.CardHeader {
+  padding: 24px;
+  position: relative;
+}
+.CardBody {
+  padding: 24px;
+}
+.CardFooter {
+  padding: 24px;
+}
+
+.DrawerModal :global .MuiBackdrop-root,
+.ModalRoot :global .MuiBackdrop-root {
+  background: rgba(40, 44, 63, 0.4) !important;
+}
+
+.BackDropDialog {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.12) 100%
+  );
+  backdrop-filter: blur(23.65px);
+}
+
+@media screen and (max-width: 767px) {
+  .MobileCloseBtn {
+    width: 32px;
+    height: 32px;
+    background-color: var(--gripWhiteLilac, #f7f7fc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 14px;
+    top: -15px;
+    z-index: 500;
+  }
+  .Card {
+    padding: 20px;
+    max-width: 100% !important;
+  }
+  .DrawerCard .Card {
+    border-radius: 12px 12px 0 0;
+  }
+  .ModalPopupInner {
+    margin: 20px auto 0;
+    max-width: 100% !important;
+    width: 100%;
+  }
+  .DrawerCard .ModalBody {
+    max-height: calc(var(--windowHeight, 80vh) - 35px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}

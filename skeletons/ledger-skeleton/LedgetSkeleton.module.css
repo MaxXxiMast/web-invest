@@ -1,0 +1,44 @@
+.container {
+  gap: 32px;
+  margin-bottom: 166px;
+}
+.circularSkeleton {
+  border-radius: 50% !important;
+  margin-right: 15px;
+}
+.detailBox {
+  border: 1px solid var(--gripMercury2, #e8e8e8);
+  border-radius: 8px;
+  padding: 26px 17px;
+  margin-bottom: 42px;
+}
+.mb_6 {
+  margin-bottom: 6px;
+}
+.mb_30 {
+  margin-bottom: 30px;
+}
+.mr_20 {
+  margin-right: 20px;
+}
+.mb_20 {
+  margin-bottom: 20px;
+}
+.divider {
+  width: 1140px;
+  margin: 18px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.leftSide {
+  flex: 0 1 calc(100% - (359px + 30px));
+  margin-bottom: 50px;
+}
+.rightSide {
+  width: 359;
+  margin-left: auto;
+  flex-shrink: 0;
+  justify-content: flex-end;
+}
+.mobileContainer {
+  margin-top: 40px;
+}

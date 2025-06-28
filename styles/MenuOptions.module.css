@@ -1,0 +1,33 @@
+.menuWrapper > .MuiPaper-root {
+  padding: 12px;
+  width: 200;
+  background: var(--gripWhite, #ffffff);
+  box-shadow: 0px 8px 24px -4px rgba(27, 46, 94, 0.08) !important;
+  border-radius: 4px;
+}
+.selectedMenuItem {
+  text-transform: capitalize;
+  margin: 0 12px !important;
+  min-width: 216px;
+  background: var(--gripWhiteLilac, #f7f7fc) !important;
+  border-radius: 8px !important;
+  color: var(--gripBlue, #00357c) !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-weight: 400 !important;
+  height: 48px;
+  font-family: var(--fontFamily, "'Inter', sans-serif") !important;
+}
+.menuItem {
+  height: 48px;
+  margin: 0 12px !important;
+  color: var(--gripLuminousDark, #282c3f) !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  font-weight: 400 !important;
+  text-transform: capitalize;
+  background: var(--gripWhite, #ffffff);
+  border-radius: 8px !important;
+  min-width: 216px;
+  font-family: var(--fontFamily, "'Inter', sans-serif") !important;
+}

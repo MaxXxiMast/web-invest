@@ -1,0 +1,38 @@
+.MainContainer {
+  margin: 40px 0;
+}
+
+.Heading {
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--gripLuminousDark);
+}
+
+.CardDetailsContainer {
+  display: flex;
+  gap: 16px;
+}
+
+.CardImage {
+  width: 335px;
+  height: 375px;
+}
+
+@media screen and (min-width: 768px) {
+  .Heading {
+    font-size: 18px;
+    margin-bottom: 31px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Heading {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  .CardImage {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,142 @@
+.Wrapper {
+  padding: 70px 0;
+}
+.Header,
+.TabItem,
+.Radio {
+  display: flex;
+  align-items: center;
+}
+
+.Header {
+  padding: 25px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  position: relative;
+}
+.BackBtn {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.BackBtn > span {
+  margin: 0;
+}
+.Main {
+  padding: 32px 0;
+}
+
+.Tabs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+}
+.Separator {
+  width: 30px;
+  height: 1px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  margin: auto 0;
+}
+
+.TabItem {
+  gap: 8px;
+}
+
+.Label {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+  color: var(--gripHeather, #b5bdcd);
+  transition: 0.2s ease-in-out;
+}
+
+.Radio {
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--gripHeather, #b5bdcd);
+  border-radius: 50%;
+  position: relative;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+  justify-content: center;
+  color: var(--gripWhite, #ffffff);
+  flex-shrink: 0;
+}
+
+.Radio::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s ease-in-out;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+}
+
+.Radio::before {
+  content: '';
+  position: absolute;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  background: url('https://static-assets.gripinvest.in/icons/check-circle.svg');
+  background-size: 22px;
+  background-position: center;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.Active .Label,
+.Completed .Label {
+  color: var(--gripTextMain, #373a46);
+}
+
+.Active .Radio {
+  background-color: var(--gripPrimaryGreen, #00b8b7);
+  border: none;
+}
+
+.Completed .Radio {
+  background-color: transparent;
+  border: none;
+}
+
+.Active .Radio::after {
+  width: 70%;
+  height: 70%;
+  background: var(--gripWhite, #ffffff);
+}
+
+.Active .Radio::before {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.Completed .Radio::before {
+  opacity: 1;
+}
+
+.Completed .Radio::after {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Main {
+    padding: 25px 0 100px;
+  }
+  .Wrapper {
+    padding: 0;
+  }
+  .Wrapper :global .containerNew {
+    padding-bottom: 0;
+  }
+  .Header {
+    border: none;
+    padding: 18px 0px 18px 25px;
+  }
+}

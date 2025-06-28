@@ -1,0 +1,95 @@
+.Wrapper {
+  gap: 10px;
+}
+.Input {
+  padding-right: 160px;
+  height: 54px;
+}
+.InputWrapper {
+  position: relative;
+}
+
+.VerifyBtn {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  z-index: 1;
+  width: 117px;
+  height: 50px;
+  box-shadow: none !important;
+  font-weight: 800;
+  border: none !important;
+}
+
+.ClearIcon {
+  right: 130px;
+}
+
+.TagList ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.TagList:empty {
+  opacity: 0;
+  margin-top: -10px;
+  transition: 0.5s opacity ease-in-out;
+}
+.TagList:not(:empty) {
+  opacity: 1;
+  transition: 0.5s opacity ease-in-out;
+  margin: 0;
+}
+.Tag {
+  background-color: var(--gripLighterOne, #e5f1ff);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--gripBlue, #00357c);
+  border-radius: 70px;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+.StateWrapper {
+  gap: 5px;
+}
+.Label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.Loader {
+  align-items: center;
+}
+.Loader > span {
+  color: var(--gripLuminousDark, #282c3f);
+}
+.Success > span {
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+.Error > span {
+  color: var(--gripDanger, #ff5c5c);
+}
+
+.DisableBtn {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.InvalidField fieldset {
+  border-color: var(--gripDanger, #ff5c5c) !important;
+}
+
+.Icon {
+  top: 2px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .InputWrapper fieldset {
+    height: 100%;
+  }
+}

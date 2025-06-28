@@ -1,0 +1,21 @@
+.BadgeContainer {
+  display: flex;
+  align-items: center;
+  background-color: var(--gripOasis, #fdeacb);
+  color: var(--gripFieryOrange, #b45414);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  gap: 5px;
+  width: max-content;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 767px) {
+  .BadgeContainer {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}

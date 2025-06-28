@@ -1,0 +1,478 @@
+.ReferNowBannerCard {
+  position: relative;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0;
+}
+#referralCodeBox:disabled {
+  color: var(--gripLuminousDark);
+}
+.redirectionText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gripLuminousDark);
+  margin: 50px 0;
+}
+.LoginText {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+  margin-bottom: 8px;
+}
+
+.redirectionText > span {
+  cursor: pointer;
+  color: var(--gripBlue);
+}
+
+.ReferNowBannerCard::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+}
+
+.ReferNowBannerCardInner {
+  background: var(--gripWhite);
+  box-shadow: 32px 31px 84px rgba(111, 118, 138, 0.03);
+  border-radius: 12px;
+  padding: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.ReferNowBannerCardInner h3 {
+  margin-bottom: 8px;
+}
+.ReferNowBannerCardInner p a {
+  color: var(--gripBlue);
+}
+.EmailBox {
+  margin-top: 28px;
+}
+.EmailBox label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+}
+.ReferralCodeLeftInner input {
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid var(--gripLightStroke, #eaedf1);
+  background-color: var(--gripWhite, #ffffff);
+  color: var(--gripLuminousDark);
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 40px 0 20px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) 50%;
+  min-height: 52px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.EmailContainer {
+  display: flex;
+  background: var(--gripWhite);
+  border: 1px solid var(--gripLuminousGrey);
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.EmailContainer input {
+  flex: 1;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  outline: none;
+  border: none;
+  color: var(--gripLuminousDark);
+  padding: 0 0 0 20px;
+}
+.EmailContainer input::-webkit-input-placeholder {
+  color: var(--gripLuminousGreyPlace);
+}
+
+.EmailContainer input:-ms-input-placeholder {
+  color: var(--gripLuminousGreyPlace);
+}
+
+.EmailContainer input::placeholder {
+  color: var(--gripLuminousGreyPlace);
+}
+
+.EmailContainer button {
+  flex-shrink: 0;
+  background: #e4edfa;
+  border-radius: 8px;
+  width: 82px;
+  height: 56px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--gripBlue);
+  cursor: pointer;
+}
+.ReferralCode {
+  margin-top: 40px;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+}
+.ReferralCode label {
+  margin-bottom: 8px;
+  color: var(--gripLuminousDark);
+  display: block;
+  font-weight: 700;
+}
+
+.ReferralCodeContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ReferralCodeLeft {
+  width: 100%;
+  padding-right: 20px;
+  display: flex;
+}
+
+.ReferralCodeLeftInner {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+.ReferralCodeLeftInner > span {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.ReferralCodeRight {
+  flex-shrink: 0;
+  line-height: 0;
+  position: relative;
+}
+
+.ShareInvite {
+  max-width: 139px;
+  min-height: 52px;
+}
+
+.ReferralDashboardBtn {
+  margin: 0 auto;
+  margin-top: 32px;
+  padding: 0;
+  min-height: 60px;
+}
+
+.ReferralDashboardBtn > div {
+  display: none;
+}
+
+.BannerIcon {
+  position: absolute;
+  right: 20px;
+  top: -20px;
+  z-index: 9;
+  pointer-events: none;
+}
+
+.SignupSection {
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+  margin-top: 28px;
+  padding-top: 20px;
+}
+.SignupSection p {
+  color: var(--gripLuminousDark);
+}
+
+.SignupSection p a {
+  text-decoration: underline;
+  color: var(--gripBlue);
+  font-weight: 700;
+}
+
+.ShareInviteModal {
+  position: absolute;
+  width: 362px;
+  background-color: var(--gripBlue);
+  border-radius: 12px;
+  padding-top: 4px;
+  right: 0;
+  top: calc(100% + 35px);
+  z-index: 1;
+}
+
+.ShareInviteModalInner {
+  position: relative;
+  background-color: var(--gripWhite);
+}
+.ShareInviteModalInner::before {
+  content: '';
+  position: absolute;
+  right: 45px;
+  top: -10px;
+  border-top: 15px solid var(--gripBlue);
+  border-right: 15px solid transparent;
+  transform: rotate(45deg);
+}
+.ShareInviteModal .ShareInviteModalInner {
+  padding: 12px;
+  background: var(--gripWhite);
+  box-shadow: 0px 8px 36px rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+}
+.LinkShareList {
+  margin-top: 20px;
+}
+.LinkShareList ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.ShareLinkItem {
+  margin: 0 15px;
+  cursor: pointer;
+}
+.ShareLinkItem p {
+  margin: 8px 0 0;
+}
+.ShareLinkIcon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 50%;
+}
+
+.ReferralCodeRight :global(.modalBox-enter) {
+  opacity: 0;
+}
+.ReferralCodeRight :global(.modalBox-enter-active) {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.ReferralCodeRight :global(.modalBox-exit) {
+  opacity: 1;
+}
+.ReferralCodeRight :global(.modalBox-exit-active) {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.MobileShareOptions {
+  display: flex;
+  margin-top: 12px;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.ShareInviteModalMobile {
+  background: rgba(40, 44, 63, 0.4);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.ShareInviteModalMobileInner {
+  background: var(--gripWhite);
+  border-radius: 12px 12px 0px 0px;
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.ShareInviteModalMobile:global(.modalBox-enter) {
+  opacity: 0;
+}
+.ShareInviteModalMobile:global(.modalBox-enter-active) {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.ShareInviteModalMobile:global(.modalBox-enter-done)
+  .ShareInviteModalMobileInner {
+  bottom: 0;
+  transition: bottom 300ms;
+}
+.ShareInviteModalMobile:global(.modalBox-exit) {
+  opacity: 1;
+}
+.ShareInviteModalMobile:global(.modalBox-exit-active) {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.ShareInviteModalMobileInner h3 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.MobileCloseSlot {
+  width: 62px;
+  height: 4px;
+  background: var(--gripWhite);
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -15px;
+}
+.MobileCloseBtn {
+  position: absolute;
+  right: 10px;
+  top: -15px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 50%;
+}
+
+.IconButton span {
+  font-size: 20px;
+  color: var(--gripBlue, #00357c);
+}
+
+.referUnit {
+  font-size: 60px;
+  color: var(--gripBlue, #00357c);
+}
+
+@media screen and (min-width: 767px) {
+  .MobileShareOptions {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .ReferNowBannerCard {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ReferNowBannerCard {
+    padding: 0;
+  }
+  .BannerIcon {
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 9;
+    pointer-events: none;
+    margin-bottom: 15px;
+  }
+
+  .ReferNowBannerCardInner h3 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .ReferNowBannerCardInner p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .EmailBox {
+    display: block;
+  }
+  .ReferralCodeContainer {
+    flex-wrap: wrap;
+  }
+  .ReferralCodeRight {
+    display: none;
+  }
+  .ReferralCodeLeft input {
+    height: 52px;
+    font-size: 16px;
+  }
+  .ReferralCodeLeft {
+    padding-right: 0;
+  }
+  .ReferNowBannerCardInner {
+    padding: 25px 16px 35px;
+    margin: 0;
+  }
+  .ReferralDashboardBtn {
+    margin-top: 32px;
+  }
+  .ReferralCode {
+    margin-top: 29px;
+  }
+  .ReferralCode label {
+    font-weight: 800;
+    font-size: 18px;
+  }
+  .SignupSection p a {
+    display: block;
+  }
+  .SignupSection p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .redirectionText {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .EmailContainer input {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+  .EmailContainer button {
+    width: 70px;
+    height: 45px;
+    font-size: 12px;
+  }
+  .ReferralCodeLeftInner input {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ShareLinkIcon {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+  }
+  .ShareLinkItem {
+    margin: 0;
+  }
+  .LinkShareList ul {
+    gap: 20px;
+  }
+  .ReferralCodeLeftInner input {
+    min-height: 42px;
+    border-radius: 6px;
+  }
+}

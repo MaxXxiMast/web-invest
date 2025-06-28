@@ -1,0 +1,23 @@
+.radioGroup {
+  gap: 6px !important;
+  padding: 0 0 4px 4px;
+  margin-bottom: 24px;
+  fill: var(--gripTextMain, #373a46) !important;
+}
+
+.radioRoot {
+  color: var(--gripGunPowder, #44485b) !important;
+  padding: 6px !important;
+}
+
+.radioButton :global(.MuiIconButton-label) {
+  height: 20px;
+  width: 20px;
+}
+
+.radioLabel :global(.MuiTypography-body1) {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  fill: var(--gripTextMain, #373a46) !important;
+}

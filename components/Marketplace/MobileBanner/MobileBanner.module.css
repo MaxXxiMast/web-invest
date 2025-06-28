@@ -1,0 +1,17 @@
+.container {
+  background: linear-gradient(
+    180deg,
+    var(--gripWhite, #ffffff) 0%,
+    var(--gripSolitude, #e7f1fe) 100%
+  );
+  height: 200px;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--gripBlue, #00357c);
+  text-align: center;
+  width: 250px;
+}

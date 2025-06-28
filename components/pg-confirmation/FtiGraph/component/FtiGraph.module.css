@@ -1,0 +1,218 @@
+.container {
+  padding: 20px 20px 0px;
+  gap: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background: var(--gripWhite, #ffffff);
+  max-width: 750px;
+}
+.title {
+  margin: 0;
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26.244px;
+}
+
+.EvelateHeading {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0px;
+}
+
+.HighReturnHeading {
+  color: var(--gripPrimaryGreen, #00b8b7);
+  font-size: 40px;
+  font-weight: 800;
+  height: 50px;
+  margin: 0px;
+  border-bottom: 2px solid var(--gripPrimaryGreen, #00b8b7);
+}
+
+.Wrapper {
+  gap: 10px;
+  flex: 1;
+}
+
+.LeftContent {
+  width: 100%;
+  gap: 20px;
+}
+
+.Btn {
+  width: 30%;
+}
+
+.RightContent {
+  gap: 15px;
+  width: 100%;
+}
+
+.HighReturnContainer {
+  gap: 30px;
+}
+
+.graphContainer {
+  padding-left: 10px;
+}
+
+.graph {
+  justify-content: space-evenly;
+  min-height: 216px;
+  width: 100%;
+  gap: 30px;
+}
+
+.Heading {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.RightContent button span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.721px;
+}
+
+.bar {
+  padding: 20px;
+  color: var(--gripDustyGray, #9b9b9b);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+  border-radius: 5px 5px 0 0;
+  flex-shrink: 0;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: max-content;
+  min-height: max-content;
+  align-items: center;
+  gap: 15px;
+}
+
+.barLabel {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 600;
+  width: 160px;
+  line-height: 18px;
+}
+
+.barContainer {
+  flex-direction: column-reverse;
+  text-align: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.barName {
+  align-self: center;
+  max-width: 100px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24px;
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.BtnContainer,
+.HeadingContainer {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .Wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .BtnContainer {
+    margin-left: 20px;
+  }
+
+  .HeadingContainer,
+  .BtnContainer {
+    display: block;
+  }
+
+  .Heading {
+    text-align: center;
+  }
+
+  .graphContainer {
+    padding-left: 0px;
+    background-image: none;
+  }
+
+  .graph {
+    border-left: none;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 180px;
+    margin: 24px 0;
+  }
+
+  .barContainer {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .bar {
+    border-radius: 0 5px 5px 0;
+    position: relative;
+    padding: 12px 20px;
+    gap: 5px;
+  }
+
+  .barName {
+    max-width: 50px;
+  }
+
+  .bar span {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 13px;
+  }
+
+  .container {
+    padding: 20px 20px 20px 0px;
+    gap: 0;
+    margin-bottom: 80px;
+    margin-top: -40px;
+  }
+
+  .RowReverse {
+    flex-direction: row-reverse;
+  }
+
+  .barLabel {
+    width: 100px;
+  }
+
+  .RightContent,
+  .HighReturnContainer {
+    text-align: center;
+  }
+
+  .HighReturnHeading {
+    font-size: 26px;
+    height: 36px;
+    margin: 0 auto;
+  }
+
+  .EvelateHeading {
+    font-size: 16px;
+  }
+
+  .ExploreBtn {
+    display: none;
+  }
+}

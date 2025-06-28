@@ -1,0 +1,66 @@
+.Wrapper {
+  padding: 24px;
+  border-radius: 12px;
+  background-color: var(--gripWhite, #ffffff);
+  gap: 10px;
+}
+.Right {
+  margin-left: auto;
+}
+.Left {
+  gap: 20px;
+}
+
+.BookCall {
+  min-width: 132px;
+}
+
+.profileCardTitle {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+}
+
+.details {
+  gap: 5px;
+}
+
+.imageContainer img {
+  border-radius: 50%;
+  object-fit: cover !important;
+}
+
+.userNameInitials {
+  background-color: var(--gripLighterOne, #e5f1ff);
+  padding: 8px;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  border: 4px solid var(--gripWhite, #ffffff);
+  font-weight: 700;
+  z-index: 5;
+}
+
+/* MEDIA Queries Start */
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+  .Wrapper {
+    padding: 0;
+  }
+  .Right {
+    display: none;
+  }
+  .Left {
+    width: 100%;
+    gap: 10px;
+  }
+  .details {
+    width: 100%;
+  }
+}
+
+/* MEDIA Queries END */

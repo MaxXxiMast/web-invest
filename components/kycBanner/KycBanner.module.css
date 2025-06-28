@@ -1,0 +1,222 @@
+.Card {
+  background-color: var(--gripWhite, #ffffff);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.CardWrapper {
+  border-radius: 8px;
+  border: 1px solid var(--gripSdiTag, #ffecbc);
+  background: var(--gripWhite, #ffffff);
+  box-shadow: 0px 1px 3px 0px rgba(96, 108, 128, 0.05);
+  padding: 16px;
+  gap: 20px;
+}
+
+.Image {
+  display: flex;
+}
+
+.Content {
+  gap: 4px;
+  max-width: 100%;
+  flex: 1;
+}
+
+.Content .InlineText {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.Content p {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 21.606px;
+  margin: 0;
+}
+
+.Content a {
+  text-decoration: underline;
+  color: var(--gripNewBlue, #00347d);
+}
+
+.Buttons {
+  flex-shrink: 0;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.PrimaryButton {
+  height: 35px;
+  white-space: nowrap;
+  color: var(--gripWhite, #ffffff);
+  background-color: var(--gripNewBlue, #00347d);
+  border-color: var(--gripNewBlue, #00347d);
+}
+
+.PrimaryButton:hover {
+  background-color: var(--gripDarkBlue, #002366);
+}
+
+.SecondaryButton {
+  background-color: var(--gripNewWhite, #ffffff);
+  color: var(--gripNewBlue, #00347d);
+  height: 35px;
+  white-space: nowrap;
+}
+
+.PrimaryButton span,
+.SecondaryButton span {
+  font-size: 12px;
+}
+
+.SecondaryButton:hover {
+  background-color: var(--gripLighterBlue, #d9e6f2);
+}
+
+.HelpButton {
+  background-color: var(--gripWhiteLilac, #e0e0e0);
+  color: var(--gripDarkGrey, #606060);
+}
+
+.HelpButton:hover {
+  background-color: var(--gripGrey, #c0c0c0);
+}
+
+.CardBottom {
+  padding: 6px 11px;
+}
+
+.link {
+  color: var(--gripNewBlue, #00347d) !important;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 5px !important;
+}
+
+.InfoIcon {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0 !important;
+}
+
+.InfoIcon > span {
+  line-height: 0;
+}
+
+.raiseQuery {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--gripNewBlue, #00347d) !important;
+}
+
+.DesktopButton {
+  font-size: small;
+  display: flex;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.HeadingContainer {
+  gap: 8px;
+}
+
+.ToolInfoIcon {
+  color: var(--gripWhite, #ffffff);
+  font-size: 12px;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+  .CardWrapper {
+    background-image: url('https://static-assets.gripinvest.in/icons/spiral.svg');
+    background-position: 60% 70%;
+    background-size: 130%;
+  }
+  .CardBottom,
+  .Extension,
+  .InfoIcon {
+    display: none;
+  }
+  .Content {
+    margin-left: 15px;
+  }
+  .PrimaryButton {
+    padding: 0px 30px;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+  .CardWrapper {
+    background-color: var(--gripEbonyClay, #292c3e);
+    background-image: url('https://static-assets.gripinvest.in/icons/two-triangles.svg');
+    border: none;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  .Image,
+  .DesktopButton,
+  .DesktopSubTitle {
+    display: none;
+  }
+  .Content .InlineText {
+    color: var(--gripWhite, #ffffff);
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .PrimaryButton {
+    background-color: var(--gripNewWhite, #f0f4f8);
+    color: var(--gripNewBlack, black);
+    padding: 0px 20px;
+  }
+  .PrimaryButton:hover {
+    background-color: var(--gripWhite, #d9e6f2);
+  }
+  .SecondaryButton {
+    color: var(--gripWhite, #292c3e);
+    background-color: var(--gripDarkBlue, #292c3e);
+    border-color: var(--gripNewWhite, #ffffff);
+  }
+  .SecondaryButton:hover {
+    background-color: var(--gripDarkBlue, #002366);
+  }
+  .Card {
+    border: 1px solid var(--gripSdiTag, #ffecbc);
+  }
+  .Content {
+    color: var(--gripLuminousGrey, #555770);
+  }
+  .CardBottom {
+    padding: 6px 8px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .Extension {
+    display: flex;
+  }
+  .Extension p {
+    font-family: inherit;
+    font-weight: 400;
+    padding-left: 10px;
+    font-size: 11px;
+    color: var(--gripBlack, black);
+  }
+  .Extension .link {
+    color: var(--gripNewBlue, #00347d);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .PrimaryButton span,
+  .SecondaryButton span {
+    font-size: 10px;
+  }
+}

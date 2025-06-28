@@ -1,0 +1,33 @@
+.Row {
+  gap: 32px;
+}
+
+.MenuSection {
+  gap: 16px;
+}
+
+.Col {
+  gap: 60px;
+}
+
+.ColLeft {
+  width: 520px;
+  flex: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .Col {
+    flex-direction: column;
+    gap: 0;
+  }
+  .ColLeft {
+    width: 100%;
+  }
+  .MenuSection {
+    gap: 10px;
+  }
+  .Row {
+    gap: 16px;
+    padding-bottom: 20px;
+  }
+}

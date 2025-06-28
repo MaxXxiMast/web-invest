@@ -1,0 +1,201 @@
+.InvestCard {
+  border-radius: 8px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+
+.CardTopContainer {
+  padding: 14px 12px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background: var(--gripWhite, #ffffff);
+  gap: 18px;
+  flex-direction: column;
+}
+
+.Bold {
+  font-weight: 600;
+  display: inline-block;
+}
+
+.BeneficiaryBtn {
+  color: var(--gripNewBlue, #00347d);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration-line: underline;
+  background: var(--gripWhite, #ffffff);
+  border-width: 0px;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.headerLeft {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 4px;
+  max-width: 50%;
+}
+
+.headerLeftAlign {
+  align-self: center;
+}
+
+.InvestmentCardIcon {
+  flex: 1;
+  max-width: 50px;
+  height: 41px;
+}
+
+.LogoImage {
+  max-width: 108px;
+  object-position: left;
+}
+
+.numberOfLots {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 10px;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.FooterNewRight {
+  flex: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 50%;
+}
+.FooterNewRight button {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.DealBtn {
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px 0px rgba(96, 108, 128, 0.05);
+  color: var(--gripWhite, #ffffff);
+  text-align: center;
+}
+
+.PayableInvestmentValue {
+  font-weight: 600;
+  font-size: 12px !important;
+  line-height: 18px !important;
+}
+
+.InvestmentIdDateContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 12px 12px;
+  align-items: center;
+  font-size: 10px;
+  height: 35px;
+}
+
+.InvestmentId,
+.InvestmentDate {
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--gripOsloGray, #81878c);
+}
+
+.CardBottom {
+  align-items: baseline;
+}
+
+.note {
+  font-size: 12px !important;
+  line-height: 18px !important;
+  text-align: left;
+}
+
+.DealBtnAnchor {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: var(--gripBlue, #00357c);
+  width: 200px;
+  color: var(--gripWhite, #ffffff);
+  text-align: center;
+}
+
+.InfoIcon {
+  font-size: 12px;
+  color: var(--gripBlue, #00357c);
+}
+
+@media screen and (max-width: 767px) {
+  .CardBottom {
+    gap: 2px;
+  }
+  .note {
+    font-size: 11px !important;
+  }
+}
+
+@media screen and (max-width: 452px) {
+  .PayableInvestmentValue {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .PayableInvestmentValue {
+    font-size: 11px !important;
+  }
+  .InvestmentIdDateContainer {
+    font-size: 9px;
+    gap: 5px;
+  }
+  .numberOfLots {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .PayableInvestmentValue {
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .PayableInvestmentValue {
+    font-size: 9px !important;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .PayableInvestmentValue {
+    font-size: 8px !important;
+  }
+}
+
+@media screen and (max-width: 343px) {
+  .InvestmentIdDateContainer {
+    font-size: 8px;
+    gap: 5px;
+  }
+  .numberOfLots {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .FooterNewRight button {
+    height: 50%;
+    width: 80% !important;
+  }
+  .PayableInvestmentValue {
+    font-size: 6px !important;
+  }
+}

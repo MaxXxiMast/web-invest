@@ -1,0 +1,29 @@
+.BackBtn {
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+}
+.BackArrow {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.BackArrowIcon {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.ExtraImage {
+  max-height: 48px;
+  max-width: 150px;
+  width: 150px;
+  height: 48px;
+}
+
+@media screen and (max-width: 992px) {
+  .ExtraImage {
+    margin: 0 auto;
+  }
+}

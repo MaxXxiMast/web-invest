@@ -1,0 +1,75 @@
+.AssetFilter ul {
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+.AssetFilter li {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 6px 15px;
+  border: 0.5px solid var(--liveBorder);
+  border-radius: 24px;
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.AssetFilter li span {
+  position: relative;
+  z-index: 1;
+}
+
+.AssetFilter .ActiveFilter {
+  background-color: var(--liveTabBackground);
+  color: var(--gripWhite);
+  transition: 0.1s ease-in;
+  position: relative;
+}
+
+.AssetFilter .ActiveFilter::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.14);
+  left: 0;
+  top: 0;
+  animation: widthAnimate;
+  animation-timing-function: linear;
+  animation-duration: inherit;
+}
+
+.PauseAnimation::after {
+  animation-play-state: paused !important;
+}
+
+@keyframes widthAnimate {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .AssetFilter {
+    margin-bottom: 16px;
+  }
+
+  .ScrollWrapper {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .ScrollWrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}

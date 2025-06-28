@@ -1,0 +1,790 @@
+.NavigationMain {
+  padding: 14px 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: var(--gripWhite, #ffffff);
+  z-index: 99;
+  box-shadow: none;
+  transition: 0.25s padding ease-in-out;
+}
+
+.NavigationMain:global(.WhiteBg) {
+  background: var(--gripWhite, #ffffff);
+}
+
+.Sticky {
+  padding: 15px 0;
+  background: var(--gripWhite, #ffffff);
+  box-shadow: 0px 8px 8px -8px rgba(27, 46, 94, 0.08);
+  transition: 0.25s padding ease-in-out;
+}
+
+.NavigationWrapper {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+}
+
+.Logo {
+  max-width: 90px;
+  max-height: 31px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.Logo img,
+.Logo span {
+  max-width: 100%;
+}
+
+.FlexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PreLoginWidgets {
+  gap: 10px;
+}
+
+.PreLoginWidgets button {
+  min-width: 85px;
+}
+
+.PostLoginWidgets {
+  gap: 15px;
+}
+
+.Navigation {
+  margin: 0 auto;
+}
+
+.Navigation > ul {
+  gap: 40px;
+}
+
+.Navigation a,
+.NavItem a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  transition: 0.15s ease-in-out;
+}
+
+.SubMenu a {
+  padding: 10px 16px;
+  display: block;
+  background-color: var(--gripWhite, #ffffff);
+  transition: 0.25s ease-in-out;
+}
+
+.Navigation a:hover {
+  color: var(--gripBlue, #00357c);
+  transition: 0.15s ease-in-out;
+}
+
+.NavItem {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 32px;
+}
+
+.SubMenu {
+  top: 100%;
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.1);
+  background-color: var(--gripWhite, #ffffff);
+  width: 100%;
+  left: 50%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -999;
+  transform: translate(-50%, 30px);
+  transition: 0.25s transform ease-in-out, 0.1s opacity ease-in-out;
+}
+
+.SubMenu a:hover {
+  background-color: #fafafa;
+  transition: 0.25s ease-in-out;
+}
+
+.MenuToggle {
+  width: 20px;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 20px;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.MenuToggle span {
+  height: 2px;
+  background-color: var(--gripLuminousDark, #282c3f);
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  position: relative;
+  max-width: 16px;
+}
+
+.MenuToggle span:nth-child(2) {
+  max-width: 12px;
+}
+
+.MenuToggle span:nth-child(3) {
+  max-width: 8px;
+}
+
+.ToggleMenu span:nth-child(2) {
+  display: none;
+}
+
+.ToggleMenu span:nth-child(1),
+.ToggleMenu span:nth-child(3) {
+  max-width: 16px;
+}
+
+.ToggleMenu span:nth-child(1) {
+  transform: rotate(45deg);
+  bottom: -3px;
+  transition: 0.25s ease-in-out;
+}
+
+.ToggleMenu span:nth-child(3) {
+  transform: rotate(-45deg);
+  bottom: 3px;
+  transition: 0.25s ease-in-out;
+}
+
+.UserProfile .SubMenu li:last-child a[title='Logout'] {
+  color: var(--gripDanger, #ff5c5c) !important;
+}
+
+.UserProfile .NavItemContent > a {
+  display: none !important;
+}
+
+.ProfilePic {
+  background-color: var(--gripLighterOne, #e5f1ff);
+  border-radius: 50%;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  color: var(--gripBlue, #00357c);
+  display: flex;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.ProfilePic img {
+  object-fit: cover !important;
+}
+
+.Wallet {
+  line-height: 0;
+  cursor: pointer;
+}
+
+.UserProfileWidget {
+  gap: 4px;
+}
+
+.NavCaret {
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+  max-width: 20px;
+  font-size: 10px;
+  line-height: 0;
+}
+
+.NavRightWidget {
+  justify-content: flex-end;
+  margin-left: 32px;
+}
+
+.LogoWrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.LogoWrapper + .NavRightWidget {
+  margin-left: auto;
+}
+
+.NavItemContent {
+  gap: 4px;
+}
+
+.RouteText {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.04em;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.NotificationBell,
+.Notification {
+  position: relative;
+}
+
+.NotificationBell {
+  line-height: 0;
+  cursor: pointer;
+}
+
+.Bell {
+  font-size: 24px;
+  color: var(--gripBlue, #00357c);
+}
+
+.NotifyAlert {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  background-color: var(--gripDanger, #ff5c5c);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--gripWhite, #ffffff);
+}
+
+.NotificationBottom {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  place-items: center;
+  padding: 16px 12px;
+}
+
+.NotificationBottomTitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: var(--gripBlue, #00357c);
+  margin: 0;
+}
+
+.thats_all_text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.NoNotificationDiv {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+  min-height: 150px;
+}
+
+.NoNotificationDiv > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+}
+
+.iconContainer {
+  height: 24px;
+  width: 24px;
+}
+
+.NotificationWrapper {
+  overflow: hidden;
+  position: absolute;
+  top: 48px;
+  right: -60px;
+  min-width: 320px;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  background: var(--gripWhite, #ffffff);
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  max-height: 650px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.Sticky .NotificationWrapper {
+  top: 46px;
+}
+
+.NotificationWrapper :global(#notification-container) {
+  max-height: calc(100vh - 200px);
+}
+
+.NotificationHeader {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+}
+
+.NotificationTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+}
+
+.NavigationLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 32px 0;
+  gap: 16px;
+}
+
+.NavigationLogin p {
+  margin: 0;
+}
+
+.BlogLogo {
+  max-width: 140px;
+  max-height: 50px;
+}
+
+.NavCaretRight {
+  transform: rotate(-90deg);
+}
+
+.newBadgeDiv {
+  gap: 5px;
+}
+
+.newBadge {
+  background-color: var(--palePeach, #ffebad);
+  width: 38px;
+  height: 16px;
+  font-weight: 600;
+  font-size: 9px;
+  color: var(--gripBlue, #00357c);
+  border-radius: 20px;
+  padding: 1.86px 3.71px;
+}
+
+.NavigationMain:global(.gciHeader) .LogoWrapper {
+  min-width: unset;
+}
+
+.NavigationMain:global(.gciHeader) .NavigationWrapper {
+  justify-content: center;
+}
+
+.NavigationMain:global(.gciHeader) .NavRightWidget {
+  display: none;
+}
+
+.NavigationMain:global(.gciHeader) .MenuToggle {
+  display: none;
+}
+
+.NavItem::before {
+  display: none;
+}
+
+/* Megamenu CSS starts here*/
+.MegaSubMenu::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  top: 100%;
+  left: 0;
+  background: transparent;
+}
+
+.Sticky .MegaMenu {
+  top: calc(var(--headerHeight, 60px) - 4px);
+}
+
+.Sticky .MegaSubMenu::after {
+  top: calc(var(--headerHeight, 60px) - 4px);
+}
+
+.MegaMenuWrapper {
+  max-height: calc(100vh - var(--headerHeight, 60px));
+  padding: 24px;
+  box-shadow: 0px 10px 15px rgba(129, 135, 140, 0.07);
+  border-radius: 8px;
+  background: var(--gripWhite, #ffffff);
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.MenuContainer {
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+.FooterBanner {
+  border-radius: 12px;
+}
+
+.NavigationMain :global .swiper-pagination-bullets {
+  display: none !important;
+}
+
+.AppIconMarketplace {
+  width: 32px;
+  height: 32px;
+  border-radius: 52px;
+  padding: 5px;
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+}
+
+.AppIcon {
+  width: 62px;
+  height: 32px;
+  border-radius: 27px;
+  padding-right: 10px;
+  padding-left: 8px;
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+}
+
+.AppIconText {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--gripWealthText, #696b74);
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 992px) {
+  .MenuToggle,
+  .Wallet,
+  .RouteText,
+  .HideInDesktop,
+  .NavigationLogin {
+    display: none !important;
+  }
+
+  .NavigationMain {
+    border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  }
+
+  .SubMenu {
+    max-width: 240px;
+    min-width: 240px;
+    position: absolute;
+  }
+
+  .Logo + .Navigation {
+    padding-left: 90px;
+  }
+
+  .NavRightWidget,
+  .LogoWrapper {
+    min-width: 110px;
+  }
+
+  .NavItem:hover .SubMenu {
+    opacity: 1;
+    z-index: 9;
+    visibility: visible;
+    transform: translate(-50%, 20px);
+    transition: 0.25s transform ease-in-out, 0.1s opacity ease-in-out;
+  }
+
+  .Sticky .NavItem:hover .SubMenu {
+    transform: translate(-50%, 18px);
+  }
+
+  .SubMenu a {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .PreLoginWidgets button {
+    padding: 0;
+  }
+
+  .NavCaret {
+    position: relative;
+    top: 2px;
+  }
+
+  .NavItem:hover .NavCaret {
+    transform: rotate(180deg) !important;
+    transition: 0.25s ease-in-out;
+  }
+
+  .MegaSubMenu::after {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - var(--headerHeight, 60px));
+    top: var(--headerHeight, 60px);
+    left: 0;
+    background: rgba(40, 44, 63, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -111;
+    pointer-events: none;
+    margin-top: 1px;
+    transition: opacity 0.2s ease-out, visibility 0s linear 0.3s;
+  }
+
+  .MegaSubMenu:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.1s opacity ease-out, 0.1s visibility ease-out;
+  }
+
+  .MegaMenu {
+    position: fixed;
+    width: auto;
+    transform: translateX(-50%) translateY(10px);
+    left: 50%;
+    top: var(--headerHeight, 60px);
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .NavItem:hover .MegaMenu {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    /* Move into place */
+    pointer-events: auto;
+    border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+  }
+
+  /* MEGA MENU WIDTH */
+  .MegaMenuWrapper {
+    transform: translateY(20px);
+    opacity: 0;
+    max-width: 904px;
+    margin: 0 auto;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    transition-delay: 0s;
+  }
+
+  .NavItem:hover .MegaMenuWrapper,
+  .MegaMenu:hover .MegaMenuWrapper {
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 0s;
+  }
+
+  .NavItem:hover .MegaSubMenu::after,
+  .MegaMenu:hover + .MegaSubMenu::after {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.2s ease-out, visibility 0s linear 0s;
+  }
+
+  .MegaMenu::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top: -20px;
+    left: 0;
+  }
+
+  .BlogMenuWrapper {
+    max-width: 995px;
+    min-width: 995px;
+  }
+
+  .NavItemActive a {
+    color: var(--gripBlue, #00357c);
+  }
+
+  .NavItemActive::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    bottom: -19px;
+    background: var(--gripBlue, #00357c);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .NavigationMain :global(.containerNew) {
+    padding: 0 20px;
+  }
+
+  .Logo,
+  .NavRightWidget {
+    position: relative;
+    z-index: 2;
+  }
+
+  .NavRightWidget {
+    margin-left: auto;
+  }
+
+  .Navigation {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--gripWhite, #ffffff);
+    top: 0;
+    left: 0;
+    padding: 80px 20px 20px;
+    align-items: flex-start;
+    display: none;
+  }
+
+  .ShowNavigation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ShowNavigation > * {
+    width: 100%;
+  }
+
+  .NavigationMain {
+    z-index: 999;
+    padding: 8px 0;
+    transition: top 0s ease-in-out !important;
+  }
+
+  .hideInTop,
+  .NavigationMain:global(.hideToTop) {
+    top: -60px !important;
+    transition: 0s top ease-in-out !important;
+  }
+
+  .Navigation > ul {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    grid-gap: 0;
+    gap: 0;
+    height: 100%;
+    justify-content: flex-start;
+    overflow-y: auto;
+    flex: 1;
+    overflow-x: hidden;
+  }
+
+  .Sticky {
+    padding: 8px 0;
+  }
+
+  .SubMenu {
+    display: none;
+  }
+
+  .NavItem {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .Navigation > ul > li {
+    border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  }
+
+  .NavItem a {
+    width: 100%;
+    font-weight: 600;
+  }
+
+  .NavItemContent div > a {
+    padding: 16px 0;
+  }
+
+  .NavItem .NavItemContent > a {
+    padding: 16px 0;
+  }
+
+  .UserProfile {
+    display: none !important;
+  }
+
+  .ShowSubMenu {
+    display: block;
+    top: 0;
+    width: 100%;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    transform: none;
+    z-index: 1;
+  }
+
+  .NavItemContent {
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .ToggleDropdownMenu {
+    transform: rotate(180deg) !important;
+    transition: 0.25s ease-in-out;
+  }
+
+  .SubMenu > ul {
+    padding-bottom: 16px;
+  }
+
+  .HideInMobile {
+    display: none !important;
+  }
+
+  .ProfilePic {
+    width: 25px;
+    height: 25px;
+  }
+
+  .MegaMenu {
+    position: static;
+    display: none;
+  }
+
+  .MegaMenu.ShowSubMenu {
+    display: block;
+  }
+
+  .MegaMenuWrapper {
+    padding: 0;
+    max-height: unset;
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .BlogLogo {
+    max-width: 110px;
+  }
+}
+
+/* Megamenu CSS ends here*/

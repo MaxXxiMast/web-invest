@@ -1,0 +1,51 @@
+.moreInfoPopup {
+  padding: 0 !important;
+  width: 460px !important;
+}
+
+.heading {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  padding: 24px 24px 0;
+}
+
+.dealInfo {
+  background: var(--gripWhiteLilac, #f7f7fc);
+  padding: 16px 14px;
+  border-radius: 12px;
+  margin: 12px 24px;
+  height: 80px;
+}
+
+.dealInfo p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: right;
+  color: var(--gripWealthText, #696b74);
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.okButton {
+  padding: 12px 24px;
+}
+
+.okButton span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .dealInfo {
+    margin: 8px 18px;
+  }
+}

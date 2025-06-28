@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 4px;
+  height: 100%;
+  padding: 0 16px;
+  min-width: 90px;
+}
+
+.name,
+.nameActive {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripLuminousGrey, #555770);
+  transition: color 0.3s ease-out;
+}
+
+.nameActive {
+  color: var(--gripBlue, #00357c);
+}
+
+.count,
+.countActive {
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 16px;
+  color: #696b74;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--gripCream, #e8edf6);
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+.countActive {
+  background-color: var(--gripBlue, #00357c);
+  color: var(--gripWhite, #ffffff);
+}
+
+.bottomLine {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--gripBlue);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.active {
+  transform: translateY(0);
+  opacity: 1;
+}

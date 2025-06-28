@@ -1,0 +1,14 @@
+.Note {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.Note > span {
+  vertical-align: middle;
+  flex-shrink: 0;
+}

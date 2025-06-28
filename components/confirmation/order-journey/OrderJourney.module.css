@@ -1,0 +1,259 @@
+.Wrapper {
+  text-align: start;
+  width: 100%;
+}
+
+.VerticalStepper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background: var(--gripWhite, #ffffff);
+}
+
+.StepIndicator {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background-color: var(--gripWhite, #ffffff);
+}
+
+.StepIcon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.StepContent {
+  margin-left: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  align-items: center;
+}
+
+.StepContentTitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0px;
+}
+
+.pendingTitle {
+  opacity: 0.5;
+}
+
+.StepContentSubTitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--gripLuminousGrey, #555770);
+  margin-bottom: 0px;
+  margin-top: 2px;
+}
+
+.amoSubtitle {
+  line-height: 24px !important;
+}
+
+.waSwitchTitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.waStatus {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-left: 8px;
+  padding: 2px 4px;
+  white-space: nowrap;
+  color: var(--gripPrimaryGreen, #00b8b7);
+  background-color: rgba(0, 184, 183, 0.1);
+  border-radius: 5px;
+}
+
+.StepperLine {
+  flex-grow: 1;
+  width: 10px;
+  border-right: 1px dashed var(--gripWhiteLilac, #f7f7fc);
+}
+
+.RowStepper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.OrderJourneyContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  flex: 3;
+  margin-right: 40px;
+}
+
+.OrderJourneyHeader {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.OrderTitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  flex: 1;
+  color: var(--gripLuminousDark, #555770);
+}
+
+.OrderWorks {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--gripBlue, #00357c);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Playbtn {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.orderStatusIcon {
+  width: 20px;
+}
+
+.VideoContainer {
+  max-width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 774px;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.ModalCLose {
+  margin-left: 24px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.VideoModal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+  left: 0;
+  background: rgba(40, 44, 63, 0.4);
+}
+
+.VideoModal:global(.VideoModal-enter) {
+  opacity: 0;
+}
+
+.VideoModal:global(.VideoModal-enter-active) {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.VideoModal:global(.VideoModal-exit) {
+  opacity: 1;
+}
+
+.VideoModal:global(.VideoModal-exit-active) {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.PayNowBtn {
+  border-radius: 10px;
+}
+
+.Instructions {
+  padding-left: 18px;
+}
+
+.PayTitle {
+  color: var(--gripLuminousDark, #282c3f) !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 24px !important;
+}
+
+.rtgsList {
+  width: 100%;
+  gap: 10px;
+  margin: 8px 0px;
+}
+
+.rtgsLabel {
+  text-align: left;
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.rtgsValue {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .VerticalStepper {
+    border: 0;
+    padding: 20px 0px 0px;
+  }
+
+  .PayNowBtn {
+    margin-left: 0px;
+    margin-top: 16px;
+  }
+
+  .StepContentSubTitle {
+    line-height: 20px;
+  }
+
+  .waStatus {
+    display: none;
+  }
+
+  .OrderJourneyContainer {
+    margin-right: 0px;
+  }
+
+  .StepContent {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Drawer {
+    bottom: 0% !important;
+  }
+}
+@media screen and (min-width: 766px) {
+  .bottomSwitch {
+    display: none;
+  }
+  .awarenessContainer {
+    display: none;
+  }
+}

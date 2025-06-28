@@ -1,0 +1,65 @@
+.circularProgressContainer {
+  position: relative;
+  background: var(--gripWhite, #ffffff);
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.circularProgressDeterminate {
+  color: var(--gripLighterOne, #e5f1ff) !important;
+}
+
+.circularProgressInDeterminate {
+  position: absolute;
+  color: var(--gripBlue, #00357c) !important;
+  left: 50%;
+  margin-left: -31.5px;
+}
+
+.circularProgressInDeterminateCircle {
+  stroke-linecap: round;
+  stroke-dasharray: 30px, 200px !important;
+}
+
+.mainHeadingText {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subHeadingText {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+}
+
+.redirectURL {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.redirectURL > span {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+/* Media Queries Start */
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .PopupInner {
+    max-width: 441px !important;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .PopupInner {
+    bottom: 0px !important;
+  }
+}

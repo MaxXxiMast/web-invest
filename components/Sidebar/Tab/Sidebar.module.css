@@ -1,0 +1,40 @@
+.container,
+.containerActive {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border: none;
+  background-color: var(--gripWhite, #ffffff);
+}
+
+.containerActive {
+  background-color: var(--gripLighterOne, #e5f1ff);
+}
+
+.container:disabled,
+.containerActive:disabled {
+  cursor: not-allowed;
+  filter: grayscale(1);
+}
+
+.name,
+.nameActive {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGreyPlace, #777777);
+  transition: color 0.3s ease-in-out;
+}
+
+.nameActive {
+  color: var(--gripBlue, #00357c);
+}
+
+.count {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripBlue, #00357c);
+}

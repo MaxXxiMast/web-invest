@@ -1,0 +1,66 @@
+.note {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+  width: 100%;
+}
+
+.note ul {
+  list-style-type: disc;
+  padding-left: 15px;
+  text-align: left;
+}
+
+.noteText {
+  text-align: center;
+  width: 100%;
+}
+
+/* Everything, apart from mobile */
+@media screen and (min-width: 993px) {
+  .VisualReturnModalPopup :global(.Card) {
+    padding: 0;
+  }
+
+  .noteContainer {
+    margin-top: 42px;
+    max-width: 344px;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  .SDISecondaryNotes {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .noteContainer {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .BondsVisualReturns :global(.CloseBtn) {
+    top: 35px;
+  }
+}
+
+/* B/W Mobile and IPAD */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .noteContainer {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+}
+
+/* Less Than IPAD */
+@media screen and (max-width: 992px) {
+  .VisualReturnsDrawer {
+    padding: 0;
+  }
+}

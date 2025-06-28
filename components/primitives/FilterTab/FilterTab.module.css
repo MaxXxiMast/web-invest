@@ -1,0 +1,27 @@
+.PortfolioTabs {
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  position: relative;
+  z-index: 8;
+}
+
+.PortfolioTabs .PortfolioTabsInner ul {
+  display: flex;
+}
+
+.PortfolioTabs .PortfolioTabsInner li {
+  padding: 7px 10px;
+  color: var(--gripLuminousGreyPlace, #777777);
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  margin-bottom: -1px;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.PortfolioTabs .Active {
+  color: var(--gripBlue, #00357c) !important;
+  font-weight: 500;
+  border-color: var(--gripBlue, #00357c) !important;
+  transition: 0.3s ease-in-out !important;
+}

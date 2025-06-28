@@ -1,0 +1,277 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainClass {
+  padding: 0px !important;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.title {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0px;
+  flex: 1;
+}
+
+.closeIcon {
+  margin-left: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.switchContainer {
+  display: flex;
+  align-items: end;
+}
+
+.tab {
+  display: flex;
+  border-radius: 8px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  text-align: center;
+  padding: 2px;
+  margin: 0px 20px;
+  gap: 6px;
+}
+
+.tabItem {
+  flex: 1;
+  padding: 10px 0px;
+  cursor: pointer;
+  color: var(--gripGunPowder, #44485b);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  border: none;
+  background: none;
+}
+
+.activeTab {
+  border-radius: 8px;
+  border: 0.5px solid var(--gripMercuryThree, #e6e6e6);
+  background: var(--gripWhite, #ffffff);
+  box-shadow: 0px 4px 12px 0px rgba(44, 46, 57, 0.06);
+  color: var(--gripBlue, #00357c);
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: auto;
+  height: 300px;
+  margin-top: 10px;
+}
+
+.header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+}
+
+.row,
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.headerItem {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 16px;
+  padding: 0 5px;
+  background-color: var(--gripWhite, #ffffff);
+}
+
+.downloadLink {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripBlue, #00357c);
+  cursor: pointer;
+  margin-right: 50px;
+  position: relative;
+}
+.rowItem {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 0 5px;
+  border-bottom: 1px dashed var(--gripLightStroke, #eaedf1);
+}
+
+.headerItem,
+.rowItem {
+  min-width: 80px;
+  flex: 1;
+  padding: 8px;
+}
+
+.row:first-child .rowItem {
+  border-top: 1px dashed var(--gripLightStroke, #eaedf1);
+}
+
+.row .rowItem:first-child,
+.header .headerItem:first-child {
+  padding-left: 28px;
+}
+
+.row .rowItem:last-child,
+.header .headerItem:last-child {
+  padding-right: 28px;
+}
+
+.table::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  display: block;
+}
+
+/* Handle */
+.table::-webkit-scrollbar-thumb {
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+.table::-webkit-scrollbar-thumb:hover {
+  background: var(--greyCloud, #b5b5b5);
+}
+
+.note {
+  color: var(--gripTextMain, #373a46);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: var(--gripEarlyDawn, #fff8ea);
+  padding: 8px 20px;
+  margin: 0px;
+}
+
+.additionalInfo {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.info {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.bottomBtn {
+  margin: 0 auto 20px;
+  max-width: 200px;
+}
+
+.skeleton {
+  margin: 20px 0;
+}
+
+.buy {
+  color: var(--gripElfGreen, #0a8b65);
+}
+
+.sell {
+  color: var(--deepCarminePink, #ef3c3c) !important;
+}
+
+.DownloadSchedulePopup {
+  position: absolute;
+  background: var(--gripWhite, #ffffff);
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 4px;
+  min-width: 120px;
+  z-index: 1;
+  top: 120%;
+}
+
+.DownloadSchedulePopupIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.DownloadSchedulePopupText {
+  font-weight: 400;
+  color: var(--gripLuminousDark);
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.DownloadSchedulePopupItemContainer {
+  align-items: center;
+  cursor: pointer;
+  padding: 8px;
+  gap: 10px;
+}
+
+.DownloadSchedulePopupItemContainer:hover {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+}
+
+.completed {
+  background-color: var(--gripOffGreen, #e5f8f8);
+}
+
+.scheduled {
+  background-color: var(--gripEarlyDawn, #fff8ea);
+}
+
+@media screen and (max-width: 767px) {
+  .headerItem,
+  .rowItem {
+    min-width: 95px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .closeIcon {
+    display: none;
+  }
+
+  /* Handle */
+  .table::-webkit-scrollbar-thumb {
+    height: 4px !important;
+    background: var(--greyCloud, #b5b5b5);
+    border-radius: 4px;
+  }
+
+  /* Handle on hover */
+  .table::-webkit-scrollbar-thumb:hover {
+    height: 4px !important;
+    background: var(--gripEmperor, #555555);
+  }
+
+  .downloadLink {
+    margin-right: 30px;
+  }
+  .DownloadSchedulePopup {
+    top: 0%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .tabItem {
+    font-size: 10px;
+  }
+}

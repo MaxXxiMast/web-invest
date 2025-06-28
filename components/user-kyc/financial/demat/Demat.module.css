@@ -1,0 +1,133 @@
+.SubHeading {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.FindCMRContainer {
+  position: unset !important;
+  width: 335px !important;
+  max-width: 100%;
+}
+
+.FindCMRHeading {
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.FindCMRSubHeading {
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.FindCMRBrokerList {
+  margin-top: 16px !important;
+}
+
+.MainContainer {
+  gap: 8px;
+}
+
+.CMRNote {
+  color: var(--gripBlue, #00357c);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration-line: underline;
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+.FetchModal :global(.Card) {
+  padding: 32px;
+}
+
+.FetchModal :global(h3) {
+  margin-top: 16px;
+}
+
+.FormWrapper {
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.FormNote {
+  display: flex;
+  gap: 6px;
+}
+
+.StepTitleHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.EditText {
+  color: var(--gripBlue, #00357c);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  margin: 0px;
+}
+
+.EditBtn {
+  display: flex;
+  text-align: center;
+  gap: 6px;
+  background-color: var(--gripWhite, #ffffff);
+  border: none;
+  cursor: pointer;
+}
+
+/* Media Queries Start */
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .MainContainer {
+    max-width: 335px;
+  }
+
+  .FormNote {
+    margin-top: 22px;
+    align-items: center;
+  }
+
+  .InputFieldSet {
+    height: 48px !important;
+  }
+
+  .FindCMRContainer {
+    height: fit-content !important;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Wrapper {
+    flex-direction: column;
+    padding-top: 32px;
+    gap: 25px;
+  }
+
+  .Drawer {
+    padding: 20px;
+  }
+
+  .FormNote {
+    align-items: baseline;
+    position: fixed;
+    bottom: 89px;
+    width: calc(100% - 40px);
+  }
+
+  .FindCMRContainer {
+    margin-top: 0 !important;
+    width: 100% !important;
+  }
+
+  .UploadNote {
+    margin-top: 4px;
+  }
+}
+
+/* Media Queries End */

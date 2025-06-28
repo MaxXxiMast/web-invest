@@ -1,0 +1,44 @@
+.PastDealsContent {
+  width: 420px !important;
+  z-index: 1;
+  background: var(--gripWhite);
+  border-radius: 12px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.cardDescription {
+  padding: 10px 18px;
+}
+
+.header {
+  padding: 10px 0px;
+  margin: 0px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  border-bottom: 1px solid var(--gripGallerySolid, #efefef);
+}
+
+.accent {
+  color: var(--gripAccentGreen, #00bbb7);
+}
+
+.description {
+  padding: 10px 0px 18px 0;
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--gripWealthText, #696b74);
+}
+
+.bottomBgColor {
+  padding: 0px 18px 16px;
+  background-color: var(--gripPastCardBg, #f1f6ff);
+  border-radius: 0 0 12px 12px;
+}
+
+.bottomBgColor p {
+  padding: 18px 0;
+}

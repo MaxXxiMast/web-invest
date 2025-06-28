@@ -1,0 +1,94 @@
+/* Media Queries */
+
+.supportContainer {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 10px;
+  width: 315px;
+  background: var(--gripWhite, #ffffff);
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.supportButton {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.supportButton img {
+  width: 20px;
+  height: 20px;
+}
+
+.supportButtonTitle {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.buttonContainer {
+  width: 100%;
+}
+
+.buttonContainer > a {
+  width: 100%;
+}
+
+.supportWrap {
+  align-items: center;
+  width: 100%;
+}
+
+.caret {
+  margin-left: auto;
+}
+
+.CaretIcon {
+  font-size: 14px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+/* Desktop only */
+@media screen and (min-width: 768px) {
+  .supportWrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    margin-top: 20px;
+    min-height: 80px;
+  }
+
+  .supportButtonTitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .supportWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .supportButton {
+    width: 100%;
+    height: 60px;
+  }
+
+  .supportButtonTitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .supportContainer {
+    width: 100%;
+  }
+}

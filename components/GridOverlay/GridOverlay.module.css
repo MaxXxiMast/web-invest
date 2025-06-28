@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.background {
+  position: relative;
+  height: 100%;
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.horizontalLine {
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid rgba(181, 181, 181, 0.075);
+}
+
+.verticalLine {
+  position: absolute;
+  height: 100%;
+  border-right: 1px solid rgba(181, 181, 181, 0.075);
+}

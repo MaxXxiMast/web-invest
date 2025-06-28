@@ -1,0 +1,58 @@
+.MonthlyReturnCardMain {
+  z-index: 92;
+  top: 65px;
+}
+
+.MonthlyReturnCardMain * {
+  transition: none;
+}
+
+.MonthlyReturnCardInner {
+  padding: 12px;
+  position: relative;
+  border-radius: 12px;
+}
+
+.MonthlyReturnCardMain:global(.modalBox-enter) {
+  opacity: 0;
+}
+.MonthlyReturnCardMain:global(.modalBox-enter-active) {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.MonthlyReturnCardMain:global(.modalBox-enter-done) .MonthlyReturnCardInner {
+  bottom: 0;
+  transition: 300ms;
+}
+.MonthlyReturnCardMain:global(.modalBox-exit) {
+  opacity: 1;
+}
+.MonthlyReturnCardMain:global(.modalBox-exit-active) {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+@media screen and (max-width: 767px) {
+  .hideMobileModal {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .MobileModal {
+    display: none;
+  }
+  .MonthlyReturnCardInner::after {
+    content: '';
+  }
+  .MonthlyReturnCardMain {
+    position: sticky;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .MonthlyReturnCardInner {
+    padding: 0;
+    width: 100%;
+  }
+}

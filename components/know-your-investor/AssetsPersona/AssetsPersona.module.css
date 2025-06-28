@@ -1,0 +1,101 @@
+.dealsSectionTitle {
+  color: rgba(0, 0, 0, 0.72);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.exploreMoreCard {
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--gripWhite, #ffffff);
+  margin-top: 10px;
+  border: 1px solid var(--gripGreyExtra, #f1f3f6);
+  gap: 10px;
+  background-image: url('https://s3.ap-south-1.amazonaws.com/gripinvest.in/asset-details-content/emptyBlocks.svg');
+}
+
+.exploreMoreTop {
+  color: var(--gripTextMain, #373a46);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  justify-content: space-between;
+}
+
+.exploreMoreTop span {
+  max-width: 150px;
+}
+
+.dealCardShadow::after {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  content: '';
+  position: absolute;
+  height: 90px;
+  width: 100%;
+  bottom: 0px;
+  z-index: 2;
+  left: 0;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .dealCard {
+    display: flex;
+    gap: 10px;
+    overflow: scroll;
+    width: calc(100% + 20px);
+    padding-bottom: 14px;
+  }
+
+  .dealsSectionTitle {
+    margin-bottom: 8px;
+  }
+
+  .exploreMoreCard {
+    min-width: 300px;
+    margin-right: 20px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .dealsSection {
+    padding: 0 12px;
+    border-radius: 12px;
+    background: var(--gripWhite, #ffffff);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .dealsSectionTitle {
+    justify-content: center;
+    position: sticky;
+    background: var(--gripWhite, #ffffff);
+    z-index: 10;
+    top: 0;
+    padding: 12px 0;
+  }
+
+  .dealCard {
+    overflow-y: auto;
+    height: 100%;
+    max-height: 400px;
+  }
+
+  .extraDealCard {
+    padding-bottom: 75px;
+  }
+
+  .exploreMoreCard {
+    max-width: 300px;
+  }
+
+  .specialPadding {
+    padding-bottom: 12px;
+  }
+}

@@ -1,0 +1,54 @@
+.kycTitle {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.kycSub {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.actionContainer {
+  margin-top: 48px;
+}
+
+.kycActionContainer {
+  justify-content: center;
+}
+
+.kycButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  width: 168px;
+  height: 52px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* MEDIA Queries Start */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .actionContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .kycActionContainer {
+    margin-top: 32px;
+  }
+}

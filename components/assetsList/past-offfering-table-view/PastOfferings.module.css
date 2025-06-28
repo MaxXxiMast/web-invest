@@ -1,0 +1,167 @@
+.BondsRatingText {
+  background: linear-gradient(
+    90deg,
+    rgb(0, 184, 183, 1) 0%,
+    rgb(0, 53, 124, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.PartnerNameText {
+  text-align: left;
+}
+
+.partnerLogo {
+  object-position: left;
+}
+
+.PastOfferings {
+  display: flex;
+}
+
+.PastOfferingsRight {
+  width: 100%;
+}
+
+.CustomTable th {
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  padding-top: 0;
+  white-space: pre;
+  padding-right: 15px;
+}
+.CustomTable td {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.CustomTable th,
+.CustomTable td {
+  text-align: center !important;
+  min-width: 100px;
+  padding-right: 0px;
+}
+
+.CustomTable th:first-child,
+.CustomTable td:first-child {
+  text-align: left !important;
+}
+
+.InfoIcon {
+  max-width: 12px;
+  max-height: 12px;
+  vertical-align: middle;
+}
+
+.InfoIcon span {
+  min-width: 12px;
+  line-height: 0;
+}
+
+.SortingIconContainer {
+  vertical-align: middle;
+  line-height: 0;
+  cursor: pointer;
+  margin-left: 3px;
+  margin-right: 5px;
+}
+.FlameIconContainer {
+  vertical-align: middle;
+  margin-left: 3px;
+  line-height: 0;
+}
+
+.FilterTab {
+  margin: 12px 0 !important;
+}
+
+.Icon {
+  color: var(--gripBlue, #00357c);
+  font-weight: 700;
+}
+
+.FlameIcon {
+  color: var(--gripLightSecondarySix, #02c988);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.SortingIcon {
+  font-size: 15px;
+  color: var(--greyCloud, #b5b5b5);
+}
+
+@media screen and (min-width: 768px) {
+  .CustomTable td:first-child {
+    width: 153px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .TableWrapper {
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tableHeaderSingleCell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .PastOfferings {
+    flex-direction: column;
+    margin: 0 -20px;
+  }
+  .PastOfferingsRight {
+    width: 100%;
+  }
+  .NoDataPlaceholder {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .NoDataPlaceholder :global(.placeholderTitle) {
+    margin: 0 0 0 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .CustomTable th,
+  .CustomTable td {
+    padding: 16px 12px;
+    min-width: 104px;
+    font-size: 10px;
+    white-space: normal;
+    height: 62px;
+  }
+  .CustomTable th {
+    color: var(--gripLuminousGreyPlace);
+    font-weight: 600;
+    font-size: 10px;
+    background-color: var(--gripWhiteLilac, #f7f7fc);
+    padding: 0 12px;
+  }
+  .CustomTable td {
+    font-size: 12px;
+    line-height: 20px;
+    background-color: var(--gripWhite, #ffffff);
+  }
+  .CustomTable th:first-child,
+  .CustomTable td:first-child {
+    border-right: 1px solid var(--gripMercuryThree, #e6e6e6);
+    box-shadow: 4px 0px 4px 0px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    left: 0;
+    min-width: 100px;
+  }
+  .FilterTab {
+    display: none;
+  }
+}

@@ -1,0 +1,59 @@
+.Header {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.ExpiryDate {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px; /* 200% */
+}
+
+.OrderDetailsContainer {
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--gripWhiteLilac, #f7f7fc);
+}
+
+.PaymentTabContainer {
+  padding-top: 18px;
+}
+
+.PopupCardContainer {
+  padding: 15px 20px;
+}
+
+.skeletonContainer {
+  gap: 20px;
+}
+
+.tagsSkeleton {
+  gap: 12px;
+}
+
+.PartnerName {
+  font-size: 12px;
+}
+
+/* Media Queries */
+
+/* For Desktop */
+@media screen and (min-width: 768px) {
+  .PopupContainerDesktop {
+    max-width: 471px !important;
+  }
+}
+
+/* For Mobile */
+@media screen and (max-width: 767px) {
+  .PopupContainerMobile {
+    bottom: 0 !important;
+  }
+
+  .PaymentTabWrapper {
+    min-height: auto !important;
+    padding-bottom: 60px;
+  }
+}

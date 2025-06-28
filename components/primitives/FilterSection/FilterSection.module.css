@@ -1,0 +1,38 @@
+.filterSection {
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.filterSection:first-of-type {
+  margin-top: 30px;
+}
+
+.filterLabel {
+  color: var(--gripTextMain, #373a46);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.filterButton {
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  cursor: pointer;
+  border-radius: 6px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  color: var(--gripLuminousDark, #282c3f);
+  padding: 8px;
+  gap: 10px;
+}
+
+.filterButton > span {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.active {
+  background: var(--gripGunPowder, #44485b);
+  color: var(--gripWhite, #ffffff);
+}
+
+.filterCompare {
+  min-width: 60px;
+}

@@ -1,0 +1,148 @@
+.checkoutHeading {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.LeftSection {
+  width: 100%;
+  gap: 20px;
+}
+
+.RightSection {
+  width: 100%;
+}
+
+.AccountInfo {
+  border-radius: 8px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border: none;
+}
+
+.InvestmentSummary {
+  border: none !important;
+}
+
+.InvestmentSummary :global #summaryWidget {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.OrderSummaryTitle {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 28px 0 10px;
+}
+
+.ReasonTitle {
+  gap: 10px;
+}
+
+.ResourceManagerContact {
+  gap: 15px;
+  border-radius: 8px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  padding: 20px;
+  max-width: 500px;
+}
+
+.Bookcall {
+  width: 100% !important;
+  margin: 0px !important;
+}
+
+.Bookcall p {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ResourceManagerContactTitle {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0px;
+}
+
+.listStyle {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.listStyle li {
+  font-size: 14px;
+  color: var(--gripWealthText, #696b74);
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* Dekstop */
+@media screen and (min-width: 768px) {
+  .MainContainer {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+  }
+
+  .RightSection {
+    max-width: 342px;
+  }
+
+  .LeftSection {
+    max-width: 423px;
+  }
+
+  .bottomSwitch {
+    display: none;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 767px) {
+  .RightSection {
+    display: none;
+  }
+
+  .AssetDetailsPGMain {
+    margin-bottom: 18px;
+  }
+
+  .PolicyWidget {
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px 20px;
+    width: 100%;
+    background: var(--gripWhite, #ffffff);
+    border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+  }
+
+  .MainContainer {
+    height: 100vh;
+  }
+
+  .ResourceManagerContact {
+    border: 0px;
+    padding: 0px;
+  }
+
+  .DiscoverCta {
+    display: none;
+  }
+
+  .ReasonTitle {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .LeftSectionSkeleton {
+    max-width: 100%;
+    max-height: 165px;
+  }
+}

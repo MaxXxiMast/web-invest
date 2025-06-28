@@ -1,0 +1,46 @@
+.SwiperNavigation {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+}
+.NavArrow {
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.NavProgress {
+  width: 100%;
+  border-bottom: 1px solid var(--gripSilver);
+  flex: 1;
+}
+
+.NavProgress :global(.swiper-scrollbar-drag) {
+  background: var(--gripBlue);
+  height: 3px;
+  border-radius: 4px;
+  position: relative;
+  bottom: -2px;
+  max-width: 100%;
+}
+.HideNaV {
+  display: none !important;
+}
+
+.Arrow {
+  font-size: 13px;
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  border: 1px solid var(--gripMercuryThree);
+  background-color: var(--gripWhite);
+  border-radius: 50%;
+  color: var(--gripBlue);
+}
+
+.colored {
+  border: 1px solid var(--gripBlue);
+}

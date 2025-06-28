@@ -1,0 +1,37 @@
+.FlexRow {
+  gap: 16px;
+  justify-content: space-between;
+}
+.Wrapper {
+  gap: 35px;
+}
+.Widget {
+  gap: 20px;
+}
+.FlexCol {
+  flex: 1;
+  gap: 16px;
+  width: 100%;
+}
+.NomineeId {
+  color: var(--gripBlue, #00357c);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 24px;
+  border: 0px;
+  padding: 0px;
+  background-color: inherit;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 5px;
+}
+
+.kycImg {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .FlexCol {
+    flex-direction: column;
+  }
+}

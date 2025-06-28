@@ -1,0 +1,110 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ImageContainer {
+  width: 125px;
+  height: 125px;
+  flex-shrink: 0;
+  margin-bottom: -15px;
+}
+
+.TopContainer {
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 19px 16px 15px;
+  overflow: hidden;
+  position: relative;
+  background: var(--gripWhite);
+}
+.TopContainer::before,
+.TopContainer::after {
+  position: absolute;
+  content: '';
+  width: 140px;
+  height: 140px;
+  background: var(--gripPrimaryGreen, #00b8b7);
+  opacity: 0.16;
+  filter: blur(50px);
+}
+
+.TopContainer::before {
+  top: -25px;
+  left: -15px;
+}
+
+.TopContainer::after {
+  right: -30px;
+  bottom: -40px;
+}
+
+.TopContainer > div {
+  position: relative;
+  z-index: 1;
+}
+
+.MainHeading {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--gripTextMain);
+}
+
+.SubHeading {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripTextMain, #373a46);
+  max-width: 134px;
+}
+
+.PlayNowContainer {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.WatchVideoText {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--gripBlue);
+}
+
+.HeadingContainer {
+  gap: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  list-style-type: disc;
+  width: 100%;
+  text-align: left;
+  margin-left: 30px;
+  padding-right: 30px;
+}
+
+.list li {
+  margin: 5px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.list a {
+  color: var(--gripBlue, #00357c);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 767px) {
+  .ImageContainer {
+    width: 115px;
+    height: 115px;
+  }
+}

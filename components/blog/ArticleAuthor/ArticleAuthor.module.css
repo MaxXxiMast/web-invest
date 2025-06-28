@@ -1,0 +1,42 @@
+.Wrapper {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.Author {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.Image {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+}
+.Image img {
+  object-fit: cover !important;
+  object-position: center !important;
+}
+.Date,
+.Name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+.Name {
+  color: var(--gripLuminousDark);
+}
+.Date {
+  color: var(--gripLuminousGrey);
+}
+
+.dot {
+  border: 1px dotted var(--gripGhost);
+  border-style: none none dotted;
+  color: var(--gripGhost);
+  background-color: var(--gripGhost);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}

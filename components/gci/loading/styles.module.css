@@ -1,0 +1,18 @@
+.progressContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greyBar {
+  color: var(--gripLighterOne) !important;
+}
+
+.progressBar {
+  color: var(--gripBlue) !important;
+}
+
+.progressLength {
+  stroke-dasharray: 40, 200 !important;
+}

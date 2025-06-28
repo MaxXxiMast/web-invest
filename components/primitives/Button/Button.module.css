@@ -1,0 +1,176 @@
+/* GENERIC COMMON BUTTON STYLES */
+.button {
+  display: inline-block;
+  border-radius: 6px;
+  vertical-align: middle;
+  cursor: pointer;
+  /* position: relative; */
+  overflow: hidden;
+  border: none;
+  padding: 4px 16px;
+  height: 48px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  outline: none;
+  font-family: var(--fontFamily, "'Inter', sans-serif") !important;
+}
+
+.button span {
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: inherit !important;
+}
+
+.button span svg {
+  width: 12px;
+  height: 12px;
+  color: inherit !important;
+}
+
+/* PRIMARY BUTTON */
+.primaryButton {
+  background: var(--gripBlue);
+  border: 1px solid var(--gripBlue);
+  color: var(--gripWhite);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  transition: 0.3s ease-in-out background;
+}
+
+.primaryButton:hover {
+  background: var(--gripSmalt);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.12);
+  border-color: var(--gripSmalt);
+}
+
+.primaryButton:disabled {
+  background: var(--gripWhiteLilac, #f7f7fc) !important;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6) !important;
+  color: var(--gripBombay) !important ;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+}
+
+.primaryButton:focus {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  background: var(--gripSmalt);
+  border-color: var(--gripSmalt);
+  transition: 0.3s ease-in-out;
+}
+.primaryButton:active {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  background: var(--gripMidnightBlue);
+  border-color: var(--gripMidnightBlue);
+  transition: 0.3s ease-in-out;
+}
+
+/* SECONDARY BUTTON - BORDERED BUTTON */
+.secondaryButton {
+  background: var(--gripWhite);
+  border: 1px solid rgba(0, 53, 124, 0.5);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  color: var(--gripBlue);
+  transition: 0.3s ease-in-out;
+}
+
+.secondaryButton:hover {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.12);
+  border-color: var(--gripBlue);
+  transition: 0.3s ease-in-out;
+}
+
+.secondaryButton:focus {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-color: var(--gripBlue);
+  transition: 0.3s ease-in-out;
+}
+.secondaryButton:active {
+  border-color: var(--gripBlue);
+  transition: 0.3s ease-in-out;
+}
+
+/* DISABLED BUTTON */
+.disabledButton,
+.secondaryButton:disabled,
+.primaryButton:disabled,
+.button:disabled {
+  background: var(--gripWhiteLilac, #f7f7fc) !important;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6) !important;
+  color: var(--gripBombay) !important ;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+}
+
+/* COMPACT BUTTON STYLES */
+.compactButton {
+  height: 40px;
+}
+
+/* PRIMARY LIGHT BUTTON STYLES */
+.primaryLight {
+  background: var(--gripLighterOne);
+  border: 1px solid var(--gripLighterOne);
+  color: var(--gripBlue);
+  transition: 0.3s ease-in-out;
+}
+.primaryLight:hover {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease-in-out;
+}
+.primaryLight:focus {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-color: var(--gripBlue);
+  transition: 0.3s ease-in-out;
+}
+.primaryLight:active {
+  border-color: var(--gripBlue);
+  transition: 0.3s ease-in-out;
+}
+
+/* SECONDARY LIGHT BUTTON STYLES */
+.secondaryLight {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--gripBlue);
+  transition: 0.3s ease-in-out;
+}
+.secondaryLight:hover {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.12);
+  border-color: var(--gripBlue);
+  transition: 0.3s ease-in-out;
+}
+.secondaryLight:focus {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
+  border-color: var(--gripBlue);
+  transition: 0.3s ease-in-out;
+}
+
+.secondaryLight:active {
+  border-color: var(--gripBlue);
+  transition: 0.3s ease-in-out;
+}
+
+/* BORDER LESS BUTTON STYLES */
+.borderLess {
+  color: var(--gripBlue, #00357c);
+  background: none;
+}
+
+.borderLess:hover {
+  border-color: var(--gripBlue, #00357c);
+}
+
+.borderLess:focus {
+  border-color: var(--gripBlue, #00357c);
+}
+
+.borderLess:active {
+  border-color: var(--gripBlue, #00357c);
+}

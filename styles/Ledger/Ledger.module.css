@@ -1,0 +1,68 @@
+.LedgerLeft {
+  flex: 0 1 calc(100% - (359px + 30px));
+}
+
+.LedgerRight {
+  width: 359px;
+  margin-left: auto;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ledgerDescription {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--gripLuminousDark);
+}
+
+.divider {
+  height: 1px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  margin: 24px 0;
+}
+
+.DownloadCasModal {
+  max-width: 400px !important;
+}
+
+.ledgerTXNDescription {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--gripLuminousGrey);
+}
+
+@media screen and (min-width: 992px) {
+  .attentionRequired {
+    border: 1px solid var(--gripMercuryThree, #e6e6e6);
+    border-radius: 12px;
+    padding: 15px 16px 0 15px;
+  }
+  .ledgerTXNDescription {
+    margin: 16px 0 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .attentionRequired {
+    padding: 40px 0 11px;
+  }
+  .ledgerDescription {
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--gripLuminousDark);
+  }
+  .allTxns {
+    margin-top: 44px !important;
+  }
+}

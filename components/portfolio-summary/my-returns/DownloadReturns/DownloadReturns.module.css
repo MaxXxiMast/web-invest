@@ -1,0 +1,40 @@
+.download {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.DownloadCasModal {
+  max-width: 400px !important;
+}
+
+.modalContainer {
+  padding: 12px 0;
+  text-align: center;
+  gap: 18px;
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.sublabel {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+@media screen and (max-width: 767px) {
+  .modalContainer {
+    padding: 18px 0;
+    gap: 28px;
+    text-wrap: balance;
+  }
+}

@@ -1,0 +1,72 @@
+.container {
+  margin-top: 25px;
+}
+
+.container > h2 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--gripLuminousDark, #282c3f);
+  margin-bottom: 0;
+}
+
+.container > p {
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--gripWealthText, #696b74);
+  margin-top: 5px;
+}
+
+.inputFieldSet {
+  position: relative;
+  height: 58px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.inputFieldSet + .inputFieldSet {
+  margin-top: 15px;
+}
+
+.verifyButtonAndClearInputButtonContainer {
+  position: absolute;
+  z-index: 2;
+  right: 5px;
+  height: 100%;
+}
+
+.clearInputButton {
+  filter: grayscale(1);
+  opacity: 0.5;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-top: 5px;
+  height: 24px;
+}
+
+.getOTP {
+  width: unset !important;
+  height: unset !important;
+  padding: 10px 15px;
+}
+
+.otpVerifiedIcon {
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+}
+
+.otpVerifiedText {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  color: var(--gripWealthText, #696b74);
+}
+
+@media screen and (max-width: 767px) {
+  .inputFieldSet {
+    width: 100%;
+  }
+}

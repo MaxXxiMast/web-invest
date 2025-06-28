@@ -1,0 +1,163 @@
+.DematHeader {
+  background-image: url('https://static-assets.gripinvest.in/icons/dematHeader.svg');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: 8px;
+  padding: 30px 16px;
+}
+
+.HeadingText {
+  margin: 16px 0;
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: left;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.brokerDetails {
+  overflow: auto;
+  max-height: 370px;
+}
+
+.DematHeader span {
+  color: var(--gripWhite, #ffffff);
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.BrokerImage {
+  border-radius: 36px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background: var(--gripWhite, #ffffff);
+  width: 60px;
+  height: 60px;
+  padding: 11px;
+  cursor: pointer;
+}
+
+.BrokersList {
+  display: flex;
+  gap: 11px;
+  margin-top: 21px;
+  overflow-x: scroll;
+}
+
+.BrokerImage:global(.SelectedBroker) {
+  border: 3px solid var(--gripPrimaryGreen, #00b8b7);
+  outline: 3px solid rgba(0, 184, 183, 0.1);
+}
+
+.BrokerDetailImageContainer {
+  max-height: 189px;
+  overflow-y: auto;
+}
+
+.BrokerDetailImage {
+  width: 100%;
+  height: auto;
+  margin: 14px 0;
+}
+
+.BrokerDetailHeader {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-bottom: 10px;
+}
+
+.BrokerDetailSubHeading {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 22px;
+  padding-top: 10px;
+}
+
+.ButtonDetails {
+  gap: 20px;
+}
+
+.BtnContainer {
+  text-align: center;
+}
+
+.OtherDetails {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.OtherDetails li:first-child {
+  margin-top: 25px;
+}
+
+.OtherDetails ul {
+  padding-left: 15px;
+  list-style-type: disc !important;
+  margin-bottom: 80px;
+}
+
+.BrokerDetailCard {
+  height: 660px;
+}
+
+.DownIcon {
+  font-size: 15px;
+  transform: rotate(-90deg);
+}
+
+/* Media Queries Start */
+
+/* For Desktop */
+@media screen and (min-width: 768px) {
+  .BrokerDetailImage {
+    max-width: 325px;
+  }
+
+  .BrokerDetailButton {
+    max-width: 335px;
+  }
+
+  .BackArrowImg {
+    display: none !important;
+  }
+
+  .BrokerDetailCard {
+    overflow-y: scroll;
+  }
+}
+
+/* For Mobile */
+@media screen and (max-width: 767px) {
+  .DematHeader span {
+    max-width: 225px;
+  }
+
+  .BrokerDetailDrawer {
+    bottom: 0 !important;
+    padding-bottom: 31px !important;
+  }
+
+  .BackArrowCntnr {
+    position: sticky;
+    top: -3px;
+    z-index: 1;
+    background: var(--gripWhite, #ffffff);
+  }
+
+  .BtnContainer {
+    position: sticky;
+    bottom: 0;
+    padding: 10px 0;
+    z-index: 1;
+    background: var(--gripWhite, #ffffff);
+  }
+}
+/* Media Queries END */

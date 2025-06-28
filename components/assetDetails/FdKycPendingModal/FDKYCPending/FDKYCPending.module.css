@@ -1,0 +1,31 @@
+.heading {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.subHeading {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.occupationInputContainer {
+  margin-top: 25px;
+}
+
+.select {
+  width: 100%;
+}
+
+.footer {
+  margin-top: 15px;
+}
+
+.securityInfo {
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--gripWealthText, #696b74);
+  margin-left: 5px;
+}

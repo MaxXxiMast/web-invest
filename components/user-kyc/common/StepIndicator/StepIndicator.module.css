@@ -1,0 +1,21 @@
+.Step {
+  border-radius: 6px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  padding: 5px 10px;
+  gap: 3px;
+  flex-grow: 0;
+  display: inline-flex;
+}
+.StepTxt {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+@media screen and (max-width: 767px) {
+  .Step {
+    width: 100%;
+    justify-content: center;
+  }
+}

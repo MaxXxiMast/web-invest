@@ -1,0 +1,39 @@
+.Heading {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.SubHeading {
+  color: var(--gripGunPowder, #44485b);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 24px 0;
+}
+
+.ArrowIcon {
+  align-self: flex-end;
+}
+
+.ButtonContainer {
+  gap: 16px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Heading {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .Heading {
+    text-align: center;
+  }
+}

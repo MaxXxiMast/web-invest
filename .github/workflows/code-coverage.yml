@@ -1,0 +1,107 @@
+name: PR Changed File Coverage
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  delta-coverage:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22.11.0'
+
+      - name: Install dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Run tests & coverage on changed files only
+        shell: bash
+        run: |
+          set -e
+
+          # 1) fetch PR base & list all changed files
+          git fetch origin develop
+          ALL_CHANGED=$(git diff --diff-filter=AMR --name-only origin/develop...HEAD)
+
+          # 2) pick up real source files (exclude .test. / .spec.)
+          SRC_CHANGED=$(echo "$ALL_CHANGED" \
+            | grep -E '\.(ts|tsx|js|jsx)$' \
+            | grep -vE '(\.test\.|\.(spec)\.)' || true)
+
+          # 3) pick up any test files
+          TEST_CHANGED=$(echo "$ALL_CHANGED" \
+            | grep -E '\.(test|spec)\.(ts|tsx|js|jsx)$' || true)
+
+          # 4) if no source touched but tests changed, map tests → sources
+          if [[ -z "$SRC_CHANGED" && -n "$TEST_CHANGED" ]]; then
+            while IFS= read -r t; do
+              src="${t/\.test\./.}"
+              src="${src/\.spec\./.}"
+              [[ -f "$src" ]] && SRC_CHANGED+="$src"$'\n'
+            done <<< "$TEST_CHANGED"
+          fi
+
+          # 5) build final list
+          CHANGED=$(echo "$SRC_CHANGED" | tr '\n' ' ' | xargs)
+
+          # 6) if still empty — skip tests entirely
+          if [[ -z "$CHANGED" ]]; then
+            echo "ℹ️  No changed source files (or companion sources). Skipping tests and coverage."
+            exit 0
+          fi
+
+          echo "👉 Changed source files for coverage:"
+          for f in $CHANGED; do echo "  • $f"; done
+
+          # 7) build --collectCoverageFrom flags
+          ARGS=()
+          for f in $CHANGED; do
+            ARGS+=( "--collectCoverageFrom=$f" )
+          done
+
+          # 8) run Jest only on changed tests, collect coverage only from changed sources
+          npx jest \
+            --coverage \
+            --changedSince=origin/develop \
+            "${ARGS[@]}" \
+            --passWithNoTests \
+          | tee changed-coverage.txt
+
+      - name: Jest Lcov Reporter (Optional UI view)
+        if:   runner.os == 'Linux' && always()   # still show even if tests skipped
+        uses: vebr/jest-lcov-reporter@v0.2.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          lcov-file: ./coverage/lcov.info
+
+      - name: Enforce coverage threshold on changed files
+        shell: bash
+        run: |
+          # if no coverage report was generated, skip threshold
+          if [[ ! -f changed-coverage.txt ]]; then
+            echo "ℹ️  No coverage report → skipping threshold check."
+            exit 0
+          fi
+
+          TOTAL=$(grep "All files" changed-coverage.txt \
+            | awk '{print $4}' | sed 's/%//')
+          echo "📊 Changed-files coverage: ${TOTAL}%"
+          THRESHOLD=80
+          if (( $(echo "$TOTAL < $THRESHOLD" | bc -l) )); then
+            echo "❌ Coverage (${TOTAL}%) below ${THRESHOLD}% threshold"
+            exit 1
+          else
+            echo "✅ Coverage meets ${THRESHOLD}%"
+          fi

@@ -1,0 +1,175 @@
+.VaultMain {
+  padding: 100px 0 70px;
+}
+.HeadingTitle {
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  padding-bottom: 20px;
+  margin-bottom: 32px;
+}
+.VaultContainer {
+  display: flex;
+}
+.VaultLeft {
+  flex: 0 1 calc(100% - (359px + 30px));
+}
+.VaultRight {
+  width: 359px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.VaultRight > p {
+  color: var(--gripLuminousDark);
+  margin-top: 16px;
+  text-align: center;
+}
+
+.VaultRight > p span {
+  text-decoration: underline;
+  color: var(--gripBlue);
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.AddMoneyCard {
+  margin-top: 28px;
+}
+
+.TransactionHistory {
+  margin-top: 26px;
+}
+
+.WithdrawlModal :global(.ModalPopupInner) {
+  max-width: 400px !important;
+}
+
+.WithdrawlModal :global(.CloseBtn) {
+  top: 35px;
+  right: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .HeadingTitle {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 40px;
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .VaultContainer {
+    flex-wrap: wrap;
+  }
+  .VaultLeft {
+    flex: 1 1 100%;
+    order: 2;
+    width: 100%;
+  }
+  .VaultRight {
+    width: 100%;
+    order: 1;
+  }
+  .VaultRight > p {
+    display: none;
+  }
+  .BalanaceCard {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .VaultMain {
+    padding: 100px 0 0;
+  }
+
+  .DesktopMoneyCard {
+    display: none;
+  }
+
+  .marginTop {
+    padding-top: 76px;
+  }
+}
+
+.DownloadCasModal {
+  max-width: 400px !important;
+}
+
+.BankingPartnerContainer {
+  margin-top: 30px;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.BankingPartnerText {
+  font-size: 12px;
+  color: var(--gripLuminousGreyPlace);
+  margin-right: 10px;
+}
+
+.BankingPartnerImage {
+  width: 90px !important;
+  height: 35px !important;
+}
+
+.vaultDiscontinuedBanner {
+  background-color: var(--gripSkyBlue, #d3f6fd);
+  border-radius: 20px;
+  padding: 48px;
+  margin: 100px 0px 240px;
+}
+
+.bannerContent {
+  gap: 24px;
+}
+
+.vaultIcon {
+  width: 80px;
+  height: 80px;
+}
+
+.heading {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.description {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.downloadButton {
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 992px) {
+  .vaultDiscontinuedBanner {
+    padding: 48px 32px;
+  }
+
+  .heading {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    text-wrap: balance;
+  }
+
+  .mobileColumn {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .downloadButton {
+    margin-top: 24px;
+  }
+}

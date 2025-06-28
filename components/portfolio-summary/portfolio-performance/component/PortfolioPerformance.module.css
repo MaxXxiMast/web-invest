@@ -1,0 +1,134 @@
+.container {
+  gap: 30px;
+}
+.title {
+  margin: 0;
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26.244px;
+}
+.Wrapper {
+  gap: 10px;
+}
+.LeftContent {
+  width: 100%;
+}
+.RightContent {
+  gap: 35px;
+  max-width: 400px;
+  flex-shrink: 0;
+  width: 100%;
+}
+.RightContent h3 {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.RightContent button span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.721px;
+}
+
+.graphContainer {
+  padding-left: 10px;
+  background-image: url('https://static-assets.gripinvest.in/commons/bggraph.png');
+  background-size: cover;
+}
+.graphWrapper {
+  max-width: 275px;
+}
+.graph {
+  border-left: 1px solid rgba(41, 44, 62, 0.16);
+  min-height: 216px;
+  width: 100%;
+  gap: 16px;
+}
+.bar {
+  padding: 12px 6px 12px 12px;
+  color: var(--gripDustyGray, #9b9b9b);
+  font-size: 12.998px;
+  font-weight: 700;
+  line-height: 12.998px;
+  border-radius: 0 5px 5px 0;
+  flex-shrink: 0;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: max-content;
+  min-height: max-content;
+}
+
+.barContainer {
+  gap: 10px;
+  align-items: center;
+}
+
+.barName {
+  color: var(--gripBlue, #00357c);
+  font-size: 9.923px;
+  font-weight: 600;
+  line-height: 10.832px;
+  text-transform: capitalize;
+  max-width: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .Wrapper {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .RightContent {
+    max-width: 100%;
+    align-items: center;
+    width: 100%;
+  }
+  .RightContent h3 {
+    text-align: center;
+  }
+  .graphWrapper {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .graphContainer {
+    padding-left: 0px;
+    background-image: none;
+  }
+  .graph {
+    border-bottom: 1px solid rgba(41, 44, 62, 0.16);
+    border-left: none;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 180px;
+  }
+  .barContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .bar {
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    padding: 12px 20px;
+  }
+  .barName {
+    max-width: 50px;
+  }
+  .bar span {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12.998px;
+  }
+  .container {
+    gap: 0;
+  }
+}

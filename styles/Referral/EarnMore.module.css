@@ -1,0 +1,46 @@
+.TitleBox {
+  max-width: 800px;
+  text-align: center;
+}
+.IotBox {
+  padding-bottom: 0;
+}
+.IotBox button {
+  padding: 12px 16px;
+  background-color: var(--gripWhite);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+  border: none;
+  border-radius: 12px;
+  margin-top: 4px;
+  position: relative;
+  bottom: -5px;
+  margin-bottom: -20px;
+}
+
+.AssetPortfolioTopLeft {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .IotBox {
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin-top: 32px;
+    top: 0;
+  }
+  .IotBox button {
+    width: 100%;
+  }
+  .IotBox h5 {
+    width: calc(100% - 60px);
+  }
+  .AssetPortfolioTopLeft {
+    flex-direction: column-reverse;
+  }
+  .AssetPortfolioTop {
+    margin-bottom: 50px;
+  }
+}

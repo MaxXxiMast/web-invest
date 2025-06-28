@@ -1,0 +1,90 @@
+.ReferralTable {
+  width: 100%;
+}
+
+.ReferralTable th {
+  text-align: left;
+  color: var(--gripLuminousGreyPlace);
+  padding: 20px 0 16px;
+}
+
+.ReferralTable td {
+  padding: 16px 0;
+}
+
+.ReferralTable th:last-child,
+.ReferralTable td:last-child {
+  text-align: right;
+}
+
+.ReferralTable tr:not(:first-child) td {
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.ReferralTable tr:nth-child(1n) td .CardIcon {
+  background-color: var(--gripRedLighterSix);
+}
+
+.ReferralTable tr:nth-child(2n) td .CardIcon {
+  background-color: var(--gripLighterOne);
+}
+.ReferralTable tr:nth-child(3n) td .CardIcon {
+  background-color: var(--gripLighterOne);
+}
+
+.Nudge {
+  max-width: 110px;
+  display: inline-block;
+  color: var(--gripLuminousGrey);
+  min-width: 110px;
+}
+
+.NudgeLink {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.NudgeLink span {
+  font-weight: 800;
+  color: var(--gripBlue);
+}
+.NudgeLink img {
+  margin-right: 8px;
+}
+
+.TablePagination {
+  padding: 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.PaginationLeft span {
+  color: var(--gripLuminousGrey);
+}
+
+.PaginationRight ul li button {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--gripBlue);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--gripBlue);
+}
+.PaginationRight ul li + li {
+  margin-left: 12px;
+}
+.PaginationRight ul li button:global(.Mui-selected) {
+  background-color: var(--gripBlue);
+  color: var(--gripWhite);
+}
+.PaginationRight ul li button:hover,
+.PaginationRight ul li button:global(.Mui-selected):hover {
+  background-color: var(--gripBlue);
+  color: var(--gripWhite);
+}

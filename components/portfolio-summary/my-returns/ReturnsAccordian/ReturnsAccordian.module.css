@@ -1,0 +1,60 @@
+.returnData {
+  color: var(--gripLuminousGrey, #555770);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22.495px;
+}
+
+.returnData span:first-child {
+  text-transform: capitalize;
+}
+
+.Container {
+  background: var(--gripWhite, #ffffff);
+  width: 180px;
+  padding: 12px;
+  border-radius: 4px;
+  gap: 6px;
+  box-shadow: rgba(166, 166, 166, 0.25) 0px 3.7492px 14.0594px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.MenuButton {
+  background: var(--gripWhite, #ffffff);
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22.495px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.MenuContainer {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.MenuContainer > span:first-child {
+  font-size: 16px;
+}
+
+.Amount {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22.495px;
+}
+
+.ArrowIcon {
+  font-size: 14px;
+  transition: 0.1s ease-in-out;
+  font-weight: 700;
+}
+
+.Rotate180 {
+  transform: rotate(180deg);
+  transition: 0.1s ease-in-out;
+}

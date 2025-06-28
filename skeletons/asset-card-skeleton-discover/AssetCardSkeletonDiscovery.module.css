@@ -1,0 +1,47 @@
+.Card {
+  margin-top: 35px;
+}
+.titleSkeleton {
+  gap: 7px;
+  margin-bottom: 35px;
+}
+.Title {
+  width: 30%;
+  height: 31px;
+}
+.SubTitle {
+  width: 20%;
+  height: 15px;
+}
+.itemWrapper {
+  gap: 16px;
+}
+
+.ProductCard {
+  height: 293px;
+}
+.CardOne,
+.CardTwo {
+  width: 289px;
+}
+.CardThree {
+  width: 112px;
+}
+
+@media screen and (max-width: 767px) {
+  .titleSkeleton {
+    margin-bottom: 25px;
+  }
+  .Title {
+    width: 60%;
+  }
+  .SubTitle {
+    width: 50%;
+  }
+  .CardTwo {
+    width: 50px;
+  }
+  .CardThree {
+    display: none;
+  }
+}

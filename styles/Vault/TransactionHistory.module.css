@@ -1,0 +1,245 @@
+.TitleSection {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.download {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--gripBlue);
+  cursor: pointer;
+  margin-left: 8px;
+}
+.DownloadBtn {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.DownloadBtn span {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripBlue);
+  margin-left: 8px;
+}
+
+.TransactionHistoryTable {
+  padding-top: 16px;
+}
+.TransactionList ul li {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.TransactionItem {
+  display: flex;
+  align-items: center;
+}
+.TransactionItemIcon {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gripWhite);
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+.TransactionItemIcon .ImageContainer {
+  width: 32px;
+  height: 32px;
+}
+.TransactionItemDetails {
+  margin-right: 16px;
+}
+.TransactionItemDetails h4 {
+  margin-bottom: 4px;
+}
+.TransactionItemDetails p {
+  color: var(--gripLuminousGrey);
+}
+
+.TransactionItemAmount {
+  margin-left: auto;
+  text-align: right;
+}
+.TransactionItemAmount :global(.Amount) {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+}
+
+.TransactionItemAmount :global(.credit) {
+  color: var(--gripLightSecondarySix, #02c988);
+}
+
+.TransactionItemAmount :global(.HoldLabel) {
+  background: rgba(253, 172, 66, 0.1);
+  border-radius: 4px;
+  color: var(--gripHoldLabel, #fdac42);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-block;
+  padding: 4px 8px;
+  margin-top: 8px;
+  text-transform: capitalize;
+}
+.TransactionItemAmount :global(.CancelLabel) {
+  background: var(--gripRedLighterSix, #ffebeb);
+  border-radius: 4px;
+  color: var(--gripDanger, #ff5c5c);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-block;
+  padding: 4px 8px;
+  margin-top: 8px;
+  text-transform: capitalize;
+}
+.TablePagination {
+  padding: 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.HistoryFilter {
+  display: flex;
+  margin: 20px -4% 0;
+  overflow: scroll;
+}
+
+.FilterItem {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 70px;
+  padding: 4px 20px;
+  margin-right: 8px;
+  transition: 0.5s ease-in-out;
+  text-transform: 'capitalize';
+}
+
+.FilterItem:global(.Active) {
+  transition: 0.5s ease-in-out;
+  background: var(--gripLuminousDark);
+  color: var(--gripWhite);
+  text-transform: 'capitalize';
+}
+.PaginationLeft span {
+  color: var(--gripLuminousGrey);
+}
+
+.PaginationRight ul li button {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--gripBlue);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--gripBlue);
+}
+.PaginationRight ul li + li {
+  margin-left: 12px;
+}
+.PaginationRight ul li button:global(.Mui-selected) {
+  background-color: var(--gripBlue);
+  color: var(--gripWhite);
+}
+
+.PaginationRight ul li button:hover,
+.PaginationRight ul li button:global(.Mui-selected):hover {
+  background-color: var(--gripBlue);
+  color: var(--gripWhite);
+}
+.TitleRight {
+  display: flex;
+  align-items: flex-end;
+}
+
+.DownloadIcon {
+  font-size: 25px;
+  color: var(--gripBlue, #00357c);
+}
+
+@media screen and (max-width: 370px) {
+  .PaginationRight ul li + li {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .PaginationRight ul li button {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    font-family: var(--fontFamily, "'Inter', sans-serif");
+    font-weight: 700;
+  }
+  .TablePagination {
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0px;
+  }
+  .TransactionList ul li:last-child {
+    border-bottom: unset;
+  }
+  .PaginationLeft {
+    display: none;
+  }
+  .TransactionItemDetails h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .TransactionItemDetails p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .TransactionItemAmount :global(.Amount) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .TransactionItemDetails {
+    margin-right: 40px;
+  }
+  .TransactionItemIcon {
+    width: 28px;
+    height: 28px;
+  }
+  .TransactionItemIcon .ImageContainer {
+    width: 19px;
+    height: 19px;
+  }
+  .TitleSection {
+    padding-bottom: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .TransactionHistoryTable {
+    padding-bottom: 50px;
+  }
+  .TitleRight {
+    margin-top: 12px;
+  }
+}
+.greyScale {
+  filter: grayscale(1);
+  opacity: 0.7;
+  cursor: not-allowed !important;
+}

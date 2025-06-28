@@ -1,0 +1,72 @@
+.Row,
+.MenuSection {
+  display: flex;
+  flex-direction: column;
+}
+.Row {
+  gap: 32px;
+}
+.MenuSection {
+  gap: 16px;
+}
+.SectionTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--gripEbonyClay, #292c3e);
+  margin: 0;
+}
+.Col {
+  display: flex;
+  gap: 60px;
+}
+.ColLeft {
+  width: 400px;
+  flex: 1;
+}
+.ColRight {
+  width: 355px;
+}
+
+.TopBorder {
+  border-top: 1px dashed var(--gripWhiteLilac, #f7f7fc);
+}
+
+.ProductVideo {
+  width: 100% !important;
+  margin: 0 !important;
+  min-height: 355px;
+}
+
+/* stylelint-disable-next-line */
+.ProductVideo :global #Duration {
+  font-weight: 300;
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 992px) {
+  .Col {
+    flex-direction: column;
+    gap: 0;
+  }
+  .ColLeft {
+    width: 100%;
+  }
+  .ProductVideo {
+    display: none;
+  }
+  .SectionTitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .MenuSection {
+    gap: 10px;
+  }
+  .Row {
+    gap: 16px;
+    padding-top: 20px;
+  }
+  .MenuContainer {
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,65 @@
+.Newsletter {
+  margin: 80px 0;
+}
+.Wrapper {
+  background: var(--gripLighterOne);
+  border-radius: 9px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.Title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  margin: 0;
+}
+.Title span {
+  text-transform: capitalize;
+}
+.Form {
+  display: flex;
+  gap: 16px;
+}
+
+.SubmitBtn {
+  height: auto;
+  min-height: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .Newsletter {
+    margin: -30px 0 80px;
+    background-color: var(--gripLighterOne);
+    padding: 36px 0;
+  }
+  .Wrapper {
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    gap: 25px;
+  }
+  .Form {
+    flex-direction: column;
+    width: 100%;
+  }
+  .SubmitBtn {
+    height: 56px;
+    width: 100% !important;
+  }
+  .Title {
+    text-align: center;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+  }
+  .Wrapper form {
+    width: 100%;
+  }
+
+  .NewsLetterContainer {
+    padding-bottom: 36px !important;
+  }
+}

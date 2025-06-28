@@ -1,0 +1,695 @@
+.container {
+  position: relative;
+  max-width: calc(50% - 10px);
+  width: calc(50% - 10px);
+}
+
+.LeaseDealCard {
+  background: var(--gripWhite);
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  box-sizing: border-box;
+  border-radius: 12px;
+  min-width: 410px;
+  position: relative;
+  overflow: hidden;
+}
+.CardHeader {
+  padding: 20px 20px 48px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+.assetHeader {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  visibility: visible;
+  overflow: hidden;
+}
+
+.IRRContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+
+.IRRContainer:empty {
+  display: none;
+}
+
+.CardHeader p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+  margin-top: 16px;
+  min-height: 48px;
+}
+.CardHeaderInner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.CardHeaderFlag {
+  margin-right: -20px;
+  margin-left: 8px;
+}
+
+.CardHeaderFlag:global(.inventory) {
+  background: linear-gradient(
+    270.03deg,
+    rgba(62, 123, 250, 0.2) 0.03%,
+    rgba(62, 123, 250, 0) 99.98%
+  );
+}
+.CardHeaderImage {
+  width: 225px;
+  margin-right: auto;
+}
+.CardHeaderImage > span {
+  max-width: 138px;
+  max-height: 44px;
+}
+.CardHeaderImage img {
+  object-position: left center;
+}
+.CardBody {
+  padding: 20px;
+}
+.LeadeTimePeriod {
+  margin-bottom: 24px;
+}
+.LeadeTimePeriod ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.LeadeTimePeriod li {
+  width: 33%;
+}
+
+.ellipsis h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.TimePeriodItem h5 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+  margin: 0;
+  text-transform: capitalize;
+}
+.TimePeriodItem h6 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey);
+  margin: 0;
+}
+
+.LeaseProgress {
+  width: 100%;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 4px;
+  height: 7px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10px;
+}
+.LeaseProgress > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--gripPrimaryGreen,  #00b8b7);
+}
+
+.LeaseCompletion {
+  margin-top: 10px;
+  display: flex;
+}
+.LeaseCompletion p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey);
+  flex: 1;
+}
+.LeaseCompletion .LeaseCompletionFigure {
+  margin-right: auto;
+  color: var(--gripPrimaryGreen,  #00b8b7);
+  font-weight: 600;
+}
+
+.LeaseCompletion p span {
+  color: var(--gripLuminousDark);
+  font-weight: 600;
+}
+
+.CompletedText {
+  font-weight: 400 !important;
+  color: var(--gripLuminousGrey) !important;
+}
+
+.BondSecondRow {
+  margin-bottom: 0px;
+}
+.MldBondsSecondRow ul {
+  justify-content: flex-start;
+}
+
+.BondsCardHeader {
+  border: none;
+  height: 130px;
+}
+
+.BondsListItemContainer {
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.BondsListItemContainer:last-child {
+  border: none;
+}
+
+.BondsListItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  align-items: center;
+  min-height: 46px;
+}
+
+.BondsTitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--gripLuminousGrey);
+}
+
+.BondsValue {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.Arrow {
+  color: var(--gripPrimaryGreen, #00b8b7);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.DownArrow {
+  rotate: 180deg;
+}
+
+.BondsCutOut {
+  text-decoration: line-through;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 600;
+  color: var(--gripLuminousGrey);
+}
+
+.AmountLeftContainer {
+  display: flex;
+  height: 40px;
+  padding: 6px 9px;
+  margin: 0 20px 10px;
+  align-items: center;
+  gap: 4px;
+  border-radius: 6px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+}
+
+.AmountLeftContainer > .quickIcon {
+  color: var(--gripMySin, #ffb628);
+  margin-right: 2px;
+}
+
+.AmountLeftContainer > .amount {
+  color: var(--gripTextMain, #373a46);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.AmountLeftContainer > .text {
+  color: var(--gripTextMain, #373a46);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.CardFooter {
+  padding: 6px 20px 10px;
+}
+
+.CardFooter ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.CardFooter ul li {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.BondsInfo li:last-child {
+  border: none;
+  padding-bottom: 0px;
+}
+
+.CardFooterBadge {
+  padding: 4px 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey);
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+.TagImage {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.ExchangeImage {
+  width: 34px !important;
+  height: auto !important;
+}
+
+.BSEBadge {
+  width: 27px !important;
+  height: auto !important;
+}
+
+.NewFlag {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: fit-content;
+  z-index: 1;
+}
+
+.OldPrice {
+  text-decoration: line-through;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration-color: var(--gripLuminousDark);
+  white-space: pre;
+}
+
+.CardReturnsWidget {
+  padding: 4px;
+  background: var(--gripLighterOne);
+  border-radius: 8px;
+  max-width: calc(100% - 8px);
+  margin: 0 auto 4px;
+}
+
+.CardReturnsWidgetInner {
+  display: flex;
+}
+
+.CardReturnsWidgetLeft {
+  width: 128px;
+  flex-shrink: 0;
+  padding: 12px;
+  background: var(--gripWhite);
+  border-radius: 8px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CardReturnsWidgetLeft p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--gripBlue);
+  margin: 4px 0 0;
+}
+
+.LeaseCompletion .LeaseCompletionFigure + p {
+  text-align: right;
+}
+
+.CardReturnsWidgetLeft :global(.Content) {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.CardReturnsWidgetRight {
+  padding-left: 14px;
+  flex: 1;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 16px;
+}
+.CardReturnsWidgetRight label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey);
+  margin-bottom: 8px;
+  display: block;
+}
+.CardReturnsWidgetRight :global(.Content) {
+  width: 100%;
+}
+
+.CardReturnsWidgetRight .LeaseProgress {
+  background-color: var(--gripWhite);
+}
+
+.ViewDetails span:not(.ThumIcon) {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripBlue);
+}
+
+.CardReturnsWidgetRight:global(.InProgress) .LeaseProgress span {
+  background: var(--gripBlue);
+}
+.CardReturnsWidget:global(.Completed) {
+  background-color: var(--gripGreenLighterOne);
+}
+.CardReturnsWidget:global(.Confirmed) {
+  background-color: var(--gripLighterOne);
+}
+.CardReturnsWidget:global(.Ongoing) {
+  background-color: var(--gripLighterOne);
+}
+
+.ViewDetails {
+  border-radius: 12px 12px 0px 0px;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  bottom: -60%;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  background-image: url('https://static-assets.gripinvest.in/dealsV2/whiteGradient.png');
+  background-size: cover;
+}
+
+.LeaseDealCard:hover .ViewDetails {
+  z-index: 1;
+  bottom: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.ThumIcon {
+  margin-left: 8px;
+  font-size: 24px;
+  color: var(--gripBlue, #00357c);
+}
+.ViewDetailsInner {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.valueLabel {
+  color: var(--gripLuminousGrey, #282c3f);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: auto;
+}
+
+.blueColor {
+  background: var(
+    --gradientBlue,
+    linear-gradient(90deg, #00357c 7.07%, #005cd7 91.41%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bondRatingText {
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 184, 183, 1) 0%,
+    rgb(0, 53, 124, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bondMldRatingText {
+  margin: auto;
+}
+
+.inactiveBondRating {
+  margin-top: 4px;
+}
+
+.inactiveBondRatingText {
+  margin: auto;
+}
+
+.inactiveBondRatingTitle {
+  margin-top: 3px;
+}
+
+.specialBadgeText {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 184, 183, 1) 0%,
+    rgb(0, 53, 124, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.specialBadgeContainer {
+  padding: 4px 12px;
+  background: #ffffff;
+  border: 1px solid #ebebf0;
+  border-radius: 4px 0px 0px 4px;
+  align-items: center;
+  justify-content: center;
+  margin-right: -20px;
+  position: relative;
+  border-right: unset;
+  width: 147px;
+}
+
+.specialBadgeImage {
+  width: 9px;
+  height: 8px;
+  margin-left: 8px;
+}
+
+.badgesContainer {
+  width: 38%;
+  align-items: flex-end;
+}
+
+.bondBadgesContainer {
+  width: 38%;
+  align-items: flex-end;
+}
+
+.iconBadge {
+  display: flex !important;
+  align-items: center;
+}
+
+.cardFooterBadge {
+  padding: 4px 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #555770;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 4px;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.bottomBadgesContainer {
+  display: flex;
+  max-width: 378px;
+}
+
+.startupEquityPastAmount {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripBlue);
+}
+
+.bondDetailsLowerRow {
+  margin-bottom: 18px;
+}
+.CapitalBadge {
+  text-transform: uppercase;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 768px) {
+  .LeaseCompletion p {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--gripLuminousGrey);
+    flex: 1;
+  }
+
+  .CardBodySE {
+    padding: 0 !important;
+  }
+
+  .LeadeTimePeriodSE {
+    margin-bottom: 0 !important;
+    padding: 24px 20px !important;
+  }
+  .specialBadgeImage {
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .specialBadgeImage > span {
+    width: 12px !important;
+    height: 12px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .CardHeader p {
+    min-height: auto;
+  }
+}
+
+/* PHONE */
+@media screen and (max-width: 767px) {
+  .CardHeaderImage {
+    width: 225px;
+  }
+  .CardHeader p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+  .LeaseDealCard {
+    min-width: fit-content;
+  }
+  .CardReturnsWidget {
+    margin: 0 -16px -16px;
+    max-width: none;
+  }
+  .ViewDetails {
+    display: none;
+  }
+  .ViewDetailsInner {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .specialBadgeText {
+    font-size: 10px;
+  }
+  .specialBadgeContainer {
+    justify-content: center;
+    padding: 4px 8px;
+    width: 121px;
+  }
+  .badgesContainer {
+    width: 55%;
+    min-width: 148px;
+  }
+  .bondBadgesContainer {
+    width: 50%;
+    min-width: 115px;
+  }
+  .whenJustInBadge {
+    min-width: unset;
+    width: 76%;
+  }
+  .cardFooterBadge {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .startupEquityPastAmount {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .container {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .TimePeriodItem h6 {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .CardBody {
+    padding: 10px;
+  }
+
+  .CardHeader {
+    padding: 10px;
+  }
+  .CardHeader p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .CardReturnsWidget {
+    margin: 0 -6px -6px;
+  }
+
+  .CardReturnsWidgetInner {
+    flex-wrap: wrap;
+  }
+  .CardReturnsWidgetLeft {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .LeadeTimePeriod {
+    margin-bottom: 10px;
+  }
+  .CardFooter {
+    padding: 6px 10px 10px;
+  }
+}

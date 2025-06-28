@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 42px;
+  padding: 0 20px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  scrollbar-width: none;
+  background-color: var(--gripWhite, #ffffff);
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: slideDown 0.3s forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

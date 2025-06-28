@@ -1,0 +1,111 @@
+.inputUpload {
+  display: none;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.profileBackground {
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profileWrapper {
+  margin-right: 8px;
+  align-items: stretch;
+}
+
+.uploadContainer {
+  padding: 12px;
+  background: var(--gripBlue, #00357c);
+  border: 1px solid var(--borderFour, #00357c);
+  border-radius: 8px;
+  align-items: center;
+  cursor: pointer;
+  width: 335px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.uploadText {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripWhite, #ffffff);
+}
+
+.uploadIcon {
+  font-size: 24px;
+  color: var(--gripWhite, #ffffff);
+  font-weight: 600;
+}
+.uploadedFileName {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripWhite, #ffffff);
+  max-width: 170px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.closeIcon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  color: var(--gripWhite, #ffffff);
+  background-color: var(--gripBlue, #00357c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.greenBorder {
+  border-color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.uploadedContainer {
+  justify-content: space-between;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.uploadContent {
+  color: var(--gripBlue, #00357c);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UploadedContainer {
+  justify-content: space-between;
+}
+
+.CrossIcon {
+  font-size: 24px;
+  color: var(--gripWhite, #ffffff);
+  cursor: pointer;
+  line-height: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .uploadContainer {
+    width: 100%;
+  }
+}

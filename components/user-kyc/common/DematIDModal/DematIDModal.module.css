@@ -1,0 +1,48 @@
+.HeadingText {
+  color: var(--gripLuminousDark, #282c3f);
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.SubHeadingText {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.SubHeadingText a {
+  text-decoration-line: underline;
+}
+
+.Container {
+  gap: 16px;
+}
+
+.Container:first-child {
+  margin-bottom: 36px;
+}
+
+.MainContainer {
+  margin-bottom: 53px;
+}
+
+/* Media Queries Start */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .ModalDrawer {
+    bottom: 0 !important;
+    padding-bottom: 31px !important;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .ModalPopupCard {
+    padding: 55px 20px 20px !important;
+  }
+}
+
+/* Media Queries End */

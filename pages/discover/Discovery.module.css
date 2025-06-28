@@ -1,0 +1,249 @@
+.PageWrapper {
+  padding: 120px 0;
+  background-color: var(--gripWhite);
+}
+
+.PageWrapper:global(.InvestedUser) {
+  padding-bottom: 0px;
+}
+
+.leftContainer {
+  max-width: 690px;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.leftSkeletonContainer {
+  min-width: 690px;
+}
+
+.ExplainerVideoComponent {
+  margin: 0 !important;
+  height: 248px !important;
+}
+
+.ExplainerVideoComponent h4 {
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+}
+
+.ExplainerVideoComponent h4:first-of-type {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+.ExplainerVideosActionOverlay {
+  gap: 7px !important;
+  padding: 12px !important;
+}
+
+.ExplainerVideosActionOverlay > span {
+  margin-bottom: 2px !important;
+}
+
+.WithOutSlidePageWrapper {
+  padding-top: 70px;
+}
+
+.stickyWrapper {
+  position: sticky;
+  top: 90px;
+  margin-bottom: 45px;
+}
+
+.rightContainer {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 8px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSkeletonContainer {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.BlogReferralContainer {
+  max-width: 600px;
+}
+
+.SecondContainer {
+  justify-content: space-between;
+  margin-top: 42px;
+}
+
+.FAQSectionMobile {
+  background: var(--gripWhiteLilac, #f7f7fc);
+}
+
+.PendingInvestmentCard {
+  margin: 50px 0px;
+}
+
+.PendingInvestmentHeader {
+  gap: 10px;
+}
+
+.PendingInvestmentTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--gripEbonyClay);
+  margin: 0;
+}
+
+.PendingInvestmentHeaderMessage {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.PendingInvestmentSubTitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 10px;
+  color: var(--gripLuminousGrey, #555770);
+  display: flex;
+  gap: 4px;
+}
+
+.PendingInvestmentSubTitle > span {
+  top: 5px;
+}
+
+.PendingRequestContentCard {
+  margin-top: 0px;
+}
+
+.NavigationClassName {
+  display: none;
+}
+
+.DiscoverFirst {
+  z-index: 2;
+  margin-top: -140px !important;
+}
+
+.MobilePendingContainer {
+  border: 0px;
+  padding: 20px 20px 0px;
+  margin-bottom: 20px;
+  background: linear-gradient(180deg, #fef6ed 0%, rgba(254, 246, 237, 0) 40%);
+  margin-top: 0px;
+}
+
+.CardContainer {
+  width: 100%;
+  position: relative;
+}
+
+.CardContainerWithNavigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.WarningIconText {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.WarningIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.kycBanner {
+  margin-top: 22px;
+}
+
+.kycBanner:empty {
+  display: none;
+}
+
+.rmCardContainer {
+  width: 100%;
+}
+
+.InfoIcon {
+  font-size: 12px;
+  color: var(--gripBlue, #00357c);
+}
+
+.DangerTriangle {
+  color: var(--gripYellowOrange, #fcac46);
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .PageWrapper :global(.containerNew) {
+    display: flex;
+    gap: 68px;
+  }
+
+  .InvestedUserContainer {
+    width: 100% !important;
+    max-width: unset !important;
+  }
+
+  .PageWrapper:global(.NonInvestedUser) {
+    padding-bottom: 40px !important;
+  }
+
+  .SecondContainerNoNotification {
+    padding-bottom: 40px !important;
+  }
+
+  .SkeletonPageWrapper {
+    padding-top: 100px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .PageWrapper {
+    padding: 47px 0 70px;
+  }
+
+  .PageWrapper :global(.containerNew) {
+    padding-top: 10px;
+  }
+
+  .MobileContainer {
+    padding-bottom: 0;
+  }
+
+  .BlogSectionMobile {
+    padding-bottom: 42px;
+  }
+
+  .PendingInvestmentTitle h3 {
+    font-size: 16px;
+  }
+
+  .WarningIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .PendingInvestmentSubTitle > span {
+    display: none !important;
+  }
+
+  .PendingInvestmentTitle {
+    font-size: 14px;
+  }
+
+  .rmCardContainer {
+    margin-top: 30px;
+  }
+}

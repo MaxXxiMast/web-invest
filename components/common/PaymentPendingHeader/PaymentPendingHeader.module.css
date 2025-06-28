@@ -1,0 +1,53 @@
+.Header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.Logo > div {
+  padding: 0 !important;
+}
+.Logo img {
+  max-height: 28;
+}
+
+.logoutbtn {
+  min-width: 75;
+}
+
+.logoutbtn button {
+  padding: 4px 12px;
+  max-height: 34;
+}
+
+.backbtn {
+  min-width: 75;
+}
+
+@media screen and (min-width: 768px) {
+  .Header {
+    padding: 18px 0 14px;
+    border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  }
+
+  .Logo {
+    margin: 0 auto;
+  }
+  .BottomFooter {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Header {
+    justify-content: center;
+  }
+
+  .BottomFooter {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}

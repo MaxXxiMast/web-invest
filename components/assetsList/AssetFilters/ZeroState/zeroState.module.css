@@ -1,0 +1,54 @@
+.containerDiv {
+  text-align: center;
+  margin-top: 0 60px;
+  padding: 20px;
+  gap: 20px;
+  height: fit-content;
+}
+
+.buttonContainer {
+  gap: 16px;
+  justify-content: center;
+}
+
+.header {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--gripTextMain, #373a46);
+  text-align: center;
+  margin: 0 8px;
+}
+
+.subHeader {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripTextMain, #373a46);
+  width: 90%;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
+.actionButton {
+  cursor: pointer;
+  font-size: 12px !important;
+  line-height: 18px;
+  margin-top: -5px;
+}
+
+@media screen and (max-width: 768px) {
+  .subHeader {
+    margin-right: 20px;
+    margin-top: -5px;
+  }
+  .header {
+    margin-right: 20px;
+    line-height: 10px;
+  }
+  .containerDiv {
+    border-radius: 12px;
+    border: 1.5px solid var(--lavenderMist, #e5ebf2);
+    margin-top: -80px;
+    width: 100%;
+  }
+}

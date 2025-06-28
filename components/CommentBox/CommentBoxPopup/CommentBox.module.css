@@ -1,0 +1,56 @@
+.CommentBoxModal {
+  max-width: 400px !important;
+}
+
+.titleHeading {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.successModal button {
+  margin-top: 24px;
+}
+
+.CommentBoxSkeletonContainer {
+  margin-top: 10px;
+}
+
+.CommentBoxSkeletonContainer span {
+  background-color: rgba(0, 0, 0, 0.11) !important;
+  margin-bottom: 20px !important;
+  transform: none !important;
+}
+
+.CommentBoxSkeletonContainer span:nth-child(3) {
+  margin-top: -10px !important;
+}
+
+.CommentBoxSkeletonContainer span:last-child {
+  margin-bottom: 10px !important;
+}
+
+.poweredBy {
+  line-height: 0;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .poweredBy {
+    margin-right: 25px;
+  }
+  .CloseBtn {
+    top: 27px;
+    right: 15px;
+  }
+}
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .titleHeading {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+/* Media Queries End */

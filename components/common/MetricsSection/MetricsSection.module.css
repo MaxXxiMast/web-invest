@@ -1,0 +1,185 @@
+.key_figures {
+  color: var(--gripLuminousDark);
+  text-align: center;
+  padding: 36px 0;
+  background: var(--gripWhiteLilac, #f7f7fc);
+}
+
+.key_figures__section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.key_figures__section__block {
+  display: flex;
+  flex-basis: calc(25% - 80px);
+  flex-direction: column;
+}
+
+.key_figures__metrics {
+  display: flex;
+  align-items: center;
+  gap: 43px;
+}
+
+.key_figures__metric {
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: start;
+}
+
+.key_figures__description {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: start;
+}
+
+.header {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: start;
+}
+
+.MetricLabel {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: var(--gripLuminousGrey);
+}
+
+.MetricValue {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--gripEbonyClay);
+}
+
+.MetricCardContainer {
+  padding: 16px 12px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  box-shadow: 0px 4px 4px rgba(222, 222, 222, 0.1);
+  border-radius: 10px;
+  min-width: 202px;
+}
+
+.MetricCardContainer:global(.radialGradientTeal) {
+  background: var(--radialGradientMetricTeal);
+}
+
+.MetricCardContainer:global(.radialGradientYellow) {
+  background: var(--radialGradientMetricYellow);
+}
+
+.MetricCardContainer:global(.radialGradientBlue) {
+  background: var(--radialGradientMetricBlue);
+}
+
+.MetricCardImage {
+  width: 30px;
+  height: 30px;
+}
+
+.GripVectorImage {
+  width: 46px;
+  height: 35px;
+}
+
+.MetricHeading {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--gripEbonyClay);
+}
+
+.MetricSubHeading {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripLuminousGrey);
+}
+
+.MetricHeadingContainer {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+
+.MetricHeadingSubContainer {
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .key_figures {
+    position: relative;
+    border-radius: 9px;
+    padding-bottom: 20px;
+    margin: 50px 0 0;
+  }
+
+  .key_figures div:global(.containerNew) {
+    padding-bottom: 0px;
+  }
+
+  .GripVectorImage {
+    position: absolute;
+    top: -16px;
+  }
+
+  .key_figures__metrics,
+  .key_figures__section,
+  .MetricHeadingContainer {
+    flex-direction: column;
+  }
+
+  .key_figures__section {
+    width: 100%;
+    max-width: 289px;
+  }
+
+  .MetricHeadingSubContainer {
+    text-align: center;
+  }
+
+  .TransparencyButton {
+    display: none;
+    position: relative;
+    bottom: -20px;
+  }
+
+  .TransparencyButton button {
+    height: 39px;
+    width: 145px !important;
+  }
+
+  .TransparencyButton span {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .MetricSubHeading {
+    max-width: 289px;
+  }
+
+  .MetricCardContainer {
+    gap: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .TransparencyButton {
+    display: none;
+  }
+
+  .MetricCardContainer {
+    gap: 20px;
+  }
+}

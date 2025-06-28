@@ -1,0 +1,134 @@
+.Wrapper * {
+  margin: 0;
+}
+
+.Wrapper {
+  gap: 24px;
+}
+
+.BankDetails {
+  border-radius: 8px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background: var(--gripWhite, #ffffff);
+  padding: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.InfoCard {
+  margin-bottom: -7px !important;
+}
+
+.CardTop {
+  gap: 10px;
+}
+
+.Mt12 {
+  margin-top: 12px;
+}
+
+.Center {
+  margin: auto;
+}
+
+.Txt {
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.Left {
+  color: var(--gripLuminousDark, #282c3f);
+  margin-top: 18px;
+}
+
+.CardBottom li {
+  gap: 3px;
+}
+
+.Left li + li {
+  margin-top: 3px;
+}
+
+.BankList {
+  gap: 10px;
+}
+
+.BankTitle {
+  font-weight: 600 !important;
+}
+
+.BankData {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-right: 4px;
+}
+
+.Bold {
+  font-weight: 800;
+  margin-left: -4px;
+}
+
+.CardBottom {
+  margin-top: 12px;
+  padding-top: 12px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.CardBottom ul {
+  gap: 8px;
+}
+
+.CardBottom li > span {
+  flex-shrink: 0;
+  top: 2px;
+}
+
+.Left,
+.Txt,
+.CardBottom {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.Instructions {
+  padding: 0px 18px 18px;
+}
+
+.InstructionList {
+  gap: 15px;
+  margin-top: 10px;
+  padding-left: 0px;
+  color: var(--gripLuminousDark, #282c3f);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.InstructionLine {
+  padding-top: 18px;
+}
+
+.InstructionTxt {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 11px !important;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 6px !important;
+}
+
+.title {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.description {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 6px;
+}

@@ -1,0 +1,94 @@
+.container {
+  margin-top: 40px;
+}
+
+.header {
+  gap: 8px;
+}
+
+.searchBox {
+  margin-left: 0;
+  flex: 1;
+}
+
+.selectRoot {
+  width: unset !important;
+}
+
+.formControlRoot {
+  min-width: unset !important;
+}
+
+.select > div {
+  background-color: var(--gripWhiteLilac, #f7f7fc) !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  border: unset !important;
+  font-weight: 500;
+  font-size: 14px !important;
+  line-height: 14px;
+  color: var(--gripWealthText, #696b74);
+}
+
+.tooltipDiv {
+  margin-left: 4px;
+}
+.selectMenuIcon {
+  color: var(--gripWealthText, #696b74) !important;
+}
+
+.table {
+  margin-top: 40px;
+}
+
+.assetCard {
+  border-bottom: 1px solid var(--gripDawnPink, #ebebf0);
+  padding-bottom: 15px;
+}
+
+.verticalDots {
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--gripEbonyClay, #292c3e);
+}
+
+.label,
+.date {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--gripLuminousGrey, #555770);
+  margin-top: 5px;
+}
+
+.TitleRightAllTransaction {
+  display: flex;
+  align-items: flex-end;
+}
+
+.download {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--gripBlue);
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.mobPending {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gripMySin, #ffb628);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: none;
+  }
+}

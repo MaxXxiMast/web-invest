@@ -1,0 +1,20 @@
+.Pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 32px;
+}
+.Pagination span {
+  width: 13px;
+  height: 3px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 37px;
+  opacity: 1;
+  cursor: pointer;
+  margin: 0 !important;
+}
+
+.Pagination span:global(.swiper-pagination-bullet-active) {
+  background: var(--gripBlue);
+}

@@ -1,0 +1,169 @@
+.ContentSection {
+  margin-top: 42px;
+}
+.CardHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.HeaderLeft h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--gripEbonyClay);
+  margin: 0;
+}
+
+.HeaderLeft h4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripLuminousGrey);
+  margin: 8px 0 0;
+}
+.CardHeader + .CardBody {
+  margin-top: 24px;
+}
+.HeaderRight {
+  margin-left: auto;
+}
+.AssetSlider {
+  position: relative;
+}
+
+.LastSlide {
+  margin-right: 0;
+}
+
+.SwiperNavigationDiscover {
+  max-width: 200px;
+  margin: 36px auto 0;
+}
+
+.BlurEndSlider::after {
+  background: linear-gradient(
+    270deg,
+    #ffffff 12.43%,
+    rgba(255, 255, 255, 0) 94.51%
+  );
+  content: '';
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 200px;
+  top: 0;
+  z-index: 1;
+}
+
+.BlurEndLastSlider::after {
+  transform: rotate(180deg);
+  right: auto;
+}
+
+.BlankLastSlider::after {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  .HeaderRight {
+    margin: 0 auto;
+  }
+
+  .AssetSlider::after,
+  .LastSlider::before {
+    background: linear-gradient(
+      270deg,
+      #ffffff 12.43%,
+      rgba(255, 255, 255, 0) 94.51%
+    );
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 85px;
+    top: 0;
+    z-index: 2;
+  }
+
+  .AssetSlider::after {
+    right: 0;
+  }
+
+  .LastSlider::before {
+    left: 0;
+    transform: rotate(180deg);
+  }
+  .ShowLeftBlur::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 85px;
+    top: 0;
+    background: var(--linearGradientSlider);
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .HeaderRight {
+    display: none;
+  }
+
+  .AssetSlider {
+    margin-right: 0px;
+  }
+  .AssetSlider,
+  .SliderSection {
+    margin-right: -20px;
+  }
+  .LastSlide {
+    margin-left: -20px;
+    margin-right: 0px;
+  }
+  .CardHeader + .CardBody {
+    margin-top: 24px;
+  }
+  .HeaderLeft h3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .AssetSection {
+    margin-top: 0 !important;
+  }
+
+  .InvestedAssetSection {
+    margin-top: 26px !important;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 360px) {
+  .CardHeader + .CardBody {
+    margin-top: 10px;
+  }
+}
+
+.NavArrow {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--gripLuminousDark);
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: pointer;
+  top: 50%;
+  right: 12px;
+  z-index: 3;
+  background-color: var(--gripWhite);
+  position: absolute;
+}
+
+.PrevArrow {
+  transform: rotate(180deg);
+  left: 12px;
+}

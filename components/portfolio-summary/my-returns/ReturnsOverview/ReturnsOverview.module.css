@@ -1,0 +1,29 @@
+.TextStyle14 {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.OverviewCellContainer {
+  gap: 18px;
+}
+
+.OverviewCellContainer > span:last-child {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.OverviewContainer {
+  margin-top: 32px;
+}
+
+.OverviewContainer:global.arrears {
+  margin-top: 8px;
+}
+
+.TotalReturns {
+  text-align: end;
+}

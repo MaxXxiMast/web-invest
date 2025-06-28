@@ -1,0 +1,84 @@
+.container {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 8px;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.container > span {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 14px;
+}
+
+.escalateButton {
+  width: unset !important;
+  padding: 0px 12px;
+  line-height: 16px;
+  height: 40px;
+  font-size: 12px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  margin: 16px 0px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gripGunPowder, #44485b);
+}
+
+.cta {
+  margin-top: 10px;
+}
+
+.modalCard {
+  width: 500px;
+}
+
+.GCPoweredContainer {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .heading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+  .info {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .modalCard {
+    width: 100%;
+  }
+
+  .GCButtonContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 40px);
+    padding-bottom: 20px;
+    background: var(--gripWhite, #ffffff);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .GCPoweredContainer {
+    display: none;
+  }
+}

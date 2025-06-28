@@ -1,0 +1,58 @@
+.container {
+  position: relative;
+  padding-bottom: 60px;
+  padding-bottom: 0;
+}
+
+.container h4 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  margin-bottom: 10px;
+}
+
+.assetFilterContainer {
+  max-height: 480px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  scrollbar-color: var(--gripSeashell, #f1f1f1);
+  -webkit-overflow-scrolling: touch;
+}
+
+.assetFilterContainer:hover {
+  overflow-y: auto;
+}
+
+.assetFilterContainer::-webkit-scrollbar {
+  width: 6px;
+}
+
+.assetFilterContainer::-webkit-scrollbar-thumb {
+  background-color: var(--gripSeashell, #f1f1f1);
+  border-radius: 60px;
+}
+.sortLabel {
+  margin: 0;
+  padding: 12px 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.52px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.buttonsContainer {
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: var(--gripWhite, #ffffff);
+  font-size: 16px !important;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .assetFilterContainer {
+    overflow-y: auto;
+  }
+}

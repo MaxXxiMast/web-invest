@@ -1,0 +1,15 @@
+.container {
+  padding: 0 24px;
+  width: 100%;
+}
+
+.divider {
+  margin: 18px 0;
+  border: none;
+  height: 1px;
+  background-color: var(--gripMercuryThree, #e6e6e6);
+}
+
+.downloadSkeleton {
+  border-radius: 4px !important;
+}

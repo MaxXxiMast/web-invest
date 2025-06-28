@@ -1,0 +1,76 @@
+.ReferralDashboard {
+  padding: 0;
+}
+.referralBreakMain {
+  margin: -18px 0 0px !important;
+}
+.PageHeading {
+  padding: 0 0 20px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+.ReferralDashboardInner {
+  padding: 56px 0;
+  display: flex;
+}
+.ReferralDashboardLeft {
+  flex: 1;
+}
+.ReferralDashboardRight {
+  width: 359px;
+  margin-left: 28px;
+}
+.ReferNowCard {
+  margin-top: 28px;
+}
+
+@media screen and (max-width: 992px) {
+  .referralBreakMain {
+    margin: -18px 0 50px !important;
+  }
+  .PageHeading {
+    border: none;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  .ReferralDashboardInner {
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  .ReferralDashboardRight {
+    order: 2;
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .ReferralDashboardLeft {
+    order: 3;
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .ReferNowCard {
+    display: none;
+  }
+  .ReferralDashboard {
+    padding: 25px 0 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ArrowRight {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .PageHeading {
+    display: flex;
+  }
+  .PageHeading :global(.Text) {
+    position: relative;
+    flex: 1;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ReferralCardList {
+    margin: 0 -20px;
+  }
+}

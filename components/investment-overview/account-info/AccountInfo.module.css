@@ -1,0 +1,59 @@
+.Wrapper {
+  border-radius: 7px;
+  padding: 16px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  width: 100%;
+}
+.Title {
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0 0 10px;
+}
+.Widget,
+.WidgetGrp {
+  display: flex;
+  align-items: center;
+}
+
+.Widget {
+  gap: 8px;
+}
+.Widget span {
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.Title,
+.Widget span {
+  font-size: 12px;
+  font-family: sans-serif;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.WidgetGrp {
+  gap: 8px;
+}
+
+.WidgetGrp + .WidgetGrp {
+  margin-top: 8px;
+}
+
+.payFrom {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .Widget + .Widget {
+    border-left: 1px solid var(--gripIron, #e2e2e5);
+    padding-left: 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .WidgetGrp {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

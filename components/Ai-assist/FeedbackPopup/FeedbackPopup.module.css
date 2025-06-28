@@ -1,0 +1,250 @@
+.overlay {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dealAssistButtonDisabled {
+  background-color: var(--gripLuminousDark, #282c3f);
+  gap: 4px;
+  color: var(--gripWhite, #ffffff);
+  border-radius: 6px;
+  height: 33px;
+  width: 114px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  padding-top: 7px;
+  padding-right: 6px;
+  padding-bottom: 7px;
+  padding-left: 6px;
+}
+.feedbackContainer {
+  position: relative;
+  width: 461px;
+  height: 477px;
+  background: var(--gripWhite, #ffffff);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 28px;
+}
+.chatpopupLogo {
+  display: block;
+}
+.experienceLabel {
+  font-size: 16px;
+  font-weight: 500;
+  height: 20px;
+  text-align: center;
+}
+.chatpopupSpan {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  margin: 5px;
+  margin-top: 15px;
+  padding: 10px;
+}
+.closeButtonIcon {
+  position: absolute;
+  top: -34px;
+  border-radius: 50%;
+  background-color: var(--gripSeashell, #f1f1f1);
+  border: none;
+  right: 2px;
+  padding: 4px;
+}
+.error-border {
+  border: 2px solid var(--deepCarminePink, #ef3c3c) !important;
+}
+.error-text {
+  color: var(--deepCarminePink, #ef3c3c);
+  font-size: 12px;
+}
+.starFeedback {
+  position: absolute;
+  top: -36px;
+  left: 52%;
+  transform: translateX(-50%);
+  padding: 6px;
+}
+.star {
+  cursor: pointer;
+  margin-right: 7px;
+  margin-top: 5px;
+}
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--gripLuminousGreyPlace, #777777);
+  position: absolute;
+  top: 15px;
+  right: 14px;
+}
+.feedbackBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.starContainer {
+  gap: 30px;
+  width: 100%;
+}
+.feedbackBox h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gripLuminousDark, #282c3f);
+  margin-bottom: -15px;
+  margin-top: 40px;
+}
+.subText {
+  font-size: 16px;
+  color: var(--gripTextMain, #373a46);
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.feedbackInput {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--borderFour, #a8a9bd);
+  border-radius: 8px;
+  font-size: 16px;
+  min-height: 80px;
+  resize: none;
+  transition: 0.3s ease;
+  font-family: var(--fontFamily, 'Inter', sans-serif);
+}
+.feedbackInput:focus {
+  box-shadow: 0px 0px 0px 4px var(--gripSolitude, #e7f1fe);
+}
+.feedbackLabel {
+  position: absolute;
+  left: 12px;
+  color: var(--gripLuminousDark, #282c3f);
+  background: var(--gripWhite, #ffffff);
+  padding: 0 5px;
+  margin-bottom: 35px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+}
+.feedbackLabel.activeLabel {
+  top: 0px;
+  color: var(--gripLuminousDark, #282c3f);
+  outline-color: var(--gripBlue, #00357c) !important;
+  font-size: 12px;
+  font-weight: 500;
+}
+.feedbackTextArea {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  margin-top: 15px;
+}
+.feedbackInputError {
+  border: 2px solid var(--deepCarminePink, #ef3c3c) !important;
+}
+.wordCount {
+  position: absolute;
+  font-size: 12px;
+  color: var(--deepCarminePink, #ef3c3c);
+  left: 10px;
+  top: 68px;
+}
+.wordCountError {
+  color: var(--deepCarminePink, #ef3c3c);
+}
+.submitButton {
+  background: var(--gripBlue, #00357c);
+  color: var(--gripWhite, #ffffff);
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.submitButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  background-color: var(--borderFour, #a8a9bd);
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+  }
+  .feedbackContainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 0;
+    border-radius: 0;
+    padding: 10px;
+  }
+  .closeButton {
+    top: 0;
+    margin-right: 2px;
+    margin-top: 20px;
+    right: 10px;
+  }
+  .feedbackBox {
+    padding: 16px;
+    width: 100%;
+    height: auto;
+  }
+  .star {
+    margin-top: 30px;
+  }
+  .feedbackBox h3 {
+    font-size: 16px;
+    color: var(--gripLuminousDark, #282c3f);
+    margin-bottom: -15px;
+    margin-top: 40px;
+    font-weight: 700;
+  }
+  .feedbackInput {
+    border: 1px solid var(--gripTextMain, #373a46);
+    transition: border-color 0.3s ease;
+    outline-color: var(--gripBlue, #00357c) !important;
+    height: 110px;
+  }
+  .feedbackLabel {
+    font-size: 13px;
+  }
+  .feedbackTextArea {
+    margin-top: 20px;
+  }
+  .wordCount{
+    top: 102px;
+  }
+  .submitButton {
+    margin-top: 27px;
+  }
+}

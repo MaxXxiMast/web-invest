@@ -1,0 +1,68 @@
+.Tabination {
+  margin: 28px 0;
+  display: flex;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  align-items: center;
+  width: 100%;
+}
+
+.TabItems ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.TabItems ul li {
+  padding: 7px 12px;
+  border-bottom: 1px solid transparent;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGreyPlace);
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.TabItems ul li + li {
+  margin-left: 12px;
+}
+.TabItems ul li:global(.active) {
+  border-color: var(--gripBlue);
+  color: var(--gripBlue);
+  transition: 0.3s linear;
+}
+.TabContent {
+  margin: 32px 0;
+  position: relative;
+}
+
+.TabContent :global(.TabContentContainer-enter) {
+  opacity: 0;
+}
+
+.TabContent :global(.TabContentContainer-enter-active) {
+  opacity: 1;
+  top: 0px;
+  transition: opacity 500ms;
+}
+.TabContent :global(.TabContentContainer-exit) {
+  opacity: 1;
+}
+.TabContent :global(.TabContentContainer-exit-active) {
+  opacity: 0;
+  top: -30px;
+  transition: opacity 500ms;
+}
+
+@media screen and (max-width: 767px) {
+  .Tabination {
+    overflow: auto;
+  }
+  .TabItems ul li {
+    white-space: pre;
+  }
+  .TabContent {
+    margin: 20px 0;
+  }
+}

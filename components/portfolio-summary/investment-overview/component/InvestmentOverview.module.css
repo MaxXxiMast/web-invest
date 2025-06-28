@@ -1,0 +1,179 @@
+.container {
+  gap: 30px;
+}
+
+.title {
+  margin: 0;
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26.244px;
+}
+
+.filter {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  border-bottom: none !important;
+  max-height: 50px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.cards {
+  height: 100%;
+  position: relative;
+  margin: 24px 0;
+  gap: 10px;
+  z-index: 1;
+}
+
+.separator {
+  width: 1.5px;
+  min-height: 90px;
+  background: var(--gripBorder, #f0f0f0);
+}
+
+.card {
+  padding: 8px 0;
+  height: 100%;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--gripLuminousGrey, #555770);
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.showModal {
+  cursor: pointer;
+}
+
+.sublabel {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 10px;
+  color: var(--gripEbonyClay, #292c3ea8);
+}
+
+.overlayContainer {
+  min-height: 320px !important;
+  pointer-events: none !important;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(
+    181.04deg,
+    rgba(255, 255, 255, 0) 0.89%,
+    #ffffff 64.13%
+  );
+  min-height: 75px;
+  z-index: 2;
+}
+
+.zeroStateOverlay {
+  margin-top: 60px;
+  background: var(--gripWhite, #ffffff);
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.ToolTipPopUp {
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  color: var(--gripEbonyClay, #292c3ea8) !important;
+  background: var(--gripWhite, #ffffff) !important;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08) !important;
+  pointer-events: visible !important;
+}
+
+.ArrowToolTip::before {
+  background-color: var(--gripWhite, #ffffff) !important;
+  margin-top: -2px !important;
+}
+
+.cardsWrapper {
+  gap: 16px;
+}
+
+.InfoIcon {
+  font-size: 12px;
+  color: var(--gripBlue, #00357c);
+  font-weight: 700;
+}
+
+.CaretRight {
+  font-size: 12px;
+}
+
+/* Large devices  */
+@media screen and (min-width: 1081px) {
+  .cards {
+    max-width: 90%;
+  }
+}
+
+/* small devices  */
+@media screen and (max-width: 1080px) {
+  .cards {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .separator {
+    display: none;
+  }
+
+  .card {
+    padding: 16px 12px;
+    background-color: var(--gripWhiteLilac, #f7f7fc);
+    border-radius: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .sublabel {
+    display: none;
+  }
+
+  .accentValue {
+    color: var(--gripPrimaryGreen, #00b8b7);
+  }
+
+  .overlayContainer {
+    min-height: 390px !important;
+  }
+  .overlay {
+    height: 100%;
+  }
+  .zeroStateOverlay {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .label {
+    font-size: 12px;
+  }
+  .value {
+    font-size: 18px;
+  }
+}

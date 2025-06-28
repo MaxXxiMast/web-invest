@@ -1,0 +1,53 @@
+.Row,
+.MenuSection {
+  display: flex;
+  flex-direction: column;
+}
+.Row {
+  gap: 32px;
+}
+.MenuSection {
+  gap: 16px;
+}
+.SectionTitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--gripEbonyClay, #292c3e);
+  margin: 0;
+}
+.Col {
+  display: flex;
+  gap: 60px;
+}
+.ColLeft {
+  width: 400px;
+  flex: 1;
+}
+.ColRight {
+  width: 400px;
+}
+
+@media screen and (max-width: 992px) {
+  .Col {
+    flex-direction: column;
+    gap: 0;
+  }
+  .ColLeft,
+  .ColRight {
+    width: 100%;
+  }
+  .ProductVideo {
+    display: none;
+  }
+  .SectionTitle {
+    display: none;
+  }
+  .MenuSection {
+    gap: 10px;
+  }
+  .Row {
+    gap: 16px;
+    padding-bottom: 20px;
+  }
+}

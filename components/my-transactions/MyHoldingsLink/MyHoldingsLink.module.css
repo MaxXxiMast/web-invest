@@ -1,0 +1,45 @@
+.container {
+  border-radius: 12px;
+  position: relative;
+  background: url('https://static-assets.gripinvest.in/bonds/InvestmentNumberCardBackgroundImg.svg')
+    no-repeat;
+  background-size: cover;
+  height: 180px;
+  margin-top: 30px;
+  padding: 14px 16px;
+  width: 220px;
+  border: none;
+}
+
+.container p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripWhite, #ffffff);
+  margin: 0;
+}
+
+.button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  gap: 7px;
+}
+
+.button > span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripWhite, #ffffff);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: unset;
+  }
+  .button {
+    margin-top: 18px;
+  }
+}

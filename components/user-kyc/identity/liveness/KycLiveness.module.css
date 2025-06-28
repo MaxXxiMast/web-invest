@@ -1,0 +1,157 @@
+.containerNew {
+  padding-bottom: 0 !important;
+}
+.KycLivenessContainer {
+  max-width: 350px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.LivenessLabel {
+  padding-right: 10px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  display: flex;
+  gap: 4px;
+}
+.LivenessDesc {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.LivenessImageContainer {
+  margin: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  overflow: hidden;
+}
+.LivenessImageContainer img {
+  max-width: 100%;
+  width: 100%;
+  margin-top: -2px;
+  margin-bottom: -2px;
+}
+.LivenessInfo {
+  margin: 16px 0;
+  font-size: 12px;
+  color: var(--gripLuminousGrey, #555770);
+  font-weight: 400;
+  line-height: 20px;
+}
+.tooltipInfo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.LivenessSubmitButton {
+  margin-top: 20px;
+  border-radius: 8px;
+  gap: 10px;
+}
+
+.LocationContainer {
+  max-width: 350px;
+}
+
+.locationErrorContainer {
+  padding: 12px;
+  border-radius: 8px;
+  gap: 10px;
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+}
+.locationErrorTitle {
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.locationImageWrapper {
+  height: 48px;
+  min-width: 48px;
+  margin-right: 10px;
+  display: grid;
+  place-items: center;
+  background-color: var(--gripWhite, #ffffff);
+  border-radius: 50px;
+}
+.locationInfo {
+  padding: 8px 8px 8px 0;
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.locationButtonGroup {
+  margin: 16px 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.PrimaryButton {
+  height: 40px;
+}
+
+.locationInstr ul {
+  position: relative;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 12px;
+}
+
+.locationInstr ul li:before {
+  content: '-';
+  position: absolute;
+  left: 0;
+}
+
+.InfoIcon {
+  font-weight: 700;
+  color: var(--gripBlue, #00357c);
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .LivenessInfo {
+    margin-right: -90px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .KycLivenessContainer {
+    position: relative;
+    min-height: 500px;
+    max-width: 100%;
+    padding-bottom: 70px;
+  }
+  .LivenessLabel {
+    margin-top: 32px;
+  }
+  .LivenessImageContainer {
+    justify-content: center;
+    gap: 16px;
+  }
+  .LivenessInfo {
+    position: static;
+    margin: 0px;
+  }
+  .LivenessSubmitButton {
+    margin: 0px;
+    position: absolute;
+    bottom: 0;
+  }
+  .LocationContainer {
+    margin: auto;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .LivenessSubmitButton {
+    position: sticky;
+    bottom: 15px;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,57 @@
+.BalanaceCard {
+  padding: 24px;
+  width: 100%;
+  background-color: var(--gripLighterFive);
+  border-radius: 12px;
+  background-image: url('https://img.gripinvest.in/innerPages/vault/BalanceCardBg.svg');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.InfoIcon,
+.InfoIcon > span {
+  width: 12px;
+  height: 40px;
+  max-width: 12px;
+  vertical-align: middle;
+}
+
+.BalanaceCardTop h3 {
+  font-weight: 600;
+}
+
+.BalanaceCardBottom {
+  margin-top: 30px;
+  display: flex;
+  gap: 16px;
+}
+.BalanaceCardBottom p {
+  color: var(--gripLuminousDark);
+}
+.bankServerDown {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 8px 0 0;
+  color: var(--gripRedTwo, #ff0000);
+  line-height: 20px;
+}
+
+.BottomBtn {
+  width: auto !important;
+  max-width: 135px;
+  max-height: 40px;
+  padding: 0 !important;
+  min-width: 125px;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .vaultBalance {
+    font-size: 24px !important;
+  }
+  .BalanaceCardBottom {
+    gap: 12px;
+  }
+  .bankServerDown {
+    margin: 15px 0 0;
+  }
+}

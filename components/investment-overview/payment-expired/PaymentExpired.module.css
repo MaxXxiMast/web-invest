@@ -1,0 +1,19 @@
+.Wrapper {
+  border-radius: 8px;
+  background: rgba(238, 26, 38, 0.1);
+  padding: 14px;
+  gap: 8px;
+}
+.Wrapper > span {
+  vertical-align: middle;
+}
+.Txt {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.Wrapper + * {
+  margin-top: 20px;
+}

@@ -1,0 +1,92 @@
+.Wrapper {
+  border-radius: 12px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+.Widget {
+  padding: 18px;
+}
+.Widget + .Widget {
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.Header,
+.Right,
+.Left,
+.Summary,
+.SummaryLeft {
+  display: flex;
+  align-items: center;
+}
+
+.Header {
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.Right {
+  gap: 5px;
+  cursor: pointer;
+}
+
+.Left {
+  color: var(--gripTextMain, #373a46);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  gap: 5px;
+}
+
+.Value {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.Caret {
+  cursor: pointer;
+  transform: none;
+  transition: 0.2s ease-in-out;
+  font-size: 10px;
+}
+
+.UpCaret {
+  transform: rotate(180deg);
+  transition: 0.2s ease-in-out;
+}
+.Body {
+  padding-top: 12px;
+  gap: 12px;
+}
+.Summary {
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.SummaryLeft {
+  gap: 5px;
+}
+
+.Tooltip {
+  line-height: 0;
+}
+
+.Badge {
+  border-radius: 4px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  padding: 4px 10px;
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.InfoIcon {
+  color: var(--gripBlue, #00357c);
+  font-size: 10px;
+  font-weight: 700;
+}

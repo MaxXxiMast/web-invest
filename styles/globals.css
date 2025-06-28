@@ -1,0 +1,615 @@
+@import './helpers/Colors.module.css';
+@import './helpers/FlexHelpers.module.css';
+@import './helpers/Margins.module.css';
+@import './helpers/typography.module.css';
+
+:root {
+  --headerHeight: 65px;
+  --fontFamily: 'Inter', sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  /* stylelint-disable-next-line font-family-name-quotes */
+  font-family: var(--fontFamily);
+  /* overflow-x: hidden ;height: 100% */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* stylelint-disable-next-line selector-id-pattern */
+#__next {
+  position: relative;
+}
+
+body.scroll-hidden {
+  touch-action: none;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: auto;
+  overflow: hidden;
+}
+input {
+  /* stylelint-disable-next-line font-family-name-quotes */
+  font-family: var(--fontFamily, "'Inter', sans-serif") !important;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+/** -------------------------------------------------------------------------- */
+.pageContainer {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1200px;
+  height: fit-content;
+}
+.backgroundWhite {
+  background-color: var(--gripWhite, #ffffff);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* for Chrome, Safari, and Opera */
+}
+
+/** -------------------------------------------------------------------------- */
+
+/*mobile media queries*/
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  .textContainer {
+    padding: 0px 60px;
+    height: fit-content;
+  }
+
+  .pageContainer {
+    padding: 0px 24px;
+    justify-content: center;
+  }
+}
+
+/*desktop media queries*/
+@media (min-width: 769px) {
+  .container {
+    width: 100%;
+    padding: 0 150px;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/** Font */
+.font14 {
+  font-size: 14px;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/** -------------------------------------------------------------------------- */
+/** These classes are used to set the initial position of Primary Text here, then make it slide-up when it scrolls into view */
+
+.slide-up {
+  opacity: 1;
+  transform: translateY(10px);
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+}
+
+.slide-up.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/** -------------------------------------------------------------------------- */
+
+.nav_hamburger_icon {
+  width: 18px;
+  height: 14px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.nav_hamburger_icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: var(--gripLuminousDark, #282c3f);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#span_1 {
+  top: 0px;
+}
+
+#span_2 {
+  top: 6px;
+}
+
+#span_3 {
+  top: 6px;
+}
+
+#span_4 {
+  top: 12px;
+}
+
+.open #span_1 {
+  top: 6px;
+  width: 0%;
+  left: 50%;
+}
+
+.open #span_2 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.open #span_3 {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.open #span_4 {
+  top: 6px;
+  width: 0%;
+  left: 50%;
+}
+
+.nav_hamburger_icon:not(.open) #span_1 {
+  max-width: 16px;
+}
+.nav_hamburger_icon:not(.open) #span_2,
+.nav_hamburger_icon:not(.open) #span_3 {
+  max-width: 12px;
+}
+
+.nav_hamburger_icon:not(.open) #span_4 {
+  max-width: 8px;
+}
+
+.containerNew {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 54px;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.sectionTitle span {
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.sectionSubtitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.sectionTagLine {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey, #555770);
+  margin: 12px 0;
+}
+
+.titleSeparator {
+  margin: 48px 0 32px;
+  background: var(--gripLuminousDark, #282c3f);
+  height: 1px;
+  width: 100%;
+}
+
+.SliderPagination {
+  margin-left: auto;
+  width: auto !important;
+}
+.SliderPagination .swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+  margin: 0 2px !important;
+  background: var(--gripLuminousDark, #282c3f);
+  opacity: 0.3;
+  border: 2px solid var(--gripLighterFour);
+  cursor: pointer;
+}
+
+.SliderPagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: transparent;
+  border-color: var(--gripLuminousDark, #282c3f);
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.scale-down {
+  transform: scale(0.95);
+}
+
+.scale-up {
+  transform: scale(1);
+}
+
+.ease-in-out {
+  transition: ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .containerNew {
+    padding: 0 20px 120px;
+  }
+  .sectionTitle {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: -0.02em;
+  }
+  .sectionSubtitle {
+    margin-bottom: 12px;
+  }
+}
+
+/*============================
+  INNER PAGES GLOBAL CSS START
+==============================*/
+.InnerPageMain,
+.InnerPageMainNew {
+  padding: 100px 0 70px;
+}
+
+.InnerPageHeading {
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  padding-bottom: 20px;
+  margin-bottom: 32px;
+}
+.SubSectionTitleSection {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .InnerPageMain {
+    padding-top: 76px;
+    padding-bottom: 0;
+  }
+  .InnerPageMainNew {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+  .InnerPageHeading {
+    border: none;
+    padding-bottom: 0;
+  }
+  .SubSectionTitleSection {
+    padding: 0px;
+    border-bottom: 1px solid var(--gripWhiteLilac, #f7f7fc) !important;
+  }
+  .bottomPaddingSubSection {
+    padding-bottom: 14px !important;
+  }
+  #ymDivCircle {
+    display: none !important;
+  }
+}
+
+.BadgesCommon {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.BadgesCommon:empty {
+  display: none !important;
+}
+
+/*============================
+  INNER PAGES GLOBAL CSS END
+==============================*/
+
+/*============================
+TABLE GLOBAL CSS START
+=============================*/
+
+.CustomTable {
+  width: 100%;
+}
+
+.CustomTable th {
+  text-align: left;
+  color: var(--gripLuminousGreyPlace, #777777);
+  padding: 20px 0 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.CustomTable td {
+  padding: 16px 0;
+}
+
+.CustomTable th:last-child,
+.CustomTable td:last-child {
+  text-align: right;
+}
+
+.CustomTable tr:not(:first-child) td {
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.CustomTable tr:last-child td {
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.TablePagination {
+  padding: 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.PaginationLeft span {
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.PaginationRight ul li button {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--gripBlue, #00357c);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--gripBlue, #00357c);
+}
+.PaginationRight ul li + li {
+  margin-left: 12px;
+}
+.PaginationRight ul li button.Mui-selected {
+  background-color: var(--gripBlue, #00357c);
+  color: var(--gripWhite, #ffffff);
+}
+.PaginationRight ul li button.Mui-selected:hover,
+.PaginationRight ul li button:hover {
+  background-color: var(--gripBlue, #00357c);
+  color: var(--gripWhite, #ffffff);
+}
+
+@media screen and (max-width: 380px) {
+  .PaginationRight ul li + li {
+    margin-left: 10px;
+  }
+  .PaginationRight ul li button {
+    width: 35px;
+    height: 35px;
+  }
+  .PaginationRight ul li > div {
+    min-width: auto;
+  }
+}
+
+/*============================
+TABLE GLOBAL CSS END
+=============================*/
+
+.textEllipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.CompactInput {
+  max-height: 46px;
+}
+.BottomCopyright {
+  text-align: center;
+  color: var(--gripLuminousGrey, #555770);
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .stickyNavSibling {
+    padding-top: 56px !important;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+/* AUTOFILL BACKGROUND CHANGES */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
+}
+
+.MuiSkeleton-root {
+  background-color: var(--gripWildSand, #f5f5f5) !important;
+  border-radius: 8px !important;
+}
+.SkeletonPaper {
+  border: 1px solid var(--gripMercury2, #e8e8e8) !important;
+  box-shadow: none !important;
+  border-radius: 8px !important;
+}
+
+.TitleWithDot {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.TitleWithDot::before {
+  display: inline-block;
+  content: '•';
+  margin-right: 5px;
+  vertical-align: middle;
+  color: var(--gripGhost, #c5c6d3);
+}
+
+.position-relative {
+  position: relative;
+}
+
+/* KYC Stepper Discovery */
+
+.PendingStepperIcon {
+  border: 1px solid var(--stepperNoStatus);
+  border-radius: 50%;
+  color: var(--gripWhite, #ffffff);
+  background: var(--gripWhite, #ffffff);
+}
+
+.DiscoveryStepperIcon {
+  width: 24px;
+  height: 24px;
+  background: var(--gripWhite, #ffffff);
+}
+
+@media screen and (max-width: 767px) {
+  .DiscoveryStepperIcon {
+    width: 18px;
+    height: 18px;
+  }
+  .calendly-overlay,
+  .calendly-overlay .calendly-popup .calendly-popup-content,
+  .calendly-overlay .calendly-popup {
+    max-width: 100% !important;
+  }
+}
+
+.Toastify [class*='toast-container'] {
+  z-index: 999999;
+}
+
+.SkeletonCard {
+  border: 1px solid var(--gripMercury2);
+  box-shadow: none;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: var(--gripWhite, #ffffff);
+  width: 100%;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.tf-v1-widget iframe,
+.form .tf-v1-widget iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.react-pdf__message--loading {
+  max-width: 100%;
+  width: 800px;
+  height: 100vh;
+  max-height: 511px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-pdf__Document {
+  width: 100%;
+  overflow: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .react-pdf__message--loading {
+    max-height: 1131px;
+  }
+}

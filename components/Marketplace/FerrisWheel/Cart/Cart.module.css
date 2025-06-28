@@ -1,0 +1,16 @@
+.container {
+  position: absolute;
+  display: flex;
+  padding: 9px;
+  width: 250px;
+  border-radius: 9px;
+  background-color: var(--gripWhite, #ffffff);
+  border: 1px solid var(--gripWhiteLilac, #f7f7fc);
+  transition: all 0.3s ease-in-out;
+}
+
+.comment {
+  font-weight: 400;
+  font-size: 10px;
+  color: var(--gripTextMain, #373a46);
+}

@@ -1,0 +1,61 @@
+.ContentSection {
+  gap: 20px;
+}
+
+.HeaderLeft h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--gripEbonyClay, #292c3e);
+  margin: 0;
+}
+
+.bannerSlide {
+  padding: 4px;
+  min-height: 360px;
+}
+
+.bannerSlide img {
+  object-fit: fill !important;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.HeaderLeft h4 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripLuminousGrey, #555770);
+  margin: 8px 0 0;
+}
+.CardHeader + .CardBody {
+  margin-top: 24px;
+}
+
+.Bullet {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--gripAlto, #d9d9d9);
+  cursor: pointer;
+  outline: none;
+}
+
+.Navigation {
+  cursor: pointer;
+  gap: 10px;
+}
+
+.ActiveBullet {
+  height: 8px;
+  width: 25px;
+  border-radius: 5px;
+  background-color: var(--gripBlue, #00357c);
+}
+
+.Arrows {
+  font-size: 32px;
+  color: var(--gripAccentGreen);
+  visibility: hidden;
+}

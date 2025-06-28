@@ -1,0 +1,165 @@
+.InfiniteScrollLinks ul {
+  width: max-content;
+  gap: 12px;
+}
+.InfiniteScrollLinks ul li span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--gripLuminousGreyPlace, #777777);
+  cursor: pointer;
+}
+.InfiniteScrollLinks ul li {
+  padding: 8px 14px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -6px;
+}
+
+.InfiniteScrollLinks ul li.ActiveLinks {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  height: 38px;
+  padding: 8px 20px;
+  border-radius: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.InfiniteScrollLinks ul li.ActiveLinks span {
+  color: var(--gripBlue, #00357c);
+  font-weight: 600;
+}
+
+.InfiniteScrollLinks {
+  position: sticky;
+  z-index: 1;
+  top: 120px;
+  background-color: var(--gripWhite, #ffffff);
+}
+
+.InfiniteScrollLinks .BackBtn {
+  display: none;
+}
+
+.infinitescrolllinks {
+  margin-top: 56px;
+}
+
+.bgScroll {
+  position: absolute;
+  bottom: 14px;
+  height: 24px;
+  z-index: 100;
+}
+
+.SideArrow {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  background: var(--gripWhiteLilac, #f7f7fc) !important;
+  border: none;
+  cursor: pointer;
+}
+
+.leftButton {
+  left: 0px;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.rightButton {
+  right: 0px;
+}
+
+.LinksContainer {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 12px;
+  padding-bottom: 12px;
+}
+
+.LinksContainer::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+.LinksContainerItem {
+  min-width: max-content;
+}
+
+.InfiniteLinkInnerContainer {
+  width: 100%;
+  padding: 0 8px;
+}
+
+/* NEW NAVIGATION CHANGES CSS STARTS HERE */
+
+@media screen and (min-width: 768px) {
+  .InfiniteScrollLinks:not(.StickyNav) .LinksContainer {
+    border-bottom: none;
+  }
+}
+
+/* NEW NAVIGATION CHANGES CSS ENDS HERE */
+
+@media screen and (min-width: 992px) {
+  .InfiniteLinkInnerContainer .BackBtn {
+    margin-right: -16px;
+  }
+
+  .InfiniteLinkInnerContainer {
+    max-width: 692px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .InfiniteScrollLinks {
+    top: 115px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .InfiniteScrollLinks .BackBtn,
+  .InfiniteScrollLinks .InvestmentCalculator {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .InfiniteScrollLinks ul li span {
+    white-space: pre;
+  }
+  .InfiniteScrollLinks ul {
+    padding: 0px;
+    border-bottom: none;
+  }
+  .InfiniteScrollLinks {
+    overflow: hidden;
+    margin: 0px -20px !important;
+    top: 56px;
+  }
+
+  .InfiniteScrollLinks ul > li:first-child {
+    margin-left: 12px;
+  }
+
+  .InfiniteScrollLinks ul > li:last-child {
+    margin-right: 12px;
+  }
+
+  .InfiniteLinkInnerContainer {
+    position: relative;
+  }
+
+  .infiniteScrollLinks {
+    margin-top: 0;
+  }
+  .leftButton {
+    left: 6px;
+  }
+  .rightButton {
+    right: 6px;
+  }
+}

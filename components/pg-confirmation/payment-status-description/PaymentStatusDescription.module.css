@@ -1,0 +1,30 @@
+.container {
+  padding: 16px;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-size: 14px;
+  color: var(--gripWealthText, #696b74);
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.listStyle {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.listStyle li {
+  font-size: 14px;
+  color: var(--gripWealthText, #696b74);
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    background: var(--gripEarlyDawn, #fff8ea);
+    width: 100%;
+  }
+}

@@ -1,0 +1,68 @@
+.heading {
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--gripEbonyClay, #292c3e);
+  line-height: 24px;
+}
+
+.subHeadingText {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gripEbonyClay, #292c3e);
+  line-height: 24px;
+  padding: 16px 0;
+}
+
+.radioButton :global(.MuiIconButton-label) {
+  color: var(--gripPrimaryGreen, #00b8b7);
+  height: 20px;
+  width: 20px;
+}
+
+.radioLabel :global(.MuiTypography-body1) {
+  color: var(--gripShuttleGray, #686b78) !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  font-family: Inter, sans-serif;
+}
+
+.bottomActionsContainer {
+  gap: 20px;
+}
+
+.submitButton {
+  margin-top: 20px;
+  max-width: calc(50% - 10px);
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 18px;
+  }
+
+  .subHeadingText {
+    font-size: 14px;
+  }
+
+  .GroupList {
+    gap: 5px;
+  }
+
+  .radioLabel :global(.MuiTypography-body1) {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+
+  .bottomActionsContainer {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+
+  .submitButton {
+    margin-top: 0;
+    width: auto !important;
+    flex-grow: 0;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+.InputWrapper {
+  gap: 10px;
+}
+
+.ValueErr {
+  color: var(--gripDanger, #ff5c5c);
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+}

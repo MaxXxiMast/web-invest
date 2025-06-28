@@ -1,0 +1,35 @@
+.AOFProgressBar {
+  max-width: 217px;
+}
+
+.AOFProgressBar span {
+  transition: 0.5s width ease-in-out;
+}
+
+/* Media Queries Start */
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .DelayTextChangeComponent {
+    margin-top: 40px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .ModalWrapper h3 {
+    margin-top: 36px !important;
+    margin-bottom: 19px !important;
+  }
+
+  .DelayTextChangeComponent {
+    margin: 72px 0;
+  }
+
+  .MobileModal {
+    bottom: 0% !important;
+    padding-top: 46px !important;
+  }
+}
+
+/* Media Queries END */

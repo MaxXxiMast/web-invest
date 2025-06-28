@@ -1,0 +1,84 @@
+.overviewSkeleton {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.mainFlex {
+  max-width: 416px;
+  margin: 45px 0;
+}
+.paper {
+  padding: 20px;
+  width: 100%;
+}
+.mt_29 {
+  margin-top: 29px;
+}
+.mt_22 {
+  margin-top: 22px;
+}
+.mt_12 {
+  margin-top: 12px;
+}
+.desktopItem {
+  margin-bottom: 29px;
+}
+
+.mobileFooter {
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.08);
+  padding: 10px 10px 25px;
+  left: 0;
+  background: var(--gripWhite, #ffffff);
+}
+
+.esignMobileFooter {
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+.HeaderSkeleton {
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 75px;
+  margin-top: 75px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.w100 {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .mobileItem {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .overviewSkeleton {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding: 0 20px;
+  }
+  .mainFlex {
+    margin: 25px 0;
+  }
+  .paper {
+    padding: 12px;
+    margin-top: 8px;
+  }
+  .mt_29 {
+    margin-top: 16px;
+  }
+  .mt_22 {
+    margin-top: 16px;
+  }
+  .desktopItem {
+    display: none;
+  }
+  .HeaderSkeleton {
+    margin-top: 0;
+    padding: 0 20px;
+  }
+}

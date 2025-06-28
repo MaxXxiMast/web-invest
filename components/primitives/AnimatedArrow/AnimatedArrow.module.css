@@ -1,0 +1,33 @@
+.Arrow {
+  display: flex;
+  gap: 5px;
+}
+
+.Arrow div {
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 12px solid var(--gripNewBlue, #00347d);
+  animation: ArrowAnimate 1s infinite;
+}
+
+.Arrow div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.Arrow div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes ArrowAnimate {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}

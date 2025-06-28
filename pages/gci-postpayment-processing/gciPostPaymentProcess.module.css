@@ -1,0 +1,62 @@
+.dataContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.processingHeader {
+  line-height: 28px;
+  font-size: 20px;
+  color: var(--gripLuminousDark);
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.processingText {
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey);
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.progressContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dataWrapper {
+  width: 600px;
+  height: 262px;
+  background-color: var(--gripWhite2);
+  box-shadow: 0px 14px 94px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .dataWrapper {
+    width: 80%;
+  }
+
+  .processingText {
+    font-size: 10px;
+  }
+
+  .processingHeader {
+    font-size: 18px;
+  }
+
+  .dataContainer {
+    height: calc(100vh - 30px);
+  }
+}

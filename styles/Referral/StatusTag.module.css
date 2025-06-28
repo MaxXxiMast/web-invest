@@ -1,0 +1,34 @@
+.StatusTagClass {
+  color: var(--gripLuminousGrey);
+  display: inline-block;
+  padding: 4px 8px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+.StatusTagClass:global(.invested),
+.StatusTagClass:global(.not-eligible),
+.StatusTagClass:global(.unlocked) {
+  background-color: var(--gripGreenLighterOne);
+  color: var(--gripPrimaryGreen,  #00b8b7);
+}
+
+.StatusTagClass:global(.locked) {
+  background-color: var(--gripLighterOne);
+  color: var(--gripBlue);
+}
+
+.StatusTagClass:global(.redeemed) {
+  background-color: var(--gripWhite);
+  color: var(--gripPrimaryGreen,  #00b8b7);
+}
+
+.StatusTagClass:global(.cancelled) {
+  background-color: var(--gripRedLighterSix);
+  color: var(--gripDanger, #ff5c5c);
+}
+.StatusTagClass:global(.redeeming) {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  color: var(--gripLuminousGrey);
+}

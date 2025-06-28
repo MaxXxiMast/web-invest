@@ -1,0 +1,97 @@
+.Layout {
+  padding: 50px 0 80px;
+}
+
+.Wrapper {
+  gap: 30px;
+}
+
+.Main {
+  gap: 80px;
+  flex: 1;
+}
+
+.Body {
+  flex: 1;
+}
+
+/* Add these styles to your existing CSS or create a new CSS file */
+.Loader {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.LayoutBody {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.FadeIn {
+  opacity: 1;
+  animation: fadeInAnimation 0.2s;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .Wrapper {
+    min-height: calc(100vh - 140px);
+  }
+}
+
+/* IPAD */
+@media screen and (max-width: 1024px) {
+  .Main {
+    gap: 16px;
+  }
+  .Layout {
+    padding: 80px 0 0;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Layout {
+    padding: 30px 0 0;
+  }
+  .Layout :global(.containerNew) {
+    padding-bottom: 0;
+  }
+  .Main {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .Wrapper {
+    gap: 0px;
+  }
+  .Stepper:not(:empty) {
+    margin: 0 -20px;
+  }
+  .LayoutBody {
+    padding-bottom: 150px;
+  }
+  .Loader {
+    min-height: calc(100vh - 300px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .LayoutBody {
+    padding-bottom: 250px;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .LayoutBody {
+    padding-bottom: 0px !important;
+  }
+}

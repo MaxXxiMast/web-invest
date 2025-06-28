@@ -1,0 +1,155 @@
+.margin {
+  width: 100%;
+}
+.inputFieldSet {
+  border: 2px solid var(--gripBlue);
+  border-radius: 8px;
+  margin-top: 32px;
+  width: 100%;
+}
+.inputContainer {
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.legend {
+  display: none;
+}
+.mailMobileInput {
+  width: 100%;
+  border: none;
+}
+.mailMobileInput:focus {
+  outline: none;
+}
+.mailMobileInput:focus + .legend {
+  display: block;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 20px;
+  color: var(--gripBlue);
+}
+
+.mailMobileInput:focus::placeholder {
+  color: transparent;
+}
+
+.socialLogo {
+  height: 20px;
+}
+
+.loginButton {
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+
+.loginText {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.redirectionText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gripLuminousDark);
+  margin-top: 20px;
+}
+.commonFont {
+  font-style: normal;
+}
+
+.redirectionText span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gripBlue);
+  cursor: pointer;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.LoginWrapper {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.LoginForm {
+  margin: auto;
+  padding-top: 60px;
+  width: 100%;
+  max-width: 400px;
+}
+.LoginBackBtn {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 0px auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url('https://static-assets.gripinvest.in/commons/LoginBG2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 55px 0 0;
+  }
+
+  .LoginWrapper {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-height: 95vh;
+    justify-content: space-between;
+  }
+
+  .loginText {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+  }
+  .redirectionText {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--gripLuminousDark);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .redirectionText span {
+    margin-top: 0px;
+    font-size: 14px;
+  }
+  .LoginForm {
+    padding-top: 0;
+  }
+}

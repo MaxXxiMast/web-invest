@@ -1,0 +1,36 @@
+.InputFieldContainer {
+  border: 1px solid var(--gripSantasGray, #a1a3ad);
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+
+.InputLabel {
+  color: var(--gripBlue, #00357c);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.InputField input {
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  width: 100%;
+  outline: none;
+  min-height: 34px;
+}
+
+.InputField input::-webkit-outer-spin-button,
+.InputField input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.InputField input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

@@ -1,0 +1,19 @@
+.FetchModal :global(.Card) {
+  padding: 32px;
+}
+
+.FetchModal {
+  margin-top: 16px;
+}
+
+/* Media Queries Start */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Drawer {
+    padding: 50px 20px;
+    margin-top: 16px;
+  }
+}
+
+/* Media Queries End */

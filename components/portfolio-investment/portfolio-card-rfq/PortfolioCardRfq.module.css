@@ -1,0 +1,337 @@
+.Card {
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  border-radius: 8px;
+}
+
+.Logo {
+  cursor: pointer;
+}
+
+.Top {
+  padding: 16px;
+  position: relative;
+}
+
+.Header {
+  padding: 13px;
+  border-radius: 6px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  gap: 10px;
+}
+
+.Body {
+  padding: 13px 0 0;
+  gap: 10px;
+}
+
+.Status,
+.Txt {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 4px;
+}
+
+.OrderDate {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.OrderAssetID {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.OrderAssetID span {
+  font-weight: 500;
+}
+
+.Status {
+  border-radius: 4px;
+  padding: 1px 8px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.Pending {
+  color: var(--pendingRFQ, #ff7a00);
+  background: rgba(255, 186, 120, 0.23);
+}
+
+.Success {
+  color: var(--gripPelorous, #3bb8b7);
+  background: rgba(235, 249, 249, 1);
+}
+
+.Bottom {
+  padding: 16px;
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+  gap: 10px;
+}
+
+.Btn {
+  height: 37px;
+  padding: 5px 12px;
+}
+
+.DealBtnAnchor {
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  background: var(--gripBlue, #00357c);
+  color: var(--gripWhite, #ffffff);
+}
+
+.Txt {
+  color: var(--gripOsloGray, #81878c);
+}
+
+.Right {
+  gap: 18px;
+}
+
+.Left {
+  gap: 32px;
+}
+
+.Link {
+  color: var(--gripBlue, #00357c);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.linkDisabled {
+  color: var(--gripOsloGrayTwo, #919598) !important;
+}
+
+.infoIcon {
+  margin-left: 4px;
+  color: var(--gripOsloGrayTwo, #919598);
+}
+
+.AssetNumbers {
+  gap: 8px;
+}
+
+.Numbers {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: normal;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.Numbers span {
+  font-weight: 500;
+}
+
+.List {
+  margin: 0 auto;
+}
+
+.List ul {
+  gap: 24px;
+  padding: 4px 0;
+  margin: 4px 0;
+}
+
+.Label {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 4px;
+  white-space: nowrap;
+}
+
+.Val {
+  color: var(--gripEbonyClay, #292c3e);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.StatusWrapper {
+  width: 100%;
+  gap: 16px;
+}
+
+.Menu {
+  border: none;
+  margin-left: auto;
+  padding: 7px 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripBlue, #00357c);
+  border-bottom: none;
+}
+
+.MobileLotSize {
+  text-align: center;
+  order: 4;
+  width: 100%;
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.AmoTag {
+  position: absolute;
+  top: -10px;
+  border-radius: 4px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background: var(--gripWhite, #ffffff);
+  padding-right: 10px;
+  align-items: center;
+}
+
+.AmoTagText {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  line-height: 12px !important;
+  margin: 0px;
+}
+
+.LinkIcon {
+  font-size: 15px;
+  color: var(--gripBlue, #00357c);
+}
+
+@media screen and (min-width: 1081px) {
+  .HideDesktop {
+    display: none;
+  }
+
+  .OrderAssetID {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .AmoTag {
+    margin-left: 16px;
+  }
+
+  .FontSize12 {
+    font-size: 12px;
+  }
+
+  .Top {
+    padding: 0;
+  }
+
+  .Header {
+    flex-wrap: wrap;
+    background-color: transparent;
+    padding: 16px;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .Status {
+    display: none;
+  }
+
+  .Logo {
+    order: 1;
+    position: relative;
+    padding-bottom: 16px;
+    min-width: 120px;
+  }
+
+  .AssetNumbers {
+    order: 2;
+    margin-left: auto;
+    gap: 2px;
+  }
+
+  .List {
+    order: 3;
+    width: 100%;
+  }
+
+  .List ul {
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .Body {
+    border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+    padding: 16px;
+  }
+
+  .Card {
+    gap: 0;
+  }
+
+  .HideMobile {
+    display: none;
+  }
+
+  .MobileIsin {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .AssetNumbers,
+  .Numbers {
+    justify-content: flex-end;
+  }
+
+  .Right {
+    margin-top: 6px;
+    flex: 1;
+  }
+
+  .Btn {
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+  }
+
+  .DealBtnAnchor {
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    padding: 12px;
+  }
+
+  .List li {
+    text-align: center;
+    flex: 1 1 4px;
+  }
+
+  .List li:first-child {
+    text-align: left;
+  }
+
+  .List li:last-child {
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .List ul {
+    flex-wrap: wrap;
+  }
+  .linkDisabled {
+    pointer-events: none !important;
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+}

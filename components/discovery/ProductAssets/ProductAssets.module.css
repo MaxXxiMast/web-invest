@@ -1,0 +1,29 @@
+.ExplainerVideoComponent {
+  margin: 0 !important;
+  height: 248px !important;
+}
+
+.ExplainerVideoComponent h4 {
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+}
+
+.ExplainerVideoComponent h4:first-of-type {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+.ExplainerVideosActionOverlay {
+  gap: 7px !important;
+  padding: 12px !important;
+}
+
+.ExplainerVideosActionOverlay > span {
+  margin-bottom: 2px !important;
+}
+
+.sliderPopular {
+  z-index: 2;
+  margin-top: -175px !important;
+}

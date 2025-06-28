@@ -1,0 +1,96 @@
+.filterLabel {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--gripTextMain, #373a46);
+  white-space: nowrap;
+  padding-right: 14px;
+}
+
+.filterContainer {
+  padding-bottom: 12px;
+}
+
+.optionsContainer {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.optionsContainer::-webkit-scrollbar {
+  display: none;
+}
+.option {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  color: var(--gripLuminousDark, #282c3f);
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  white-space: nowrap;
+  -ms-user-select: none; /* For IE/Edge */
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none; /* For Firefox */
+  user-select: none; /* Prevents text selection */
+}
+
+.selectedOption {
+  background-color: var(--gripGunPowder, #44485b);
+  color: var(--gripWhite, #ffffff);
+  padding: 10px;
+}
+
+.scrollContainer {
+  position: relative;
+  overflow-x: auto;
+}
+
+.leftGradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  pointer-events: none;
+  z-index: 5;
+  background: linear-gradient(
+    90deg,
+    var(--gripWhite, #ffffff) 0%,
+    rgba(255, 255, 255, 0) 30%
+  );
+}
+
+.rightGradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  pointer-events: none;
+  z-index: 5;
+  background: linear-gradient(
+    270deg,
+    var(--gripWhite, #ffffff) 0%,
+    rgba(255, 255, 255, 0) 30%
+  );
+}
+
+@media screen and (max-width: 767px) {
+  .filterContainer {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .scrollContainer {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .optionsContainer {
+    width: 100%;
+  }
+}

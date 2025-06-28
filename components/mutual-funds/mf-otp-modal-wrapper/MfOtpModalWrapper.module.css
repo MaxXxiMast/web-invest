@@ -1,0 +1,9 @@
+.OtpModal :global .ModalPopupInner {
+  max-width: 450px;
+}
+
+@media screen and (max-width: 992px) {
+  .OtpModal :global .ModalPopupInner {
+    max-width: 100%;
+  }
+}

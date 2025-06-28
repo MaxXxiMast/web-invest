@@ -1,0 +1,79 @@
+.progressbar {
+  height: 10px;
+  background: var(--gripPorcelain, #f7f8f9);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.progressContainer {
+  padding: 10px 0px;
+  gap: 6px;
+}
+
+.progressBarContent {
+  color: var(--gripWealthText, #696b74);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.progress {
+  height: 100%;
+  transition: width 0.5s ease;
+  border-radius: 12px;
+  background: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.step {
+  color: var(--gripTextMain, #373a46);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  width: 100%;
+}
+
+.VerticalLine {
+  height: 20px;
+  border-left: 1px dashed var(--gripWhiteLilac, #f7f7fc);
+  margin-left: 8px;
+}
+
+.title {
+  margin-left: 8px;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.intermediate {
+  border-color: var(--gripHeather, #b5bdcd);
+  background-color: var(--gripWhite, #ffffff);
+}
+
+.processed {
+  background: var(--gripPrimaryGreen, #00b8b7);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gripWhite, #ffffff);
+  font-size: 12px;
+  border-radius: 50%;
+}
+
+.ProcessedTitle {
+  color: var(--gripTextMain, #373a46);
+}
+
+.LoadingTitle {
+  color: var(--gripBlue, #00357c);
+}
+
+.IntermediateTitle {
+  color: var(--gripHeather, #b5bdcd);
+}

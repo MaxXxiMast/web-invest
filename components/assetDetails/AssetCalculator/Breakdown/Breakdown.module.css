@@ -1,0 +1,134 @@
+.RepaymentAmount {
+  margin-top: 0px !important;
+}
+
+.CountLabel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.PreTaxAmoount {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  white-space: pre;
+}
+
+.CalculatedAmount {
+  max-width: 150px;
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.PreTaxAmoountSDI {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.CaretDown {
+  margin-right: -10px;
+  cursor: pointer;
+  height: 24px;
+}
+
+.Caret {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 5px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.RepaymentAmount ul {
+  padding-left: 10px;
+  width: 100%;
+}
+
+.RepaymentAmount[id='sdi-sidebar-principal'] ul,
+.RepaymentAmount[id='bonds-sidebar-principal'] ul {
+  padding: 0 14px 0 10px;
+  width: 100%;
+}
+
+.RepaymentAmount[id='bonds-sidebar-principal'] ul {
+  padding: 0 14px 0 5px;
+}
+
+.RepaymentAmount .CountLabel,
+.RepaymentAmount .PostTaxAmoount,
+.RepaymentAmount .PreTaxAmoount {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.RepaymentAmount .PostTaxAmoount {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: right;
+}
+
+.RepaymentAmount ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.RepaymentAmount ul li + li {
+  margin-top: 16px;
+}
+
+.modalLinkLabel {
+  color: var(--gripBlue);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.InfoIcon {
+  margin-left: 5px;
+  font-weight: 700;
+  font-size: 11px;
+  color: var(--gripBlue);
+}
+
+.PreTaxAmoount:global(.Active) .CaretDown .Caret {
+  transform: rotate(180deg);
+  transition: 0.3s ease-in-out;
+}
+
+.InfoModal {
+  max-width: 400px !important;
+}
+
+.InfoModal :global(.CloseBtn) {
+  top: 35px;
+}
+
+.BrokerageFees {
+  text-decoration: line-through;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .RepaymentAmount[id='sdi-sidebar-principal'] {
+    padding: 0 !important;
+  }
+
+  .RepaymentAmount[id='bonds-sidebar-principal'] ul {
+    padding: 0;
+  }
+  .RepaymentAmount[id='bonds-sidebar-principal'] ul > li {
+    padding: 0 12px 0 6px;
+  }
+}

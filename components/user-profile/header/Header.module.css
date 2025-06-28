@@ -1,0 +1,104 @@
+.Header {
+  padding: 48px 0 70px;
+  background-color: var(--gripLighterOne, #e5f1ff);
+}
+.Left {
+  gap: 10px;
+  flex: 1;
+}
+.Title {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.Back {
+  cursor: pointer;
+  line-height: 0;
+}
+
+.ArrowLeft {
+  font-size: 30px;
+}
+.BookCall {
+  color: var(--gripBlue, #00357c);
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.Right {
+  margin-left: auto;
+}
+
+.HeaderWrapper {
+  position: relative;
+}
+
+.EditPencilBtn {
+  color: var(--gripBlue, #00357c);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  border: 0px;
+  background-color: inherit;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.Pencil {
+  color: var(--gripBlue, #00357c);
+  font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .Right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 40px;
+  }
+  .HeaderWrapper {
+    padding: 0;
+  }
+  .Back,
+  .BookCall {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  .PaddingLeft {
+    padding-left: 80px;
+  }
+  .Back {
+    left: 0;
+  }
+  .BookCall {
+    right: 0;
+  }
+  .Header {
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    background-color: var(--gripWhite, #ffffff);
+    z-index: 4;
+  }
+  .Header :global .containerNew {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .BookCall {
+    font-size: 12px;
+  }
+  .Title {
+    font-size: 16px;
+  }
+}

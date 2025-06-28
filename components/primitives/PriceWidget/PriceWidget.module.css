@@ -1,0 +1,33 @@
+.ArrowImage {
+  line-height: 0;
+}
+
+.NegativeCutOut {
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+.CutOutValue {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.cutOut {
+  text-decoration: line-through;
+  margin-right: 2px;
+}
+
+.MainValueCutOut {
+  color: var(--gripLuminousDark, #282c3f);
+  line-height: 24px;
+  text-decoration: line-through;
+  margin-right: 2px;
+}
+
+.Arrow {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--gripPrimaryGreen, #00b8b7);
+}

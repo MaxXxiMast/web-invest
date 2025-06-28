@@ -1,0 +1,287 @@
+@media screen and (min-width: 768px) {
+  .profileContainer {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 100px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 0px;
+    width: 100%;
+    position: relative;
+  }
+
+  .headerTitle {
+    padding-left: 20px;
+    font-family: var(--fontFamily, "'Inter', sans-serif");
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: var(--gripLuminousDark, #282c3f);
+  }
+
+  .hints {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .hintTitle {
+    font-family: var(--fontFamily, "'Inter', sans-serif");
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--gripBlue, #00357c);
+    padding-left: 6px;
+    padding-top: 2px;
+  }
+
+  .contentContainer {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+    border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  }
+
+  .actionContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .actionButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    border-radius: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .actionTitle {
+    font-family: var(--fontFamily, "'Inter', sans-serif");
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 28px;
+    align-items: center;
+    text-align: center;
+    color: var(--gripWhite, #ffffff);
+    padding-right: 8px;
+  }
+
+  .modalContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: var(--gripLuminousDark, #282c3f);
+    opacity: 0.15;
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+  }
+
+  .modal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 32px 24px;
+    margin: auto;
+    width: 400px;
+    height: 224px;
+    background: #fefefe;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    transition: all 0.1s ease-out;
+  }
+
+  .bottomModal {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 32px 24px;
+    left: 0;
+    right: 0;
+    top: 65%;
+    margin: auto;
+    width: 500px;
+    height: 84px;
+    background: #e6faf3;
+    border: 1px solid #02c988;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.03);
+    border-radius: 12px 12px 0 0;
+  }
+
+  .bottomContent {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: flex-start;
+  }
+
+  .modalTitle {
+    font-family: var(--fontFamily, "'Inter', sans-serif");
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--gripLuminousDark, #282c3f);
+    text-align: center;
+  }
+
+  .modalSubtitle {
+    font-family: var(--fontFamily, "'Inter', sans-serif");
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--gripLuminousGrey, #555770);
+    text-align: center;
+  }
+
+  .stepsContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 264px;
+    height: 215px;
+    left: 0px;
+    top: 40px;
+  }
+
+  .stepHeader {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: var(--fontFamily, "'Inter', sans-serif");
+    font-style: normal;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--gripLuminousDark, #282c3f);
+  }
+
+  .activeWrapper {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    left: 0px;
+    top: 17%;
+  }
+
+  .activeProgress {
+    width: 24.9%;
+    margin-right: 1px;
+    height: 2px;
+    transition: all 0.2s ease-out;
+  }
+
+  .progress {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 18%;
+    bottom: 0%;
+    height: 1px;
+    width: 100%;
+    background: var(--gripWhiteLilac, #f7f7fc);
+  }
+
+  .stepsWrapper {
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .sideProgress {
+    position: absolute;
+    left: 1.89%;
+    right: 97.73%;
+    top: 12%;
+    bottom: 0%;
+    background: #eaedf1;
+  }
+
+  .steps {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    left: 0px;
+    box-sizing: border-box;
+    transition: all 0.2s ease-out;
+  }
+
+  .stepTitle {
+    font-family: var(--fontFamily, "'Inter', sans-serif");
+    padding-left: 24px;
+    padding-top: 2px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--gripLuminousDark, #282c3f);
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-out;
+  }
+  .stepCountContainer {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profileContainer {
+    display: none;
+  }
+  .cardContainer {
+    display: none;
+  }
+  .headerContainer {
+    display: none;
+  }
+  .contentContainer {
+    display: none;
+  }
+  .formContainer {
+    display: none;
+  }
+}

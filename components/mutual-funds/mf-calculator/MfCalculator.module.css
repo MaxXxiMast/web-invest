@@ -1,0 +1,73 @@
+.MonthlyReturnCardContent {
+  z-index: 1;
+  border-radius: 12px;
+  padding: 4px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background-color: var(--gripWhite, #ffffff);
+}
+
+.CardTop {
+  padding: 24px 24px 20px;
+  border-radius: 8px;
+}
+
+.InvestmentType {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.InvestmentTypeLeft h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+}
+.InvestmentTypeRight {
+  margin-left: auto;
+}
+.InvestmentTypeRight > span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.ContinueSection {
+  max-width: 344px;
+  margin: 0 auto;
+  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 993px) {
+  .MonthlyReturnCardContent {
+    position: relative;
+  }
+}
+
+/* IPAD - 1199 */
+@media screen and (max-width: 1199px) {
+  .CardTop {
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .MonthlyReturnCardContent {
+    border-radius: 12px 12px 0 0;
+    padding: 0 12px;
+    border: none;
+  }
+  .CardTop {
+    padding: 16px 0;
+  }
+  .InvestmentTypeLeft h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .ContinueSection {
+    margin-bottom: 0px;
+    max-width: 100%;
+    width: 100%;
+  }
+}

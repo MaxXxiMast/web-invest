@@ -1,0 +1,44 @@
+.ScrollToTop {
+  background: var(--gripWhite, #ffffff);
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.03);
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  z-index: 9;
+  right: 25px;
+  bottom: -100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.ShowBtn {
+  bottom: 100px;
+  transition: 0.5s ease-in-out;
+}
+.ScrollToTopInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ScrollToTopInner span {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 16px;
+  color: var(--gripBlue, #00357c);
+}
+
+@media screen and (max-width: 767px) {
+  .ScrollToTop {
+    right: 10px;
+  }
+  .ShowBtn {
+    bottom: 120px;
+  }
+}

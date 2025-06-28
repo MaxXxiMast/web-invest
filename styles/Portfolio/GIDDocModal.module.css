@@ -1,0 +1,106 @@
+.CardHeader {
+  padding-bottom: 20px;
+}
+
+.CardHeaderNew {
+  padding-bottom: 20px;
+  padding-left: 5px;
+}
+
+.CardHeader h4 {
+  font-weight: 700;
+}
+.CardBody {
+  padding: 20px 0 0;
+}
+
+.CardBodyNew {
+  padding: 20px 0 0;
+  padding-left: 5px;
+}
+
+.DocList {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.DocListNew {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  height: 310px;
+  overflow: hidden;
+  overflow-y: auto;
+  padding-right: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gripMercuryThree, #e6e6e6) transparent;
+}
+
+.OneDocList {
+  height: auto;
+}
+
+.DocListNew::-webkit-scrollbar {
+  width: 3px;
+  height: auto;
+}
+
+.DocListNew::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.DocListNew::-webkit-scrollbar-thumb {
+  background-color: var(--gripMercuryThree);
+  border-radius: 2px;
+}
+
+.DocItem {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--gripWhite);
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  border-radius: 12px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.DocItem h4 {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.AGTSDisplayName {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.note {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--gripWealthText, #696b74);
+  margin-top: 28px;
+}
+
+.note > strong {
+  font-weight: 500;
+  color: var(--gripTextMain, #373a46);
+}
+
+.DocIcon {
+  font-size: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .DocItem h4 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

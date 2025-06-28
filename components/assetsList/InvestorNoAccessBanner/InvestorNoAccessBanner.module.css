@@ -1,0 +1,48 @@
+.mainContainer {
+  justify-content: center;
+}
+
+.heading {
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--gripEbonyClay, #292c3e);
+  line-height: 24px;
+  padding: 6px 0;
+}
+
+.subHeadingText {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--gripShuttleGray, #686b78);
+  line-height: 28px;
+  padding: 6px 0;
+  width: 50%;
+}
+
+
+.icon {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  .mainContainer {
+    justify-content: flex-start;
+  }
+
+  .subHeadingText {
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .mainContainer {
+    max-height: 500px;
+    align-items: center !important;
+  }
+
+  .subHeadingText {
+    text-align: center;
+  }
+}
+

@@ -1,0 +1,45 @@
+.CardFooter {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--gripBlue);
+  padding-bottom: 0;
+}
+
+.CardFooter span {
+  cursor: pointer;
+}
+.ArrowRight {
+  margin-right: 16px;
+}
+.InfoIcon {
+  font-weight: 700;
+  color: var(--gripBlue, #00357c);
+  font-size: 12px;
+}
+.TDS {
+  line-height: 0;
+  margin-bottom: 4px;
+}
+.TDS > span {
+  line-height: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .ArrowRight {
+    display: none;
+  }
+  .textAlignLeft {
+    text-align: left !important;
+  }
+  .textAlignRight {
+    text-align: right !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ImageIcon {
+    display: none !important;
+  }
+}

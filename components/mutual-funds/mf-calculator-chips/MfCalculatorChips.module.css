@@ -1,0 +1,50 @@
+.AmountCloudItem {
+  position: relative;
+}
+
+.AmountCloud {
+  margin: 24px 0;
+  justify-content: center;
+}
+.AmountCloud:empty {
+  display: none;
+}
+
+.AmountCloud span {
+  border: 1px solid var(--gripMercury3, #e6e6e6);
+  box-shadow: 0px 4px 23px 0px var(--gripBoxShadow, #2c2e390d);
+  height: 28px;
+  width: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 24px;
+  color: var(--gripTextMain, #373a46);
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.selectedChip {
+  background-color: var(--gripSolitude, #e7f1fe);
+}
+
+.popularTag {
+  position: absolute;
+  padding: 2px 4px;
+  top: -12px;
+  border-radius: 4px;
+  background: #f9d579;
+  margin: 0px;
+  line-height: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .AmountCloud[id='sdi'] span {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+}

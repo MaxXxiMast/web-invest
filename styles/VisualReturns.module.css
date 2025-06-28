@@ -1,0 +1,419 @@
+.CardHeader {
+  padding: 0 40px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.CardHeaderLeft {
+  display: flex;
+  align-items: center;
+}
+.CardHeaderLeft .ImageIcon {
+  width: 40px;
+  height: 40px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 8px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CardHeaderLeft .Label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gripLuminousDark);
+}
+.CardHeaderRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.DownloadBtn {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripBlue);
+  cursor: pointer;
+  position: relative;
+}
+.DownloadBtn svg {
+  margin-right: 8px;
+}
+.CloseBtn {
+  cursor: pointer;
+}
+.CardBody {
+  z-index: 0;
+  position: relative;
+}
+.CardBody table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.CardBody th {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 16px;
+  color: var(--gripLuminousGrey);
+  padding-bottom: 8px;
+  text-align: center;
+  min-width: 100px;
+}
+.CardBody td {
+  padding: 10px 0;
+  border-top: 1px dashed var(--gripLightStroke);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousDark);
+  background-color: var(--gripWhite);
+  text-align: center;
+  min-width: 100px;
+}
+
+.BondsTable th,
+.BondsTable td {
+  text-align: right;
+  padding-right: 8px;
+}
+
+.VisualiseTable thead th {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  background-color: var(--gripWhite, #ffffff);
+}
+
+.BondsTable th:nth-child(1),
+.BondsTable td:nth-child(1),
+.BondsTable th:nth-child(2),
+.BondsTable td:nth-child(2) {
+  text-align: center;
+}
+
+.CardBody td:first-child,
+.CardBody thead th:first-child {
+  position: sticky;
+  left: -2px;
+  z-index: 1;
+  padding-left: 16px;
+  padding-right: 12px;
+  max-width: 70px;
+  min-width: 70px;
+}
+
+.CardBody thead tr th:first-child {
+  z-index: 4;
+}
+
+.CardBody tr:last-child td {
+  border-bottom: 1px dashed var(--gripLightStroke);
+}
+
+.TotalRow tr:last-child td {
+  position: sticky;
+  bottom: -2px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  color: var(--gripTextMain, #373a46);
+  font-weight: 500;
+}
+
+.CardFooter {
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.assetUnits {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gripLuminousDark);
+}
+
+.unitSuffix {
+  padding: 0 4px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gripLuminousDark);
+}
+
+.InvestmentItem :global(.Label) {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey);
+}
+.InvestmentItem :global(.Amount) {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+}
+
+.lotsButton {
+  background-color: var(--gripSolitude, #e7f1fe) !important;
+}
+
+.lotsDisable {
+  background-color: var(--gripMercury, #e2e2e2)!important;
+  pointer-events: none !important;
+  cursor: not-allowed !important;
+  color: var(--gripWhite, #ffffff);
+  opacity: 1;
+  border: none;
+}
+
+.InvestmentItem + .InvestmentItem {
+  margin-top: 12px;
+}
+
+.PreTaxtInvestmentItem {
+  margin-top: 0px !important;
+}
+
+.EditBtn {
+  cursor: pointer;
+  margin-left: 8px;
+  vertical-align: middle;
+  background-color: inherit;
+  border: 0px;
+}
+
+.MobileClose {
+  background: var(--gripWhite);
+  border-radius: 10px;
+  width: 62px;
+  height: 4px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.HeaderTooltip a {
+  vertical-align: middle;
+  line-height: 0;
+}
+
+.CircularProgress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.leaseXadjustedReturnHeaderContainer {
+  padding-bottom: 5px !important;
+}
+
+.leaseXadjustedReturnHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leaseXadjustedReturnHeader > div:first-of-type {
+  padding-bottom: 3px;
+  padding-right: 4px;
+}
+
+.DownloadIcon {
+  font-size: 18px;
+  color: var(--gripBlue);
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 993px) {
+  .MobileClose {
+    display: none;
+  }
+  .CardHeader {
+    padding: 0 4px 8px 0;
+  }
+  .CardBody {
+    max-height: 270px;
+    overflow-y: auto;
+  }
+  .CardBody::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    display: block;
+  }
+
+  /* Handle */
+  .CardBody::-webkit-scrollbar-thumb {
+    background: var(--gripWhiteLilac, #f7f7fc);
+    border-radius: 4px;
+  }
+
+  /* Handle on hover */
+  .CardBody::-webkit-scrollbar-thumb:hover {
+    background: var(--greyCloud, #b5b5b5);
+  }
+  .VisulaCardHeader {
+    padding: 24px 60px 20px 24px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .Card {
+    border-radius: 12px 12px 0 0;
+  }
+  .CardFooter {
+    padding: 16px;
+    min-width: 100%;
+    gap: 40px;
+  }
+  .unitSuffix {
+    padding: 0;
+    font-size: 10px;
+    line-height: 5px;
+    font-weight: 400;
+    color: var(--gripLuminousGrey);
+  }
+  .CardHeader {
+    padding: 14px 24px 10px 12px;
+  }
+
+  .CardBody::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    display: block;
+  }
+
+  /* Handle */
+  .CardBody::-webkit-scrollbar-thumb {
+    height: 4px !important;
+    background: var(--greyCloud, #b5b5b5);
+    border-radius: 4px;
+  }
+
+  /* Handle on hover */
+  .CardBody::-webkit-scrollbar-thumb:hover {
+    height: 4px !important;
+    background: var(--gripEmperor, #555555);
+  }
+
+  .DownloadBtn {
+    margin-right: 0;
+  }
+  .CardBody {
+    max-height: 400px;
+    overflow: auto;
+  }
+}
+
+.DownloadSchedulePopup {
+  position: absolute;
+  background: var(--gripWhite, #ffffff);
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.DownloadSchedulePopupIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.DownloadSchedulePopupText {
+  font-weight: 400;
+  color: var(--gripLuminousDark);
+  line-height: 24px;
+}
+
+.DownloadSchedulePopupItemContainer {
+  align-items: center;
+  cursor: pointer;
+}
+
+.InfoIcon,
+.InfoIcon > span {
+  width: 12px;
+  height: 12px;
+  max-width: 12px;
+  max-height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.Rupee {
+  font-size: 22px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.Edit {
+  font-size: 18px;
+  color: var(--gripBlue, #00357c);
+}
+.Info {
+  font-weight: 700;
+  color: var(--gripBlue, #00357c);
+  font-size: 8px;
+}
+
+.VisualReturnButtonText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 767px) {
+  .DownloadSchedulePopup {
+    min-width: 180px;
+    top: 13%;
+    padding: 8px 12px;
+  }
+
+  .DownloadSchedulePopupItemContainer {
+    padding: 12px 4px;
+    gap: 12px;
+  }
+
+  .DownloadSchedulePopupText {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .DownloadSchedulePopup {
+    padding: 12px;
+    min-width: 200px;
+    top: 14%;
+  }
+
+  .DownloadSchedulePopupItemContainer {
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .DownloadSchedulePopupText {
+    font-size: 16px;
+  }
+  .BondsTable td:last-child,
+  .BondsTable th:last-child {
+    padding-right: 33px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .leaseXadjustedReturnHeader > div:first-of-type {
+    padding-right: 4px;
+    width: 62%;
+  }
+  .TotalRow tr td:last-child {
+    padding-right: 10px;
+  }
+  .TotalRow tr:nth-last-child(2) td {
+    padding-bottom: 20px;
+  }
+}

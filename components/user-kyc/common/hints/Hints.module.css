@@ -1,0 +1,40 @@
+.HintContainer {
+  gap: 12px;
+}
+
+.HintMainTitle {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.g8 {
+  gap: 8px;
+}
+
+.Circle {
+  background: var(--gripLuminousDark, #282c3f);
+  width: 4px;
+  height: 4px;
+  min-width: 4px;
+  border-radius: 999999px;
+}
+
+.HintTitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+/* Media Queries Start */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .HintContainer {
+    width: 100%;
+    margin-bottom: 21px;
+  }
+}
+
+/* Media Queries End */

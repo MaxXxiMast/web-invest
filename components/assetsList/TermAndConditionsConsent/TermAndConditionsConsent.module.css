@@ -1,0 +1,166 @@
+.scrollContainer {
+  border: 1px solid var(--gripLightStroke, #eaedf1);
+  margin: 24px 0;
+  border-radius: 8px;
+  padding: 20px 10px 20px 20px;
+}
+
+.consentDetailsContainer {
+  overflow-y: scroll;
+  height: 250px;
+  padding-right: 16px;
+}
+
+.consentDetailsContainer::-webkit-scrollbar {
+  width: 4px;
+}
+
+.consentDetailsContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.consentDetailsContainer::-webkit-scrollbar-thumb {
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 20px;
+}
+
+.noteContainer {
+  padding: 16px 20px;
+  margin-top: 20px;
+  color: var(--gripShuttleGray, #7c8696);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.noteHeading {
+  font-weight: 800;
+}
+
+.heading {
+  font-size: 20px;
+  color: var(--gripEbonyClay, #292c3e);
+  line-height: 24px;
+  padding: 6px 0;
+}
+
+.heading p {
+  margin: 0;
+}
+
+.scrollText {
+  font-weight: 400;
+}
+
+.radioButton :global(.MuiIconButton-label) {
+  color: var(--gripPrimaryGreen, #00b8b7);
+  height: 20px;
+  width: 20px;
+}
+
+.drawerHeading {
+  border-bottom: 1px solid var(--gripLightStroke, #eaedf1);
+  position: fixed;
+  z-index: 21;
+  background-color: var(--gripWhite, #ffffff);
+  padding: 32px 20px 8px;
+}
+
+.topHeading {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.bottomHeading {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripShuttleGray, #686b78);
+}
+
+.bottomDrawerClass {
+  position: fixed;
+  bottom: 4px;
+  z-index: 30;
+  margin-bottom: 10px;
+}
+
+.topDrawerClass {
+  margin-top: 12px;
+}
+
+.closeContainerClass {
+  z-index: 50;
+  position: fixed;
+  background-color: var(--gripWhite, #ffffff);
+}
+
+.contentContainer {
+  height: 300px;
+  overflow-y: scroll;
+  padding: 12px 15px;
+  position: relative;
+  top: 90px;
+  margin-bottom: 200px;
+}
+
+.contentText {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripEbonyClay, #292c3e);
+}
+
+@media (max-width: 767px) {
+  .drawerHeading {
+    padding: 0 12px 20px;
+    position: static;
+    border-bottom: none;
+  }
+
+  .mainDrawerClass {
+    padding: 0;
+    overflow-y: hidden;
+  }
+
+  .contentContainer {
+    max-height: 360px;
+    height: 360px;
+    border: 1px solid rgba(104, 107, 120, 0.1);
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: rgba(246, 247, 251, 0.2);
+    backdrop-filter: blur(10px);
+    top: 0;
+  }
+
+  .contentContainer > div > ol {
+    padding-inline-start: 15px;
+  }
+
+  .contentText {
+    font-size: 14px;
+  }
+
+  .bottomDiv {
+    padding: 0 6px;
+  }
+
+  .checkboxRoot {
+    align-self: baseline;
+    margin-top: 20px;
+  }
+
+  .TermsContainer {
+    margin: 0 -6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bottomHeading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}

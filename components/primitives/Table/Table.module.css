@@ -1,0 +1,18 @@
+.TableRow:nth-child(odd) :global(.CardIcon) {
+  background: var(--gripRedLighterSix, #ffebeb);
+}
+.TableRow:nth-child(even) :global(.CardIcon) {
+  background: var(--gripLighterOne, #e5f1ff);
+}
+
+.ReturnTxt {
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.AmountTxt {
+  font-weight: 700;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.lightFontWeight {
+  font-weight: 400;
+}

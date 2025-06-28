@@ -1,0 +1,33 @@
+.stickyContainer {
+  position: sticky;
+  top: 120px;
+  z-index: 8;
+  background: linear-gradient(#ffffff 75%, transparent);
+  padding: 20px 0 10px;
+}
+
+.TitleWrapper {
+  padding-bottom: 8px;
+}
+
+.TitleWrapper h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+}
+
+.FilterTabAssets {
+  margin-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .stickyContainer {
+    display: none;
+  }
+  .container {
+    display: none;
+  }
+}

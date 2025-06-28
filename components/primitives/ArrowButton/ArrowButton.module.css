@@ -1,0 +1,88 @@
+.ArrowButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid var(--gripBlue);
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0px;
+  text-align: left;
+  outline: none;
+  position: relative;
+  color: var(--gripBlue);
+  line-height: 0;
+}
+.ArrowButtonWOLine {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0px;
+  text-align: left;
+  outline: none;
+  position: relative;
+  color: var(--gripBlue);
+  line-height: 0;
+}
+
+.ButtonImage {
+  margin-left: 15px;
+}
+
+.ArrowButton::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--gripBlue);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.ArrowButton:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.ArrowButton.AnimatedArrow .ButtonImage {
+  /* stylelint-disable-next-line value-keyword-case */
+  -webkit-animation: updownAnimation 1s infinite alternate;
+  animation: updownAnimation 1s infinite alternate;
+  position: relative;
+}
+
+.ArrowButton.AnimatedArrow:hover .ButtonImage {
+  animation: none;
+}
+
+.ThumIcon {
+  font-size: 20px;
+  color: var(--gripBlue, #00357c);
+}
+
+/* stylelint-disable-next-line at-rule-no-vendor-prefix */
+@-webkit-keyframes updownAnimation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -8px;
+  }
+}
+@keyframes updownAnimation {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -8px;
+  }
+}

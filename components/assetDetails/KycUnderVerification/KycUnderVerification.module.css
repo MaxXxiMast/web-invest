@@ -1,0 +1,14 @@
+.mainContainer {
+  border-radius: 0 0 8px 8px;
+  padding: 16px 0;
+  justify-content: center;
+  border-top: 1px solid var(--gripLightStroke, #eaedf1);
+  gap: 8px;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #7c8696;
+}

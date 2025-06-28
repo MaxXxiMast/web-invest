@@ -1,0 +1,104 @@
+.viewAllDealMobile {
+  padding: 14px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.viewAllDealMobile:global(.primary) {
+  background: var(--gripWhite);
+}
+
+.viewAllDealMobile:global(.secondary) {
+  background: var(--gripWhiteLilac, #f7f7fc);
+}
+
+.ViewAllDealText {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 28px;
+  color: var(--gripTextMain);
+}
+
+.LiveTagContainer {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.LiveDealButton {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripBlue);
+  cursor: pointer;
+}
+
+.ViewAllDealContainer {
+  width: 100% !important;
+  margin: 32px auto 0px;
+  background: var(--gripLighterTwo);
+  padding: 23px 20px 23px 18px;
+  border-radius: 8px;
+}
+
+.ViewAllDealsButton {
+  background: var(--gripWhite);
+  box-shadow: 0px 1px 3px rgba(96, 108, 128, 0.05);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripBlue);
+  width: 115px;
+  padding: 7px 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ViewAllDealImageContainer {
+  margin-right: 12px;
+}
+
+.LiveTag {
+  background: var(--gripPrimaryGreen,  #00b8b7);
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  animation-name: Pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  display: block;
+}
+
+@keyframes Pulse {
+  0% {
+    box-shadow: 0 0 0px 0px rgba(0, 184, 183, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 4px 4px rgba(0, 184, 183, 0.3);
+  }
+
+  100% {
+    box-shadow: 0 0 0px 0px rgba(0, 184, 183, 0.3);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .viewAllDealMobile {
+    padding: 14px 10px;
+    margin-bottom: 42px;
+  }
+
+  .LiveDealButton {
+    padding: 6px 9px;
+    background: var(--gripWhite);
+    box-shadow: 0px 1px 3px rgba(96, 108, 128, 0.05);
+    border-radius: 6px;
+  }
+}

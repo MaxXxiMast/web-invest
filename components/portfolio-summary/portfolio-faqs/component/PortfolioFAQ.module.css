@@ -1,0 +1,126 @@
+.questionsContainer {
+  background: var(--gripWhite, #ffffff);
+  border: 1px solid var(--gripGallerySolid, #efefef);
+  box-shadow: 0px 14px 94px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  width: 100%;
+}
+
+.faqWrapper {
+  box-shadow: unset !important;
+  margin: 0px !important;
+  padding: 0 22px;
+}
+
+.faqWrapper::before {
+  display: none;
+}
+
+.faqWrapper:first-of-type {
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+}
+
+.faqWrapper:last-of-type {
+  border-bottom-left-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+  border-bottom-width: 1px !important;
+}
+
+.borderLastBottom {
+  border-bottom: 1px solid var(--gripGallerySolid, #efefef);
+}
+
+.accordionSummaryRoot {
+  padding: 0px !important;
+  min-height: 48px !important;
+}
+
+.accordionSummaryContent {
+  margin: 12px 0px !important;
+}
+
+.faqQuestion {
+  font-weight: 600;
+  line-height: 28px;
+  padding-right: 10px;
+}
+
+.faqAnswer {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.faqAnswer p {
+  margin: 0px;
+}
+
+.accordianDetails {
+  padding-top: 0 !important;
+}
+
+.accordianExpanded {
+  transform: 'unset';
+}
+
+.FAQHeading {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  line-height: 26.244px;
+}
+
+.PortfolioFAQIcon {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  .faqWrapper {
+    max-width: unset;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .accordionSummaryContent {
+    margin: 7px 0px !important;
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .accordianDetails {
+    padding: 0 4px 8px !important;
+  }
+
+  .faqQuestion {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .faqAnswer {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--gripLuminousDark, #282c3f) !important;
+  }
+
+  .questionsContainer {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .FAQHeading {
+    font-weight: 700;
+    margin-bottom: 28px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .FAQHeading {
+    font-weight: 600;
+    margin-bottom: 33px;
+  }
+}

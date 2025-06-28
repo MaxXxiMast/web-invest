@@ -1,0 +1,31 @@
+.modalCard {
+  width: 500px;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 20px 0 0;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gripGunPowder, #44485b);
+  margin: 16px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    font-size: 18px;
+  }
+  .description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

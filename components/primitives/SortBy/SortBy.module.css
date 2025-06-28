@@ -1,0 +1,137 @@
+.ShortBy {
+  padding: 7px 12px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripBlue, #00357c);
+  border-bottom: 1px solid var(--gripBlue, #00357c);
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.SortByArrow {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-left: 10px;
+  line-height: 14px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.SortByArrow:global(.Active) {
+  transform: rotate(180deg);
+  transition: 0.3s ease-in-out;
+}
+.ShortByDropDown {
+  background: var(--gripWhite, #ffffff);
+  box-shadow: 0px 8px 24px -4px rgba(27, 46, 94, 0.08);
+  border-radius: 4px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  min-width: 240px;
+  padding: 12px;
+  z-index: 999;
+  margin-top: 10px;
+}
+
+.ShortByDropDown ul li {
+  padding: 12px;
+  border-radius: 8px;
+  background-color: var(--gripWhite, #ffffff);
+  transition: 0.3s ease-in-out;
+}
+.ShortByDropDown ul li span {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  transition: 0.3s ease-in-out;
+}
+.ShortByDropDown ul li:global(.Active) {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  transition: 0.3s ease-in-out;
+}
+.ShortByDropDown ul li:global(.Active) span {
+  color: var(--gripBlue, #00357c);
+  transition: 0.3s ease-in-out;
+}
+
+.ShortByDropDown ul li:hover {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  transition: 0.3s ease-in-out;
+}
+.ShortByDropDown ul li:hover span {
+  color: var(--gripBlue, #00357c);
+  transition: 0.3s ease-in-out;
+}
+
+.ShortByDropDown:global(.filterBox-enter) {
+  opacity: 0;
+}
+.ShortByDropDown:global(.filterBox-enter-active) {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.ShortByDropDown:global(.filterBox-exit) {
+  opacity: 1;
+}
+.ShortByDropDown:global(.filterBox-exit-active) {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.MobileSortByFilter h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+}
+.MobileSortByFilter ul {
+  margin-top: 30px;
+}
+/* stylelint-disable-next-line no-descending-specificity */
+.MobileSortByFilter ul li {
+  position: relative;
+  padding: 20px 25px 20px 0px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+.MobileSortByFilter ul li::after {
+  width: 24px;
+  height: 24px;
+  /* stylelint-disable-next-line function-url-quotes */
+  background-image: url(../../../components/assets/static/assetList/CheckMark.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+/* stylelint-disable-next-line no-descending-specificity */
+.MobileSortByFilter ul li span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  transition: 0.3s ease-in-out;
+}
+
+.MobileSortByFilter ul li:global(.Active) span {
+  color: var(--gripBlue, #00357c);
+  transition: 0.3s ease-in-out;
+}
+
+.MobileSortByFilter ul li:global(.Active)::after {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}

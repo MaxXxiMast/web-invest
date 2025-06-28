@@ -1,0 +1,33 @@
+.Wrapper {
+  gap: 18px;
+  border-radius: 8px;
+  border: 1.5px solid var(--Color-Greys-Stroke, #e6e6e6);
+  background: linear-gradient(
+    285deg,
+    rgba(255, 252, 242, 0.6) 28.94%,
+    rgba(242, 237, 255, 0.6) 126.16%
+  );
+  padding: 28px;
+  max-width: 410px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.Wrapper h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0;
+}
+
+.Wrapper li {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.Wrapper li + li {
+  margin-top: 20px;
+}
+.Wrapper ul {
+  list-style-type: disc;
+  padding-left: 15px;
+}

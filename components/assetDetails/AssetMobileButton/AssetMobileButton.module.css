@@ -1,0 +1,43 @@
+.MobileFixedBtn {
+  padding: 10px 20px 16px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 9 !important;
+  background-color: var(--gripWhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.06);
+  flex-direction: column;
+}
+
+.CalculateReturn {
+  flex: 1;
+  min-height: 55px;
+  padding: 0 !important;
+  line-height: 55px !important;
+  width: 100% !important;
+}
+
+.fullSubscribed {
+  padding: 10px 0 18px;
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--gripWealthText, #696b74);
+}
+
+.findOtherDeals {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .MobileFixedBtn {
+    display: none;
+  }
+}

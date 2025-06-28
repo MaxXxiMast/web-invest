@@ -1,0 +1,156 @@
+.RepaymentAmount {
+  margin-top: 0px !important;
+}
+
+.CountLabel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.PreTaxAmoount {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  white-space: pre;
+}
+
+.CalculatedAmount {
+  max-width: 150px;
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.PreTaxAmoountSDI {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.CaretDown {
+  margin-right: -10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.CaretDown svg {
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.RepaymentAmount ul {
+  padding-left: 10px;
+  width: 100%;
+}
+
+.RepaymentAmount[id='sdi-sidebar-principal'] ul,
+.RepaymentAmount[id='bonds-sidebar-principal'] ul {
+  padding: 0 14px 0 10px;
+  width: 100%;
+}
+
+.RepaymentAmount[id='bonds-sidebar-principal'] ul {
+  padding: 0 14px 0 5px;
+}
+
+.RepaymentAmount[id='fd-sidebar-principal'] ul {
+  padding: 0 22px 0 10px;
+}
+
+.RepaymentAmount .CountLabel,
+.RepaymentAmount .PostTaxAmoount,
+.RepaymentAmount .PreTaxAmoount {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.RepaymentAmount .PostTaxAmoount {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: right;
+}
+
+.RepaymentAmount ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.RepaymentAmount ul li + li {
+  margin-top: 16px;
+}
+
+.modalLinkLabel {
+  color: var(--gripBlue);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.InfoIcon,
+.InfoIcon > span {
+  width: 12px;
+  height: 12px;
+  max-width: 12px;
+  max-height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0 !important;
+}
+
+.InfoIcon {
+  margin-left: 5px;
+}
+
+.Icon {
+  font-weight: 700;
+  color: var(--gripBlue, #00357c);
+  font-size: 12px;
+}
+
+.PreTaxAmoount .InfoIcon {
+  margin-right: -10px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+.PreTaxAmoount:global(.Active) .CaretDown svg {
+  transform: rotate(180deg);
+  transition: 0.3s ease-in-out;
+}
+
+.InfoModal {
+  max-width: 400px !important;
+}
+
+.InfoModal :global(.CloseBtn) {
+  top: 35px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .RepaymentAmount[id='sdi-sidebar-principal'] {
+    padding: 0 !important;
+  }
+
+  .RepaymentAmount[id='bonds-sidebar-principal'] ul {
+    padding: 0;
+  }
+  .RepaymentAmount[id='bonds-sidebar-principal'] ul > li {
+    padding: 0 12px 0 6px;
+  }
+
+  .PreTaxAmoount .InfoIcon {
+    height: 15px;
+    max-height: 15px;
+  }
+}

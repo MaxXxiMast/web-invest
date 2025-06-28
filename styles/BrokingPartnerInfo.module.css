@@ -1,0 +1,115 @@
+.BrokingPartnerInfoContainer {
+  flex-direction: column;
+  align-items: center !important;
+  margin-top: 42px;
+}
+
+@media screen and (max-width: 991px) {
+  .BrokingPartnerInfoContainer {
+    margin-top: 0px;
+  }
+}
+
+.WithoutConsent {
+  margin-top: 20px;
+}
+
+.BrokingPartnerInfoDisclaimerText {
+  font-size: 12px;
+  color: var(--gripLuminousGrey);
+  margin-bottom: 10px;
+}
+
+.BrokingPartnerInfoDisclaimerLink {
+  color: var(--gripBlue);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.BrokingPartnerInfo {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  padding: 12px 20px;
+  flex-direction: row;
+  justify-content: space-between !important;
+  align-items: center !important;
+  border-radius: 9px;
+}
+
+.BrokingPartnerInfoText {
+  font-size: 12px;
+  color: var(--gripLuminousGrey);
+}
+
+.BrokingPartnerIcon {
+  width: 72px;
+  height: 25px;
+  max-width: 72px;
+  max-height: 25px;
+}
+
+.ConsentSharingModal {
+  max-width: 544px !important;
+}
+
+.ConsentSharingModal ul {
+  padding-inline-start: 15px;
+}
+
+.ConsentSharingModal .ql-align-right {
+  justify-content: flex-end !important;
+}
+
+.ConsentSharingModal .ql-align-center {
+  justify-content: center !important;
+}
+
+.ConsentSharingModal .ql-align-justify {
+  text-align: justify !important;
+}
+
+.ConsentSharingModal .ql-indent-1 {
+  margin-left: 20px;
+}
+
+.ConsentSharingModal .ql-indent-2 {
+  margin-left: 20px;
+}
+
+.ConsentSharingModal li {
+  list-style-type: disc;
+}
+
+.ConsentSharingModal li.ql-indent-1 {
+  list-style-type: circle;
+}
+
+.ConsentSharingModal li.ql-indent-2 {
+  list-style-type: square;
+}
+
+.ConsentSharingModal ol > li {
+  list-style-type: decimal !important;
+}
+
+.ConsentHeader {
+  font-size: 18px;
+  color: var(--gripLuminousDark);
+  font-weight: 700 !important;
+  margin-bottom: 16px;
+  line-height: 28px;
+}
+
+.ConsentDescription {
+  font-size: 14px;
+  color: var(--gripLuminousGrey);
+  margin-bottom: 20px;
+  padding-right: 30px;
+  line-height: 24px;
+}
+
+.ConsentList {
+  font-size: 14px;
+  color: var(--gripLuminousGrey);
+  line-height: 24px;
+  margin-bottom: 8px;
+}

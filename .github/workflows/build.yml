@@ -1,0 +1,58 @@
+name: Build and SonarQube Scan
+
+on:
+  pull_request:
+    branches: ['develop']
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.ref_type == 'branch' && format('{0}/{1}', github.repository, github.ref_name) || github.repository }}
+
+jobs:
+  sonar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Ensure full history for PR comparison
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22.11.0'
+
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Run Tests & Generate Coverage
+        run: npm run test:cov
+
+      - name: Run SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        with:
+          args: >
+            -Dsonar.projectKey=${{ secrets.SONAR_PROJECTKEY }}
+            -Dsonar.sources=.
+            -Dsonar.inclusions=**/*.tsx,**/*.jsx
+            -Dsonar.test.inclusions=**/*.test.tsx,**/*.test.jsx
+            -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+            -Dsonar.qualitygate.wait=true
+            -Dsonar.qualitygate.timeout=300
+
+      - name: PR Coverage Comment from SonarQube
+        if: always()
+        uses: campos-pay/sonarqube-pr-comment@main
+        with:
+          sonar_token: ${{ secrets.SONAR_TOKEN }}
+          sonar_host_url: ${{ secrets.SONAR_HOST_URL }}
+          sonar_projectkey: ${{ secrets.SONAR_PROJECTKEY }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repo_name: ${{ github.repository }}
+          pr_number: ${{ github.event.pull_request.number }}

@@ -1,0 +1,48 @@
+.modalPopup {
+  width: 453px;
+  height: auto;
+}
+
+.OuterDiv {
+  height: 329px;
+}
+
+.Heading span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--gripTextMain, #373a46);
+}
+
+.ImageDiv {
+  margin-top: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .OuterDiv {
+    height: 400px;
+  }
+
+  .Heading span {
+    display: none;
+  }
+
+  .Heading2 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gripTextMain, #373a46);
+    margin-bottom: 8px;
+  }
+
+  .ButtonDiv {
+    margin-top: 20px;
+  }
+
+  .PrimaryButton {
+    width: 343px !important;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+  }
+}

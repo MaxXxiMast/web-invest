@@ -1,0 +1,86 @@
+name: Build-Release
+
+on:
+  push:
+    tags: ['*']
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  sonar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22.11.0'
+
+      - name: Install Dependencies
+        run: npm install --legacy-peer-deps
+
+      - name: Run Tests & Generate Coverage
+        run: npm run test:cov
+
+      - name: Run SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        with:
+          args: >
+            -Dsonar.projectKey=${{ secrets.SONAR_PROJECTKEY }}
+            -Dsonar.sources=.
+            -Dsonar.inclusions=**/*.tsx,**/*.jsx
+            -Dsonar.test.inclusions=**/*.test.tsx,**/*.test.jsx
+            -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+            -Dsonar.qualitygate.wait=true
+            -Dsonar.qualitygate.timeout=300
+
+  build-and-push-image:
+    runs-on: ubuntu-latest
+    environment: 'release'
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Log in to the Container registry
+        uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=ref,event=tag
+            type=sha
+            type=semver,pattern={{version}}
+      - name: Build and push Docker image
+        uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            NEXT_PUBLIC_STRAPI_API_URL=${{ vars.LIVE_NEXT_PUBLIC_STRAPI_API_URL }}
+            NEXT_PUBLIC_GRIP_API_URL=${{ vars.LIVE_NEXT_PUBLIC_GRIP_API_URL }}
+            NEXT_PUBLIC_GRIP_BROKING_API_URL=${{ vars.LIVE_NEXT_PUBLIC_GRIP_BROKING_API_URL }}
+            NEXT_PUBLIC_ENVIRONMENT=${{ vars.LIVE_NEXT_PUBLIC_ENVIRONMENT }}
+            NEXT_PUBLIC_RSA_PUBLIC_KEY=${{ vars.NEXT_PUBLIC_RSA_PUBLIC_KEY }}

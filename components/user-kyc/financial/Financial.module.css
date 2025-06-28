@@ -1,0 +1,8 @@
+.Stepper:not(:empty) {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .Stepper:not(:empty) {
+    margin: 0 -20px;
+  }
+}

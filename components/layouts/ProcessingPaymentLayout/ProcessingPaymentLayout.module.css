@@ -1,0 +1,45 @@
+.container {
+  padding: 150px 0 116px;
+  height: 100vh;
+}
+
+.processingHeader {
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.processingText {
+  color: var(--gripGunPowder, #44485b);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.MainContainer {
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 12px;
+}
+
+.SkeletonContainer {
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .container :global(.containerNew) {
+    padding-bottom: 0;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .container {
+    height: calc(100vh - 250px);
+  }
+}

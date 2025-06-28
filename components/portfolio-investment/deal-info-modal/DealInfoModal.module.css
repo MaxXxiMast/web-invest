@@ -1,0 +1,30 @@
+.CardHeader {
+  padding-bottom: 20px;
+}
+.CardHeader h4 {
+  font-weight: 700;
+}
+.CardBody {
+  padding: 20px 0;
+}
+.CardBody li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CardBody li + li {
+  margin-top: 16px;
+}
+.CardBody li span {
+  color: var(--gripLuminousGrey);
+}
+.CardHeader h4 span {
+  margin-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .CardHeader h4 span {
+    display: none;
+  }
+}

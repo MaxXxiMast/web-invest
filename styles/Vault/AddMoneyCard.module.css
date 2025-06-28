@@ -1,0 +1,133 @@
+.AddMoneyCard {
+  padding: 24px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  border-radius: 12px;
+  background: var(--gripWhite);
+}
+.buttonChildren {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 8px;
+}
+
+.AddMoneyCardTop :global(.Heading3) {
+  display: flex;
+  align-items: center;
+}
+
+.WithdrawIcon svg {
+  margin: 0 !important;
+}
+
+.AddMoneyCardTop :global(.Heading3) svg {
+  margin-right: 12px;
+}
+
+.AmountCloud {
+  margin: 13px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.AmountCloud span {
+  background: var(--gripLighterOne);
+  border-radius: 70px;
+  padding: 4px 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripBlue);
+  margin: 0 4px;
+}
+
+.InvestMentAmount {
+  margin-top: 28px;
+  position: relative;
+  font-family: var(--fontFamily, "'Inter', sans-serif");
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  border: 1px solid var(--gripGhost);
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 56px;
+  padding: 16px;
+}
+
+.InvestMentAmount:focus {
+  border: 1px solid var(--gripBlue);
+  box-shadow: 0px 0px 0px 4px var(--gripLighterOne, #e5f1ff);
+}
+.errorText {
+  display: flex;
+  align-items: flex-end;
+  color: var(--gripDanger, #ff5c5c);
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.TransferNote {
+  color: var(--gripLuminousDark);
+  margin-top: 16px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.TransferNote > span {
+  text-decoration: underline;
+  color: var(--gripBlue);
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+
+.mobileTransferNote {
+  margin-bottom: 16px !important;
+}
+
+.WithdrawIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 8px;
+  margin-right: 12px;
+}
+
+.vaultAddErrorText {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--gripRedTwo, #ff0000);
+  margin-top: 7px;
+}
+
+.RupeesIcon {
+  font-size: 24px;
+  color: var(--gripBlue, #00357c);
+}
+
+.WalletIcon {
+  font-size: 24px;
+  color: var(--gripBlue, #00357c);
+}
+
+@media screen and (min-width: 767px) {
+  .TransferNote {
+    display: none;
+  }
+
+  .AddMoneyCardBottom {
+    margin-top: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .AddMoneyCard:global(.MobileMoneyCard) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+}

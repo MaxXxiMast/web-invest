@@ -1,0 +1,76 @@
+.CardBody {
+  position: relative;
+  max-height: 270px;
+  overflow-y: auto;
+}
+
+.CardBody::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  display: block;
+}
+
+.CardBody::-webkit-scrollbar-thumb {
+  height: 4px !important;
+  background: var(--greyCloud, #b5b5b5);
+  border-radius: 4px;
+}
+
+.CardBody::-webkit-scrollbar-thumb:hover {
+  height: 4px !important;
+  background: var(--gripEmperor, #555555);
+}
+
+.CardBody table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  min-width: 40px;
+  padding: 10px 8px;
+  border-bottom: 1px dashed var(--gripLightStroke);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousDark);
+  background-color: var(--gripWhite);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.table th {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 16px;
+  color: var(--gripLuminousGrey);
+  padding-bottom: 8px;
+}
+
+.table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.table td:first-child,
+.table th:first-child {
+  padding-left: 24px;
+  text-align: left;
+}
+
+.table td:last-child,
+.table th:last-child {
+  padding-right: 24px;
+}
+
+.table td > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table td:first-child > div {
+  justify-content: flex-start;
+}

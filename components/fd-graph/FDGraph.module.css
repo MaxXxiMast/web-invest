@@ -1,0 +1,191 @@
+.container {
+  padding: 12px;
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  margin-top: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+.Slider {
+  width: 100%;
+}
+
+.Bar {
+  position: absolute;
+  bottom: 10px;
+  border-radius: 3px 3px 0 0;
+  border: 1px solid var(--gripWhite, #ffffff);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.yAxis {
+  position: relative;
+  width: 25px;
+}
+
+.Graph {
+  position: relative;
+  height: 120px;
+  flex: 1;
+}
+
+.yMark {
+  font-weight: 500;
+  color: var(--greyCloud, #b5b5b5);
+  position: absolute;
+  font-size: 8px;
+}
+
+.intrestRate {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  margin: 0;
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.intrestRateLabel {
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--gripWealthText, #696b74);
+  margin: 0;
+  margin-top: 2px;
+}
+
+.tenure {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: right;
+  color: var(--gripBlue, #00357c);
+  margin: 0;
+}
+
+.tenureLabel {
+  font-size: 10px;
+  line-height: 14px;
+  text-align: right;
+  color: var(--gripWealthText, #696b74);
+  margin: 0;
+  margin-top: 2px;
+}
+
+.chevronDown {
+  margin-top: 5px;
+}
+
+.buttonsContainer {
+  margin-left: 7px;
+  gap: 3px;
+}
+
+.button {
+  cursor: pointer;
+  background-color: var(--gripWhite, #ffffff);
+  border-radius: 50%;
+  color: var(--gripLuminousDark, #282c3f);
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid var(--gripLuminousDark, #282c3f);
+}
+
+.verticalLine {
+  position: absolute;
+  height: 100%;
+  border-image: linear-gradient(
+      var(--gripWhiteLilac, #f7f7fc),
+      rgba(181, 181, 181, 0.5),
+      var(--gripWhiteLilac, #f7f7fc)
+    )
+    1 / 0 1px 0 0;
+  z-index: 0;
+  border-style: solid;
+}
+
+.crown {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.horizontalLine {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+}
+
+.tooltip {
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: -10px;
+  background-color: var(--gripWhite, #ffffff);
+  padding: 4px 0px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 5px;
+  color: var(--gripGunPowder, #44485b);
+  z-index: 99;
+  position: absolute;
+  transition: all 0.3s;
+  text-align: center;
+  width: 100px;
+}
+
+.tooltip .range {
+  font-weight: 300;
+}
+
+.SkeletonContainer {
+  padding: 0;
+}
+.Skeleton {
+  min-height: 220px;
+}
+
+.Tenure {
+  color: var(--gripGunPowder, #44485b);
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Slider :global(.rc-slider-handle) {
+  animation-name: Pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+.Slider :global(.rc-slider-handle)::after {
+  content: '';
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: -100%;
+  left: -100%;
+}
+
+@keyframes Pulse {
+  0% {
+    box-shadow: 0 0 0px 0px rgba(0, 53, 124, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 5px 5px rgba(0, 53, 124, 0.2);
+  }
+
+  100% {
+    box-shadow: 0 0 0px 0px rgba(0, 53, 124, 0.2);
+  }
+}

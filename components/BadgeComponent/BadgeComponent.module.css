@@ -1,0 +1,68 @@
+.CardFooterBadge {
+  padding: 4px 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey);
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 5px;
+  text-transform: capitalize;
+}
+
+.badgeIcon {
+  font-size: 14px;
+}
+
+.badgeContainer {
+  display: flex;
+  gap: 4px;
+  padding: 0;
+}
+
+.color-filling-fast {
+  color: var(--gripPersonaStrategist, #3e6497);
+}
+
+.color-repeat-investors {
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.color-highest-returns-rates {
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.color-shortest-tenure {
+  color: var(--gripWealthText, #696b74);
+}
+
+.color-most-popular {
+  color: var(--gripMacaroniAndCheese, #fbbb78);
+}
+
+.color-hiked-recently {
+  color: var(--gripTacao, #f4ac80);
+}
+
+.color-sell-anytime {
+  color: var(--gripBlue, #00357c);
+}
+
+.color-withdraw-anytime {
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.color-no-savings-ac {
+  color: var(--gripTacao, #f4ac80);
+}
+
+@media screen and (max-width: 767px) {
+  .CardFooterBadge {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 16px;
+  }
+}

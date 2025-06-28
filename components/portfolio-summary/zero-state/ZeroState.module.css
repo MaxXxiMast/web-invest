@@ -1,0 +1,28 @@
+.title {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26.244px;
+}
+
+.zeroContainer {
+  position: relative;
+  margin-top: 16px;
+  padding: 16px 24px 24px;
+  width: 500px;
+  text-align: center;
+  text-wrap: balance;
+  gap: 6px;
+  border: 2px solid var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 10px;
+  pointer-events: all !important;
+}
+
+.overlayLogo {
+  position: absolute;
+  top: -15%;
+}
+
+.Lock {
+  font-size: 60px;
+}

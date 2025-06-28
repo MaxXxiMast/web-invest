@@ -1,0 +1,180 @@
+.CardHeader {
+  padding: 0 40px 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CardHeaderLeft {
+  display: flex;
+  align-items: center;
+}
+
+.CardHeaderLeft .ImageIcon {
+  width: 40px;
+  height: 40px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 8px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CardHeaderLeft .Label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gripLuminousDark);
+}
+
+.CardBody table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.CardBody th {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 16px;
+  color: var(--gripLuminousGrey);
+  padding-bottom: 8px;
+  text-align: center;
+  min-width: 100px;
+}
+.CardBody td {
+  padding: 10px 0;
+  border-top: 1px dashed var(--gripLightStroke);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousDark);
+  background-color: var(--gripWhite);
+  text-align: center;
+  min-width: 100px;
+}
+
+.CardBody td:first-child,
+.CardBody th:first-child {
+  max-width: 60px;
+  min-width: 60px;
+}
+
+.CardBody tr:last-child td {
+  border-bottom: 1px dashed var(--gripLightStroke);
+}
+
+.InvestmentItem :global(.Label) {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey);
+}
+.InvestmentItem :global(.Amount) {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+}
+
+.InvestmentItem + .InvestmentItem {
+  margin-top: 12px;
+}
+
+.CardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 24px 0;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--gripBlue, #00357c);
+}
+
+.CardFooter span {
+  cursor: pointer;
+}
+
+.ArrowRight {
+  margin-right: 16px;
+}
+
+/* Mobile and IPAD */
+@media screen and (max-width: 992px) {
+  .Card {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .CardBody::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    display: block;
+  }
+
+  /* Handle */
+  .CardBody::-webkit-scrollbar-thumb {
+    height: 4px !important;
+    background: var(--greyCloud, #b5b5b5);
+    border-radius: 4px;
+  }
+
+  /* Handle on hover */
+  .CardBody::-webkit-scrollbar-thumb:hover {
+    height: 4px !important;
+    background: var(--gripEmperor, #555555);
+  }
+
+  .CardBody {
+    max-height: 50vh;
+    overflow: auto;
+  }
+
+  .CardFooter {
+    flex-wrap: wrap;
+  }
+}
+
+/* IPAD and Desktop */
+@media screen and (min-width: 993px) {
+  .CardBody {
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  .CardBody::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    display: block;
+  }
+
+  /* Handle */
+  .CardBody::-webkit-scrollbar-thumb {
+    background: var(--gripWhiteLilac, #f7f7fc);
+    border-radius: 4px;
+  }
+
+  /* Handle on hover */
+  .CardBody::-webkit-scrollbar-thumb:hover {
+    background: var(--greyCloud, #b5b5b5);
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .ArrowRight {
+    display: none;
+  }
+  .textAlignLeft {
+    text-align: left !important;
+  }
+  .textAlignRight {
+    text-align: right !important;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .ImageIcon {
+    display: none !important;
+  }
+}

@@ -1,0 +1,209 @@
+.StepTitle {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.FormFieldsContainer {
+  gap: 20px;
+}
+
+.DateInputIcon {
+  width: 16px;
+  height: 16px;
+  margin-right: 14px;
+}
+
+.ReuploadTextContainer {
+  color: var(--gripBlue, #00357c);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  align-items: center;
+  display: flex;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.FormTitleContainer {
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.DocumentUploadTitle {
+  width: 100%;
+  gap: 16px;
+}
+
+.DocumentUploadSubTitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: var(--gripLuminous, #555770);
+  margin-top: -10px;
+}
+
+.FetchModal :global(.Card) {
+  padding: 32px;
+}
+
+.FetchModal {
+  margin-top: 16px;
+}
+
+.KRAFetchModal :global(.Card) {
+  padding: 43px 24px;
+}
+
+.KRAFetchModal :global(h3) {
+  margin-top: 16px;
+}
+
+.KRAIconContainer {
+  border-bottom: 1px solid var(--borderSix, #eaeaea);
+  padding-bottom: 25px;
+  align-items: center;
+  display: flex;
+  gap: 36px;
+}
+
+.DocumentUploadContainer {
+  gap: 46px;
+}
+
+.ExistingPan {
+  margin-top: -8px;
+}
+
+.PanHintsContainer {
+  width: 100%;
+}
+
+.ResetButton {
+  color: var(--gripBlue, #00357c);
+  font-weight: 600;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.AutoFetchContainer {
+  margin-top: -5px;
+  border-radius: 0px 0px 6px 6px;
+  padding: 12px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  color: var(--gripTextMain, #373a46);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.IconTick {
+  font-size: 13px;
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.AutoFetchContainerInner {
+  gap: 4px;
+}
+
+.PanSkeletonTitle {
+  gap: 16px;
+}
+
+/* Media Queries Start */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .DocumentUploadContainer {
+    flex-direction: column;
+    min-height: 160px;
+  }
+
+  .Drawer {
+    margin-top: 16px;
+    padding: 20px;
+  }
+
+  .KRADrawer {
+    padding: 20px;
+  }
+
+  .KRADrawer :global(h3) {
+    margin-top: 16px;
+    max-width: 284px;
+  }
+
+  .Wrapper {
+    padding-top: 25px;
+  }
+
+  .DocumentUploadTitle {
+    width: 100%;
+  }
+
+  .PanHintsContainer {
+    position: fixed;
+    bottom: 0px;
+    padding: 0 20px;
+  }
+
+  .PanSkeletonContainer {
+    flex-direction: column;
+    padding-top: 32px;
+  }
+
+  .HideMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 580px) {
+  .DocumentUploadTitle {
+    height: 280px;
+  }
+  .PanHintsContainer {
+    position: static;
+    padding: 0px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .FormTitleContainer {
+    max-width: 371px;
+  }
+
+  .KRADrawer :global(h3) {
+    max-width: 295px;
+  }
+
+  .InputFieldSetPan {
+    max-width: 373px !important;
+  }
+
+  .FooterPanContainer {
+    margin-top: 20px;
+    margin-left: -300px !important;
+  }
+
+  .DocumentUploadContainer {
+    height: 120px;
+  }
+
+  .DocumentUploadTitle,
+  .PanHintsContainer {
+    height: 100%;
+  }
+
+  .FooterContainerForm :global .DisclaimerKYCFooter,
+  .FooterPanContainer :global .DisclaimerKYCFooter {
+    width: 100%;
+  }
+
+  .PanSkeletonTitle {
+    width: 440px;
+  }
+}
+
+/* Media Queries End */

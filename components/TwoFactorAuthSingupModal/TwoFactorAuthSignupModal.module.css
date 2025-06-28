@@ -1,0 +1,94 @@
+.Button {
+  margin: 16px 0;
+}
+
+.m9 {
+  margin-top: 9px;
+}
+
+.twoFacAuthWrapper {
+  border-radius: 6px;
+  background: var(--sdiSecondary, #fff7ec);
+  position: relative;
+  top: -30px;
+  padding: 5px 10px;
+  gap: 10px;
+}
+
+.twoFacAuthContent {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.inputWrapper {
+  width: 100%;
+}
+
+.userMessageWrapper {
+  margin: 16px 0 32px;
+  text-align: center;
+}
+
+.confirmationText {
+  padding: 4px;
+  font-size: 14px;
+}
+
+.warningWrapper {
+  color: var(--gripGunPowder, #44485b);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 5px 10px;
+  border-radius: 54px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+}
+
+.link {
+  color: var(--gripBlue, #00357c);
+  text-decoration: underline;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--gripWhite, #ffffff);
+}
+
+.errorMessageWrapper {
+  color: var(--gripDanger, #ff5c5c);
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.UserDetailsContainer {
+  text-align: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.UserDetailsContainer p,
+.UserDetailsContainer h2 {
+  margin: 0;
+  word-break: break-all;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .MainClass {
+    overflow: unset !important;
+  }
+  .errorWrapper {
+    align-items: flex-start;
+  }
+  .DrawerRootExtraClass ~ :global(.CalculatorAssetDrawer) {
+    display: none;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .TwoFactorAuthModal {
+    max-width: 505px !important;
+  }
+}

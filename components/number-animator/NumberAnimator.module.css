@@ -1,0 +1,6 @@
+.Animator {
+  display: inline-flex;
+}
+.Animator * {
+  font-variant-numeric: unset !important;
+}

@@ -1,0 +1,29 @@
+.container {
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  border-radius: 12px;
+  position: relative;
+  background: url('https://static-assets.gripinvest.in/bonds/InvestmentNumberCardBackgroundImg.svg')
+    no-repeat;
+  background-size: cover;
+  padding: 16px;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gripWhite, #ffffff);
+}
+
+.link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--gripWhite, #ffffff);
+  margin-top: 20px;
+}
+
+.rightArrow {
+  font-weight: 700;
+  margin-left: 4px;
+}

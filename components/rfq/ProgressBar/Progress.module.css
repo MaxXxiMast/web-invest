@@ -1,0 +1,226 @@
+.Header {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.linearProgress::before {
+  background-color: var(--specialDarkColor, #ededee) !important;
+  opacity: 1 !important;
+}
+
+.linearProgress:global(.error)::before {
+  background-color: rgba(238, 26, 38, 0.12) !important;
+}
+
+.linearProgress {
+  color: var(--gripPrimaryGreen, #00b8b7);
+  transition: width 0.5s ease-in-out;
+  border-radius: 28px;
+  height: 10px !important;
+  width: 100%;
+}
+
+.linearProgress span {
+  border-radius: 28px;
+}
+
+.mainContainer {
+  margin-top: 30px;
+}
+
+.linearProgressContainer {
+  gap: 8px;
+}
+
+.progressText {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.progressDetailText {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.circularProgressContainer {
+  position: relative;
+  background: var(--gripWhite, #ffffff);
+}
+
+.circularProgressDeterminate {
+  color: var(--gripLighterOne, #e5f1ff) !important;
+}
+
+.circularProgressInDeterminate {
+  position: absolute;
+  left: 0;
+  color: var(--gripBlue, #00357c) !important;
+}
+
+.circularProgressInDeterminateCircle {
+  stroke-linecap: round;
+  stroke-dasharray: 30px, 200px !important;
+}
+
+.labelContainer :global .label {
+  color: var(--gripTextMain, #373a46);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-left: 10px;
+}
+
+.labelContainer :global .sublabel {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 7px;
+}
+
+.labelContainer:global.sublabel {
+  margin-left: 10px;
+}
+
+.subLabelContainer {
+  margin-top: 14px;
+  gap: 14px;
+}
+
+.StepLabelRoot {
+  flex-direction: row !important;
+  position: relative;
+  align-items: flex-start !important;
+}
+
+.StepLabel {
+  margin-top: 0 !important;
+  text-align: initial;
+  font-family: var(--fontFamily, "'Inter', sans-serif") !important;
+}
+
+.StepIcon {
+  width: 24px !important;
+  height: 24px !important;
+  background: var(--gripWhite, #ffffff) !important;
+}
+
+.stepRoot {
+  margin-top: unset;
+}
+
+.StepperIconCompleted {
+  width: 24px;
+  height: 24px;
+  background: var(--gripWhite, #ffffff);
+}
+
+.StepperIconCompleted:global.sublabel {
+  width: 17px;
+  height: 17px;
+  margin-left: 0px !important;
+}
+
+.PendingSubLabelCircle {
+  width: 17px;
+  height: 17px;
+  background: var(--specialDarkColor, #ededee);
+  border-radius: 999999px;
+}
+
+.ftWeight500 {
+  font-weight: 500 !important;
+}
+
+.StepperRoot {
+  position: relative;
+}
+
+.StepperRoot::before {
+  content: '';
+  position: absolute;
+  height: 72%;
+  left: 12px;
+  right: 0;
+  border-left: 1px dashed var(--gripWhiteLilac, #f7f7fc);
+  top: 15px;
+}
+
+.StepperRootLast::before {
+  height: 43%;
+}
+
+.orderProcessed {
+  color: var(--gripOsloGray, #81878c);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.errorText {
+  color: var(--progressRedColor, #ee1a26);
+}
+
+.IconTick {
+  font-size: 24px;
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.SubLabel {
+  font-size: 17px;
+}
+
+/* Media Queries start */
+
+/* For Desktop */
+@media screen and (min-width: 768px) {
+  .orderProcessed {
+    margin-top: 33px;
+  }
+
+  .progressDetailText {
+    margin-top: 13px;
+  }
+}
+
+/* For Mobile */
+@media screen and (max-width: 767px) {
+  .progressDetailText {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 34px;
+    margin-top: 24px;
+  }
+
+  .labelContainer :global .label {
+    font-size: 16px;
+  }
+
+  .labelContainer :global .sublabel {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .linearProgressContainer {
+    gap: 11px;
+  }
+
+  .StepLabelRoot {
+    padding: 12px 0 !important;
+  }
+
+  .orderProcessed {
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,125 @@
+/* Radio button */
+.Radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--gripOsloGray, #81878c);
+  flex-shrink: 0;
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+
+.Radio::before {
+  content: '';
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background-color: var(--gripBlue, #00357c);
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.Active .Radio::before {
+  opacity: 1;
+}
+
+.Active .Radio {
+  border-color: var(--gripBlue, #00357c);
+  border-width: 2px;
+}
+
+.Disabled .Radio {
+  border-color: var(--gripMischka, #dadade);
+}
+
+.Disabled {
+  color: var(--gripMischka, #dadade) !important;
+  cursor: not-allowed !important;
+}
+
+/* Radio Button End */
+
+.TabItemContainer {
+  cursor: pointer;
+  padding: 28px 12px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  gap: 12px;
+}
+
+.TabItem {
+  gap: 12px;
+  cursor: pointer;
+}
+
+.TabItemContainer:last-child {
+  border-bottom: none;
+}
+
+.TabLabel {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.Active .TabLabel {
+  color: var(--gripBlue, #00357c);
+}
+
+.Skeleton {
+  height: 60px;
+}
+
+.SkeletonContainer {
+  gap: 17px;
+}
+
+.PaymentTag {
+  /* Tag Settings */
+  height: 27px;
+  padding: 6px 8px;
+  border-radius: 6px;
+
+  /* Font Settings */
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.PaymentTag:global(.upi),
+.PaymentTag:global(.netbanking) {
+  color: var(--gripPersianGreen, #00a3a2);
+  background: var(--gripOffGreen, #e5f8f8);
+}
+
+.PaymentTag:global(.neft) {
+  color: var(--gripBlue, #00357c);
+  background: var(--gripSolitude, #e7f1fe);
+}
+
+.DisabledNetBanking {
+  gap: 4px;
+  color: var(--gripSantasGray, #a1a3ad);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.InfoIcon {
+  cursor: pointer;
+  color: var(--gripMySin, #ffb628);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .TabItemContainer {
+    padding: 15px 12px;
+  }
+}

@@ -1,0 +1,24 @@
+/* Circular Loader Starts */
+.circularProgressContainer {
+  position: relative;
+  background: var(--gripWhite, #ffffff);
+  margin-bottom: 28px;
+  text-align: center;
+  display: inline-flex;
+}
+
+.circularProgressDeterminate {
+  color: var(--gripLighterOne, #e5f1ff) !important;
+}
+
+.circularProgressInDeterminate {
+  position: absolute;
+  color: var(--gripBlue, #00357c) !important;
+}
+
+.circularProgressInDeterminateCircle {
+  stroke-linecap: round;
+  stroke-dasharray: 30px, 200px !important;
+}
+
+/* Circular Loader Ends */

@@ -1,0 +1,41 @@
+.TitleContainer {
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  display: flex;
+}
+
+.Title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  padding-bottom: 8px;
+  flex: 1;
+}
+
+.FormTitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  flex: 1;
+}
+
+.FormTitle,
+.Title {
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+}
+
+.Pencil {
+  color: var(--gripBlue, #00357c);
+  font-size: 16px;
+}
+
+.EditPencilBtn {
+  color: var(--gripBlue, #00357c);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 24px;
+  border: 0px;
+  background-color: inherit;
+  cursor: pointer;
+  gap: 5px;
+}

@@ -1,0 +1,105 @@
+.ReferralRewardCard {
+  padding: 16px;
+  background: var(--gripWhite);
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.popup {
+  width: 400px !important;
+}
+.popUpHeaderContainer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.popUpBodyContainer {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-top: 16px;
+}
+.popUpBodyRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popUpBodyAmountType {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.popupHeading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.popupFooter {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gripBlue, #00357c);
+  justify-content: center;
+  margin-top: 20px;
+}
+.RewardCard {
+  padding: 24px 135px 24px 24px;
+  background: var(--gripLighterOne);
+  border-radius: 12px;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.RewardList {
+  margin-top: 20px;
+}
+.RewardList ul li + li {
+  margin-top: 16px;
+}
+.RewardItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--gripLuminousDark);
+}
+
+.RewardItem a {
+  color: var(--gripBlue);
+  text-decoration: underline;
+}
+
+.RedeemReward {
+  margin-top: 32px;
+}
+
+.RewardHstoryBtn {
+  margin-top: 36px;
+  border: none !important;
+  padding: 0 0 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .ReferralRewardCard {
+    box-shadow: 0px 20px 30px rgba(211, 209, 216, 0.15);
+    border: none;
+    padding: 0;
+  }
+  .RewardList {
+    margin-top: 0px;
+    padding: 20px 20px 0px;
+  }
+  .RedeemReward {
+    margin-top: 32px;
+    padding: 0 20px 16px;
+  }
+  .RewardHstoryBtn :global(.ButtonImage) {
+    margin-left: 8px;
+  }
+}

@@ -1,0 +1,8 @@
+.SkeletonCard {
+  border: 1px solid var(--gripMercury2);
+  box-shadow: none;
+  border-radius: 8px;
+  padding: 24px;
+  background-color: var(--gripWhite, #ffffff);
+  width: 100%;
+}

@@ -1,0 +1,98 @@
+.Title {
+  color: var(--gripTextMain, #373a46);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.18px;
+  width: 60%;
+}
+
+.Container {
+  background-image: url('https://s3.ap-south-1.amazonaws.com/gripinvest.in/KnowYourInvestor/KnowYourInvestorMobileBg.svg ');
+  padding: 20px;
+  border-radius: 8px;
+  background-size: cover;
+}
+
+.ContainerBanner {
+  background-image: url('https://s3.ap-south-1.amazonaws.com/gripinvest.in/KnowYourInvestor/KnowYourInvestorWebBg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+
+.LeftContainerBanner {
+  width: 50%;
+  padding: 75px 0 0;
+}
+
+.TitleBanner {
+  color: var(--gripTextMain, #373a46);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 52px;
+  margin: 20px 0;
+}
+
+.TypeFormModal {
+  height: 700px;
+}
+
+.MobileCloseBtn {
+  width: 28px;
+  height: 28px;
+  background-color: var(--gripGreyExtra, #f1f3f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 8px;
+  top: -15px;
+  z-index: 500;
+}
+
+.footerBtn {
+  border: 0;
+  color: var(--gripLuminousGrey);
+  background: none;
+  font-size: 12px;
+  padding: 0px;
+  cursor: pointer;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .Container {
+    margin-top: 55px;
+    background-image: url('https://s3.ap-south-1.amazonaws.com/gripinvest.in/KnowYourInvestor/KnowYourInvestorMobileGreyBg.svg');
+  }
+
+  .Title {
+    min-height: 70px;
+  }
+
+  .TitleBanner {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0 0 20px;
+  }
+
+  .LeftContainerBanner {
+    width: 80%;
+    padding: 20px 0 0;
+  }
+
+  .ContainerBanner {
+    background-image: url('https://s3.ap-south-1.amazonaws.com/gripinvest.in/KnowYourInvestor/KnowYourInvestorMobileGreyBg.svg');
+    margin: 0 10px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 387px) {
+  .LeftContainerBanner {
+    width: 70%;
+  }
+}

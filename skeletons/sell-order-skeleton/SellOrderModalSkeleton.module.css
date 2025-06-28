@@ -1,0 +1,31 @@
+.container {
+  padding: 24px;
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.assetInfo {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-color, #e5e7eb);
+  margin-bottom: 16px;
+}
+
+.detailRow {
+  min-width: 80px;
+}
+
+.maturity {
+  margin-bottom: 24px;
+}
+
+.inputSection {
+  margin-bottom: 16px;
+}
+
+.terms {
+  margin-top: 16px;
+  text-align: center;
+}

@@ -1,0 +1,96 @@
+.container {
+  min-height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 5px;
+  margin-bottom: 5px;
+}
+
+.unitText {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 4px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.bondUnitAsset {
+  font-size: 12px;
+  line-height: 20px;
+  margin-top: 4px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.sdiContainer {
+  flex-direction: column !important;
+  justify-content: center;
+}
+
+.logo {
+  height: 40px;
+  object-position: left;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.partnershipTextContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.partnershipText {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey);
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.partnerName {
+  font-weight: 600;
+}
+
+.OxyzoLogo {
+  display: inline-flex;
+}
+
+.BondsPartnerTxt {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    height: 32px;
+  }
+
+  .partnershipText {
+    font-weight: 400;
+    font-size: 8px;
+    width: 146px;
+    line-height: 12px;
+    color: var(--gripLuminousGrey);
+    margin-bottom: 0px;
+    margin-top: 4px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .partnershipText {
+    font-size: 8px;
+    margin-top: 2px;
+  }
+
+  .partnershipText span {
+    max-height: 12px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+}

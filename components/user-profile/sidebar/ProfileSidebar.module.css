@@ -1,0 +1,99 @@
+.Sidebar {
+  width: 100%;
+  gap: 4px;
+}
+.Item {
+  padding: 12px 16px;
+  color: var(--gripLuminousGreyPlace, #777777);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.1s ease-in-out;
+  gap: 8px;
+}
+
+.Arrow {
+  margin-left: auto;
+  color: var(--gripLuminousGreyPlace, #777777);
+  font-weight: 700;
+}
+
+.appInfo {
+  margin-bottom: 50px;
+}
+
+.appVersion {
+  color: var(--gripTextMain, #373a46);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.otaVersion {
+  color: var(--gripTextMain, #373a46);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.appUpdate {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.updateTxt {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--gripTextMain, #373a46);
+  margin-left: 8px;
+}
+
+.updateBtn {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  width: min-content !important;
+  white-space: nowrap;
+  height: min-content !important;
+  padding: 8px 16px !important;
+}
+
+@media screen and (min-width: 768px) {
+  .Item.Active {
+    font-weight: 500;
+    color: var(--gripBlue, #00357c);
+    background: var(--gripLighterOne, #e5f1ff);
+    transition: 0.1s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Sidebar {
+    gap: 0;
+  }
+  .Item {
+    border-radius: 0;
+    padding: 20px 0;
+  }
+  .Item:not(:first-child) {
+    border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+  }
+  .DangerLink {
+    color: var(--gripDanger, #ff5c5c);
+  }
+  .NoBorder {
+    border: none !important;
+    padding: 0 !important;
+  }
+}

@@ -1,0 +1,119 @@
+.PortfolioPageMain {
+  display: flex;
+}
+
+.PortfolioPageLeft {
+  width: calc(100% - (360px + 30px));
+}
+
+.PortfolioPageRight {
+  width: 360px;
+  flex-shrink: 0;
+  margin-left: 30px;
+}
+
+.mt35 {
+  margin-top: 35px;
+}
+
+.mt80 {
+  margin-top: 80px;
+}
+
+.bookCall {
+  margin-left: 0 !important;
+  position: sticky;
+  top: var(--headerHeight, 65px);
+}
+
+.gap60 {
+  gap: 60px;
+}
+
+.gap80 {
+  gap: 80px;
+}
+
+.Banner {
+  position: sticky;
+  top: var(--headerHeight, 65px);
+}
+
+.title {
+  margin: 0 0 15px;
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26.244px;
+}
+
+/* stylelint-disable-next-line selector-id-pattern */
+.PortfolioSummary :global #ShortByDropDown li {
+  padding: 10px;
+}
+
+/* stylelint-disable-next-line selector-id-pattern */
+.PortfolioSummary :global #ShortByDropDown li span {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.FAQLayoutContainer {
+  margin-top: 80px;
+}
+
+.flexWrapMobile {
+  justify-content: flex-end;
+}
+
+/* small devices  */
+@media screen and (max-width: 1080px) {
+  .PortfolioPageMain {
+    display: flex;
+    flex-direction: column;
+  }
+  .flexWrapMobile {
+    flex-direction: column;
+  }
+  .PortfolioPageLeft {
+    width: 100%;
+  }
+  .PortfolioPageRight {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .DisplayOnMobile {
+    display: none;
+  }
+  .greyBorder {
+    border: 2px solid var(--gripWhiteLilac, #f7f7fc);
+    border-radius: 12px;
+    padding: 27px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .DisplayOnDesktop,
+  .Banner {
+    display: none;
+  }
+  .flexWrapMobile {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .PortfolioSummary {
+    overflow: hidden;
+  }
+  .FAQLayoutContainer {
+    margin-top: 30px;
+  }
+}

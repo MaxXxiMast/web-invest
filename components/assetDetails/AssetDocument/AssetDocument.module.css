@@ -1,0 +1,78 @@
+.documentsCardContainer {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.documentsCard {
+  width: calc(50% - 16px);
+  min-width: 300px;
+  max-width: 360px;
+  position: relative;
+}
+
+.contentWrapper {
+  height: 65px;
+  margin: 0;
+  padding: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid var(--gripMercury3, #e6e6e6);
+  color: var(--gripLuminousDark, #2e303a);
+}
+
+.documentTitle {
+  margin-left: 18px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  height: auto;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.Download {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.FileIcon {
+  font-size: 40px;
+}
+
+.DownloadIcon {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .documentsCardContainer {
+    margin-top: 16px;
+  }
+  .documentsCard {
+    width: calc(50% - 8px);
+    min-width: auto;
+    max-width: initial;
+    flex: 0 0 auto;
+    margin-right: 0;
+    margin-bottom: 16px;
+    height: auto;
+  }
+  .documentTitle {
+    text-align: center;
+    margin: 8px 0 0;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    width: 100%;
+  }
+  .contentWrapper {
+    flex-direction: column;
+    min-height: 116px;
+    align-items: center;
+    justify-content: center;
+  }
+}

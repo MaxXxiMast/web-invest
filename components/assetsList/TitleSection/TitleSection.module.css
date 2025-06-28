@@ -1,0 +1,569 @@
+.moreDetailsHeadingContainer {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sdiTabheadingSecond {
+  padding-top: 32px;
+  width: 100%;
+  margin-top: -11px;
+}
+.sdiTabheadingFirst{
+  width: 100%;
+}
+.headingContainer{
+  padding-top: 5px;
+  width: 100%;
+}
+.moreDetailsIcon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 8px;
+  margin-right: 12px;
+  font-size: 22px;
+}
+
+.moreDetailsHeading {
+  font-weight: 700;
+  font-family: Inter, sans-serif;
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.detailsStep {
+  padding: 20px 0px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.removeBorder {
+  border-bottom: unset !important;
+}
+
+.detailsStepText {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: Inter, sans-serif;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.forwardArrow {
+  color: var(--gripBlue, #00357c);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.detailsContainer {
+  margin: 20px 0 0px;
+}
+
+.swiperSlideClass {
+  width: 100% !important;
+}
+
+.swipperSlideContainer {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.slideSubtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripBlack, #000000);
+  margin: 8px 0;
+}
+
+.slideDesc {
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(85, 87, 112);
+}
+
+.slideIcon {
+  width: 60px;
+  height: 60px;
+  margin-top: 40px;
+  margin-bottom: 4px;
+}
+
+.arrowBack {
+  cursor: pointer;
+  margin-right: 12px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.sliderDrawerHeading {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripBlack, #000000);
+}
+
+.moreDetailsContainer {
+  position: relative;
+  top: 31%;
+  width: 400px;
+  padding: 24px;
+  background: var(--gripWhite2, #fefefe);
+  box-shadow: 0px 14px 94px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menuDrawerContainer {
+  position: relative;
+  top: 50%;
+  width: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 24px;
+  background: var(--gripWildSand, #f5f5f5);
+  box-shadow: 0px 14px 94px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.closeIcon {
+  cursor: pointer;
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.menuDrawerCloseIcon {
+  font-size: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.mobileDescription {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gripTextMain, #373a46);
+  margin-top: 12px;
+  max-width: 300px;
+}
+
+.mobileSectionTitle {
+  align-items: center;
+  width: calc(100% + 40px) !important;
+  margin-left: -20px;
+  padding: 25px 20px;
+  justify-content: space-between;
+}
+
+.mobileSectionTitle > div {
+  width: 100%;
+}
+
+.knowMoreAboutHeading {
+  color: var(--gripBlue, #00357c);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.TitleSectionMain {
+  margin-bottom: 20px;
+}
+.TitleSectionMain h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--gripLuminousDark);
+  margin: 0;
+}
+
+.TitleSectionMain p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey);
+  margin: 0;
+}
+
+.Text {
+  margin-right: 8px;
+}
+
+.PlayIcon {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.FlyerVideo {
+  border-radius: 12px;
+  margin-top: 28px;
+}
+
+.FlyerVideoContent h3 {
+  margin-bottom: 8px;
+}
+
+.FlyerVideoContent p {
+  color: var(--gripLuminousDark, #282c3f);
+  opacity: 0.7;
+}
+
+.VideoModal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999;
+  left: 0;
+  background: rgba(40, 44, 63, 0.4);
+}
+.VideoModal:global(.VideoModal-enter) {
+  opacity: 0;
+}
+.VideoModal:global(.VideoModal-enter-active) {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.VideoModal:global(.VideoModal-exit) {
+  opacity: 1;
+}
+.VideoModal:global(.VideoModal-exit-active) {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.VideoContainer {
+  max-width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 774px;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.VideoContainer > div {
+  max-height: calc(100vh - 30px);
+  background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0) 90.5%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 83.6%, rgba(0, 0, 0, 0.5) 100%);
+  background-blend-mode: multiply, multiply, normal;
+}
+
+.ModalCLose {
+  margin-left: 24px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.LastDiv {
+  display: none;
+}
+
+.watchVideoLink {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--gripBlue);
+  cursor: pointer;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.watchVideoIconContainer {
+  height: 20px;
+  width: 20px;
+  margin-left: 6px;
+  line-height: 0;
+}
+
+.mobileTitleSectionContainer {
+  margin-bottom: 16px;
+  margin-top: 15px;
+}
+
+.tenure {
+  color: var(--gripTextMainLight);
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 20px;
+}
+
+.mobileButtonContainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.mobileReadMoreButton {
+  background-color: transparent;
+  border: 1px solid;
+  color: var(--gripBlue);
+  padding: 5px 8px;
+  border-radius: 6px;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.mobileWatchVideoButton {
+  background-color: var(--gripBlue);
+  color: var(--gripWhite);
+  border: none;
+  padding: 5px 8px;
+  border-radius: 6px;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.knowMoreContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 14px 0px;
+  border-radius: 8px;
+}
+
+.knowMoreContainer:global(.bonds),
+.knowMoreContainer:global(.bondsMFs) {
+  background: linear-gradient(
+    to right,
+    var(--gripWhite, #ffffff),
+    var(--bonds)
+  );
+}
+
+.knowMoreContainer:global(.highyieldfd) {
+  background: linear-gradient(
+    270deg,
+    var(--gripAfterMarket, #d1f2f2) 2.71%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.knowMoreContainer:global(.sdi) {
+  background: linear-gradient(
+    to right,
+    var(--gripWhite, #ffffff),
+    var(--sdiSecondary)
+  );
+}
+
+.knowMoreContainer:global(.startupEquity) {
+  background: linear-gradient(
+    to right,
+    var(--gripWhite, #ffffff),
+    var(--startupEquity)
+  );
+}
+
+.knowMoreContainer:global(.realEstate) {
+  background: linear-gradient(
+    to right,
+    var(--gripWhite, #ffffff),
+    var(--realEstate)
+  );
+}
+
+.knowMoreContainer:global(.Baskets) {
+  padding: 10px;
+  background: linear-gradient(
+    294.93deg,
+    rgba(255, 252, 242, 0.6) 25.13%,
+    rgba(242, 237, 255, 0.6) 77.13%
+  );
+}
+
+.productTypeDesc {
+  max-width: 80%;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--gripLuminousGrey);
+  line-height: 24px;
+}
+
+.headerContainerAccordian {
+  margin-top: 20px;
+  position: relative;
+}
+
+.DownCaret {
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .mobileSectionTitle {
+    display: none;
+  }
+
+  .headingContainer {
+    width: 100%;
+  }
+
+  .slideIcon {
+    width: 72px;
+    height: 72px;
+    margin-top: 28px;
+  }
+  .moreDetailsHeadingContainer {
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  .moreDetailsIcon {
+    display: none;
+  }
+
+  .moreDetailsHeading {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 0;
+  }
+  .slideSubtitle {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menuDrawerContainer {
+    width: 45%;
+  }
+
+  .moreDetailsContainer {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .FlyerVideo iframe {
+    border-radius: 12px;
+  }
+  .menuDrawerHeader {
+    padding: 0 20px;
+  }
+
+  .mobileMenuDrawer {
+    padding: 20px 4px;
+  }
+
+  .closeIcon {
+    display: none !important;
+  }
+
+  .knowMoreAboutHeading {
+    display: none;
+  }
+
+  .swipperSlideContainer {
+    width: 90% !important;
+    margin: 0 auto 50px;
+  }
+  .mobileSectionTitle {
+    width: 100% !important;
+    margin-left: 0;
+    border-radius: 12px;
+    height: 130px;
+    padding-top: 1px;
+  }
+
+  .SebiBadgeDiv {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .SEBIText {
+    font-size: 12px;
+    font-weight: 500;
+    gap: 5px;
+    color: var(--gripWealthText, #696b74);
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .SEBITextBlue {
+    font-size: 12px;
+    font-weight: 700;
+    gap: 5px;
+    color: var(--gripBlue, #00357c);
+    background: transparent;
+    border: none;
+  }
+
+  .moreDetailsContainer {
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .detailsContainer {
+    margin-top: 16px !important;
+  }
+
+  .ModalCLose {
+    margin-left: 0;
+    cursor: pointer;
+    width: 24px;
+    height: 0;
+  }
+
+  .LastDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .LastDivFirstText {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--gripWealthText, #696b74);
+    font-weight: 400;
+  }
+
+  .LastDivSecondText {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: var(--gripBlue, #00357c);
+    font-weight: 600;
+    margin-top: -7px;
+    cursor: pointer;
+  }
+
+  .VideoStyling {
+    border-radius: 11px;
+  }
+
+  .InfoIcon {
+    width: 16px;
+    height: 12px;
+    font-weight: 700;
+  }
+
+  .ShieldCheck {
+    filter: brightness(0) invert(0);
+  }
+}

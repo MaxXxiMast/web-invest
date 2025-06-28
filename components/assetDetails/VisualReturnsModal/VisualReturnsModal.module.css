@@ -1,0 +1,16 @@
+@media screen and (min-width: 993px) {
+  .VisualReturnModalPopup :global(.Card) {
+    padding: 0 !important;
+  }
+
+  .VisualReturnsDrawer {
+    padding: 0 !important;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .BondsVisualReturns :global(.CloseBtn) {
+    top: 35px;
+  }
+}

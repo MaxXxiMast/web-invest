@@ -1,0 +1,9 @@
+.flexColumnDir {
+  flex-shrink: 0;
+}
+.sidebarMobile {
+  gap: 10px;
+  width: auto;
+  overflow-x: hidden;
+  margin: 20px 8px;
+}

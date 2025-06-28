@@ -1,0 +1,199 @@
+.InnerPageHeading {
+  margin-bottom: 24px;
+}
+
+.PortfolioPageMain {
+  display: flex;
+}
+
+.PortfolioPageLeft {
+  width: calc(100% - (360px + 30px));
+}
+
+.PortfolioPageRight {
+  width: 360px;
+  flex-shrink: 0;
+  margin-left: 30px;
+}
+
+.TotalInvestment + .DocumentsSection {
+  margin-top: 40px;
+}
+
+.EarningWaysSection {
+  margin-top: 42px;
+}
+
+.UpcomingReturns {
+  margin-top: 40px;
+}
+
+.PortfolioDiversification {
+  margin-top: 60px;
+}
+
+.PortfolioPageMain :global(.SubSectionTitleSection) {
+  border: none;
+}
+
+.PortfolioTabs {
+  margin-bottom: 33px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  position: sticky;
+  z-index: 21;
+  padding: 4px;
+  top: 0;
+  background: var(--gripWhite, #ffffff);
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 12px;
+  width: calc(100% + 40px);
+}
+
+.PortfolioTabsInner span {
+  border-radius: 34px;
+  height: 16px;
+  margin-left: 4px;
+  background-color: var(--gripPillYellow3, #fff0d4);
+  font-weight: 600;
+  font-size: 8px;
+  padding: 6px;
+  color: var(--gripTextMain, #373a46) !important;
+}
+
+.PortfolioTabs ul {
+  display: flex;
+}
+
+.PortfolioTabsInner li {
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+}
+
+.Skelton {
+  display: flex;
+  gap: 10px;
+}
+
+.PortfolioTabs li {
+  padding: 7px 10px;
+  color: var(--gripLuminousGreyPlace);
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
+  margin-bottom: -4px;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  display: flex;
+}
+
+.PortfolioTabs .Active {
+  color: var(--gripBlue);
+  font-weight: 500;
+  border-color: var(--gripBlue);
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+  .TotalInvestmentMobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .PortfolioPageMain {
+    flex-direction: column;
+  }
+  .PortfolioPageLeft,
+  .PortfolioPageRight {
+    width: 100%;
+  }
+  .PortfolioPageRight {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .TotalInvestmentDesktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .InnerPageHeading h1 {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .InnerPageHeading {
+    display: none !important;
+  }
+  .UpcomingReturns {
+    margin-top: 40px;
+  }
+  .PortfolioDiversification {
+    margin-top: 30px;
+  }
+  .EarningWaysSection {
+    margin-top: 20px;
+  }
+  .PortfolioPageRight {
+    margin-bottom: 30px;
+  }
+  .PortfolioInnerPageMain {
+    padding-top: 60px;
+  }
+
+  .PortfolioTabs:global(.sticky.withFilter) {
+    top: -65px;
+    transition: 0.3s ease-in-out;
+    padding-bottom: 0;
+  }
+
+  .PortfolioTabs:global(.sticky.boxShadow) {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+  }
+
+  .PortfolioTabs:global(.sticky.floating) {
+    z-index: 99;
+    top: 0px;
+    transition: 0.3s top ease-in-out;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .PortfolioTabsInner li {
+    font-size: 14px;
+  }
+
+  .PortfolioTabsInner span {
+    font-size: 7px;
+    padding: 3px 4px;
+    height: 14px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .PortfolioTabs li {
+    white-space: nowrap;
+    padding: 7px 6px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .PortfolioTabsInner li {
+    font-size: 12px;
+  }
+
+  .PortfolioTabsInner span {
+    font-size: 7px;
+    padding: 3px 4px;
+    height: 14px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .PortfolioTabs li {
+    white-space: nowrap;
+    padding: 7px 6px;
+  }
+}

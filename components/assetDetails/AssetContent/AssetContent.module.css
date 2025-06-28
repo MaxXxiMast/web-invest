@@ -1,0 +1,87 @@
+.InfiniteSection:first-child {
+  padding-top: 20px;
+}
+
+.InfiniteSection:last-child {
+  padding-bottom: 0;
+}
+
+.InfiniteSection:empty {
+  display: none;
+}
+
+.InfiniteSection + .InfiniteSection {
+  padding-top: 60px;
+}
+
+.InfiniteSection:empty + .InfiniteSection {
+  padding-top: 20px;
+}
+
+.InfiniteScroll {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.AssetDetailsTab {
+  width: 100% !important;
+  overflow: hidden;
+}
+
+.AssetContentContainer {
+  position: relative;
+}
+
+.Skeleton {
+  gap: 16px;
+}
+
+.TabSectionTitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  color: var(--gripLuminousDark);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.TabSectionTitle:empty {
+  display: none;
+}
+
+.DocContainer {
+  padding-top: 60px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .InfiniteSection:first-child :global(.TabScrollContent) {
+    padding-top: 0;
+  }
+
+  .InfiniteScroll {
+    flex-direction: column;
+  }
+
+  .AssetDetailsTab {
+    margin: 0 -20px;
+    padding: 0 20px;
+    width: auto !important;
+  }
+
+  .DocumentTabSectionTitle {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+    text-align: left;
+  }
+
+  .InfiniteSection + .InfiniteSection {
+    padding-top: 40px;
+  }
+}

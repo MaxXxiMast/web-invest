@@ -1,0 +1,93 @@
+.container {
+  padding: 16px 8px;
+  border-radius: 8px;
+  background: transparent;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.container:hover {
+  background: var(--gripWhiteLilac, #f7f7fc);
+}
+
+.MenuItem {
+  gap: 14px;
+}
+
+.MenuItem h5 span {
+  transform: translateX(0px);
+  transition: 0.25s ease-in-out;
+}
+
+.MenuItem:hover h5 span {
+  transform: translateX(5px);
+  transition: 0.25s ease-in-out;
+}
+
+.ItemIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Filled {
+  width: 50px;
+  height: 50px;
+  padding: 4px;
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+}
+
+.ItemContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ItemContent h5 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--gripTextMain, #373a46);
+  margin: 0;
+  display: flex;
+  gap: 5px;
+}
+
+.ItemContent p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.CaretRight {
+  font-size: 12px;
+}
+
+.subLinkContainer {
+  gap: 10px;
+  margin-left: 54px;
+  margin-top: 10px;
+}
+
+.subLink {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  line-height: 14px !important;
+  padding: 8px 10px;
+  border-radius: 4px;
+  width: max-content !important;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 14px 4px;
+  }
+}

@@ -1,0 +1,112 @@
+.MobileHeaderRight {
+  gap: 10px;
+}
+
+.UploadBtn {
+  padding: 0;
+  border: none;
+  z-index: 11;
+  background-color: transparent;
+}
+.StickyContainer {
+  margin: 0 -20px;
+  background-color: var(--gripWhite, #ffffff);
+}
+
+.LogoWrapper {
+  width: 100%;
+}
+
+.PoweredByGrip {
+  margin-right: 15px;
+}
+
+.PartnerLogoContainer {
+  min-height: 32px;
+  margin: 5px 0;
+  display: none !important;
+}
+.PartnerLogoContainer.ShowLogo {
+  display: flex !important;
+}
+
+.UploadIcon {
+  font-size: 28px;
+  color: var(--gripBlue, #00357c);
+  cursor: pointer;
+}
+
+/*  IPAD and above */
+@media screen and (min-width: 992px) {
+  .MobileReturns,
+  .MobileHeaderRight {
+    display: none;
+  }
+
+  .MonthlyReturnCardDrawer {
+    padding: 8px !important;
+  }
+}
+
+/* Special for lower cases */
+@media screen and (max-width: 480px) {
+  .MobileReturns {
+    width: auto;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .extraMarginTop {
+    margin-top: 10px;
+  }
+
+  .mobileHeaderSticky {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    left: 0;
+    padding: 4px 10px !important;
+    z-index: 100;
+    background-color: var(--gripWhite, #ffffff);
+    transition: padding-top 0.3s ease-in-out;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  .FDAssetHeader {
+    padding: 4px 10px !important;
+  }
+  .aiassist {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 10px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .stickyDesktop {
+    position: sticky;
+    z-index: 91;
+    top: 64px;
+    background-color: transparent;
+    padding: 8px 10px;
+    margin: 0 -10px;
+  }
+
+  .stickyDesktop:global(.StickyHeaderBg) {
+    background-color: var(--gripWhite, #ffffff);
+    height: 65px;
+  }
+  .PoweredByGrip {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .stickyDesktop {
+    top: 48px;
+  }
+}

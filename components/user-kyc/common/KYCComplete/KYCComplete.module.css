@@ -1,0 +1,45 @@
+.Wrapper {
+  text-align: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.Wrapper h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+  max-width: 95%;
+}
+
+.Wrapper :is(h3, p) + button {
+  margin-top: 8px;
+}
+
+.Wrapper p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--gripLuminousGrey, #555770);
+  margin: 0;
+}
+
+/* Media Queries Start */
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .Wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Wrapper {
+    margin: 50% 0;
+  }
+}
+
+/* Media Queries END */

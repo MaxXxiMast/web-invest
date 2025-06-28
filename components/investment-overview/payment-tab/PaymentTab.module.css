@@ -1,0 +1,149 @@
+.Wrapper {
+  max-width: 450px;
+  margin: 0 auto;
+  width: 100%;
+}
+.Tabs {
+  gap: 18px;
+}
+
+.TabContent {
+  margin-top: 30px;
+}
+
+.Separator {
+  width: 1px;
+  height: 28px;
+  background: var(--gripWhiteLilac, #f0f0f3);
+}
+
+.Separator:last-child {
+  display: none;
+}
+
+.TabLabel {
+  gap: 5px;
+}
+
+.Label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.Radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--gripOsloGray, #81878c);
+  flex-shrink: 0;
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+
+.Radio::before {
+  content: '';
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background-color: var(--gripBlue, #00357c);
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.TabItem {
+  gap: 8px;
+  cursor: pointer;
+}
+
+.Active .Radio::before {
+  opacity: 1;
+}
+
+.Active .Radio {
+  border-color: var(--gripBlue, #00357c);
+  border-width: 2px;
+}
+
+.TabItem:not(.Active) .Logo {
+  filter: grayscale(100%) contrast(0.5);
+}
+
+.TabBottom {
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.TabBottom:empty {
+  display: none;
+}
+
+.PaymentWaitingNote {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.PaymentWaitingNote span:last-child {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  flex: 1;
+}
+
+.PrmyBtnClassPopup {
+  max-width: 326px;
+}
+
+.ModalClassPopup {
+  max-width: 555px !important;
+}
+
+.ModalClassPopup :global(.Card) {
+  padding: 30px 45px;
+}
+
+.SubHeadingClass {
+  margin-top: -9px;
+  max-width: 410px;
+}
+
+@media screen and (max-width: 767px) {
+  .Wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 100px - 80px);
+    gap: 20px;
+  }
+  .TabContent {
+    margin-top: 4px;
+  }
+  .Tabs {
+    gap: 10px;
+  }
+  .IconHide .Logo {
+    display: none;
+  }
+  .Proceed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 20px 30px;
+    background-color: var(--gripWhite, #ffffff);
+    box-shadow: 0px -3px 8px 0px rgba(0, 0, 0, 0.08);
+    z-index: 1;
+  }
+  .Proceed button {
+    max-width: 160px;
+  }
+  .TabBottom {
+    margin-top: auto;
+    margin-bottom: 30px;
+  }
+}

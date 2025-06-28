@@ -1,0 +1,43 @@
+.LeaseProgress {
+  width: 100%;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 4px;
+  height: 7px;
+  overflow: hidden;
+  position: relative;
+}
+.LeaseProgress > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.LeaseCompletion {
+  margin-top: 10px;
+  display: flex;
+}
+.LeaseCompletion p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey);
+  flex: 1;
+}
+.LeaseCompletion .LeaseCompletionFigure {
+  margin-right: auto;
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.LeaseCompletion p span {
+  color: var(--gripLuminousDark);
+}
+
+.CompletedText {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--gripOsloGrayTwo, #919598) !important;
+}

@@ -1,0 +1,77 @@
+.List ul {
+  gap: 10px;
+}
+.Status {
+  gap: 8px;
+}
+.Content span:not(.Separator) {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.Content label {
+  color: var(--gripOsloGray, #81878c);
+  font-size: 12px;
+  font-weight: 500;
+}
+.Blank {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid var(--stepperNoStatus, #c2c2c2);
+  position: relative;
+  top: 2px;
+  flex-shrink: 0;
+  background-color: var(--gripWhite, #ffffff);
+}
+.Content .NoStatusTxt {
+  color: var(--gripOsloGray, #81878c) !important;
+}
+.Separator {
+  border-top: 1px dashed var(--gripWhiteLilac, #f7f7fc);
+  flex: 1;
+  min-width: 40px;
+}
+.NameSepator {
+  gap: 15px;
+}
+.List li:last-child .Separator {
+  display: none;
+}
+.StepIcon {
+  flex-shrink: 0;
+}
+@media screen and (max-width: 1080px) {
+  .List ul {
+    flex-direction: column;
+  }
+  .List li:not(:last-child) {
+    position: relative;
+    padding-bottom: 15px;
+  }
+  .List li:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    height: 65%;
+    border-left: 1px dashed var(--gripWhiteLilac, #f7f7fc);
+    top: 22px;
+    left: 10px;
+  }
+  .Separator {
+    display: none;
+  }
+  .Content {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .Content label {
+    margin-left: auto;
+  }
+  .Blank {
+    width: 18px;
+    height: 18px;
+    right: -2px;
+  }
+}

@@ -1,0 +1,18 @@
+.mainContainer {
+  padding: 68px 0 0;
+}
+
+.AssetBond {
+  margin-top: 32px !important;
+}
+
+@media screen and (min-width: 1025px) {
+  .BondsSucessPage {
+    gap: 40px !important;
+    top: 0 !important;
+    margin-top: -232px;
+  }
+  .TextWrapper {
+    max-width: 450px;
+  }
+}

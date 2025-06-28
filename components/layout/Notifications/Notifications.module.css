@@ -1,0 +1,136 @@
+.disabledArrow {
+  filter: grayscale(1);
+}
+
+.notification_wrapper {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.notification_image {
+  display: flex;
+}
+
+.notification_right {
+  width: 90%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-left: 10px;
+  padding-right: 30px;
+}
+
+.notification_title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+}
+
+.notification_subTitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey);
+}
+
+.notification_time {
+  position: absolute;
+  right: 0px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: right;
+  color: var(--gripLuminousDark);
+}
+
+.notification_button_title {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: var(--gripBlue);
+  margin-right: 6px;
+}
+
+.notification_button_title_disabled {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: var(--gripLuminousGreyPlace);
+  margin-right: 6px;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .notification_mobileWrapper {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--gripWhite);
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px 60px;
+  }
+
+  .notification_mobileHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding: 30px 20px 0px;
+    width: 100%;
+    position: relative;
+  }
+
+  .notification_main {
+    cursor: pointer;
+  }
+
+  .notification_wrapper {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .notification_button {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 80px;
+    right: 20px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+  .notification_main {
+    position: relative;
+  }
+
+  .notification_header {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 12px;
+  }
+
+  .notification_wrapper {
+    padding: 20px 12px;
+    min-height: 110px;
+  }
+
+  .notification_button {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    bottom: 12px;
+    right: 12px;
+    cursor: pointer;
+  }
+}

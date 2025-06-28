@@ -1,0 +1,43 @@
+.FilterTabAssets {
+  width: fit-content;
+  overflow: hidden;
+  border: none !important;
+}
+
+.FilterTabAssets ul {
+  gap: 10px;
+}
+.FilterTabAssets ul li {
+  padding: 5px 17px !important;
+  color: var(--gripGunPowder, #44485b) !important;
+  background-color: var(--gripWhiteLilac, #f7f7fc) !important;
+  font-weight: 500 !important;
+  border-radius: 25px !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.FilterTabAssets li:global(.ActiveTab) {
+  background: var(--gripLuminousDark, #282c3f) !important;
+  color: var(--gripWhite, #ffffff) !important;
+  font-weight: 600 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .FilterTabAssets {
+    width: auto;
+  }
+
+  .FilterTabAssets ul li {
+    padding: 8px 13px !important;
+    flex: none;
+    font-size: 12px;
+    line-height: 16px;
+    justify-content: center;
+    border: none !important;
+  }
+
+  .FilterTabAssets li:global(.ActiveTab) {
+    background: var(--gripWhiteLilac, #f7f7fc);
+  }
+}

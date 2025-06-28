@@ -1,0 +1,74 @@
+.dealListModal {
+  max-width: 453px !important;
+}
+
+.SkeletonWrapper {
+  border: 1.5px solid transparent;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  position: sticky;
+  top: 0;
+  margin: 1rem 0px;
+  padding: 1rem 0px;
+  z-index: 100;
+}
+
+.dealList {
+  margin-bottom: 20px;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.dealItem {
+  padding-top: 15px;
+  border-radius: 8px;
+  border: 1.5px solid transparent;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  cursor: pointer;
+}
+
+.dealItem:hover {
+  border-color: var(--gripBlue, #00357c);
+}
+
+.dealItemContent {
+  padding: 0px 15px 15px;
+  color: var(--gripWealthText, #696b74);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.active {
+  border-color: var(--gripBlue, #00357c);
+  position: relative;
+}
+
+.regulatedBadge {
+  border-radius: 0px 0px 7px 7px;
+  background: var(--gripCream, #e8edf6);
+  color: var(--gripTextMain, #373a46);
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.stickyButtonContainer {
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+  padding: 1rem;
+}
+
+.dealImg {
+  width: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .MainClass {
+    overflow: unset !important;
+  }
+
+  .DrawerRootExtraClass ~ :global(.CalculatorAssetDrawer) {
+    display: none;
+  }
+}

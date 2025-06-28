@@ -1,0 +1,26 @@
+.margin {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.FieldWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.verifyButtonAndClearInputButtonContainer {
+  position: absolute;
+  z-index: 2;
+  height: 45px;
+  bottom: 1px;
+  right: 1px;
+}
+
+.error {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripDanger);
+  width: 100%;
+  margin-top: 5px;
+}

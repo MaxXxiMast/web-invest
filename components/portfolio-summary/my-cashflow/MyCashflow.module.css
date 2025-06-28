@@ -1,0 +1,88 @@
+.cashflowContainer {
+  min-height: 380px;
+  padding: 32px 24px;
+  gap: 24px;
+  border: 2px solid var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 12px;
+}
+
+.chipsArrContainer {
+  flex-wrap: nowrap; /* Ensure chips stay in a single line */
+  gap: 10px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.chipsArrContainerWrapper {
+  gap: 8px;
+  width: 100%;
+}
+
+.filterChip {
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--gripLuminousDark, #282c3f);
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 50px;
+  cursor: pointer;
+  text-wrap: nowrap;
+  white-space: nowrap;
+  line-height: 16px;
+  border-bottom: none;
+  max-height: 36px;
+}
+
+.selected {
+  color: var(--gripWhite, #ffffff);
+  background: var(--gripLuminousDark, #282c3f);
+}
+
+.selected svg path {
+  fill: var(--gripWhite, #ffffff);
+}
+
+.avgReturnTitle {
+  min-width: 130px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.avgReturnValue {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.sublabel {
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 60px;
+  line-height: 21px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.filterContainer :global .ShortByInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cashflowContainer {
+    border: none;
+    padding: 4px 0;
+  }
+  .chipsArrContainer {
+    max-width: calc(100% - 90px);
+  }
+  .sublabel {
+    margin-left: 0;
+  }
+  .hideMobile {
+    display: none;
+  }
+}

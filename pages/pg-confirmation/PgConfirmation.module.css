@@ -1,0 +1,19 @@
+.OrderConfirmationContainer {
+  max-width: 1180px;
+  padding: 0px 20px;
+  margin: 100px auto;
+  gap: 20px;
+}
+
+.LeftContainer {
+  gap: 20px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .OrderConfirmationContainer {
+    flex-direction: column;
+    margin-top: 0px;
+    padding-bottom: 130px;
+  }
+}

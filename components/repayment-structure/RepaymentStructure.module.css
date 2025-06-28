@@ -1,0 +1,188 @@
+.repaymentDiv {
+  margin: 8px 0 24px;
+  border: 1px solid var(--gripMercury2, #e8e8e8);
+  height: 106px;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.repaymentHeading {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: var(--gripWealthText, #696b74);
+  margin: 0;
+}
+
+.repaymentChildDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.repaymentInnerChild {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.repaymentInterest {
+  width: 176px;
+  display: flex;
+  gap: 10px;
+  height: 25px;
+}
+
+.InterestBadges {
+  width: 75px;
+  height: 25px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  background-color: #f6f8fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.InterestText {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--gripWealthText, #696b74);
+}
+
+.Value {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-top: 5px;
+  white-space: nowrap;
+  color:var(--gripTextMain,#373a46);
+}
+
+.ctaButton {
+  width: 182px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--gripSolitude, #e7f1fe);
+  color: var(--gripBlue, #00357c);
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.ctaButton:active {
+  background: var(--gripSolitude, #e7f1fe);
+  color: var(--gripBlue, #00357c);
+}
+
+.ctaButton:focus {
+  background: var(--gripSolitude, #e7f1fe);
+  color: var(--gripBlue, #00357c);
+}
+
+@media screen and (min-width: 993px) {
+  .VisualReturnModalPopup :global(.Card) {
+    padding: 0;
+  }
+
+  .VisualReturnsDrawer {
+    padding: 0 !important;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .BondsVisualReturns :global(.CloseBtn) {
+    top: 35px;
+  }
+  .repaymentInnerChild {
+    flex: 1;
+    max-width: calc(100% - 220px);
+  }
+  .repaymentInterest {
+    width: 50%;
+  }
+  .repaymentChildDiv {
+    min-height: 60px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .repaymentDiv {
+    width: auto;
+    padding: 0;
+    height: auto;
+  }
+
+  .repaymentHeading {
+    padding: 15px;
+  }
+
+  .repaymentChildDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+
+  .repaymentInnerChild {
+    width: 100%;
+  }
+
+  .repaymentInterest {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    width: 100%;
+    height: 58px;
+  }
+
+  .repaymentInterestContainer {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    border-right: 1px solid var(--gripMercury2, #e8e8e8);
+  }
+
+  .repaymentInterest:first-child {
+    max-width: 130px;
+    padding-left: 12px;
+  }
+  .InterestBadges {
+    margin-top: 20px;
+  }
+  .ctaButton {
+    width: 100% !important;
+    border-top: 1px solid var(--gripMercury2, #e8e8e8);
+    border-radius: 0 0 10px 10px;
+    background: linear-gradient(
+      180deg,
+      rgba(248, 248, 253, 0) 0%,
+      #f8f8fd 100%
+    );
+    font-weight: 500;
+    margin-top: 15px;
+    padding: 0;
+    height: 50px;
+  }
+
+  .ctaButton:active {
+    border: none;
+  }
+
+  .ctaButton:focus {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1150px) {
+  .repaymentDiv {
+    width: 100%;
+  }
+}

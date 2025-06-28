@@ -1,0 +1,94 @@
+.Wrapper {
+  padding: 16px;
+  width: 100%;
+  border-radius: 12px;
+  background: var(--gripWhite, #ffffff);
+}
+
+.Title {
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0 0 10px;
+}
+.Widget,
+.WidgetGrp {
+  display: flex;
+  align-items: center;
+}
+
+.Widget {
+  gap: 8px;
+}
+.Widget span {
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.Title,
+.Widget span {
+  font-size: 12px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.WidgetGrp {
+  gap: 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 12px;
+}
+
+.WidgetGrp + .WidgetGrp {
+  margin-top: 8px;
+}
+
+.payFrom {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.Caret {
+  cursor: pointer;
+  transform: none;
+  transition: 0.2s ease-in-out;
+}
+
+.UpCaret {
+  transform: rotate(180deg);
+  transition: 0.2s ease-in-out;
+}
+
+.Header,
+.Right,
+.Left,
+.Summary,
+.SummaryLeft {
+  display: flex;
+  align-items: center;
+}
+
+.Header {
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.Right {
+  gap: 5px;
+  cursor: pointer;
+}
+
+.Left {
+  color: var(--gripTextMain, #373a46);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: normal;
+  gap: 8px;
+}
+
+.accountInfoTitle {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}

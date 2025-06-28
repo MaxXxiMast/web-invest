@@ -1,0 +1,15 @@
+.Wrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.Badge {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousDark);
+  padding: 4px 12px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 4px;
+  cursor: pointer;
+}

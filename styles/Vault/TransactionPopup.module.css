@@ -1,0 +1,39 @@
+.modalContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  background: var(--gripRedLighterSix, #ffebeb);
+  align-items: center;
+}
+.cardClass {
+  background: var(--gripRedLighterSix, #ffebeb);
+}
+.mobilepopup {
+  bottom: 0 !important;
+  background: var(--gripRedLighterSix, #ffebeb);
+}
+.mainPopup {
+  width: 400px !important;
+  background: var(--gripRedLighterSix, #ffebeb);
+  min-height: fit-content !important;
+  margin-top: 15%;
+  border-radius: 12px;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+.addMoneyText {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+.transactionAmount {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--gripDanger, #ff5c5c);
+}

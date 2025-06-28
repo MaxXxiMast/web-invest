@@ -1,0 +1,34 @@
+.AssetDetailsnner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.AssetDetaiLeft {
+  width: calc(100% - 448px);
+}
+
+.ContactAssetDetail {
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .AssetDetaiLeft {
+    width: calc(100% - 408px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .AssetDetailsnner {
+    flex-wrap: wrap;
+  }
+  .AssetDetaiLeft {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ContactAssetDetail {
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+}

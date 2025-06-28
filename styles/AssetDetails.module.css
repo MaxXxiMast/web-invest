@@ -1,0 +1,61 @@
+.mt_15 {
+  margin-bottom: 15px;
+}
+
+.AssetDetailsMain {
+  padding: 80px 0 50px;
+}
+
+.AssetDetailsMain::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(180deg, #f6f8fa 0%, #ffffff 100%);
+  z-index: -1;
+}
+
+.AssetDetailsnner {
+  display: flex;
+  justify-content: space-between;
+}
+.AssetDetaiRight {
+  width: 416px;
+}
+.AssetDetaiLeft {
+  width: calc(100% - 448px);
+}
+.DesktopSkeleton {
+  padding: 12px;
+}
+@media screen and (max-width: 1199px) {
+  .AssetDetailsMain {
+    padding: 60px 0 0;
+  }
+  .AssetDetaiRight {
+    width: 386px;
+  }
+  .AssetDetaiLeft {
+    width: calc(100% - 408px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .AssetDetailsnner {
+    flex-wrap: wrap;
+  }
+  .SkeletonWrapper {
+    padding: 8px 0 0;
+  }
+  .AssetDetaiRight {
+    display: none;
+  }
+  .AssetDetaiLeft {
+    width: 100%;
+  }
+  .DesktopSkeleton {
+    padding: 0;
+  }
+}

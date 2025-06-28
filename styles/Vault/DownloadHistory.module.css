@@ -1,0 +1,131 @@
+.CardHeader {
+  padding-bottom: 20px;
+}
+.CardHeader h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gripLuminousDark);
+}
+.CardBody {
+  padding: 20px 0;
+}
+
+.ContinueBtn {
+  width: 100% !important;
+  min-height: 52px;
+}
+
+.TimePeriodContainer > h6 {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--gripLuminousDark);
+}
+
+.Separator {
+  min-height: 20px;
+  position: relative;
+  text-align: center;
+  margin: 24px 0;
+}
+.Separator span:global(.Line) {
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.Separator span:global(:not(.Line)) {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gripLuminousDark);
+  background: var(--gripWhite);
+  padding: 0 8px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.TimePeriodList {
+  display: flex;
+}
+
+.TimePeriodItem {
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 70px;
+  padding: 8px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+  margin-right: 16px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.TimePeriodItem:global(.Active) {
+  background: var(--gripLuminousDark);
+  color: var(--gripWhite);
+  transition: 0.5s ease-in-out;
+}
+
+.DateSelector {
+  display: flex;
+  justify-content: space-between;
+}
+.DatePickerEle {
+  border: 1px solid var(--gripGhost);
+  border-radius: 8px;
+  padding: 12px 20px;
+  width: calc(50% - 10px);
+  display: flex;
+}
+
+.DatePickerEle input {
+  flex-grow: 1;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gripLuminousGreyPlace);
+  border: none;
+  outline: none;
+}
+.DatePickerEle svg {
+  flex-shrink: 0;
+}
+
+.CardFooter {
+  padding-top: 20px;
+}
+
+.divider {
+  width: 400px;
+  height: 1px;
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  margin-left: -24px;
+}
+.note {
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--gripLuminousGreyPlace);
+}
+.bold {
+  font-weight: 700;
+}
+.noteBlock {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 0 28px;
+}
+.noteDesc {
+  margin-left: 8px;
+}
+
+.CalendarIcon {
+  font-size: 20px;
+}

@@ -1,0 +1,29 @@
+.radioRoot {
+  color: var(--gripBlue, #00357c) !important;
+  padding: 5px 8px !important;
+}
+
+.radioRoot:global(:not(.Mui-checked)) {
+  color: var(--gripLuminousGreyPlace, #777777) !important;
+}
+.radioLabel {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 22px !important;
+}
+
+.RadioGroup {
+  gap: 28px;
+}
+
+.labelRoot {
+  margin-right: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .RadioGroup {
+    row-gap: 0px;
+    column-gap: 20px;
+  }
+}

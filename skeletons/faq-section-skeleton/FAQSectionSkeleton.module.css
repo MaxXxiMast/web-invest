@@ -1,0 +1,28 @@
+.container {
+  padding: 20px 12px;
+}
+
+.Title {
+  width: 300px;
+  max-width: 70%;
+  height: 35px;
+}
+
+.SubTitle {
+  width: 500px;
+  max-width: 90%;
+  height: 20px;
+  margin-top: 5px;
+}
+
+.Content {
+  width: 700px;
+  height: 300px;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .Content {
+    width: 100%;
+  }
+}

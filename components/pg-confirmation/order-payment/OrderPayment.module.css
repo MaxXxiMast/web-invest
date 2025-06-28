@@ -1,0 +1,204 @@
+.OrderPaymentcontainer {
+  height: fit-content;
+  gap: 24px;
+  padding: 8px;
+  min-width: 350px;
+}
+
+.awareness {
+  width: 350px !important;
+}
+
+.orderInvestmentSummary {
+  background: var(--gripWhite, #ffffff);
+}
+
+.AccountInfo {
+  background: var(--gripWhiteLilac, #f7f7fc) !important;
+}
+
+.InvestmentSummary {
+  border: none !important;
+}
+
+.InvestmentSummary :global #summaryWidget {
+  padding: 18px 0;
+}
+
+.AssetDetailsMain {
+  margin-top: 20px;
+}
+
+/* Mobile asset details */
+.MainContainer {
+  border-radius: 8px;
+  border: 1.5px solid var(--gripWhiteLilac, #f7f7fc);
+  background: var(--gripWhite, #ffffff);
+}
+
+.AssetDetailsContainer {
+  padding: 12px;
+  border-bottom: 1px solid var(--borderSix, #eaeaea);
+  gap: 8px;
+}
+
+.AssetDetails {
+  color: var(--gripOsloGrayTwo, #919598);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.AssetDetails span:not(:last-child)::after {
+  width: 4px;
+  height: 4px;
+  content: '';
+  background: var(--gripOsloGrayTwo, #919598);
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.Badge {
+  border-radius: 4px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  padding: 4px;
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.amoBadge {
+  border-radius: 4px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  width: fit-content;
+  padding: 5px;
+}
+
+.amoBadge > span {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  margin-left: 5px;
+}
+
+.AmountContainer {
+  padding: 12px;
+  justify-content: space-between;
+}
+
+.ArrowIcon span {
+  color: var(--gripWhite, #ffffff);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.AmountPayable span:last-child {
+  color: var(--gripGunPowder, #44485b);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.AmountPayable span:first-child {
+  color: var(--gripOsloGrayTwo, #919598);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.Arrow {
+  width: 16px;
+  height: 16px;
+}
+
+.InvestmentSummaryMobile {
+  border: none !important;
+}
+
+.InvestmentSummaryMobile :global #summaryWidget {
+  padding: 18px 0;
+}
+
+.OrderSummaryTitle {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.float {
+  margin-top: -16px;
+  margin-left: 10px;
+  background-color: var(--gripWhite, #ffffff);
+}
+
+.MobileSkeleton {
+  margin-top: 20px;
+}
+
+.CtaContainer {
+  margin: 10px;
+  gap: 10px;
+}
+
+.ArrowIconWrapper {
+  position: relative;
+  width: 68px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.ArrowIcon {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gripPrimaryGreen, #00b8b7);
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 3px #d6f8f7;
+  z-index: 9;
+  position: relative;
+}
+.ArrowIconWrapper::before {
+  content: '';
+  width: 90%;
+  height: 1px;
+  background-color: var(--gripPrimaryGreen, #00b8b7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+}
+
+.AmoIcon {
+  color: var(--gripPrimaryGreen, #00b8b7);
+  font-size: 22px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .OrderPaymentcontainer {
+    margin-top: -110px;
+    min-width: 100px;
+    width: 100%;
+  }
+
+  .awarenessContainer,
+  .AccountInfo,
+  .AssetDetailsMain,
+  .Skeleton {
+    display: none;
+  }
+
+  .AssetDetailsPGMain {
+    margin-bottom: 24px;
+  }
+}

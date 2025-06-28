@@ -1,0 +1,97 @@
+.profileSection {
+  background: var(--gripPersonaStrategist, #3e6497);
+  padding: 24px 16px;
+  border-radius: 12px;
+  box-shadow: 0px 12px 20px 0px var(--gripPersonaShadow, #00000029);
+  background-size: cover;
+}
+
+.iconWrapper {
+  width: 62px;
+  height: 62px;
+  background: var(--gripWhite, #ffffff);
+  border-radius: 50%;
+  margin-bottom: 8px;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.name {
+  color: var(--gripWhite, #ffffff);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: "Bricolage Grotesque", serif !important;
+}
+
+.role {
+  font-size: 28px;
+  color: var(--gripWhite, #ffffff);
+  font-weight: 500;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-family: "Bricolage Grotesque", serif !important;
+}
+
+.description {
+  color: var(--gripWhite, #ffffff);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+.traitsCard {
+  padding: 16px;
+  border-radius: 9px;
+  border: 1px solid var(--gripAlto, #d9d9d9);
+  background: var(--gripWhite, #ffffff);
+  color: var(--gripTextMain, #373a46);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  width: 100%;
+  margin: 24px 0;
+  gap: 14px;
+}
+
+.traitsCard ul {
+  gap: 14px;
+}
+
+.traitsTitle {
+  text-transform: uppercase;
+}
+
+.traitsList {
+  list-style: none;
+  padding: 0;
+}
+
+.traitItem {
+  gap: 6px;
+  color: var(--gripWealthText, #696b74);
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .traitsCard {
+    margin-bottom: 0px;
+  }
+
+  .name {
+    max-width: 100%;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .profileSection {
+    padding-bottom: 20px;
+    max-width: 393px;
+  }
+
+  .name {
+    max-width: 361px;
+  }
+}

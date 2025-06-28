@@ -1,0 +1,82 @@
+.Title {
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.AddressContainer {
+  border-radius: 8px;
+  border: 1px solid var(--borderFive, #f7f7fc);
+  background: var(--gripWhite, #ffffff);
+  box-shadow: 0px 1px 3px 0px rgba(96, 108, 128, 0.05);
+  padding: 41px 30px 24px;
+  position: relative;
+}
+
+.AddressContainer span {
+  color: var(--grip-luminous-dark, #282c3f);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  display: inherit;
+}
+
+.UserLocationImage {
+  background: var(--borderFive, #f7f7fc);
+  width: 48px;
+  height: 48px;
+  border-radius: 999999px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.RightBtn {
+  height: 52px !important;
+}
+
+/* Media Queries Start */
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Drawer {
+    bottom: 0 !important;
+    padding-bottom: 38px !important;
+    padding-top: 38px !important;
+  }
+
+  .Title {
+    max-width: 285px;
+    margin: 0 auto;
+  }
+
+  .ButtonsContainer {
+    gap: 18px !important;
+    margin-top: 32px;
+  }
+  .AddressContainer {
+    margin-top: 49px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .ButtonsContainer {
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .ModalInner {
+    max-width: 400px !important;
+  }
+
+  .AddressContainer {
+    margin-top: 40px;
+  }
+}
+
+/* Media Queries End */

@@ -1,0 +1,59 @@
+.ContactAssetDetail {
+  background-color: var(--gripLighterOne, #e5f1ff);
+  padding: 36px;
+  border-radius: 12px;
+  gap: 32px;
+}
+
+.ContactRight h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+}
+
+.ContactRight {
+  gap: 20px;
+}
+
+.RightBtn {
+  max-width: 160px;
+}
+
+.ButtonContainer {
+  gap: 12px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .ContactAssetDetail {
+    padding: 10px 24px;
+    flex-direction: column;
+    border-radius: 28px;
+  }
+  .ContactRight h3 {
+    font-size: 26px;
+    line-height: 40px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .ButtonContainer {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ContactRight {
+    align-items: center;
+    gap: 28px;
+    margin-top: 56px;
+  }
+}
+
+/* Desktop */
+@media screen and (max-width: 767px) {
+  .ContactAssetDetail {
+    margin-bottom: 75px;
+  }
+}

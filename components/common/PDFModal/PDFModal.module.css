@@ -1,0 +1,60 @@
+.dialogRoot {
+  z-index: 99999 !important;
+}
+
+.dialogPaper {
+  position: relative !important;
+  max-width: 800px !important;
+  max-height: calc(100% - 150px) !important;
+}
+
+.pageControls {
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+  border-radius: 4px;
+  background: white;
+}
+
+.pageControls > button {
+  width: 44px;
+  height: 44px;
+  background: white;
+  border: 0;
+  font-size: 0.8em;
+  border-radius: 4px;
+  outline: none;
+}
+
+.pageControls > span {
+  font-size: 0.8em;
+  padding: 0px 0.5em;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 99;
+  font-size: 24px;
+  color: var(--gripNewDarkTwo,#091626);
+  font-weight: 700;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .dialogPaper {
+    max-width: none;
+    margin: 0;
+    max-height: none;
+  }
+}
+
+@media screen and (max-width: 524px) {
+  .pageControls {
+    zoom: 0.9;
+  }
+}

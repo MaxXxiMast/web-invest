@@ -1,0 +1,514 @@
+.MonthlyReturnCardContent {
+  z-index: 1;
+  border-radius: 12px;
+  padding: 4px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.noPadding {
+  padding: 0 !important;
+}
+
+.investmentLabel,
+.returnsLabel {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  color: var(--gripTuna, #383a42);
+}
+
+.investmentValue {
+  border-bottom: 1px dashed var(--gripTuna, #383a42);
+}
+
+.investmentValue span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gripTuna, #383a42) !important;
+}
+
+.returnsValue {
+  border-bottom: 1px dashed var(--gripPrimaryGreen, #00b8b7);
+}
+
+.returnsValue span {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gripPrimaryGreen, #00b8b7) !important;
+}
+
+.ytmAndTenure {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ytmAndTenureContainer {
+  background-color: var(--gripTuna, #383a42);
+  border: 1px solid var(--greyCloud, #b5b5b5);
+  padding: 6px 8px;
+  border-radius: 8px;
+  color: var(--gripWhite, #ffffff);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  gap: 2px;
+  min-width: 80px;
+}
+
+.ytmAndTenureContainer > .cutOutValue {
+  text-decoration: line-through;
+}
+
+.CardTop {
+  padding: 24px 24px 20px;
+  border-radius: 8px;
+}
+
+.CardBottom {
+  padding: 20px 0 0;
+}
+
+.LotCard {
+  padding: 8px 24px 0;
+}
+
+.AmountCloudSDI {
+  margin-bottom: 0 !important;
+}
+
+.AmountCloudSDI span {
+  white-space: nowrap;
+}
+
+.AmountCloud {
+  margin: 24px 0;
+  justify-content: center;
+}
+.AmountCloud:empty {
+  display: none;
+}
+
+.AmountCloud span {
+  border: 1px solid var(--gripMercury3, #e6e6e6);
+  box-shadow: 0px 4px 23px 0px var(--gripBoxShadow, #2c2e390d);
+  height: 28px;
+  width: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 24px;
+  color: var(--gripTextMain, #373a46);
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+#selectedChip {
+  background-color: var(--gripSolitude, #e7f1fe);
+}
+
+.InvestmentType {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.InvestmentTypeLeft h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gripLuminousDark, #282c3f);
+  margin: 0;
+}
+.InvestmentTypeRight {
+  margin-left: auto;
+}
+.InvestmentTypeRight > span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+
+/* Countlist start */
+
+.CountList {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.CountList > li {
+  padding: 16px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--gripLightStroke, #eaedf1);
+}
+
+.CountList > li:last-child {
+  margin-bottom: 0;
+}
+
+.PostTaxItem {
+  border-top: 1px solid var(--gripLightStroke, #eaedf1);
+}
+
+.CountList .PostTaxItem {
+  padding: 16px 8px;
+}
+
+.AmountCloudItem {
+  position: relative;
+}
+
+#popularTag {
+  position: absolute;
+  padding: 2px 4px;
+  top: -12px;
+  border-radius: 4px;
+  background: #f9d579;
+  margin: 0px;
+  line-height: normal;
+}
+
+/* Count list end */
+
+.InfoIcon {
+  font-weight: 700;
+  color: var(--gripBlue, #00357c);
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+.VisualReturns {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gripBlue, #00357c);
+  margin: 32px 0 16px;
+  padding: 0 24px;
+}
+
+.VisualReturnsNew {
+  margin-top: 10px;
+}
+
+.VisualReturnsInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.VisualReturns span {
+  cursor: pointer;
+}
+
+.ContinueSection {
+  max-width: 344px;
+  margin: 0 auto;
+  margin-bottom: -30px;
+}
+
+.CounterField input {
+  background: var(--gripWhite, #ffffff);
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--gripLuminousDark, #282c3f);
+  width: 100%;
+}
+
+.LotCounterField {
+  border: 1px solid #a1a3ad;
+  padding: 4px 12px;
+  border-radius: 6px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.LotCounterField input:focus {
+  outline: none;
+}
+
+.LotCounterField h4 {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 20px;
+  margin: 0 0 4px;
+  text-align: center;
+  color: var(--gripBlue, #00357c);
+}
+
+.LotError {
+  margin: 8px 0 -8px;
+  text-align: center;
+  color: var(--gripDanger, #ff5c5c);
+}
+
+.Counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.CounterBtn {
+  width: 36px;
+  height: 36px;
+  background: var(--gripSolitude, #e7f1fe);
+  border-radius: 6px;
+  color: var(--gripBlue, #00357c);
+  display: flex;
+  text-align: center;
+  line-height: 24px;
+  font-size: 25px;
+  font-weight: 350;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.DisabledCounterBtn {
+  background: var(--gripMercury, #e2e2e2);
+  pointer-events: none !important;
+  cursor: not-allowed !important;
+  color: var(--gripWhite, #ffffff);
+  opacity: 1;
+}
+
+.CounterField {
+  max-width: 160px;
+  margin: 0;
+}
+
+.CounterField input::-webkit-outer-spin-button,
+.CounterField input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.CounterField input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.BidPopupContainer {
+  max-width: 800px !important;
+}
+
+.SDIPreTaxItem {
+  margin-bottom: 0 !important;
+}
+
+.disableInvestBtn {
+  margin-top: 10px;
+}
+
+.purchasePrice {
+  color: var(--gripLuminousGrey, #555770);
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 4px;
+  margin-left: 10px;
+}
+
+.purchaseUnitContainer {
+  margin-right: 3px;
+  align-items: center;
+}
+
+.modalLinkLabel {
+  color: var(--gripBlue, #00357c);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.purchaseLabel {
+  line-height: 20px;
+  text-align: right;
+}
+
+.Icon {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--gripBlue, #00357c);
+  margin-right: 8px;
+}
+
+.arrowLineLeft {
+  position: relative;
+  width: 30px;
+  height: 1px;
+  background: linear-gradient(
+    to left,
+    var(--greyCloud, #b5b5b5) 0%,
+    transparent 100%
+  );
+}
+.arrowLineRight {
+  position: relative;
+  width: 30px;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    var(--greyCloud, #b5b5b5) 0%,
+    transparent 100%
+  );
+}
+
+.arrowLineLeft::after,
+.arrowLineRight::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 6px;
+  height: 6px;
+  border-right: 1px solid var(--greyCloud, #b5b5b5);
+  border-top: 1px solid var(--greyCloud, #b5b5b5);
+}
+
+.Header {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--gripLuminousDark, #282c3f);
+  line-height: 20px;
+}
+
+.Row {
+  margin: 6px 0px;
+}
+
+.RowGroup {
+  margin: 12px 0px 20px;
+}
+
+.Row .label {
+  color: var(--gripWealthText, #696b74);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.Row .value {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.Row .modalLinkLabel {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-left: 4px;
+}
+
+.BrokerageFees {
+  text-decoration: line-through;
+}
+
+/* Desktop with ipad */
+@media screen and (min-width: 993px) {
+  .VisualReturnModalPopup :global(.Card) {
+    padding: 0;
+  }
+
+  .MonthlyReturnCardContent {
+    position: relative;
+  }
+}
+
+/* IPAD - 1199 */
+@media screen and (max-width: 1199px) {
+  .CardTop {
+    padding: 16px;
+  }
+}
+
+/* Mobile - 992 */
+@media screen and (max-width: 992px) {
+  .ContinueSection {
+    margin-bottom: 0px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .actionButtonNew {
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--gripWhite, #ffffff);
+    padding-top: 10px;
+  }
+  .investNowBtnNew {
+    width: 95% !important;
+    margin-left: 2.5%;
+    margin-bottom: 20px;
+  }
+  .CardBottom {
+    padding: 0 0 10px;
+  }
+
+  .MonthlyReturnCardContent {
+    border-radius: 12px 12px 0 0;
+    padding: 0 12px;
+    border: none;
+  }
+  .InvestmentTypeLeft h5 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .CardTop {
+    padding: 16px 0;
+  }
+  .CountList li {
+    padding: 16px 18px 16px 12px;
+  }
+  .VisualReturnsDrawer {
+    padding: 0;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .SDIPreTaxItem {
+    padding: 16px 18px 16px 12px;
+  }
+
+  .CountList .PostTaxItem {
+    padding: 16px 18px 16px 12px;
+  }
+
+  .AmountCloud[id='sdi'] span {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .totalAmout {
+    font-size: 18px;
+    color: var(--gripLuminousDark, #282c3f);
+    font-weight: 600;
+  }
+  .BondsVisualReturns :global(.CloseBtn) {
+    top: 35px;
+  }
+}

@@ -1,0 +1,12 @@
+.textWrap {
+  color: var(--gripBlue, #00357c);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.textWrap span {
+  font-size: 10px;
+}

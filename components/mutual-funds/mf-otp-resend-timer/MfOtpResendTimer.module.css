@@ -1,0 +1,19 @@
+.resendButton {
+  background: none;
+  border: none;
+  color: var(--gripLuminousDark, #282c3f);
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.resendButton.active {
+  font-weight: 600;
+  color: var(--gripBlue, #00357c);
+}
+.resendButton:disabled {
+  cursor: not-allowed;
+  opacity: 1;
+}

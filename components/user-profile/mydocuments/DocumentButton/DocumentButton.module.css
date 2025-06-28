@@ -1,0 +1,18 @@
+.Document {
+  border-radius: 12px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background: var(--gripWhite, #ffffff);
+  padding: 12px 14px;
+  gap: 10px;
+  max-width: fit-content;
+  min-width: 176px;
+  cursor: pointer;
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.DownloadIcon {
+  font-size: 16px;
+}

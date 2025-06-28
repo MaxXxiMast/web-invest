@@ -1,0 +1,48 @@
+.container {
+  margin: 16px 0 20px;
+}
+
+.highlightContainer {
+  height: 280px;
+  background: linear-gradient(
+    180deg,
+    #f8f8fd 0.41%,
+    rgba(248, 248, 253, 0.92) 48.85%,
+    #ffffff 102.6%
+  );
+  border-radius: 8px;
+  padding: 16px 16px 0;
+  flex: 1;
+  max-width: calc(50% - 8px);
+}
+
+.seeMoreModal {
+  max-width: 450px !important;
+}
+
+.modalContainer {
+  max-height: 450px;
+  overflow-y: scroll;
+  margin-top: 28px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    margin: 8px 0 16px;
+    gap: 16px;
+  }
+  .modalContainer {
+    margin-top: 10px;
+  }
+  .highlightContainer {
+    height: fit-content;
+    max-height: 280px;
+    min-width: 100%;
+  }
+  .modalContent {
+    max-height: 100%;
+  }
+  .modalButton {
+    margin-bottom: 20px !important;
+  }
+}

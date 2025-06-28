@@ -1,0 +1,30 @@
+.Referral {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100%;
+}
+
+.Referral span {
+  color: var(--gripBlue, #00357c);
+  text-decoration-line: underline;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.referralDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .referralDiv {
+    margin-top: 20px;
+    background: var(--gripWhite);
+    z-index: 3;
+    border-radius: 0 0 8px 8px;
+  }
+}

@@ -1,0 +1,54 @@
+.margin {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.resendButton {
+  width: 30%;
+  height: 48px;
+  background: var(--gripLighterOne, #e5f1ff);
+  border: var(--gripLighterOne, #e5f1ff);
+  border-radius: 0px 6px 6px 0px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0px 0 4px;
+  cursor: pointer;
+  color: var(--gripBlue, #00357c);
+  min-width: 92px;
+}
+
+.resendButton:disabled {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  color: var(--gripBombay, #b2b7c2);
+  cursor: not-allowed;
+}
+
+.container :global(.HasValue) .resendButton {
+  border-color: var(--gripBlue, #00357c);
+}
+
+.resendText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gripLuminousDark, #282c3f);
+  margin-left: -125px !important;
+  z-index: 1;
+  display: flex;
+  gap: 5px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 767px) {
+  .resendButton {
+    height: 45px;
+    padding: 8px 12px;
+    max-width: 92px;
+  }
+  .resendText {
+    font-size: 14px;
+    margin-left: -115px !important;
+  }
+}

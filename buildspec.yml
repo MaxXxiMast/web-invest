@@ -1,0 +1,30 @@
+# Do not change version. This is the version of aws buildspec, not the version of your buldspec file.
+version: 0.2
+
+env:
+  variables:
+    NODE_OPTIONS: '--max-old-space-size=8192'
+
+phases:
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install -g n --force
+      - sudo n 16.14.0 -y
+      - npm install -g yarn
+      - yarn set version 1.22.18
+      - yarn install
+
+  build:
+    commands:
+      - echo Build started on `date`
+      - CI=false NODE_ENV=production yarn build
+  post_build:
+    commands:
+      - echo deleting node_modules on `date`
+      - rm -rf node_modules
+# Include only the files required for your application to run.
+artifacts:
+  files:
+    - '**/*'
+  name: gi-client-web-$(date +%Y-%m-%d)

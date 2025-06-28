@@ -1,0 +1,169 @@
+.Container {
+  width: 100%;
+}
+
+.percentageTextContainer {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.precentAssetInfo {
+  min-width: 153px;
+}
+
+.percentageTextgreen {
+  color: var(--gripPrimaryGreen, #00b8b7);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.percentageTextBlack {
+  color: var(--gripLuminousDark);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.percentageTextCompleted {
+  color: var(--gripLuminousGrey, #555770);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.percentageLoaderProgress {
+  width: 100%;
+  border-radius: 4px;
+  height: 4px;
+  overflow: hidden;
+  position: relative;
+  background: var(--gripWhiteLilac, #f7f7fc);
+}
+
+.percentageLoaderProgress > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--gripPrimaryGreen, #00b8b7);
+}
+
+.tenureSuffix {
+  font-weight: 600;
+}
+
+.InterestFrequency {
+  width: 100%;
+  color: var(--gripLuminousGrey, #555770);
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: var(--gripWhiteLilac, #f7f7fc);
+  padding: 10px 0;
+  align-items: center;
+}
+
+.InterestFrequency > span:first-child {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.InterestFrequency > span:last-child {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
+  border-radius: 4px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  padding: 4px;
+}
+
+.percentageLoaderContainer {
+  width: 100%;
+}
+
+.AssetDetailContainer {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainValueClass {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.cutOutValueClass {
+  font-weight: 600;
+  line-height: 28px;
+  margin-left: 4px;
+}
+
+.ModalPopupInner {
+  max-width: 400px !important;
+}
+
+.ModalPopupInner .CloseBtn {
+  top: 34px;
+}
+
+.ModalPopupInner .CardBody {
+  padding-top: 16px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Container {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .precentAssetInfo {
+    flex-basis: calc(50%) !important;
+    font-size: 14px;
+  }
+
+  .percentageTextBlack,
+  .percentageTextgreen {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .percentageTextCompleted {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .percentageLoaderContainer {
+    margin-top: 8px;
+  }
+}
+
+/* IPAD and above */
+@media screen and (min-width: 993px) and (max-width: 1052px) {
+  .AssetDetailContainer {
+    width: 50% !important;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .InterestFrequency {
+    display: none;
+  }
+
+  .percentageLoaderContainer {
+    max-width: 270px;
+  }
+
+  .cutOutValueClass {
+    font-size: 18px;
+  }
+
+  .AssetDetailContainer {
+    margin-right: 16px;
+  }
+}

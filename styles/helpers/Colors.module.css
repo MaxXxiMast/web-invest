@@ -1,0 +1,283 @@
+/** Colors */
+:root {
+  --gripBlue: #00357c;
+  --gripWhite: #ffffff;
+  --gripWhite2: #fefefe;
+  --gripWhite3: #eaeafc;
+  --gripBorder: #f0f0f0;
+
+  /* Grey Shades in App */
+  --gripWhiteLilac: #f7f7fc;
+  --gripLuminousDark: #282c3f;
+  --gripLuminousGrey: #555770;
+  --gripLuminousGreyPlace: #777777;
+  --gripDustyGray: #9b9b9b;
+  --gripShuttleGray: #686b78;
+  --gripOsloGray: #81878c;
+  --gripOsloGrayTwo: #919598;
+  --gripSantasGray: #a1a3ad;
+  --greyCloud: #b5b5b5;
+  --gripLighter: #e6faf3;
+  --gripLighterFour: #f9faf4;
+  --gripLighterThree: #fafeff;
+  --gripLighterTwo: #ecf2ff;
+  --gripGreenLighterOne: #e6faf3;
+  --gripPrimaryGreen: #00b8b7;
+  --gripAccentGreen: #00bbb7;
+  --gripGhost: #c5c6d3;
+  --gripBoxShadow: #2c2e390d;
+  --gripNewDarkTwo: #091626;
+  --gripRedLighterSix: #ffebeb;
+  --gripLighterFive: #d7f7ff;
+  --gripLighterOne: #e5f1ff;
+  --gripPastCardBg: #f1f6ff;
+  --gripLightStroke: #eaedf1;
+  --gripSecondaryOne: #ffa6a6;
+  --gripTurquoiseBlue: #73dfe7;
+  --gripSeashell: #f1f1f1;
+  --gripPelorous: #3bb8b7;
+  --gripRed: #fb5a4b;
+  --gripLightSecondarySix: #02c988;
+  --gripDanger: #ff5c5c;
+  --gripBombay: #b2b7c2;
+  --gripMidnightBlue: #002961;
+  --gripSmalt: #003f94;
+  --gripGallerySolid: #efefef;
+  --gripLinen: #fcedeb;
+  --gripHawkesBlue: #dee6fd;
+  --gripTara: #e0f5ea;
+  --gripHummingBird: #e0f5fb;
+  --gripSelago: #f1ecfc;
+  --gripPorcelain: #f7f8f9;
+  --gripEbonyClay: #292c3e;
+  --gripMercury: #e2e2e2;
+  --gripLavender: #edf0ff;
+  --gripSilver: #bdbdbd;
+  --gripDodgerBlue: #2f80ed;
+  --gripWildSand: #f5f5f5;
+  --gripMercury2: #e8e8e8;
+  --gripOrange: #ea7500;
+  --gripTrinidad: #ea5a00;
+  --gripAbbey: #484e54;
+  --gripTextMain: #373a46;
+  --gripTextMainLight: rgba(55, 58, 70, 0.75);
+  --gripLightGreen: #eef4f3;
+  --gripWealthText: #696b74;
+  --gripMacaroniAndCheese: #fbbb78;
+  --palePeach: #FFEBAD;
+  --gripTacao: #f4ac80;
+  --whatsapp: #25d366;
+  --stepperNoStatus: #c2c2c2;
+  --liveTab: #44485a;
+  --liveTabBackground: #3d404f;
+  --liveBorder: #404354;
+  --gripHoldLabel: #fdac42;
+  --gripPending: #f9b673;
+  --gripPillYellow: #fcf1ce;
+  --gripPillYellow2: #f8edca;
+  --gripPillYellow3: #fff0d4;
+  --gripInProcessColor: #007aff;
+  --gripComingSoonColor: #e3e2e2;
+  --gripLiveDealsCountBackground: #ededed;
+  --gripIron: #e2e2e5;
+  --gripHeather: #b5bdcd;
+  --gripMarketRed: #fcdadc;
+  --gripMarketYellow: #fef2cc;
+  --gripAfterMarket: #d1f2f2;
+  --gripCream: #e8edf6;
+  --borderTwo: #f0f0f3;
+  --timeoutColor: #fef2cc;
+  --failedColor: #ffd9d3;
+  --borderThree: #d9d8d8;
+  --specialDarkColor: #ededee;
+  --progressRedColor: #ee1a26;
+  --pendingRFQ: #ff7a00;
+  --borderFour: #a8a9bd;
+  --borderFive: var(--gripWhiteLilac, #f7f7fc);
+  --gripNewBlue: #00347d;
+  --borderSix: #eaeaea;
+  --gripSdiTag: #ffecbc;
+  --gripTuna: #383a42;
+  --gripSkyBlue: #d3f6fd;
+  --gripEmperor: #555555;
+  --gripEarlyDawn: #fff8ea;
+  --gripMischka: #dadade;
+  --gripPersianGreen: #00a3a2;
+  --gripOffGreen: #e5f8f8;
+  --gripSolitude: #e7f1fe;
+  --gripGunPowder: #44485b;
+  --bridesmaid: #fef1f1;
+  --deepCarminePink: #ef3c3c;
+  --lavenderMist: #e5ebf2;
+  --gripBotticelli: #ccd7e5;
+  --gripBoulder: #757575;
+  --gripIceberg: #daf4f4;
+  --gripBianca: #fffcf2;
+  --gripSelagoTwo: #f4f6fd;
+  --gripMercuryThree: #e6e6e6;
+  --gripGullGrey: #99a5b9;
+  --gripRedTwo: #ff0000;
+  --gripAltoTwo: #d4d4d4;
+  --gradientBlue: linear-gradient(90deg, #00357c 7.07%, #005cd7 91.41%);
+  --gripYellowOrange: #fcac46;
+  --gripCinnabar: #ee3c3c;
+  --gripMySin: #ffb628;
+  --gripOasis: #fdeacb;
+  --gripFieryOrange: #b45414;
+  --gripStTropaz: #2b4c8c;
+  --gripPersonaStrategist: #3e6497;
+  --gripPersonaEnthusiast: #fdad41;
+  --gripPersonaEquilibrist: #00caf1;
+  --gripPersonaFinancial: #9f7aff;
+  --gripPersonaShadow: #00000029;
+  --gripBoulderTwo: #787878;
+  --gripDawnPink: #ebebf0;
+  --gripElfGreen: #0a8b65;
+  --gripWhiteIce: #e0f7f0;
+  --linerGradientOne: linear-gradient(
+    180deg,
+    #ffa6a6 0%,
+    rgba(255, 166, 166, 0) 100%
+  );
+  --linerGradientOneNew: linear-gradient(
+    180deg,
+    rgba(255, 166, 166, 0.3) 0%,
+    rgba(255, 166, 166, 0) 100%
+  );
+  --linerGradientTwo: linear-gradient(
+    180deg,
+    #3e7bfa 0%,
+    rgba(62, 123, 250, 0.0052) 99.99%,
+    rgba(62, 123, 250, 0) 100%
+  );
+  --linerGradientTwoNew: linear-gradient(
+    180deg,
+    rgba(62, 123, 250, 0.3) 0%,
+    rgba(62, 123, 250, 0.0052) 99.99%,
+    rgba(62, 123, 250, 0) 100%
+  );
+  --linerGradientFour: linear-gradient(
+    180deg,
+    #02c988 0%,
+    rgba(2, 201, 136, 0) 100%
+  );
+  --linerGradientFourNew: linear-gradient(
+    180deg,
+    rgba(2, 201, 136, 0.3) 0%,
+    rgba(2, 201, 136, 0) 100%
+  );
+  --linerGradientFive: linear-gradient(
+    270.03deg,
+    rgba(255, 166, 166, 0.2) 0.03%,
+    rgba(255, 166, 166, 0) 99.98%
+  );
+  --linearGradientSeven: linear-gradient(
+    180deg,
+    #00caf1 0%,
+    rgba(0, 202, 241, 0) 100%
+  );
+  --linearGradientEight: linear-gradient(
+    180deg,
+    #3e7bfa 0%,
+    rgba(62, 123, 250, 0) 100%
+  );
+  --linearGradientSevenNew: linear-gradient(
+    180deg,
+    rgba(0, 202, 241, 0.3) 0%,
+    rgba(0, 202, 241, 0) 100%
+  );
+  --linearGradientNine: linear-gradient(
+    180deg,
+    rgba(159, 122, 255, 1) 0%,
+    rgba(159, 122, 255, 0) 100%
+  );
+  --radialGradientTeal: radial-gradient(
+    at 0% 4%,
+    rgba(0, 184, 183, 0.2) 10px,
+    var(--gripWhite) 30%,
+    var(--gripWhite) 50%
+  );
+  --gripLuminousGray: #999999;
+  /* Metric Cards */
+  --radialGradientMetricTeal: radial-gradient(
+    at 0% 4%,
+    rgba(0, 184, 183, 0.2) 10px,
+    var(--gripWhite) 30%,
+    var(--gripWhite) 50%
+  );
+  --radialGradientMetricYellow: radial-gradient(
+    at 0% 4%,
+    rgba(250, 190, 129, 0.2) 10px,
+    var(--gripWhite) 30%,
+    var(--gripWhite) 50%
+  );
+  --radialGradientMetricBlue: radial-gradient(
+    at 0% 4%,
+    rgba(0, 53, 124, 0.2) 10px,
+    var(--gripWhite) 30%,
+    var(--gripWhite) 50%
+  );
+  --linearGradientSlider: linear-gradient(
+    90deg,
+    #ffffff 12.43%,
+    rgba(255, 255, 255, 0) 94.51%
+  );
+
+  /* referral cards gradient */
+  --gripBondsRefBg: linear-gradient(
+    180deg,
+    var(--gripSecondaryOne, #ffa6a6) 0%,
+    rgba(255, 166, 166, 0) 100%
+  );
+  --gripSdiRefBg: linear-gradient(
+    180deg,
+    var(--gripLightSecondarySix, #02c988) 0%,
+    rgba(2, 201, 136, 0) 100%
+  );
+  --gripBasketRefBg: linear-gradient(
+    180deg,
+    #3e7bfa 0%,
+    rgba(62, 123, 250, 0.0052) 99.99%,
+    rgba(62, 123, 250, 0) 100%
+  );
+
+  /*
+    Notice colors
+  */
+
+  --yellowOrangeAlpha: rgba(253, 172, 66, 0.1);
+
+  /*
+    Finance Product type colors
+   */
+  --inventory: rgba(62, 123, 250, 0.2);
+  --leasing: rgba(255, 166, 166, 0.2);
+  --realEstate: rgba(2, 201, 136, 0.2);
+  --startupEquity: rgba(0, 202, 241, 0.2);
+  --bonds: #f1ecff;
+  --sdiSecondary: #fff7ec;
+}
+
+.gripBlue {
+  color: var(--gripBlue);
+}
+
+.gripLuminous {
+  color: #81878c;
+}
+
+.gripLuminousGrey {
+  color: var(--gripLuminousGrey);
+}
+
+.gripLuminousDark {
+  color: var(--gripLuminousDark);
+}
+
+.backgroundLightGreen {
+  background-color: var(--gripLuminousDark);
+}
+
+.gripDanger {
+  color: var(--gripDanger);
+}

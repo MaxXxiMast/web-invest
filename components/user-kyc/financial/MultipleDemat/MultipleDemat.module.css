@@ -1,0 +1,136 @@
+.MultipleDematModal {
+  max-width: 550px !important;
+}
+
+.Heading {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/* Demat Card */
+.DematCardContainer {
+  padding: 12px;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  background: var(--gripPorcelain, #f7f8f9);
+  cursor: pointer;
+}
+
+.DematCardContainer.Active {
+  border: 1px solid var(--gripBlue, #00357c);
+  background: var(--gripSolitude, #e7f1fe);
+}
+
+.Radio {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--gripOsloGray, #81878c);
+  flex-shrink: 0;
+  position: relative;
+  transition: 0.2s ease-in-out;
+}
+
+.Radio::before {
+  content: '';
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background-color: var(--gripBlue, #00357c);
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+
+.Active .Radio::before {
+  opacity: 1;
+}
+
+.Active .Radio {
+  border-color: var(--gripBlue, #00357c);
+  border-width: 2px;
+}
+
+.DematDetails {
+  gap: 7px;
+}
+
+.DematDetailsContainer {
+  gap: 12px;
+}
+
+.Note {
+  color: var(--gripGunPowder, #44485b);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 10px 0 24px;
+}
+
+.Note span {
+  color: var(--gripBlue, #00357c);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+.ClickHere {
+  cursor: pointer;
+}
+
+.DematDetailsContainer span:first-child {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.DematDetailsContainer span:last-child {
+  color: var(--gripWealthText, #696b74);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Demat card end */
+
+.MultipleDematContainer {
+  gap: 12px;
+  width: 100%;
+  margin-top: 16px;
+  max-height: 430px;
+  overflow: scroll;
+}
+
+.DPIDImage {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NoDemat {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--gripSolitude, #e7f1fe);
+}
+
+.BrokerIconContainer {
+  width: 32px;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .Heading {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+  }
+}

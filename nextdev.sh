@@ -1,0 +1,4 @@
+#!/bin/bash
+export NODE_OPTIONS='-r newrelic'
+export NEW_RELIC_LICENSE_KEY=$NEW_RELIC_API_KEY
+export NEW_RELIC_APP_NAME=$SERVICE_NAME

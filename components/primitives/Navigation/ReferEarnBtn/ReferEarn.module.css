@@ -1,0 +1,27 @@
+.ReferBtn {
+  position: relative;
+}
+
+.ReferIcon {
+  font-size: 18px !important;
+}
+
+.ReferralAmount {
+  position: absolute;
+  top: -10px;
+  margin-left: 12px;
+  padding: 1px 8px;
+  border: 1px solid var(--gripLighterOne, #e5f1ff);
+  border-radius: 4px;
+  color: var(--gripPrimaryGreen, #00b8b7);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: var(--gripWhite, #ffffff);
+}
+
+@media screen and (max-width: 992px) {
+  .ReferBtn {
+    display: none;
+  }
+}

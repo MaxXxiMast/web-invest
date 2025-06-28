@@ -1,0 +1,62 @@
+.commonFont {
+  font-style: normal;
+}
+
+.socialButton {
+  width: 100%;
+  height: 48px;
+  background: var(--gripWhite) !important;
+  border: 1px solid var(--gripLuminousDark) !important;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.socialButton > span {
+  width: 100%;
+}
+
+.socialButton + .socialButton {
+  margin-top: 15px;
+}
+.socialButton .commonFont {
+  margin: 0 auto;
+}
+
+.socialText {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gripLuminousDark);
+}
+
+.orTextDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.orTextDivider::before,
+.orTextDivider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.orTextDivider::before {
+  margin-right: 10px;
+}
+
+.orTextDivider::after {
+  margin-left: 10px;
+}
+
+.orText {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 20px;
+  color: var(--gripLuminousGrey);
+}

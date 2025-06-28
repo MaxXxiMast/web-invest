@@ -1,0 +1,58 @@
+.UCCModal :global .MuiPaper-root {
+  max-width: 560px !important;
+  margin: 0 auto;
+}
+
+.Wrapper {
+  background-color: var(--gripWhite, #ffffff);
+  padding: 45px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.Wrapper h3 {
+  margin: 0;
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.Wrapper p {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 16px 0 0;
+}
+
+.Wrapper p a {
+  text-decoration: underline;
+}
+
+.Btn {
+  max-width: 280px;
+  margin-top: 28px;
+}
+
+.IconWrapper {
+  width: 70px;
+  height: 70px;
+  display: inline-flex;
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 50%;
+}
+
+.Icon {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .Wrapper {
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+  }
+  .Btn {
+    max-width: 100%;
+  }
+}

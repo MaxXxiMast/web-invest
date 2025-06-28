@@ -1,0 +1,196 @@
+.ModalHeader {
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+  margin: 0 -20px;
+  padding: 0px 20px 16px;
+}
+.errorText {
+  display: flex;
+  align-items: flex-end;
+  color: var(--gripRedTwo, #ff0000);
+  font-size: 12px;
+  margin-top: 5px;
+}
+.withdrawAmount {
+  margin-top: 2px;
+  position: relative;
+  font-family: var(--fontFamily, "'Inter', sans-serif");
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  border: 1px solid var(--gripGhost);
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 56px;
+  padding: 16px;
+}
+.withdrawAmount:focus-visible {
+  outline: var(--gripGhost) auto 0px;
+}
+.InfoIcon,
+.InfoIcon > span {
+  width: auto;
+  height: auto;
+  max-width: auto;
+  max-height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+.popup {
+  width: 350px !important;
+}
+.mainPopup {
+  width: 400px !important;
+}
+.popUpFirstRow {
+  font-family: var(--fontFamily, "'Inter', sans-serif");
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--gripLuminousDark, #282c3f);
+  justify-content: center;
+  padding-top: 16px;
+}
+.ModalHeader h4 {
+  display: flex;
+  align-items: center;
+}
+
+.ModalBody {
+  padding: 20px 0;
+}
+
+.WithdrawIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 8px;
+  margin-right: 12px;
+}
+.ModalFooter {
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+  line-height: 0;
+  margin: 0 -20px;
+  padding: 20px 20px 0px;
+}
+
+.WithdrawBtn {
+  width: 100% !important;
+  min-height: 56px;
+  line-height: 30px !important;
+}
+
+.Note p {
+  color: var(--gripLuminousGrey);
+  margin-top: 8px;
+}
+.Note ul {
+  margin-top: 8px;
+  margin-left: 18px;
+  list-style-type: disc;
+}
+
+.BankAccountDetails {
+  margin-top: 24px;
+}
+.BankAccountDetails h3 {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.BankAccountDetails ul {
+  margin-bottom: 24px;
+}
+
+.BankAccountDetails span + span {
+  font-weight: 500;
+  color: var(--gripLuminousDark);
+}
+
+.BankAccountDetails span:not(.CopyIcon, .BankIcon) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousGrey);
+  display: flex;
+  align-items: center;
+}
+
+.BankAccountDetails li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.BankAccountDetails li + li {
+  margin-top: 16px;
+}
+
+.CopyIcon {
+  margin-left: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--gripBlue, #00357c);
+}
+
+.TransferBalanceModal {
+  width: 400px !important;
+}
+
+.TransferBalanceModal .ModalHeader {
+  border: none;
+}
+
+.TransferBalanceModal :global(.CloseBtn) {
+  top: 30px;
+}
+
+.TransferBalanceModal .BankAccountDetails {
+  margin-top: 0;
+}
+
+.heading {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--gripLuminousDark, #282c3f);
+  justify-content: center;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.buttonContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.WarningImage {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  margin-top: 8px;
+}
+
+.RupeesIcon {
+  font-size: 24px;
+  color: var(--gripBlue, #00357c);
+}
+
+.BankIcon {
+  font-size: 24px;
+  margin-right: 12px;
+}

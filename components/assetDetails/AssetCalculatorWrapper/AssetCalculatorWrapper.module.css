@@ -1,0 +1,50 @@
+.AssetDetailRight {
+  width: 416px;
+  z-index: 1 !important;
+}
+
+.BondsDocuementModal {
+  max-width: 400px !important;
+}
+
+.BondsDocuementModalCard {
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1199px) {
+  .AssetDetailRight {
+    width: 386px;
+  }
+}
+
+/* Mobiles */
+@media screen and (max-width: 992px) {
+  .AssetDetailRight {
+    display: none;
+  }
+
+  .MonthlyReturnCardDrawer {
+    padding: 8px !important;
+  }
+
+  .FdDrawer :global .MobileDrawerBody {
+    max-height: 80vh;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+  .KYCModalMain {
+    max-width: 400px;
+  }
+  .KYCModalMain h2 {
+    margin-bottom: -20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .NotifyMeButtonExperiment {
+    display: none;
+  }
+}

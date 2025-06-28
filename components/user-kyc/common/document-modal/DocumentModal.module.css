@@ -1,0 +1,89 @@
+.DocumentPopupContainer {
+  width: 500px !important;
+}
+
+.DocumentPopupHeader {
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.DocumentPopupSubHeader {
+  color: var(--gripLuminousGrey, #555770);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.DocumentPopupFooter {
+  color: var(--gripLuminousGrey, #555770);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 0px;
+}
+
+.DocumentCertifiedLine {
+  line-height: 24px;
+  margin: 16px 0px 20px;
+  gap: 10px;
+}
+
+.DocumentCertifiedLineText {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0px;
+}
+
+.DocumnentPopupTitle {
+  color: var(--gripLuminousDark, #282c3f);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  margin: 2px 0px;
+}
+
+.DocumnentPopupSubTitle {
+  color: var(--gripLuminousGrey, #555770);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0px 0px 20px;
+}
+
+.list {
+  list-style-type: disc;
+  margin: 25px 20px;
+  color: var(--gripBlue, #00357c);
+}
+
+.ShieldImage {
+  color: var(--gripPrimaryGreen, #00b8b7);
+  font-size: 24px;
+}
+
+.ProfileImage {
+  width: 100px;
+  height: 100px;
+  margin: 0px auto;
+}
+
+.PopupConfirm {
+  width: 100% !important;
+}
+
+.DocumentPopupDrawer {
+  bottom: 0% !important;
+}
+
+@media screen and (max-width: 767px) {
+  .DocumentPopupContainer {
+    width: 100%;
+  }
+}

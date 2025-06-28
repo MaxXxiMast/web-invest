@@ -1,0 +1,258 @@
+.RewardHistoryTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.RewardHistoryTable th {
+  text-align: left;
+  color: var(--gripLuminousGreyPlace);
+  padding: 20px 24px 16px;
+}
+.RewardHistoryTable td {
+  padding: 16px;
+}
+
+.RewardHistoryTable th:last-child,
+.RewardHistoryTable td:last-child {
+  text-align: right;
+}
+
+.RewardHistoryTable tr:global(.redeemed) td {
+  background: var(--gripLighter);
+}
+.RewardHistoryTable tr:not(:first-child) td {
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.TablePagination {
+  padding: 28px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.PaginationLeft span {
+  color: var(--gripLuminousGrey);
+}
+
+.PaginationRight ul li button {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--gripBlue);
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  color: var(--gripBlue);
+}
+.PaginationRight ul li + li {
+  margin-left: 12px;
+}
+.PaginationRight ul li button:global(.Mui-selected) {
+  background-color: var(--gripBlue);
+  color: var(--gripWhite);
+}
+
+.PaginationRight
+  ul
+  li
+  button:hover
+  .PaginationRight
+  ul
+  li
+  button:global(.Mui-selected):hover {
+  background-color: var(--gripBlue);
+  color: var(--gripWhite);
+}
+
+.RefereeCard {
+  display: flex;
+}
+
+.CardIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 16px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gripWhite);
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.RefereeCard:global(.Credited) .CardIcon {
+  background: var(--gripGreenLighterOne);
+  border: 1px solid var(--gripLighterOne);
+}
+
+.CardDetails h3 {
+  margin-bottom: 4px;
+  color: var(--gripLuminousDark);
+}
+
+.CardDetails p {
+  color: var(--gripLuminousGrey);
+}
+
+.ForText {
+  color: var(--gripLuminousGrey);
+}
+.ForText span {
+  color: var(--gripLuminousDark);
+}
+.AssetInvestedText {
+  color: var(--gripLuminousDark);
+}
+.AssetInvestedText span {
+  color: var(--gripLuminousGrey);
+  display: flex;
+  align-items: center;
+}
+
+.AssetInvestedText span::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+  background-color: var(--gripPrimaryGreen,  #00b8b7);
+}
+
+.AssetInvestedText span:global(.accepting)::before {
+  background-color: var(--gripBlue);
+}
+
+.MobileTabination .MobileReferalHistoryTab {
+  margin: 20px -24px 28px;
+  border: none;
+  width: auto;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 10px 24px;
+  background: white;
+}
+
+.MobileTabination .MobileReferalHistoryTab ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripLuminousDark);
+  background: var(--gripWhiteLilac, #f7f7fc);
+  border-radius: 35px !important;
+  border: none;
+  padding: 4px 20px;
+  outline: none;
+}
+
+.MobileTabination .MobileReferalHistoryTab ul li + li {
+  margin-left: 8px;
+}
+.MobileTabination .MobileReferalHistoryTab ul li:global(.active) {
+  background: var(--gripLuminousDark);
+  color: var(--gripWhite);
+}
+
+.MobileReferalHistoryTabContent {
+  margin-bottom: 0;
+}
+
+.MobileCard {
+  background: var(--gripWhite);
+  border: 1px solid var(--gripMercuryThree, #e6e6e6);
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.MobileCard + .MobileCard {
+  margin-top: 16px;
+}
+.CardBody {
+  padding: 16px;
+  position: relative;
+}
+.CardBodyInner {
+  display: flex;
+}
+.CardBodyLeft {
+  flex-grow: 1;
+  padding-right: 15px;
+}
+.CardBodyRight {
+  text-align: right;
+  flex-shrink: 0;
+}
+.CardBody .ForText {
+  margin-top: 16px;
+}
+.CardFooter {
+  padding: 12px;
+  border-top: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.CardStatus {
+  margin-bottom: 4px;
+}
+.CardDate {
+  color: var(--gripLuminousGrey);
+}
+.CardFooterInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.RedeemedBg {
+  background-color: var(--gripLighter);
+}
+@media screen and (min-width: 992px) {
+  .MobileTabination {
+    display: none;
+  }
+  .ForText {
+    max-width: 460px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .DesktopTable {
+    display: none;
+  }
+  .CardIcon {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .MobileTabination .MobileReferalHistoryTab {
+    margin: 0px -20px 0;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.8);
+    padding: 0px 20px 12px;
+    overflow-x: scroll;
+  }
+  .MobileTabination .MobileReferalHistoryTab:global(.StickToTop) {
+    padding: 12px 20px;
+    transition: 0.25s padding ease-in-out;
+  }
+  .MobileTabination .MobileReferalHistoryTab:global(.ExtraTopSpace) {
+    top: 56px;
+    padding: 0px 20px 12px;
+    transition: 0.1s ease-in-out;
+  }
+
+  .MobileTabination .MobileReferalHistoryTab::-webkit-scrollbar {
+    height: 0;
+  }
+  .CardFooterRight > span {
+    white-space: nowrap;
+  }
+
+  .CardFooterLeft {
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

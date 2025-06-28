@@ -1,0 +1,62 @@
+.LeasingInvestmentsBody > ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.LeasingInvestmentsBody > ul > li {
+  width: calc(50% - 10px);
+}
+
+.ReadMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ReadmoreHandler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ReadMore .CaretDown {
+  font-size: 8px;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.ReadMore span {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--gripBlue);
+  margin: 0 4px;
+  display: flex;
+  align-items: center;
+}
+
+.DealCount {
+  color: var(--gripLuminousGrey, #555770);
+}
+
+@media screen and (max-width: 992px) {
+  .LeasingInvestmentsBody > ul > li {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .LeasingInvestmentsBody > ul > li {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .LeasingInvestmentsBody > ul {
+    gap: 16px;
+  }
+  .ReadMore {
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+}

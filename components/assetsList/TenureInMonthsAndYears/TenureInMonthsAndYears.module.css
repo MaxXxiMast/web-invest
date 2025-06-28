@@ -1,0 +1,12 @@
+.value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gripLuminousDark, #282c3f);
+  text-align: center;
+}
+
+.subValue {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}

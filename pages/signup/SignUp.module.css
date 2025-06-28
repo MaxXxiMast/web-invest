@@ -1,0 +1,229 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 32px;
+  gap: 20px;
+}
+
+.inputFieldSet {
+  border-radius: 8px;
+  margin-top: 32px;
+  width: 100%;
+  padding: 10px;
+  height: 64px;
+  position: relative;
+  text-align: left;
+}
+.inputContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 0 0;
+  margin: auto;
+}
+.itemList {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  margin-top: 0px;
+  padding-left: 35px;
+}
+.itemList + .itemList {
+  margin-top: 20px;
+}
+.itemList input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  cursor: pointer;
+}
+.itemList span {
+  color: var(--gripLuminousGreyPlace) !important;
+}
+.itemList span::before,
+.itemList span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+.itemList span::before {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--gripLuminousGreyPlace);
+  border-radius: 4px;
+}
+.itemList span::after {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  opacity: 0;
+  left: 4px;
+  background-color: var(--gripLuminousGreyPlace);
+  transition: 0.3s ease-in-out;
+}
+
+.itemList:global(:not(.RadioBtn)) span::after {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--gripBlue);
+  left: 0;
+  background-color: var(--gripBlue);
+  content: '✓';
+  color: var(--gripWhite);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 10px;
+}
+
+.itemList:global(.RadioBtn) span::before,
+.itemList:global(.RadioBtn) span::after {
+  border-radius: 50%;
+}
+
+.itemList input:checked + span::after {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.itemList:global(.RadioBtn) input:checked + span::before {
+  border-color: var(--gripBlue);
+}
+.itemList:global(.RadioBtn) input:checked + span::after {
+  background-color: var(--gripBlue);
+}
+
+.itemList text {
+  margin-left: 12px;
+}
+.loginButton {
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+
+.loginText {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  align-items: center;
+  text-align: center;
+  color: var(--gripLuminousDark);
+}
+.checkbox {
+  padding: 0px !important;
+}
+
+.CheckboxGrp :global(.RadioBtn) {
+  margin-top: 0;
+}
+
+.CheckboxGrp :global(.RadioBtn + .RadioBtn) {
+  margin-top: 16px;
+}
+
+.clearInputButton {
+  filter: grayscale(1);
+  opacity: 0.5;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-top: 5px;
+  height: 24px;
+}
+
+.verifyButton {
+  background: var(--gripLighterOne);
+  border: var(--gripLighterOne);
+  border-radius: 0px 5px 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  height: 100%;
+  margin-bottom: 0px;
+  padding: 12px 20px;
+  color: var(--gripBlue);
+  min-width: 92px;
+}
+
+.verifyButton:disabled {
+  background-color: var(--gripWhiteLilac, #f7f7fc);
+  color: var(--gripBombay);
+  cursor: not-allowed;
+}
+
+.container :global(.HasValue) .verifyButton {
+  border-color: var(--gripBlue, #00357c);
+}
+
+.consentUL {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.divider {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1.5px solid var(--gripWhiteLilac, #f7f7fc);
+  width: 100%;
+}
+
+.SignupWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.tncAgreement {
+  text-align: center;
+  font-size: 12px;
+  color: var(--gripLuminousGrey, #555770);
+}
+
+.link {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .loginText {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .inputContainer {
+    padding: 0;
+  }
+  .mainContainer {
+    margin-top: 24px;
+  }
+}

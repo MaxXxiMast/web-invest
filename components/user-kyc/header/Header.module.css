@@ -1,0 +1,42 @@
+/* Header */
+.Header {
+  margin-top: -20px;
+  border-bottom: 1px solid var(--gripMercuryThree, #e6e6e6);
+}
+
+.Header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  color: var(--gripLuminousDark, #282c3f);
+}
+.Close {
+  cursor: pointer;
+}
+
+.Close:global(.disable) {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+  .Header {
+    border: none;
+  }
+  .Header h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    flex: unset;
+  }
+  .Close {
+    background-color: var(--gripWhiteLilac, #f7f7fc);
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}
